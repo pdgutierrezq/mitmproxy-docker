@@ -1,4 +1,7 @@
 #!/usr/bin/env bash
+#docker exec -it mitmproxy /bin/bash
+#apt-get update
+#apt-get install curl
 git add .
 git commit -m "auto-commit"
 git push
