@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-#docker exec -it mitmproxy /bin/bash
+#docker exec -it proxy /bin/bash
 #apt-get update
 #apt-get install curl
 git add .
@@ -9,7 +9,7 @@ ssh -i "rb-pb-dev-ecs-auto.pem" ec2-user@ec2-3-15-4-198.us-east-2.compute.amazon
    #commands to run on remote host
   cd mitmproxy-docker
    docker ps
-   docker stop mitmproxy
+   docker stop proxy
    git fetch
    git pull
    ./run.sh
