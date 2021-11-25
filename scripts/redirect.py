@@ -13,6 +13,7 @@ def request(flow: http.HTTPFlow) -> None:
         flow.request.port = 442
         flow.request.path = '/PFBA_Crm31/sca/WSBA_Crm_consultarCondicionesCliente'
       if flow.request.path == '/mock':
-        flow.request.host = "rb-dev-alb-ecs-ext-525169194.us-east-2.elb.amazonaws.com"
-        flow.request.port = 443
+#         flow.request.host = "rb-dev-alb-ecs-ext-525169194.us-east-2.elb.amazonaws.com"
+        flow.request.host = "10.5.10.169"
+        flow.request.port = 80
         flow.request.path = '/castlemock/mock/soap/project/7cGqrI/CustomerConditionsInquirySvcPort'
