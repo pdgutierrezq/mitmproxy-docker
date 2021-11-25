@@ -18,7 +18,7 @@ services:
       - TZ="America/Bogota"
       - SSH_PORT=41
     volumes:
-      - $(pwd):/data
+      - "$(pwd):/data"
     ports:
       - "8080:8080"
       - "8081:8081"
