@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+git
+ssh -i "rb-pb-dev-ecs-auto.pem" ec2-user@ec2-3-15-4-198.us-east-2.compute.amazonaws.com <<'ENDSSH'
+   #commands to run on remote host
+  cd mitmproxy-docker
+   docker ps
+   docker stop mitmproxy
+   git fetch
+   git pull
+   ./run.sh
+ENDSSH
+
