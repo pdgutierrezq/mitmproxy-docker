@@ -7,6 +7,7 @@ def request(flow: http.HTTPFlow) -> None:
     # pretty_host takes the "Host" header of the request into account,
     # which is useful in transparent mode where we usually only have the IP
     # otherwise.
-    if flow.request.pretty_host == "api.example.com":
-        flow.request.host = "192.168.0.1"
-        flow.request.port = 8080
+    if flow.request.pretty_host == "10.5.8.216":
+        flow.request.host = "bb-stg-alb-ecs-ext-902953221.us-east-2.elb.amazonaws.com"
+        flow.request.port = 80
+        flow.request.path = '/castlemock/mock/soap/project/7cGqrI/CustomerConditionsInquirySvcPort'
