@@ -9,6 +9,6 @@ def request(flow: http.HTTPFlow) -> None:
     # otherwise.
     if flow.request.pretty_host == "10.5.8.216":
       if flow.request.path == '/CustomerConditions':
-        flow.request.host = "bb-stg-alb-ecs-ext-902953221.us-east-2.elb.amazonaws.com"
-        flow.request.port = 80
-        flow.request.path = '/castlemock/mock/soap/project/7cGqrI/CustomerConditionsInquirySvcPort'
+        flow.request.host = "192.168.135.28"
+        flow.request.port = 442
+        flow.request.path = '/PFBA_Crm31/sca/WSBA_Crm_consultarCondicionesCliente'
