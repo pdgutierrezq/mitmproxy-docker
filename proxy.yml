@@ -1,14 +1,14 @@
 version: '2'
 services:
   mitmproxy:
-    container_name: mitmproxy
+    container_name: proxy
     image: mitmproxy/mitmproxy
     network_mode: "host"
     extra_hosts:
     - "bc-host:127.0.0.1"
     - "default:127.0.0.1"
     restart: always
-    command: mitmweb --web-host 0.0.0.0 --web-port 8081 -s /data/scripts/redirect.py -s /data/scripts/modify_response.py
+    command: mitmweb --web-host 0.0.0.0 --web-port 8081 -s /data/scripts/redirect.py --no-http2 --view-filter localhost -s /data/scripts/modify_response.py
     environment:
       - APP_PATH=/usr/share/projects/bocc-commons-frontend-ejecutivo-empoderado
       - TZ="America/Bogota"
