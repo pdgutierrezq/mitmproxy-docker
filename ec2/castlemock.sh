@@ -4,6 +4,6 @@ ssh -i "rb-pb-dev-ecs-auto.pem" "ec2-user@$EC2" <<'ENDSSH'
   cd mitmproxy-docker
   git fetch
   git pull
-  cd mitmproxy-docker/data/castlemock/import
+  cd data/castlemock/import
   curl -X POST "http://10.5.10.86/castlemock/api/rest/core/project/soap/import" -H "accept: */*" -H "Authorization: " -H "Content-Type: multipart/form-data" -F "file=@project-soap-7cGqrI.xml;type=text/xml"
 ENDSSH
