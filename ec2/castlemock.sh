@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 sh ./git.sh
 ssh -i "rb-pb-dev-ecs-auto.pem" "ec2-user@$EC2" <<'ENDSSH'
+  cd mitmproxy-docker
   git fetch
   git pull
   cd mitmproxy-docker/data/castlemock/import
