@@ -1,7 +1,8 @@
 #!/usr/bin/env bash
 sh ./git.sh
-CASTLEMOCK_HOST=localhost
+
 ssh -i "rb-pb-dev-ecs-auto.pem" "ec2-user@$EC2" <<'ENDSSH'
+  CASTLEMOCK_HOST=localhost
   cd mitmproxy-docker
   git fetch
   git pull
