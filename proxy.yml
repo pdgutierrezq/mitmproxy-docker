@@ -10,11 +10,20 @@ services:
     restart: always
     command: mitmweb --ssl-insecure --web-host 0.0.0.0 --web-port 8081 -s /data/scripts/redirect.py --no-http2 -s /data/scripts/modify_response.py
     environment:
-      - APP_PATH=/usr/share/projects/bocc-commons-frontend-ejecutivo-empoderado
       - TZ="America/Bogota"
       - SSH_PORT=41
     volumes:
-      - ".:/data"
+      - "./proxy:/data"
     ports:
       - "8080:8080"
       - "8081:8081"
+
+  castlemock:
+    container_name: castlemock
+    image: castlemock/castlemock:1.51
+    network_mode: "host"
+    restart: always
+    volumes:
+      - "./castlemock:/root/.castlemock"
+    ports:
+      - "80:8080"
