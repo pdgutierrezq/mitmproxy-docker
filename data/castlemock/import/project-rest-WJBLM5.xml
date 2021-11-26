@@ -1,0 +1,736 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<restExportContainer>
+    <applications>
+        <application>
+            <id>Ckgm7o</id>
+            <name>pse-transactions</name>
+            <projectId>WJBLM5</projectId>
+            <resources/>
+        </application>
+    </applications>
+    <methods>
+        <method>
+            <currentResponseSequenceIndex>0</currentResponseSequenceIndex>
+            <httpMethod>GET</httpMethod>
+            <id>ZiTvqE</id>
+            <mockResponses/>
+            <name>token</name>
+            <networkDelay>0</networkDelay>
+            <resourceId>zIoy2e</resourceId>
+            <responseStrategy>RANDOM</responseStrategy>
+            <simulateNetworkDelay>false</simulateNetworkDelay>
+            <status>MOCKED</status>
+        </method>
+        <method>
+            <currentResponseSequenceIndex>0</currentResponseSequenceIndex>
+            <httpMethod>GET</httpMethod>
+            <id>Z9BiKb</id>
+            <mockResponses/>
+            <name>get</name>
+            <networkDelay>0</networkDelay>
+            <resourceId>KAqGCv</resourceId>
+            <responseStrategy>RANDOM</responseStrategy>
+            <simulateNetworkDelay>false</simulateNetworkDelay>
+            <status>MOCKED</status>
+        </method>
+        <method>
+            <currentResponseSequenceIndex>0</currentResponseSequenceIndex>
+            <httpMethod>PUT</httpMethod>
+            <id>eWgRbu</id>
+            <mockResponses/>
+            <name>finish_transaction</name>
+            <networkDelay>0</networkDelay>
+            <resourceId>zWE45X</resourceId>
+            <responseStrategy>RANDOM</responseStrategy>
+            <simulateNetworkDelay>false</simulateNetworkDelay>
+            <status>MOCKED</status>
+        </method>
+        <method>
+            <currentResponseSequenceIndex>0</currentResponseSequenceIndex>
+            <defaultQueryMockResponseId></defaultQueryMockResponseId>
+            <forwardedEndpoint></forwardedEndpoint>
+            <httpMethod>POST</httpMethod>
+            <id>BSifQY</id>
+            <mockResponses/>
+            <name>create-transaction</name>
+            <networkDelay>0</networkDelay>
+            <resourceId>zWE45X</resourceId>
+            <responseStrategy>RANDOM</responseStrategy>
+            <simulateNetworkDelay>false</simulateNetworkDelay>
+            <status>MOCKED</status>
+        </method>
+        <method>
+            <currentResponseSequenceIndex>0</currentResponseSequenceIndex>
+            <httpMethod>GET</httpMethod>
+            <id>QfC8wv</id>
+            <mockResponses/>
+            <name>transaction-status</name>
+            <networkDelay>0</networkDelay>
+            <resourceId>zWE45X</resourceId>
+            <responseStrategy>RANDOM</responseStrategy>
+            <simulateNetworkDelay>false</simulateNetworkDelay>
+            <status>MOCKED</status>
+        </method>
+    </methods>
+    <mockResponses>
+        <mockResponse>
+            <body>{&#13;
+  token_type: 'Bearer',&#13;
+  access_token: 'AAIgNjk2MzhmZjQ0NTRkYjE5N2Q0MTRmMGNhZTRmZDM4NzanZUz5W6Z-QQIyXLVR7VlOA3T5Tagnx3dZDzDsAjWbbRk_ZmXUWXCflzWM1tqSrUe4zE8wDWUFaizy_8e1PFjPjC_LE-kSfmGzp5jVtsk0e6MRQ96yZwW-in9wn5h0tTc',&#13;
+  expires_in: 3600,&#13;
+  consented_on: 1636423996,&#13;
+  scope: 'scope1'&#13;
+}</body>
+            <contentEncodings/>
+            <httpHeaders/>
+            <httpStatusCode>200</httpStatusCode>
+            <id>z0pYUq</id>
+            <methodId>ZiTvqE</methodId>
+            <name>ok</name>
+            <parameterQueries/>
+            <status>ENABLED</status>
+            <usingExpressions>false</usingExpressions>
+        </mockResponse>
+        <mockResponse>
+            <body>{&#13;
+	"BankInfo": [&#13;
+		{&#13;
+			"BankId": "0",&#13;
+			"Name": "A continuaci�n seleccione su banco"&#13;
+		},&#13;
+		{&#13;
+			"BankId": "1552",&#13;
+			"Name": "BAN.CO"&#13;
+		},&#13;
+		{&#13;
+			"BankId": "1040",&#13;
+			"Name": "BANCO AGRARIO"&#13;
+		},&#13;
+		{&#13;
+			"BankId": "1081",&#13;
+			"Name": "BANCO AGRARIO DESARROLLO"&#13;
+		},&#13;
+		{&#13;
+			"BankId": "1080",&#13;
+			"Name": "BANCO AGRARIO QA DEFECTOS"&#13;
+		},&#13;
+		{&#13;
+			"BankId": "10322",&#13;
+			"Name": "BANCO CAJA SOCIAL"&#13;
+		},&#13;
+		{&#13;
+			"BankId": "1032",&#13;
+			"Name": "BANCO CAJA SOCIAL DESARROLLO"&#13;
+		},&#13;
+		{&#13;
+			"BankId": "1019",&#13;
+			"Name": "BANCO COLPATRIA DESARROLLO"&#13;
+		},&#13;
+		{&#13;
+			"BankId": "1078",&#13;
+			"Name": "BANCO COLPATRIA UAT"&#13;
+		},&#13;
+		{&#13;
+			"BankId": "1052",&#13;
+			"Name": "BANCO COMERCIAL AVVILLAS S.A."&#13;
+		},&#13;
+		{&#13;
+			"BankId": "1061",&#13;
+			"Name": "BANCO COOMEVA S.A. - BANCOOMEVA"&#13;
+		},&#13;
+		{&#13;
+			"BankId": "1016",&#13;
+			"Name": "BANCO COOPERATIVO COOPCENTRAL"&#13;
+		},&#13;
+		{&#13;
+			"BankId": "1051",&#13;
+			"Name": "BANCO DAVIVIENDA"&#13;
+		},&#13;
+		{&#13;
+			"BankId": "10512",&#13;
+			"Name": "BANCO DAVIVIENDA Desarrollo"&#13;
+		},&#13;
+		{&#13;
+			"BankId": "1039",&#13;
+			"Name": "BANCO DE BOGOTA"&#13;
+		},&#13;
+		{&#13;
+			"BankId": "1001",&#13;
+			"Name": "BANCO DE BOGOTA DESARROLLO 2013"&#13;
+		},&#13;
+		{&#13;
+			"BankId": "1023",&#13;
+			"Name": "BANCO DE OCCIDENTE"&#13;
+		},&#13;
+		{&#13;
+			"BankId": "1062",&#13;
+			"Name": "BANCO FALABELLA"&#13;
+		},&#13;
+		{&#13;
+			"BankId": "1010",&#13;
+			"Name": "BANCO GNB COLOMBIA (ANTES HSBC)"&#13;
+		},&#13;
+		{&#13;
+			"BankId": "1012",&#13;
+			"Name": "BANCO GNB SUDAMERIS"&#13;
+		},&#13;
+		{&#13;
+			"BankId": "1060",&#13;
+			"Name": "BANCO PICHINCHA S.A."&#13;
+		},&#13;
+		{&#13;
+			"BankId": "1002",&#13;
+			"Name": "BANCO POPULAR"&#13;
+		},&#13;
+		{&#13;
+			"BankId": "1058",&#13;
+			"Name": "BANCO PROCREDIT COLOMBIA"&#13;
+		},&#13;
+		{&#13;
+			"BankId": "1203",&#13;
+			"Name": "BANCO PRODUCTOS POR SEPARADO"&#13;
+		},&#13;
+		{&#13;
+			"BankId": "1101",&#13;
+			"Name": "Banco PSE"&#13;
+		},&#13;
+		{&#13;
+			"BankId": "1065",&#13;
+			"Name": "BANCO SANTANDER COLOMBIA"&#13;
+		},&#13;
+		{&#13;
+			"BankId": "1063",&#13;
+			"Name": "Banco Serfinanza"&#13;
+		},&#13;
+		{&#13;
+			"BankId": "1035",&#13;
+			"Name": "BANCO TEQUENDAMA"&#13;
+		},&#13;
+		{&#13;
+			"BankId": "1004",&#13;
+			"Name": "Banco union Colombia Credito"&#13;
+		},&#13;
+		{&#13;
+			"BankId": "1005",&#13;
+			"Name": "Banco union Colombia credito FD"&#13;
+		},&#13;
+		{&#13;
+			"BankId": "1022",&#13;
+			"Name": "BANCO UNION COLOMBIANO"&#13;
+		},&#13;
+		{&#13;
+			"BankId": "1055",&#13;
+			"Name": "Banco Web Service ACH"&#13;
+		},&#13;
+		{&#13;
+			"BankId": "1055",&#13;
+			"Name": "Banco Web Service ACH WSE 3.0"&#13;
+		},&#13;
+		{&#13;
+			"BankId": "10072",&#13;
+			"Name": "BANCOLOMBIA DATAPOWER"&#13;
+		},&#13;
+		{&#13;
+			"BankId": "10071",&#13;
+			"Name": "BANCOLOMBIA DESARROLLO"&#13;
+		},&#13;
+		{&#13;
+			"BankId": "1007",&#13;
+			"Name": "BANCOLOMBIA QA"&#13;
+		},&#13;
+		{&#13;
+			"BankId": "1013",&#13;
+			"Name": "BBVA COLOMBIA S.A."&#13;
+		},&#13;
+		{&#13;
+			"BankId": "1009",&#13;
+			"Name": "CITIBANK COLOMBIA S.A."&#13;
+		},&#13;
+		{&#13;
+			"BankId": "1292",&#13;
+			"Name": "CONFIAR COOPERATIVA FINANCIERA"&#13;
+		},&#13;
+		{&#13;
+			"BankId": "1551",&#13;
+			"Name": "DAVIPLATA"&#13;
+		},&#13;
+		{&#13;
+			"BankId": "1006",&#13;
+			"Name": "ITAU"&#13;
+		},&#13;
+		{&#13;
+			"BankId": "1508",&#13;
+			"Name": "NEQUI CERTIFICACION"&#13;
+		},&#13;
+		{&#13;
+			"BankId": "121212",&#13;
+			"Name": "Prueba Steve"&#13;
+		}&#13;
+	]&#13;
+}</body>
+            <contentEncodings/>
+            <httpHeaders/>
+            <httpStatusCode>200</httpStatusCode>
+            <id>SNDDOx</id>
+            <methodId>Z9BiKb</methodId>
+            <name>ok prod</name>
+            <parameterQueries/>
+            <status>ENABLED</status>
+            <usingExpressions>false</usingExpressions>
+        </mockResponse>
+        <mockResponse>
+            <body>[&#13;
+  {&#13;
+    "BankId": "0",&#13;
+    "Name": "A continuación seleccione su banco"&#13;
+  },&#13;
+  {&#13;
+    "BankId": "1552",&#13;
+    "Name": "BAN.CO"&#13;
+  },&#13;
+  {&#13;
+    "BankId": "1040",&#13;
+    "Name": "BANCO AGRARIO"&#13;
+  },&#13;
+  {&#13;
+    "BankId": "1081",&#13;
+    "Name": "BANCO AGRARIO DESARROLLO"&#13;
+  },&#13;
+  {&#13;
+    "BankId": "1080",&#13;
+    "Name": "BANCO AGRARIO QA DEFECTOS"&#13;
+  },&#13;
+  {&#13;
+    "BankId": "10322",&#13;
+    "Name": "BANCO CAJA SOCIAL"&#13;
+  },&#13;
+  {&#13;
+    "BankId": "1032",&#13;
+    "Name": "BANCO CAJA SOCIAL DESARROLLO"&#13;
+  },&#13;
+  {&#13;
+    "BankId": "1019",&#13;
+    "Name": "BANCO COLPATRIA DESARROLLO"&#13;
+  },&#13;
+  {&#13;
+    "BankId": "1078",&#13;
+    "Name": "BANCO COLPATRIA UAT"&#13;
+  },&#13;
+  {&#13;
+    "BankId": "1052",&#13;
+    "Name": "BANCO COMERCIAL AVVILLAS S.A."&#13;
+  },&#13;
+  {&#13;
+    "BankId": "1061",&#13;
+    "Name": "BANCO COOMEVA S.A. - BANCOOMEVA"&#13;
+  },&#13;
+  {&#13;
+    "BankId": "1016",&#13;
+    "Name": "BANCO COOPERATIVO COOPCENTRAL"&#13;
+  },&#13;
+  {&#13;
+    "BankId": "1051",&#13;
+    "Name": "BANCO DAVIVIENDA"&#13;
+  },&#13;
+  {&#13;
+    "BankId": "10512",&#13;
+    "Name": "BANCO DAVIVIENDA Desarrollo"&#13;
+  },&#13;
+  {&#13;
+    "BankId": "1001",&#13;
+    "Name": "BANCO DE BOGOTA DESARROLLO 2013"&#13;
+  },&#13;
+  {&#13;
+    "BankId": "1023",&#13;
+    "Name": "BANCO DE OCCIDENTE"&#13;
+  },&#13;
+  {&#13;
+    "BankId": "1062",&#13;
+    "Name": "BANCO FALABELLA"&#13;
+  },&#13;
+  {&#13;
+    "BankId": "1010",&#13;
+    "Name": "BANCO GNB COLOMBIA (ANTES HSBC)"&#13;
+  },&#13;
+  {&#13;
+    "BankId": "1012",&#13;
+    "Name": "BANCO GNB SUDAMERIS"&#13;
+  },&#13;
+  {&#13;
+    "BankId": "1060",&#13;
+    "Name": "BANCO PICHINCHA S.A."&#13;
+  },&#13;
+  {&#13;
+    "BankId": "1002",&#13;
+    "Name": "BANCO POPULAR"&#13;
+  },&#13;
+  {&#13;
+    "BankId": "1058",&#13;
+    "Name": "BANCO PROCREDIT COLOMBIA"&#13;
+  },&#13;
+  {&#13;
+    "BankId": "1203",&#13;
+    "Name": "BANCO PRODUCTOS POR SEPARADO"&#13;
+  },&#13;
+  {&#13;
+    "BankId": "1101",&#13;
+    "Name": "Banco PSE"&#13;
+  },&#13;
+  {&#13;
+    "BankId": "1065",&#13;
+    "Name": "BANCO SANTANDER COLOMBIA"&#13;
+  },&#13;
+  {&#13;
+    "BankId": "1035",&#13;
+    "Name": "BANCO TEQUENDAMA"&#13;
+  },&#13;
+  {&#13;
+    "BankId": "1004",&#13;
+    "Name": "Banco union Colombia Credito"&#13;
+  },&#13;
+  {&#13;
+    "BankId": "1005",&#13;
+    "Name": "Banco union Colombia credito FD"&#13;
+  },&#13;
+  {&#13;
+    "BankId": "1022",&#13;
+    "Name": "BANCO UNION COLOMBIANO"&#13;
+  },&#13;
+  {&#13;
+    "BankId": "1055",&#13;
+    "Name": "Banco Web Service ACH"&#13;
+  },&#13;
+  {&#13;
+    "BankId": "1055",&#13;
+    "Name": "Banco Web Service ACH WSE 3.0"&#13;
+  },&#13;
+  {&#13;
+    "BankId": "10072",&#13;
+    "Name": "BANCOLOMBIA DATAPOWER"&#13;
+  },&#13;
+  {&#13;
+    "BankId": "10071",&#13;
+    "Name": "BANCOLOMBIA DESARROLLO"&#13;
+  },&#13;
+  {&#13;
+    "BankId": "1007",&#13;
+    "Name": "BANCOLOMBIA QA"&#13;
+  },&#13;
+  {&#13;
+    "BankId": "1013",&#13;
+    "Name": "BBVA COLOMBIA S.A."&#13;
+  },&#13;
+  {&#13;
+    "BankId": "1009",&#13;
+    "Name": "CITIBANK COLOMBIA S.A."&#13;
+  },&#13;
+  {&#13;
+    "BankId": "1292",&#13;
+    "Name": "CONFIAR COOPERATIVA FINANCIERA"&#13;
+  },&#13;
+  {&#13;
+    "BankId": "1551",&#13;
+    "Name": "DAVIPLATA"&#13;
+  },&#13;
+  {&#13;
+    "BankId": "1006",&#13;
+    "Name": "ITAU"&#13;
+  },&#13;
+  {&#13;
+    "BankId": "1508",&#13;
+    "Name": "NEQUI CERTIFICACION"&#13;
+  },&#13;
+  {&#13;
+    "BankId": "121212",&#13;
+    "Name": "Prueba Steve"&#13;
+  }&#13;
+]&#13;
+</body>
+            <contentEncodings/>
+            <httpHeaders/>
+            <httpStatusCode>200</httpStatusCode>
+            <id>uM53v6</id>
+            <methodId>Z9BiKb</methodId>
+            <name>ok</name>
+            <parameterQueries/>
+            <status>DISABLED</status>
+            <usingExpressions>false</usingExpressions>
+        </mockResponse>
+        <mockResponse>
+            <body></body>
+            <contentEncodings/>
+            <httpHeaders/>
+            <httpStatusCode>204</httpStatusCode>
+            <id>z1y5SA</id>
+            <methodId>eWgRbu</methodId>
+            <name>OK</name>
+            <parameterQueries/>
+            <status>ENABLED</status>
+            <usingExpressions>false</usingExpressions>
+        </mockResponse>
+        <mockResponse>
+            <body>{&#13;
+	"StatusCode": "500",&#13;
+	"StatusDesc": "Error Inesperado"&#13;
+}</body>
+            <contentEncodings/>
+            <httpHeaders/>
+            <httpStatusCode>500</httpStatusCode>
+            <id>Lre9fX</id>
+            <methodId>eWgRbu</methodId>
+            <name>server_error</name>
+            <parameterQueries/>
+            <status>DISABLED</status>
+            <usingExpressions>false</usingExpressions>
+        </mockResponse>
+        <mockResponse>
+            <body>{&#13;
+	"MsgRsHdr": {&#13;
+		"Status": {&#13;
+			"StatusCode": "206",&#13;
+			"AdditionalStatus": {&#13;
+				"StatusCode": "206",&#13;
+				"StatusDesc": "FAIL_INVALIDTRAZABILITYCODE"&#13;
+			},&#13;
+			"StatusDesc": "FAIL_INVALIDTRAZABILITYCODE",&#13;
+			"EndDt": "2020-09-09T20:05:20"&#13;
+		},&#13;
+		"EndDt": "2020-09-09T20:05:20"&#13;
+	}&#13;
+}</body>
+            <contentEncodings/>
+            <httpHeaders/>
+            <httpStatusCode>206</httpStatusCode>
+            <id>CdewWI</id>
+            <methodId>eWgRbu</methodId>
+            <name>service_error</name>
+            <parameterQueries/>
+            <status>DISABLED</status>
+            <usingExpressions>false</usingExpressions>
+        </mockResponse>
+        <mockResponse>
+            <body>{&#13;
+	"StatusCode": "500",&#13;
+	"StatusDesc": "Error Inesperado"&#13;
+}</body>
+            <contentEncodings/>
+            <httpHeaders/>
+            <httpStatusCode>500</httpStatusCode>
+            <id>NuSDkF</id>
+            <methodId>BSifQY</methodId>
+            <name>server_error</name>
+            <parameterQueries/>
+            <status>DISABLED</status>
+            <usingExpressions>false</usingExpressions>
+        </mockResponse>
+        <mockResponse>
+            <body>{&#13;
+	"MsgRsHdr": {&#13;
+		"Status": {&#13;
+			"StatusCode": "300",&#13;
+			"Severity": "Error",&#13;
+			"StatusDesc": "No es posible procesar la transacción.",&#13;
+			"AdditionalStatus": {&#13;
+				"StatusCode": "300",&#13;
+				"Severity": "Error",&#13;
+				"StatusDesc": "No es posible procesar la transacción."&#13;
+			},&#13;
+			"EndDt": "2020-03-27T15:57:05"&#13;
+		},&#13;
+		"EndDt": "2020-03-27T15:57:05"&#13;
+	}&#13;
+}</body>
+            <contentEncodings/>
+            <httpHeaders/>
+            <httpStatusCode>206</httpStatusCode>
+            <id>6sXi4i</id>
+            <methodId>BSifQY</methodId>
+            <name>transaction_error</name>
+            <parameterQueries/>
+            <status>DISABLED</status>
+            <usingExpressions>false</usingExpressions>
+        </mockResponse>
+        <mockResponse>
+            <body>{&#13;
+	"Transaction": {&#13;
+		"TrnRqUID": "1866062",&#13;
+		"TrnType": "1"&#13;
+	},&#13;
+	"DepAcctStmtRec": {&#13;
+		"URL": "https://registro.desarrollo.pse.com.co/PSEUserRegister/StartTransaction.htm?enc=V%2brHQIwzrDzFvDKfmDEJ7lpXVYnEfLwM2OyHGKrbXFhcZvAoTudmp5nuzgo6kNfB"&#13;
+	}&#13;
+}</body>
+            <contentEncodings/>
+            <httpHeaders/>
+            <httpStatusCode>201</httpStatusCode>
+            <id>ey0ODh</id>
+            <methodId>BSifQY</methodId>
+            <name>OK</name>
+            <parameterQueries/>
+            <status>ENABLED</status>
+            <usingExpressions>true</usingExpressions>
+        </mockResponse>
+        <mockResponse>
+            <body>{&#13;
+	"Transaction": {&#13;
+		"Code": "0",&#13;
+		"ClientDt": "2021-03-16T11:28:35.000-05:00",&#13;
+		"LastTrnDt": "2021-03-16T11:31:28.000-05:00"&#13;
+	}&#13;
+}</body>
+            <contentEncodings/>
+            <httpHeaders/>
+            <httpStatusCode>200</httpStatusCode>
+            <id>SDXiGu</id>
+            <methodId>QfC8wv</methodId>
+            <name>transaction_pending</name>
+            <parameterQueries/>
+            <status>DISABLED</status>
+            <usingExpressions>false</usingExpressions>
+        </mockResponse>
+        <mockResponse>
+            <body>{&#13;
+	"Transaction": {&#13;
+		"Code": "1",&#13;
+		"ClientDt": "2021-03-16T11:28:35.000-05:00",&#13;
+		"LastTrnDt": "2021-03-16T11:31:28.000-05:00"&#13;
+	}&#13;
+}</body>
+            <contentEncodings/>
+            <httpHeaders/>
+            <httpStatusCode>200</httpStatusCode>
+            <id>YwqSe2</id>
+            <methodId>QfC8wv</methodId>
+            <name>transaction_not_authorized</name>
+            <parameterQueries/>
+            <status>DISABLED</status>
+            <usingExpressions>false</usingExpressions>
+        </mockResponse>
+        <mockResponse>
+            <body>{&#13;
+	"StatusCode": "500",&#13;
+	"StatusDesc": "Error Inesperado"&#13;
+}</body>
+            <contentEncodings/>
+            <httpHeaders/>
+            <httpStatusCode>500</httpStatusCode>
+            <id>cWcKF8</id>
+            <methodId>QfC8wv</methodId>
+            <name>server_error</name>
+            <parameterQueries/>
+            <status>DISABLED</status>
+            <usingExpressions>false</usingExpressions>
+        </mockResponse>
+        <mockResponse>
+            <body>{&#13;
+    "Transaction": {&#13;
+        "Code": "0",&#13;
+        "ClientDt": "2021-03-16T11:28:35.000-05:00",&#13;
+        "LastTrnDt": "2021-03-16T11:31:28.000-05:00",&#13;
+        "ApprovalId" : "false"&#13;
+    }&#13;
+}</body>
+            <contentEncodings/>
+            <httpHeaders/>
+            <httpStatusCode>200</httpStatusCode>
+            <id>mJCz61</id>
+            <methodId>QfC8wv</methodId>
+            <name>transaction_fail_approval_id_false</name>
+            <parameterQueries/>
+            <status>DISABLED</status>
+            <usingExpressions>false</usingExpressions>
+        </mockResponse>
+        <mockResponse>
+            <body>{&#13;
+	"MsgRsHdr": {&#13;
+		"Status": {&#13;
+			"StatusCode": "206",&#13;
+			"AdditionalStatus": {&#13;
+				"StatusCode": "206",&#13;
+				"StatusDesc": "FAIL_INVALIDTRAZABILITYCODE"&#13;
+			},&#13;
+			"StatusDesc": "FAIL_INVALIDTRAZABILITYCODE",&#13;
+			"EndDt": "2020-09-09T20:05:20"&#13;
+		},&#13;
+		"EndDt": "2020-09-09T20:05:20"&#13;
+	}&#13;
+}</body>
+            <contentEncodings/>
+            <httpHeaders/>
+            <httpStatusCode>206</httpStatusCode>
+            <id>VgXjVn</id>
+            <methodId>QfC8wv</methodId>
+            <name>service_error</name>
+            <parameterQueries/>
+            <status>DISABLED</status>
+            <usingExpressions>false</usingExpressions>
+        </mockResponse>
+        <mockResponse>
+            <body>{&#13;
+	"Transaction": {&#13;
+		"Code": "0",&#13;
+		"ClientDt": "2021-03-16T11:28:35.000-05:00",&#13;
+		"LastTrnDt": "2021-03-16T11:31:28.000-05:00",&#13;
+                "ApprovalId" : "true"&#13;
+	}&#13;
+}</body>
+            <contentEncodings/>
+            <httpHeaders/>
+            <httpStatusCode>200</httpStatusCode>
+            <id>idvZUF</id>
+            <methodId>QfC8wv</methodId>
+            <name>transaction_ok</name>
+            <parameterQueries/>
+            <status>ENABLED</status>
+            <usingExpressions>false</usingExpressions>
+        </mockResponse>
+        <mockResponse>
+            <body>{&#13;
+    "Transaction": {&#13;
+        "Code": "1",&#13;
+        "ClientDt": "2021-03-16T11:28:35.000-05:00",&#13;
+        "LastTrnDt": "2021-03-16T11:31:28.000-05:00",&#13;
+       "ApprovalId" : "false"&#13;
+    }&#13;
+}</body>
+            <contentEncodings/>
+            <httpHeaders/>
+            <httpStatusCode>200</httpStatusCode>
+            <id>iHMRev</id>
+            <methodId>QfC8wv</methodId>
+            <name>transaction_failed</name>
+            <parameterQueries/>
+            <status>DISABLED</status>
+            <usingExpressions>false</usingExpressions>
+        </mockResponse>
+    </mockResponses>
+    <project>
+        <description>Pasivo - servicios PSE (crear transacción, estado transacción, finalizar transacción)</description>
+        <id>WJBLM5</id>
+        <name>pasivo-pse-process</name>
+        <applications/>
+    </project>
+    <resources>
+        <resource>
+            <applicationId>Ckgm7o</applicationId>
+            <id>zIoy2e</id>
+            <methods/>
+            <name>token</name>
+            <uri>/Authentication/oauth2/token</uri>
+        </resource>
+        <resource>
+            <applicationId>Ckgm7o</applicationId>
+            <id>KAqGCv</id>
+            <methods/>
+            <name>Inquiries_Pse</name>
+            <uri>/Inquiries_Pse/Pse/Companies</uri>
+        </resource>
+        <resource>
+            <applicationId>Ckgm7o</applicationId>
+            <id>zWE45X</id>
+            <methods/>
+            <name>Administration_Cpv</name>
+            <uri>/test</uri>
+        </resource>
+    </resources>
+</restExportContainer>
