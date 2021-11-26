@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 sh ./git.sh
-ssh -i -q "rb-pb-dev-ecs-auto.pem" "ec2-user@$EC2" <<'ENDSSH'
+ssh -i -o "StrictHostKeyChecking no" "rb-pb-dev-ecs-auto.pem" "ec2-user@$EC2" <<'ENDSSH'
   sudo yum install git -y
   git clone https://github.com/pdgutierrezq/mitmproxy-docker.git
   sudo yum update -y
