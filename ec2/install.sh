@@ -4,7 +4,7 @@ EC2_1='ec2-user@ec2-3-135-221-17.us-east-2.compute.amazonaws.com'
 git commit -am "auto-commit"
 git push
 #ssh -i "rb-pb-dev-ecs-auto.pem" ec2-user@ec2-3-15-4-198.us-east-2.compute.amazonaws.com
-ssh -i "rb-pb-dev-ecs-auto.pem $EC2" <<'ENDSSH'
+ssh -i "rb-pb-dev-ecs-auto.pem" "$EC2" <<'ENDSSH'
   sudo yum install git -y
   git clone https://github.com/pdgutierrezq/mitmproxy-docker.git
   sudo yum update -y
