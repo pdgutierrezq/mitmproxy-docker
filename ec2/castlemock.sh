@@ -1,6 +1,5 @@
 #!/usr/bin/env bash
 sh ./git.sh
-
 ssh -i "rb-pb-dev-ecs-auto.pem" "ec2-user@$EC2" <<'ENDSSH'
   CASTLEMOCK_HOST=localhost
   cd mitmproxy-docker
