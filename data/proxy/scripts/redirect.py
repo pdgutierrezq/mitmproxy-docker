@@ -7,7 +7,7 @@ def request(flow: http.HTTPFlow) -> None:
     # pretty_host takes the "Host" header of the request into account,
     # which is useful in transparent mode where we usually only have the IP
     # otherwise.
-    if flow.request.pretty_host == "10.5.10.169":
+    if flow.request.pretty_host == "proxy":
       if flow.request.path == '/CustomerConditions':
         flow.request.host = "192.168.135.28"
         flow.request.scheme = "https"
