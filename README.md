@@ -33,12 +33,12 @@ curl --proxy localhost:8888 -X GET http://old.host.com
 ```
 
 ## Example scripts
-Scripts can be used for intercepting requests passing throught the proxy. In the [scripts](./scripts) directory you can find some basic examples ready for use.
+Scripts can be used for intercepting requests passing throught the proxy. In the [scripts](data/proxy/scripts) directory you can find some basic examples ready for use.
 
 You can point to the script (or multiple scripts) when starting the container and you can switch to another script any time later from the web console (in the Options). Scripts are also reloaded whenever you modify them.
 
 
-1. [Redirecting requests](./scripts/redirect.py)
+1. [Redirecting requests](data/proxy/scripts/redirect.py)
 ```python
 """
 This example shows two ways to redirect flows to another server.
@@ -52,6 +52,6 @@ def request(flow: http.HTTPFlow) -> None:
     if flow.request.pretty_host == "original.host.com":
         flow.request.host = "new.host.com"
 ```
-2. [Response modification](./scripts/modify_response.py)
+2. [Response modification](data/proxy/scripts/modify_response.py)
 
 More examples are in mitmproxy's [GitHub repository]( https://github.com/mitmproxy/mitmproxy/tree/master/examples).
