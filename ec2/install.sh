@@ -1,8 +1,5 @@
 #!/usr/bin/env bash
-EC2_0='ec2-3-15-4-198.us-east-2.compute.amazonaws.com'
-EC2_1='ec2-3-135-221-17.us-east-2.compute.amazonaws.com'
-git commit -am "auto-commit"
-git push
+./git.sh
 #ssh -i "rb-pb-dev-ecs-auto.pem" ec2-user@ec2-3-15-4-198.us-east-2.compute.amazonaws.com
 ssh -i "rb-pb-dev-ecs-auto.pem" "ec2-user@$EC2" <<'ENDSSH'
   sudo yum install git -y
@@ -15,7 +12,7 @@ ssh -i "rb-pb-dev-ecs-auto.pem" "ec2-user@$EC2" <<'ENDSSH'
   sudo chmod +x /usr/local/bin/docker-compose
   docker-compose version
 ENDSSH
-
+./test.sh
 
 
 
