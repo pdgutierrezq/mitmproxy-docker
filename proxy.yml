@@ -1,6 +1,6 @@
 version: '2'
 services:
-  mitmproxy:
+  proxy:
     container_name: proxy
     image: mitmproxy/mitmproxy
     network_mode: "host"
