@@ -9,5 +9,5 @@ ssh -i "rb-pb-dev-ecs-auto.pem" "ec2-user@$EC2" <<'ENDSSH'
   curl --location --request POST 'http://10.5.10.86/castlemock/api/rest/core/project/soap/import' \
   --header 'accept: */*' \
   --header 'Authorization: Basic YWRtaW46YWRtaW4x' \
-  --form 'file=@"/Users/pedro.gutierrez/Downloads/project-soap-7cGqrI.xml"'
+  --form 'file=@"project-soap-7cGqrI.xml"'
 ENDSSH
