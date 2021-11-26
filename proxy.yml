@@ -3,7 +3,7 @@ services:
   proxy:
     container_name: proxy
     image: mitmproxy/mitmproxy
-    network_mode: "host"
+#    network_mode: "host"
     extra_hosts:
     - "bc-host:127.0.0.1"
     - "default:127.0.0.1"
@@ -23,7 +23,7 @@ services:
     image: castlemock/castlemock:1.51
     restart: always
     links:
-      - proxy
+      - "proxy:proxy"
     volumes:
       - "./data/castlemock:/root/.castlemock"
     ports:
