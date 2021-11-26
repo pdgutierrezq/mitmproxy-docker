@@ -21,9 +21,8 @@ services:
   castlemock:
     container_name: castlemock
     image: castlemock/castlemock:1.51
-    network_mode: "host"
     restart: always
     volumes:
       - "./data/castlemock:/root/.castlemock"
     ports:
-      - "80:8080"
+      - "8080:80"
