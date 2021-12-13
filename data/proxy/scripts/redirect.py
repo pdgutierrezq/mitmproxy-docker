@@ -13,7 +13,7 @@ def request(flow: http.HTTPFlow) -> None:
     basePath = BasePath(flow.request.path)
     ctx.log.info("Output: domain: " + basePath.host +
                  ", path: " + basePath.path)
-    if flow.request.path == '/192.168.135.28/PFBA_Crm31/sca/WSBA_Crm_consultarCondicionesCliente':
+    if flow.request.path == '/https://192.168.135.28:442/PFBA_Crm31/sca/WSBA_Crm_consultarCondicionesCliente':
       flow.request.host = basePath.host
       flow.request.scheme = "https"
       flow.request.port = 442
