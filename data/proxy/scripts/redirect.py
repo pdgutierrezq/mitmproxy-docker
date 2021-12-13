@@ -44,11 +44,10 @@ class Request:
            + "Host:" + self.host +'\n'\
            + "Port:" + self.port +'\n'\
            + "Path:" + self.path +'\n'
-
-
-print(Request(
-  '/https://192.168.135.28:442/PFBA_Crm31/sca/WSBA_Crm_consultarCondicionesCliente').toString())
-print(Request(
-  '/https://192.168.135.28/PFBA_Crm31/sca/WSBA_Crm_consultarCondicionesCliente').toString())
-print(Request(
-  '/http://192.168.135.28/PFBA_Crm31/sca/WSBA_Crm_consultarCondicionesCliente').toString())
+# Examples
+# print(Request(
+#   '/https://192.168.135.28:442/PFBA_Crm31/sca/WSBA_Crm_consultarCondicionesCliente').toString())
+# print(Request(
+#   '/https://192.168.135.28/PFBA_Crm31/sca/WSBA_Crm_consultarCondicionesCliente').toString())
+# print(Request(
+#   '/http://192.168.135.28/PFBA_Crm31/sca/WSBA_Crm_consultarCondicionesCliente').toString())
