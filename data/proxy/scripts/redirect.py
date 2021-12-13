@@ -9,10 +9,13 @@ def request(flow: http.HTTPFlow) -> None:
     # otherwise.
 #     if flow.request.pretty_host == "10.5.10.169":
     if flow.request.pretty_host == "proxy":
-      if flow.request.path == '/PFBA_Crm31/sca/WSBA_Crm_consultarCondicionesCliente':
-        flow.request.host = "192.168.135.28"
+    host = flow.request.path.split('/')[0]
+    path = flow.request.path.replace(host,'')
+      if flow.request.path == '192.168.135.28/PFBA_Crm31/sca/WSBA_Crm_consultarCondicionesCliente':
+        flow.request.host = host
         flow.request.scheme = "https"
         flow.request.port = 442
+        flow.request.path = path
       if flow.request.path == '/mock':
 #         flow.request.host = "rb-dev-alb-ecs-ext-525169194.us-east-2.elb.amazonaws.com"
         flow.request.host = "localhost"
