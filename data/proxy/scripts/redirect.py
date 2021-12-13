@@ -23,31 +23,32 @@ def request(flow: http.HTTPFlow) -> None:
       flow.request.port = 80
       flow.request.path = '/castlemock/mock/soap/project/7cGqrI/CustomerConditionsInquirySvcPort'
 
+
 class Request:
   def __init__(self, path):
     initialPath = path.split('/', 4)
-    self.scheme = initialPath[1].replace(':','')
-    if(self.scheme =='http'):
-      self.port="80"
+    self.scheme = initialPath[1].replace(':', '')
+    if (self.scheme == 'http'):
+      self.port = "80"
     else:
-      self.port="443"
+      self.port = "443"
     self.host = initialPath[3]
-    splitHost=initialPath[3].split(':')
-    if(len(splitHost)>1):
+    splitHost = initialPath[3].split(':')
+    if (len(splitHost) > 1):
       self.host = splitHost[0]
       self.port = splitHost[1]
-    self.path = '/'+initialPath[4]
+    self.path = '/' + initialPath[4]
 
-  def toString(self) -> None:
-    print("scheme:"+self.scheme)
-    print("host:"+self.host)
-    print("port:"+self.port)
-    print("path:"+self.path)
-
-
+  def toString(self):
+    return "Scheme:" + self.scheme +'\n'\
+           + "Host:" + self.host +'\n'\
+           + "Port:" + self.port +'\n'\
+           + "Path:" + self.path +'\n'
 
 
-
-print(Request('/https://192.168.135.28:442/PFBA_Crm31/sca/WSBA_Crm_consultarCondicionesCliente').toString())
-print(Request('/https://192.168.135.28/PFBA_Crm31/sca/WSBA_Crm_consultarCondicionesCliente').toString())
-print(Request('/http://192.168.135.28/PFBA_Crm31/sca/WSBA_Crm_consultarCondicionesCliente').toString())
+print(Request(
+  '/https://192.168.135.28:442/PFBA_Crm31/sca/WSBA_Crm_consultarCondicionesCliente').toString())
+print(Request(
+  '/https://192.168.135.28/PFBA_Crm31/sca/WSBA_Crm_consultarCondicionesCliente').toString())
+print(Request(
+  '/http://192.168.135.28/PFBA_Crm31/sca/WSBA_Crm_consultarCondicionesCliente').toString())
