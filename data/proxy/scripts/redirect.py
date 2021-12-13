@@ -1,7 +1,7 @@
 """
 This example shows two ways to redirect flows to another server.
 """
-from mitmproxy import http
+from mitmproxy import http, ctx
 
 def request(flow: http.HTTPFlow) -> None:
     # pretty_host takes the "Host" header of the request into account,
