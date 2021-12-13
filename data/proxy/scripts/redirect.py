@@ -12,7 +12,7 @@ def request(flow: http.HTTPFlow) -> None:
 #    host = flow.request.path
 #    host = host.split('/')[0]
 #    path = flow.request.path.replace(host,'')
-      if flow.request.path == '/PFBA_Crm31/sca/WSBA_Crm_consultarCondicionesCliente':
+      if flow.request.path == '/192.168.135.28/PFBA_Crm31/sca/WSBA_Crm_consultarCondicionesCliente':
         flow.request.host = '192.168.135.28'
         flow.request.scheme = "https"
         flow.request.port = 442
