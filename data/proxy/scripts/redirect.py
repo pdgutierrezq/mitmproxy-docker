@@ -12,11 +12,11 @@ def request(flow: http.HTTPFlow) -> None:
   if flow.request.pretty_host == "proxy":
     request = Request(flow.request.path)
     ctx.log.info(request.toString())
-    # if flow.request.path == '/https://192.168.135.28:442/PFBA_Crm31/sca/WSBA_Crm_consultarCondicionesCliente':
     flow.request.host = request.host
     flow.request.scheme = request.scheme
     flow.request.port = request.port
     flow.request.path = request.path
+    # if flow.request.path == '/https://192.168.135.28:442/PFBA_Crm31/sca/WSBA_Crm_consultarCondicionesCliente':
     # if flow.request.path == '/mock':
     #   #         flow.request.host = "rb-dev-alb-ecs-ext-525169194.us-east-2.elb.amazonaws.com"
     #   flow.request.host = "localhost"
