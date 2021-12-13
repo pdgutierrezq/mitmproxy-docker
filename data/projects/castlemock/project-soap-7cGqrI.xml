@@ -608,7 +608,7 @@
    &lt;/soapenv:Body&gt;
 &lt;/soapenv:Envelope&gt;</defaultBody>
             <defaultMockResponseId>LmmQSD</defaultMockResponseId>
-            <forwardedEndpoint>http://proxy:8080/CustomerConditions</forwardedEndpoint>
+            <forwardedEndpoint>http://proxy:8080/https://192.168.135.28:442/PFBA_Crm31/sca/WSBA_Crm_consultarCondicionesCliente</forwardedEndpoint>
             <httpMethod>POST</httpMethod>
             <id>BovFg2</id>
             <identifyStrategy>ELEMENT_NAMESPACE</identifyStrategy>
@@ -620,7 +620,7 @@
                 <name>CustomerConditionsRequest</name>
                 <namespace>urn://grupoaval.com/customers/v1/</namespace>
             </operationIdentifier>
-            <originalEndpoint>http://ESBATH:7800/customers/CustomerConditionsInquirySvc</originalEndpoint>
+            <originalEndpoint>https://aliaslambda.avvillaspasivo.net:442/PFBA_Crm31/sca/WSBA_Crm_consultarCondicionesCliente</originalEndpoint>
             <portId>efr7Pe</portId>
             <responseStrategy>SEQUENCE</responseStrategy>
             <simulateNetworkDelay>false</simulateNetworkDelay>
@@ -650,3451 +650,3451 @@
         <resource>
             <content>&lt;?xml version="1.0" encoding="UTF-8" standalone="no"?&gt;
 &lt;wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="urn://grupoaval.com/customers/v1/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="CustomerConditionsInquirySvc" targetNamespace="urn://grupoaval.com/customers/v1/"&gt;
-      
+
     &lt;wsdl:types&gt;
-            
+
         &lt;xsd:schema xmlns:aval="urn://grupoaval.com/xsd/ifx/" xmlns:avalv2="urn://grupoaval.com/xsd/ifx/v2/" xmlns:avalv3="urn://grupoaval.com/xsd/ifx/v3/" targetNamespace="urn://grupoaval.com/customers/v1/"&gt;
-                        
+
             &lt;xsd:import namespace="urn://grupoaval.com/xsd/ifx/v3/"/&gt;
-                        
+
             &lt;xsd:import namespace="urn://grupoaval.com/xsd/ifx/v2/"/&gt;
-                        
+
             &lt;xsd:import namespace="urn://grupoaval.com/xsd/ifx/"/&gt;
-                  
+
             &lt;xsd:element name="CustomerConditionsRequest"&gt;
-                        
+
                 &lt;xsd:complexType&gt;
-                              
+
                     &lt;xsd:sequence&gt;
-                                    
+
                         &lt;xsd:element ref="tns:CustomerConditionsInqRq"/&gt;
-                                  
+
                     &lt;/xsd:sequence&gt;
-                            
+
                 &lt;/xsd:complexType&gt;
-                      
+
             &lt;/xsd:element&gt;
-                  
+
             &lt;xsd:element name="CustomerConditionsResponse"&gt;
-                        
+
                 &lt;xsd:complexType&gt;
-                              
+
                     &lt;xsd:sequence&gt;
-                                    
+
                         &lt;xsd:element ref="tns:CustomerConditionsInqRs"/&gt;
-                                  
+
                     &lt;/xsd:sequence&gt;
-                            
+
                 &lt;/xsd:complexType&gt;
-                      
+
             &lt;/xsd:element&gt;
-                
+
             &lt;xsd:complexType name="CustomerConditionsInqRq_Type"&gt;
-                		
+
                 &lt;xsd:complexContent&gt;
-                    			
+
                     &lt;xsd:extension base="aval:SvcRq_Type"&gt;
-                        				
+
                         &lt;xsd:sequence&gt;
-                            					
+
                             &lt;xsd:element minOccurs="0" ref="aval:DepAcctId"/&gt;
-                            					
+
                             &lt;xsd:element minOccurs="0" ref="avalv2:CustInfo"/&gt;
-                            				
+
                         &lt;/xsd:sequence&gt;
-                        			
+
                     &lt;/xsd:extension&gt;
-                    		
+
                 &lt;/xsd:complexContent&gt;
-                	
+
             &lt;/xsd:complexType&gt;
-                  
+
             &lt;xsd:element name="CustomerConditionsInqRq" type="tns:CustomerConditionsInqRq_Type"/&gt;
-                  
+
             &lt;xsd:complexType name="CustomerConditionsInqRs_Type"&gt;
-                		
+
                 &lt;xsd:complexContent&gt;
-                    			
+
                     &lt;xsd:extension base="aval:SvcRs_Type"&gt;
-                        				
+
                         &lt;xsd:sequence&gt;
-                            					
+
                             &lt;xsd:element minOccurs="0" ref="avalv3:CustInfo"/&gt;
-                            					
+
                             &lt;xsd:element maxOccurs="unbounded" minOccurs="0" ref="avalv3:ChannelInfo"&gt;
 					&lt;/xsd:element&gt;
-                            					
+
                             &lt;xsd:element maxOccurs="unbounded" minOccurs="0" ref="aval:BankInfo"&gt;
 					&lt;/xsd:element&gt;
-                            					
+
                             &lt;xsd:element minOccurs="0" ref="avalv3:ApplicationInfo"&gt;
 					&lt;/xsd:element&gt;
-                            				
+
                         &lt;/xsd:sequence&gt;
-                        			
+
                     &lt;/xsd:extension&gt;
-                    		
+
                 &lt;/xsd:complexContent&gt;
-                	
+
             &lt;/xsd:complexType&gt;
-                  
+
             &lt;xsd:element name="CustomerConditionsInqRs" type="tns:CustomerConditionsInqRs_Type"&gt;
 	&lt;/xsd:element&gt;
-                
+
         &lt;/xsd:schema&gt;
-                
+
         &lt;xsd:schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:aval="urn://grupoaval.com/xsd/ifx/" xmlns:avalv2="urn://grupoaval.com/xsd/ifx/v2/" xmlns:pref="urn://grupoaval.com/xsd/ifx/v2/" attributeFormDefault="unqualified" elementFormDefault="unqualified" targetNamespace="urn://grupoaval.com/xsd/ifx/"&gt;
-                  
+
             &lt;xsd:import namespace="urn://grupoaval.com/xsd/ifx/v2/"/&gt;
-                  
+
             &lt;xsd:import/&gt;
-                  
+
             &lt;xsd:element name="Status" type="aval:Status_Type"/&gt;
-                  
+
             &lt;xsd:complexType name="Status_Type"&gt;
-                		
+
                 &lt;xsd:sequence&gt;
-                    			
+
                     &lt;xsd:element minOccurs="1" ref="aval:StatusCode"/&gt;
-                    			
+
                     &lt;xsd:element minOccurs="0" ref="aval:ServerStatusCode"/&gt;
-                    			
+
                     &lt;xsd:element minOccurs="0" ref="aval:Severity"/&gt;
-                    			
+
                     &lt;xsd:element minOccurs="0" ref="aval:StatusDesc"/&gt;
-                    			
+
                     &lt;xsd:element minOccurs="0" ref="aval:ServerStatusDesc"/&gt;
-                    			
+
                     &lt;xsd:element maxOccurs="unbounded" minOccurs="0" ref="aval:AdditionalStatus"/&gt;
-                    		
+
                 &lt;/xsd:sequence&gt;
-                	
+
             &lt;/xsd:complexType&gt;
-                  
+
             &lt;xsd:element name="PSSMsgEncryption" type="aval:OpenEnum_Type"/&gt;
-                  
+
             &lt;xsd:element name="CustStatusCode" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="IncCounts" type="xsd:boolean"/&gt;
-                  
+
             &lt;xsd:element name="ChkAcceptStatusCode" type="aval:OpenEnum_Type"/&gt;
-                  
+
             &lt;xsd:element name="SecObjId" type="aval:Identifier_Type"/&gt;
-                  
+
             &lt;xsd:element name="TrnType" type="aval:OpenEnum_Type"/&gt;
-                  
+
             &lt;xsd:element name="Amt" type="xsd:decimal"/&gt;
-                  
+
             &lt;xsd:element name="FileRqDt" type="xsd:dateTime"/&gt;
-                  
+
             &lt;xsd:element name="MatchedRec" type="xsd:long"/&gt;
-                  
+
             &lt;xsd:element name="OrgIdNum" type="aval:Identifier_Type"/&gt;
-                  
+
             &lt;xsd:element name="ServicePackageId" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="ContactType" type="aval:OpenEnum_Type"/&gt;
-                  
+
             &lt;xsd:element name="SpecialHandling" type="aval:OpenEnum_Type"/&gt;
-                  
+
             &lt;xsd:element name="PartyAcctRelId" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="NoBillerMainReference" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="MaxCurAmt" type="aval:CurrencyAmount_Type"/&gt;
-                  
+
             &lt;xsd:element name="Portfolio" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="DeliveryMethod" type="aval:OpenEnum_Type"/&gt;
-                  
+
             &lt;xsd:element name="IdentVerifyEntity" type="aval:OpenEnum_Type"/&gt;
-                  
+
             &lt;xsd:element name="LoanPmtComplement" type="aval:OpenEnum_Type"/&gt;
-                  
+
             &lt;xsd:element name="Token" type="aval:Identifier_Type"/&gt;
-                  
+
             &lt;xsd:element name="ServiceTypeDesc" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="Message" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="AllocateAllowed" type="xsd:boolean"/&gt;
-                  
+
             &lt;xsd:element name="PrimaryAcct" type="xsd:boolean"/&gt;
-                  
+
             &lt;xsd:element name="BillSummAmtCode" type="aval:OpenEnum_Type"/&gt;
-                  
+
             &lt;xsd:element name="ImmediatePmt" type="xsd:boolean"/&gt;
-                  
+
             &lt;xsd:element name="Org" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="Channel" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="TransactionNumber" type="xsd:long"/&gt;
-                  
+
             &lt;xsd:element name="RevReasonCode" type="aval:OpenEnum_Type"/&gt;
-                  
+
             &lt;xsd:element name="FileId" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="MinCurAmt" type="aval:CurrencyAmount_Type"/&gt;
-                  
+
             &lt;xsd:element name="CloseDt" type="xsd:dateTime"/&gt;
-                  
+
             &lt;xsd:element name="SessKey" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="PaidDt" type="xsd:dateTime"/&gt;
-                  
+
             &lt;xsd:element name="NetworkOwner" type="aval:OpenEnum_Type"/&gt;
-                  
+
             &lt;xsd:element name="IdentServiceCode" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="DaysToEPost" type="xsd:long"/&gt;
-                  
+
             &lt;xsd:element name="PmtMethod" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="ServicePackType" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="LiquidationMethod" type="aval:OpenEnum_Type"/&gt;
-                  
+
             &lt;xsd:element name="TerminalType" type="aval:OpenEnum_Type"/&gt;
-                  
+
             &lt;xsd:element name="PrefetchURL" type="aval:URL_Type"/&gt;
-                  
+
             &lt;xsd:element name="AgentType" type="aval:OpenEnum_Type"/&gt;
-                  
+
             &lt;xsd:element name="BillPmtStatusCode" type="aval:OpenEnum_Type"/&gt;
-                  
+
             &lt;xsd:element name="CentralBankId" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="OptDocType" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="Cursor" type="aval:Binary_Type"/&gt;
-                  
+
             &lt;xsd:element name="FeeType" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="RemainRec" type="xsd:boolean"/&gt;
-                  
+
             &lt;xsd:element name="ClientTerminalSeqId" type="aval:Identifier_Type"/&gt;
-                  
+
             &lt;xsd:element name="ServerTerminalSeqId" type="aval:Identifier_Type"/&gt;
-                  
+
             &lt;xsd:element name="NotifyMethodDesc" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="ParameterDesc" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="CustPermId" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="IdentProgramId" type="aval:Identifier_Type"/&gt;
-                  
+
             &lt;xsd:element name="PmtAuthId" type="aval:Identifier_Type"/&gt;
-                  
+
             &lt;xsd:element name="DigitalCertificate" type="xsd:boolean"/&gt;
-                  
+
             &lt;xsd:element name="LastSettlementDt" type="xsd:dateTime"/&gt;
-                  
+
             &lt;xsd:element name="TaxId" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="POSVerifyCapability" type="aval:OpenEnum_Type"/&gt;
-                  
+
             &lt;xsd:element name="Category" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="NumEmployees" type="xsd:long"/&gt;
-                  
+
             &lt;xsd:element name="BillId" type="aval:UUID_Type"/&gt;
-                  
+
             &lt;xsd:element name="CurDt" type="xsd:dateTime"/&gt;
-                  
+
             &lt;xsd:element name="AdjType" type="aval:OpenEnum_Type"/&gt;
-                  
+
             &lt;xsd:element name="ExtBalType" type="aval:OpenEnum_Type"/&gt;
-                  
+
             &lt;xsd:element name="RecXferMod" type="xsd:boolean"/&gt;
-                  
+
             &lt;xsd:element name="ClientCreateDt" type="xsd:dateTime"/&gt;
-                  
+
             &lt;xsd:element name="ServerStatusCode" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="PeriodDesc" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="ParameterType" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="CSPRefId" type="aval:Identifier_Type"/&gt;
-                  
+
             &lt;xsd:element name="IdentPrevReadMethod" type="aval:OpenEnum_Type"/&gt;
-                  
+
             &lt;xsd:element name="StatusOverDraft" type="aval:OpenEnum_Type"/&gt;
-                  
+
             &lt;xsd:element name="Active" type="xsd:boolean"/&gt;
-                  
+
             &lt;xsd:element name="PmtAgreementId" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="ItemValue" type="xsd:boolean"/&gt;
-                  
+
             &lt;xsd:element name="MarketSegment" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="BSPName" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="NotifyWilling" type="xsd:boolean"/&gt;
-                  
+
             &lt;xsd:element name="StmtSummType" type="aval:OpenEnum_Type"/&gt;
-                  
+
             &lt;xsd:element name="PostedDt" type="xsd:dateTime"/&gt;
-                  
+
             &lt;xsd:element name="PaidCurAmt" type="aval:CurrencyAmount_Type"/&gt;
-                  
+
             &lt;xsd:element name="BankIdType" type="aval:OpenEnum_Type"/&gt;
-                  
+
             &lt;xsd:element name="CurCode" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="EstablishDt" type="xsd:dateTime"/&gt;
-                  
+
             &lt;xsd:element name="RecPmtMod" type="xsd:boolean"/&gt;
-                  
+
             &lt;xsd:element name="CityId" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="SentRec" type="xsd:long"/&gt;
-                  
+
             &lt;xsd:element name="AmountRequired" type="xsd:boolean"/&gt;
-                  
+
             &lt;xsd:element name="CategoryCode" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="InvoicePremium" type="aval:CurrencyAmount_Type"/&gt;
-                  
+
             &lt;xsd:element name="GovOrg" type="aval:OpenEnum_Type"/&gt;
-                  
+
             &lt;xsd:element name="CreateRefId" type="aval:Identifier_Type"/&gt;
-                  
+
             &lt;xsd:element name="StatusDesc" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="HistRetentionDays" type="xsd:long"/&gt;
-                  
+
             &lt;xsd:element name="ComercialRegion" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="IsInvGen" type="xsd:boolean"/&gt;
-                  
+
             &lt;xsd:element name="PhoneNumber" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="AcctPayAcct" type="aval:Identifier_Type"/&gt;
-                  
+
             &lt;xsd:element name="NotificationType" type="xsd:long"/&gt;
-                  
+
             &lt;xsd:element name="Brand" type="aval:OpenEnum_Type"/&gt;
-                  
+
             &lt;xsd:element name="OwnerInd" type="xsd:boolean"/&gt;
-                  
+
             &lt;xsd:element name="POSOperation" type="aval:OpenEnum_Type"/&gt;
-                  
+
             &lt;xsd:element name="EndDt" type="xsd:dateTime"/&gt;
-                  
+
             &lt;xsd:element name="BankAcctStatusCode" type="aval:OpenEnum_Type"/&gt;
-                  
+
             &lt;xsd:element name="Rate" type="xsd:decimal"/&gt;
-                  
+
             &lt;xsd:element name="ChkIssueStatusCode" type="aval:OpenEnum_Type"/&gt;
-                  
+
             &lt;xsd:element name="ChkImgBack" type="aval:Binary_Type"/&gt;
-                  
+
             &lt;xsd:element name="SelRangePaidDt" type="aval:SelRangeDt_Type"/&gt;
-                  
+
             &lt;xsd:element name="BillingPlanTransactions" type="xsd:long"/&gt;
-                  
+
             &lt;xsd:element name="IncSummary" type="xsd:boolean"/&gt;
-                  
+
             &lt;xsd:element name="XferId" type="aval:Identifier_Type"/&gt;
-                  
+
             &lt;xsd:element name="ForExDealId" type="aval:Identifier_Type"/&gt;
-                  
+
             &lt;xsd:element name="AvailDt" type="xsd:dateTime"/&gt;
-                  
+
             &lt;xsd:element name="Count" type="xsd:long"/&gt;
-                  
+
             &lt;xsd:element name="StartDt" type="xsd:dateTime"/&gt;
-                  
+
             &lt;xsd:element name="CalendarDesc" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="PendExpDays" type="xsd:long"/&gt;
-                  
+
             &lt;xsd:element name="BranchId" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="NoteType" type="aval:OpenEnum_Type"/&gt;
-                  
+
             &lt;xsd:element name="OrigIssueDt" type="xsd:dateTime"/&gt;
-                  
+
             &lt;xsd:element name="DueDt" type="xsd:dateTime"/&gt;
-                  
+
             &lt;xsd:element name="POSEntryCapability" type="aval:OpenEnum_Type"/&gt;
-                  
+
             &lt;xsd:element name="BillType" type="aval:OpenEnum_Type"/&gt;
-                  
+
             &lt;xsd:element name="PSSMsgMAC" type="aval:OpenEnum_Type"/&gt;
-                  
+
             &lt;xsd:element name="TrxAllowed" type="xsd:boolean"/&gt;
-                  
+
             &lt;xsd:element name="IncDetail" type="xsd:boolean"/&gt;
-                  
+
             &lt;xsd:element name="ChkBkId" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="SecurID" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="Version" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="ApprovalId" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="OrgPhone" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="FileStatus" type="aval:OpenEnum_Type"/&gt;
-                  
+
             &lt;xsd:element name="MaxAmtDue" type="aval:CurrencyAmount_Type"/&gt;
-                  
+
             &lt;xsd:element name="ServicePack" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="ContentType" type="aval:OpenEnum_Type"/&gt;
-                  
+
             &lt;xsd:element name="SPName" type="aval:Identifier_Type"/&gt;
-                  
+
             &lt;xsd:element name="PartyAcctRelType" type="aval:OpenEnum_Type"/&gt;
-                  
+
             &lt;xsd:element name="NoteDetail" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="OrigDt" type="xsd:dateTime"/&gt;
-                  
+
             &lt;xsd:element name="DepAcctStmtId" type="aval:Identifier_Type"/&gt;
-                  
+
             &lt;xsd:element name="IdentVerifyMethod" type="aval:OpenEnum_Type"/&gt;
-                  
+
             &lt;xsd:element name="POSAttended" type="xsd:boolean"/&gt;
-                  
+
             &lt;xsd:element name="LoanPmtType" type="aval:OpenEnum_Type"/&gt;
-                  
+
             &lt;xsd:element name="TotalCurAmt" type="aval:CurrencyAmount_Type"/&gt;
-                  
+
             &lt;xsd:element name="Action" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="BillSummAmtId" type="aval:Identifier_Type"/&gt;
-                  
+
             &lt;xsd:element name="MinAmtDue" type="aval:CurrencyAmount_Type"/&gt;
-                  
+
             &lt;xsd:element name="AllowsMultipleProducts" type="xsd:boolean"/&gt;
-                  
+
             &lt;xsd:element name="PSSCATSecLevel" type="aval:OpenEnum_Type"/&gt;
-                  
+
             &lt;xsd:element name="ImmediateXfer" type="xsd:boolean"/&gt;
-                  
+
             &lt;xsd:element name="ChargeRegulation" type="aval:OpenEnum_Type"/&gt;
-                  
+
             &lt;xsd:element name="RqUID" type="aval:UUID_Type"/&gt;
-                  
+
             &lt;xsd:element name="TrnSrc" type="aval:OpenEnum_Type"/&gt;
-                  
+
             &lt;xsd:element name="FileName" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="MainDocType" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="OrgDt" type="xsd:dateTime"/&gt;
-                  
+
             &lt;xsd:element name="CompositeCurAmtType" type="aval:OpenEnum_Type"/&gt;
-                  
+
             &lt;xsd:element name="SettlementMethod" type="aval:OpenEnum_Type"/&gt;
-                  
+
             &lt;xsd:element name="PartyAcctRelDesc" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="NextDt" type="xsd:dateTime"/&gt;
-                  
+
             &lt;xsd:element name="IdentType" type="aval:OpenEnum_Type"/&gt;
-                  
+
             &lt;xsd:element name="DeliveryMessage" type="xsd:boolean"/&gt;
-                  
+
             &lt;xsd:element name="PmtRefId" type="aval:Identifier_Type"/&gt;
-                  
+
             &lt;xsd:element name="LoanName" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="TransactionLimit" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="MaxRec" type="xsd:long"/&gt;
-                  
+
             &lt;xsd:element name="TINType" type="aval:OpenEnum_Type"/&gt;
-                  
+
             &lt;xsd:element name="PrenoteReqd" type="xsd:boolean"/&gt;
-                  
+
             &lt;xsd:element name="Aging" type="aval:OpenEnum_Type"/&gt;
-                  
+
             &lt;xsd:element name="BillStatusCode" type="aval:OpenEnum_Type"/&gt;
-                  
+
             &lt;xsd:element name="ImageURL" type="aval:URL_Type"/&gt;
-                  
+
             &lt;xsd:element name="OptOrgIdNum" type="aval:Identifier_Type"/&gt;
-                  
+
             &lt;xsd:element name="CertCode" type="aval:OpenEnum_Type"/&gt;
-                  
+
             &lt;xsd:element name="FileDesc" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="RemitId" type="aval:Identifier_Type"/&gt;
-                  
+
             &lt;xsd:element name="ClosedDt" type="xsd:dateTime"/&gt;
-                  
+
             &lt;xsd:element name="ServiceCode" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="DayId" type="aval:OpenEnum_Type"/&gt;
-                  
+
             &lt;xsd:element name="Name" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="IdentReadMethod" type="aval:OpenEnum_Type"/&gt;
-                  
+
             &lt;xsd:element name="DaysCall" type="xsd:long"/&gt;
-                  
+
             &lt;xsd:element name="PmtFormat" type="aval:OpenEnum_Type"/&gt;
-                  
+
             &lt;xsd:element name="AccessType" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="LastTrnDt" type="xsd:dateTime"/&gt;
-                  
+
             &lt;xsd:element name="TaxType" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="PrcDt" type="xsd:dateTime"/&gt;
-                  
+
             &lt;xsd:element name="BillingAcct" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="CentralBankDesc" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="OpenDt" type="xsd:dateTime"/&gt;
-                  
+
             &lt;xsd:element name="AgentId" type="aval:Identifier_Type"/&gt;
-                  
+
             &lt;xsd:element name="CurRate" type="xsd:decimal"/&gt;
-                  
+
             &lt;xsd:element name="Extensions" type="xsd:long"/&gt;
-                  
+
             &lt;xsd:element name="RefId" type="aval:Identifier_Type"/&gt;
-                  
+
             &lt;xsd:element name="ClientDt" type="xsd:dateTime"/&gt;
-                  
+
             &lt;xsd:element name="ServerStatusDesc" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="NotifyMethodType" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="ParameterCode" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="CurAmt" type="aval:CurrencyAmount_Type"/&gt;
-                  
+
             &lt;xsd:element name="CustLoginId" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="IdentPrevServiceCode" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="StmtRunningBal" type="aval:CurrencyAmount_Type"/&gt;
-                  
+
             &lt;xsd:element name="PmtAuthCount" type="xsd:long"/&gt;
-                  
+
             &lt;xsd:element name="KeyAcctId" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="NumTemplates" type="xsd:long"/&gt;
-                  
+
             &lt;xsd:element name="SvcId" type="aval:Identifier_Type"/&gt;
-                  
+
             &lt;xsd:element name="CardVrfyData" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="NumberOfInstalments" type="xsd:long"/&gt;
-                  
+
             &lt;xsd:element name="PostingSessionId" type="aval:Identifier_Type"/&gt;
-                  
+
             &lt;xsd:element name="BillDt" type="xsd:dateTime"/&gt;
-                  
+
             &lt;xsd:element name="CurConvertRule" type="aval:OpenEnum_Type"/&gt;
-                  
+
             &lt;xsd:element name="AddrType" type="aval:OpenEnum_Type"/&gt;
-                  
+
             &lt;xsd:element name="ExpDt" type="xsd:dateTime"/&gt;
-                  
+
             &lt;xsd:element name="RecXferId" type="aval:Identifier_Type"/&gt;
-                  
+
             &lt;xsd:element name="ClientBusinessDt" type="xsd:dateTime"/&gt;
-                  
+
             &lt;xsd:element name="SeqNum" type="xsd:long"/&gt;
-                  
+
             &lt;xsd:element name="PeriodCode" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="HighCurAmt" type="aval:CurrencyAmount_Type"/&gt;
-                  
+
             &lt;xsd:element name="CategoryName" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="CryptType" type="aval:OpenEnum_Type"/&gt;
-                  
+
             &lt;xsd:element name="StatusModBy" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="IdentConditions" type="aval:OpenEnum_Type"/&gt;
-                  
+
             &lt;xsd:element name="AcctType" type="aval:OpenEnum_Type"/&gt;
-                  
+
             &lt;xsd:element name="IssDt" type="xsd:dateTime"/&gt;
-                  
+
             &lt;xsd:element name="MarketSegmentId" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="PhoneType" type="aval:OpenEnum_Type"/&gt;
-                  
+
             &lt;xsd:element name="BSPCode" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="NotifyReqd" type="xsd:boolean"/&gt;
-                  
+
             &lt;xsd:element name="OwnerPercent" type="xsd:decimal"/&gt;
-                  
+
             &lt;xsd:element name="POSOutCapabilities" type="aval:OpenEnum_Type"/&gt;
-                  
+
             &lt;xsd:element name="BankId" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="Environment" type="aval:OpenEnum_Type"/&gt;
-                  
+
             &lt;xsd:element name="RecId" type="xsd:long"/&gt;
-                  
+
             &lt;xsd:element name="ChkNum" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="SendNotificationDt" type="xsd:dateTime"/&gt;
-                  
+
             &lt;xsd:element name="XferStatusCode" type="aval:OpenEnum_Type"/&gt;
-                  
+
             &lt;xsd:element name="RegistrationId" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="IncToken" type="xsd:boolean"/&gt;
-                  
+
             &lt;xsd:element name="GovIssueIdentType" type="aval:OpenEnum_Type"/&gt;
-                  
+
             &lt;xsd:element name="BalType" type="aval:OpenEnum_Type"/&gt;
-                  
+
             &lt;xsd:element name="CreatedDt" type="xsd:dateTime"/&gt;
-                  
+
             &lt;xsd:element name="StatusCode" type="xsd:long"/&gt;
-                  
+
             &lt;xsd:element name="ComercialRegionId" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="IPAddr" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="Phone" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="AcctId" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="NotificationId" type="xsd:long"/&gt;
-                  
+
             &lt;xsd:element name="BranchName" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="OverDraftDays" type="xsd:long"/&gt;
-                  
+
             &lt;xsd:element name="EffDt" type="xsd:dateTime"/&gt;
-                  
+
             &lt;xsd:element name="POSLocation" type="aval:OpenEnum_Type"/&gt;
-                  
+
             &lt;xsd:element name="PSSNetworkType" type="aval:OpenEnum_Type"/&gt;
-                  
+
             &lt;xsd:element name="BillingPlanName" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="IncHistory" type="xsd:boolean"/&gt;
-                  
+
             &lt;xsd:element name="ChkImgFront" type="aval:Binary_Type"/&gt;
-                  
+
             &lt;xsd:element name="ChkBkType" type="aval:OpenEnum_Type"/&gt;
-                  
+
             &lt;xsd:element name="SelRangeDueDt" type="aval:SelRangeDt_Type"/&gt;
-                  
+
             &lt;xsd:element name="ViewDtlPref" type="aval:OpenEnum_Type"/&gt;
-                  
+
             &lt;xsd:element name="AvailableImage" type="xsd:boolean"/&gt;
-                  
+
             &lt;xsd:element name="FileType" type="aval:OpenEnum_Type"/&gt;
-                  
+
             &lt;xsd:element name="OrigCurAmt" type="aval:CurrencyAmount_Type"/&gt;
-                  
+
             &lt;xsd:element name="CorrectAction" type="aval:OpenEnum_Type"/&gt;
-                  
+
             &lt;xsd:element name="SPRefId" type="aval:Identifier_Type"/&gt;
-                  
+
             &lt;xsd:element name="CalendarId" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="PaymentForm" type="aval:OpenEnum_Type"/&gt;
-                  
+
             &lt;xsd:element name="BinLength" type="xsd:long"/&gt;
-                  
+
             &lt;xsd:element name="NoteNum" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="OriginatorType" type="xsd:long"/&gt;
-                  
+
             &lt;xsd:element name="Desc" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="IdentVerifyResults" type="aval:OpenEnum_Type"/&gt;
-                  
+
             &lt;xsd:element name="POSCaptureCapability" type="xsd:boolean"/&gt;
-                  
+
             &lt;xsd:element name="LowCurAmt" type="aval:CurrencyAmount_Type"/&gt;
-                  
+
             &lt;xsd:element name="BillSummAmtType" type="aval:OpenEnum_Type"/&gt;
-                  
+
             &lt;xsd:simpleType name="UUID_Type"&gt;
-                		
+
                 &lt;xsd:restriction base="xsd:string"&gt;
-                    			
+
                     &lt;xsd:annotation&gt;
-                        				
+
                         &lt;xsd:documentation&gt;UUID elements are Narrow Character with a maximum length of 36.&lt;/xsd:documentation&gt;
-                        			
+
                     &lt;/xsd:annotation&gt;
-                    			
+
                     &lt;xsd:maxLength value="36"/&gt;
-                    		
+
                 &lt;/xsd:restriction&gt;
-                	
+
             &lt;/xsd:simpleType&gt;
-                  
+
             &lt;xsd:element name="UUID" type="aval:UUID_Type"/&gt;
-                  
+
             &lt;xsd:simpleType name="OpenEnum_Type"&gt;
-                		
+
                 &lt;xsd:restriction base="xsd:string"&gt;
 		&lt;/xsd:restriction&gt;
-                	
+
             &lt;/xsd:simpleType&gt;
-                  
+
             &lt;xsd:element name="OpenEnum" type="aval:OpenEnum_Type"/&gt;
-                  
+
             &lt;xsd:complexType name="CurrencyAmount_Type"&gt;
-                		
+
                 &lt;xsd:sequence&gt;
-                    			
+
                     &lt;xsd:element minOccurs="1" ref="aval:Amt"/&gt;
-                    			
+
                     &lt;xsd:element minOccurs="0" ref="aval:CurCode"/&gt;
-                    			
+
                     &lt;xsd:sequence minOccurs="0"&gt;
-                        				
+
                         &lt;xsd:element minOccurs="0" ref="aval:CurRate"/&gt;
-                        				
+
                         &lt;xsd:element minOccurs="0" ref="aval:CurConvertRule"/&gt;
-                        			
+
                     &lt;/xsd:sequence&gt;
-                    		
+
                 &lt;/xsd:sequence&gt;
-                	
+
             &lt;/xsd:complexType&gt;
-                  
+
             &lt;xsd:element name="CurrencyAmount" type="aval:CurrencyAmount_Type"/&gt;
-                  
+
             &lt;xsd:element name="Identifier" type="aval:Identifier_Type"/&gt;
-                  
+
             &lt;xsd:simpleType name="Identifier_Type"&gt;
-                		
+
                 &lt;xsd:annotation&gt;
-                    			
+
                     &lt;xsd:documentation&gt;
 				Object identifiers in the IFX Specification are of the
 				data type "Identifier." This is a Narrow Character data
 				type with a maximum length of 200.
 			&lt;/xsd:documentation&gt;
-                    		
+
                 &lt;/xsd:annotation&gt;
-                		
+
                 &lt;xsd:restriction base="xsd:string"&gt;
-                    			
+
                     &lt;xsd:maxLength value="200"/&gt;
-                    		
+
                 &lt;/xsd:restriction&gt;
-                	
+
             &lt;/xsd:simpleType&gt;
-                  
+
             &lt;xsd:simpleType name="URL_Type"&gt;
-                		
+
                 &lt;xsd:restriction base="xsd:string"&gt;
-                    			
+
                     &lt;xsd:maxLength value="1024"/&gt;
-                    		
+
                 &lt;/xsd:restriction&gt;
-                	
+
             &lt;/xsd:simpleType&gt;
-                  
+
             &lt;xsd:element name="URL" type="aval:URL_Type"/&gt;
-                  
+
             &lt;xsd:complexType name="Binary_Type"&gt;
-                		
+
                 &lt;xsd:sequence&gt;
-                    			
+
                     &lt;xsd:element minOccurs="0" ref="aval:ContentType"/&gt;
-                    			
+
                     &lt;xsd:element ref="aval:BinLength"/&gt;
-                    			
+
                     &lt;xsd:element ref="aval:BinData"/&gt;
-                    			
+
                     &lt;xsd:element minOccurs="0" ref="aval:CryptType"/&gt;
-                    		
+
                 &lt;/xsd:sequence&gt;
-                	
+
             &lt;/xsd:complexType&gt;
-                  
+
             &lt;xsd:element name="Binary" type="aval:Binary_Type"/&gt;
-                  
+
             &lt;xsd:simpleType name="BinData_Type"&gt;
-                		
+
                 &lt;xsd:restriction base="xsd:base64Binary"/&gt;
-                	
+
             &lt;/xsd:simpleType&gt;
-                  
+
             &lt;xsd:element name="BinData" type="aval:BinData_Type"/&gt;
-                  
+
             &lt;xsd:element name="SelRangeDt" type="aval:SelRangeDt_Type"/&gt;
-                  
+
             &lt;xsd:complexType name="SelRangeDt_Type"&gt;
-                		
+
                 &lt;xsd:sequence&gt;
-                    			
+
                     &lt;xsd:element minOccurs="0" ref="aval:StartDt"/&gt;
-                    			
+
                     &lt;xsd:element minOccurs="0" ref="aval:EndDt"/&gt;
-                    		
+
                 &lt;/xsd:sequence&gt;
-                	
+
             &lt;/xsd:complexType&gt;
-                  
+
             &lt;xsd:element name="Severity" type="aval:Severity_Type"/&gt;
-                  
+
             &lt;xsd:simpleType name="Severity_Type"&gt;
-                		
+
                 &lt;xsd:restriction base="xsd:string"&gt;
-                    			
+
                     &lt;xsd:enumeration value="Error"/&gt;
-                    			
+
                     &lt;xsd:enumeration value="Info"/&gt;
-                    			
+
                     &lt;xsd:enumeration value="Warn"/&gt;
-                    		
+
                 &lt;/xsd:restriction&gt;
-                	
+
             &lt;/xsd:simpleType&gt;
-                  
+
             &lt;xsd:complexType name="AdditionalStatus_Type"&gt;
-                		
+
                 &lt;xsd:sequence&gt;
-                    			
+
                     &lt;xsd:element minOccurs="0" ref="aval:StatusCode"/&gt;
-                    			
+
                     &lt;xsd:element minOccurs="0" ref="aval:ServerStatusCode"/&gt;
-                    			
+
                     &lt;xsd:element minOccurs="0" ref="aval:Severity"/&gt;
-                    			
+
                     &lt;xsd:element minOccurs="0" ref="aval:StatusDesc"/&gt;
-                    		
+
                 &lt;/xsd:sequence&gt;
-                	
+
             &lt;/xsd:complexType&gt;
-                  
+
             &lt;xsd:element name="AdditionalStatus" type="aval:AdditionalStatus_Type"/&gt;
-                  
+
             &lt;xsd:simpleType name="IdentSerialNum_Type"&gt;
-                		
+
                 &lt;xsd:restriction base="xsd:string"&gt;
 		&lt;/xsd:restriction&gt;
-                	
+
             &lt;/xsd:simpleType&gt;
-                  
+
             &lt;xsd:element name="IdentSerialNum" type="aval:IdentSerialNum_Type"/&gt;
-                  
+
             &lt;xsd:complexType name="GenericAcctId_Type"&gt;
-                		
+
                 &lt;xsd:sequence&gt;
-                    			
+
                     &lt;xsd:element minOccurs="0" ref="aval:AcctId"/&gt;
-                    			
+
                     &lt;xsd:element minOccurs="1" ref="aval:AcctType"/&gt;
-                    			
+
                     &lt;xsd:element minOccurs="0" ref="aval:BankInfo"/&gt;
-                    			
+
                     &lt;xsd:element maxOccurs="1" minOccurs="0" ref="aval:AcctCur"/&gt;
-                    		
+
                 &lt;/xsd:sequence&gt;
-                	
+
             &lt;/xsd:complexType&gt;
-                  
+
             &lt;xsd:simpleType name="AcctCur_Type"&gt;
-                		
+
                 &lt;xsd:restriction base="xsd:string"&gt;
 		&lt;/xsd:restriction&gt;
-                	
+
             &lt;/xsd:simpleType&gt;
-                  
+
             &lt;xsd:element name="AcctCur" type="aval:AcctCur_Type"/&gt;
-                  
+
             &lt;xsd:element name="BankInfo" type="aval:BankInfo_Type"/&gt;
-                  
+
             &lt;xsd:complexType name="BankInfo_Type"&gt;
-                		
+
                 &lt;xsd:sequence&gt;
-                    			
+
                     &lt;xsd:element minOccurs="0" ref="aval:BankIdType"/&gt;
-                    			
+
                     &lt;xsd:element ref="aval:BankId"/&gt;
-                    			
+
                     &lt;xsd:element maxOccurs="unbounded" minOccurs="0" ref="aval:RefInfo"/&gt;
-                    			
+
                     &lt;xsd:element minOccurs="0" ref="aval:Name"/&gt;
-                    			
+
                     &lt;xsd:element minOccurs="0" ref="aval:BranchId"/&gt;
-                    			
+
                     &lt;xsd:element minOccurs="0" ref="aval:BranchName"/&gt;
-                              
+
                     &lt;xsd:choice minOccurs="0"&gt;
-                        				
+
                         &lt;xsd:element minOccurs="0" ref="aval:PostAddr"/&gt;
-                        				
+
                         &lt;xsd:sequence minOccurs="0"&gt;
-                            					
+
                             &lt;xsd:element minOccurs="0" ref="aval:City"/&gt;
-                            					
+
                             &lt;xsd:element minOccurs="0" ref="aval:StateProv"/&gt;
-                            					
+
                             &lt;xsd:element minOccurs="0" ref="aval:PostalCode"/&gt;
-                            					
+
                             &lt;xsd:element minOccurs="0" ref="aval:Country"/&gt;
-                            				
+
                         &lt;/xsd:sequence&gt;
-                        			
+
                     &lt;/xsd:choice&gt;
-                    		
+
                 &lt;/xsd:sequence&gt;
-                	
+
             &lt;/xsd:complexType&gt;
-                  
+
             &lt;xsd:complexType name="RefInfo_Type"&gt;
-                		
+
                 &lt;xsd:sequence&gt;
-                    			
+
                     &lt;xsd:element ref="aval:RefType"/&gt;
-                    			
+
                     &lt;xsd:element ref="aval:RefId"/&gt;
-                    		
+
                 &lt;/xsd:sequence&gt;
-                	
+
             &lt;/xsd:complexType&gt;
-                  
+
             &lt;xsd:element name="RefInfo" type="aval:RefInfo_Type"/&gt;
-                  
+
             &lt;xsd:simpleType name="RefType_Type"&gt;
-                		
+
                 &lt;xsd:restriction base="xsd:string"/&gt;
-                	
+
             &lt;/xsd:simpleType&gt;
-                  
+
             &lt;xsd:element name="RefType" type="aval:RefType_Type"/&gt;
-                  
+
             &lt;xsd:element name="PostAddr" type="aval:PostAddr_Type"/&gt;
-                  
+
             &lt;xsd:complexType name="PostAddr_Type"&gt;
-                		
+
                 &lt;xsd:sequence&gt;
-                    			
+
                     &lt;xsd:element maxOccurs="4" minOccurs="0" ref="aval:Addr"/&gt;
-                    			
+
                     &lt;xsd:element minOccurs="0" ref="aval:CityId"/&gt;
-                    			
+
                     &lt;xsd:element minOccurs="0" ref="aval:City"/&gt;
-                    			
+
                     &lt;xsd:element minOccurs="0" ref="aval:StateProv"/&gt;
-                    			
+
                     &lt;xsd:element minOccurs="0" ref="aval:PostalCode"/&gt;
-                    			
+
                     &lt;xsd:element minOccurs="0" ref="aval:Country"/&gt;
-                    			
+
                     &lt;xsd:element minOccurs="0" ref="aval:AddrType"/&gt;
-                    			
+
                     &lt;xsd:element minOccurs="0" ref="aval:StartDt"/&gt;
-                    			
+
                     &lt;xsd:element minOccurs="0" ref="aval:EndDt"/&gt;
-                    			
+
                     &lt;xsd:element minOccurs="0" ref="avalv2:Neighborhood"/&gt;
-                    		
+
                 &lt;/xsd:sequence&gt;
-                	
+
             &lt;/xsd:complexType&gt;
-                  
+
             &lt;xsd:simpleType name="Addr_Type"&gt;
-                		
+
                 &lt;xsd:restriction base="xsd:string"&gt;
 		&lt;/xsd:restriction&gt;
-                	
+
             &lt;/xsd:simpleType&gt;
-                  
+
             &lt;xsd:element name="Addr" type="aval:Addr_Type"/&gt;
-                  
+
             &lt;xsd:simpleType name="City_Type"&gt;
-                		
+
                 &lt;xsd:restriction base="xsd:string"&gt;
 		&lt;/xsd:restriction&gt;
-                	
+
             &lt;/xsd:simpleType&gt;
-                  
+
             &lt;xsd:element name="City" type="aval:City_Type"/&gt;
-                  
+
             &lt;xsd:element name="StateProv" type="aval:StateProv_Type"/&gt;
-                  
+
             &lt;xsd:simpleType name="StateProv_Type"&gt;
-                		
+
                 &lt;xsd:restriction base="xsd:string"&gt;
 		&lt;/xsd:restriction&gt;
-                	
+
             &lt;/xsd:simpleType&gt;
-                  
+
             &lt;xsd:simpleType name="PostalCode_Type"&gt;
-                		
+
                 &lt;xsd:restriction base="xsd:string"&gt;
 		&lt;/xsd:restriction&gt;
-                	
+
             &lt;/xsd:simpleType&gt;
-                  
+
             &lt;xsd:element name="PostalCode" type="aval:PostalCode_Type"/&gt;
-                  
+
             &lt;xsd:simpleType name="Country_Type"&gt;
-                		
+
                 &lt;xsd:restriction base="xsd:string"&gt;
 		&lt;/xsd:restriction&gt;
-                	
+
             &lt;/xsd:simpleType&gt;
-                  
+
             &lt;xsd:element name="Country" type="aval:Country_Type"/&gt;
-                  
+
             &lt;xsd:complexType name="SvcRs_Type"&gt;
-                		
+
                 &lt;xsd:sequence&gt;
-                    			
+
                     &lt;xsd:element minOccurs="1" ref="aval:Status"/&gt;
-                    			
+
                     &lt;xsd:element minOccurs="0" ref="aval:ApprovalId"/&gt;
-                    			
+
                     &lt;xsd:element minOccurs="1" ref="aval:RqUID"/&gt;
-                    			
+
                     &lt;xsd:element minOccurs="0" ref="aval:MsgRqHdr"/&gt;
-                    			
+
                     &lt;xsd:element minOccurs="0" ref="aval:MsgRsHdr"/&gt;
-                    			
+
                     &lt;xsd:element minOccurs="0" ref="aval:CustId"/&gt;
-                    		
+
                 &lt;/xsd:sequence&gt;
-                	
+
             &lt;/xsd:complexType&gt;
-                  
+
             &lt;xsd:element name="SvcRs" type="aval:SvcRs_Type"/&gt;
-                  
+
             &lt;xsd:complexType name="MsgRqHdr_Type"&gt;
-                		
+
                 &lt;xsd:sequence&gt;
-                    			
+
                     &lt;xsd:element minOccurs="0" ref="aval:ClientApp"/&gt;
-                    			
+
                     &lt;xsd:element minOccurs="0" ref="avalv2:Channel"/&gt;
-                    			
+
                     &lt;xsd:element minOccurs="0" ref="aval:BankInfo"/&gt;
-                    			
+
                     &lt;xsd:element minOccurs="0" ref="avalv2:ClientDt"/&gt;
-                    			
+
                     &lt;xsd:element minOccurs="0" ref="avalv2:IPAddr"/&gt;
-                    			
+
                     &lt;xsd:element minOccurs="0" ref="avalv2:SessKey"/&gt;
-                    			
+
                     &lt;xsd:element minOccurs="0" ref="aval:UserId"/&gt;
-                    			
+
                     &lt;xsd:element minOccurs="0" ref="avalv2:KeyAcctId"/&gt;
-                    			
+
                     &lt;xsd:element ref="avalv2:Reverse"/&gt;
-                    			
+
                     &lt;xsd:element ref="avalv2:Language"/&gt;
-                    			
+
                     &lt;xsd:element minOccurs="0" ref="avalv2:NextDay"/&gt;
-                    		
+
                 &lt;/xsd:sequence&gt;
-                	
+
             &lt;/xsd:complexType&gt;
-                  
+
             &lt;xsd:element name="MsgRqHdr" type="aval:MsgRqHdr_Type"/&gt;
-                  
+
             &lt;xsd:element name="ClientApp" type="aval:ClientApp_Type"/&gt;
-                  
+
             &lt;xsd:complexType name="ClientApp_Type"&gt;
-                		
+
                 &lt;xsd:sequence&gt;
-                    			
+
                     &lt;xsd:element minOccurs="0" ref="aval:Org"/&gt;
-                    			
+
                     &lt;xsd:element minOccurs="0" ref="aval:Name"/&gt;
-                    			
+
                     &lt;xsd:element minOccurs="0" ref="aval:Version"/&gt;
-                    		
+
                 &lt;/xsd:sequence&gt;
-                	
+
             &lt;/xsd:complexType&gt;
-                  
+
             &lt;xsd:element name="UserId" type="aval:UserId_Type"/&gt;
-                  
+
             &lt;xsd:complexType name="UserId_Type"&gt;
-                		
+
                 &lt;xsd:complexContent&gt;
-                    			
+
                     &lt;xsd:extension base="aval:CustId_Type"&gt;
-                        				
+
                         &lt;xsd:sequence/&gt;
-                        			
+
                     &lt;/xsd:extension&gt;
-                    		
+
                 &lt;/xsd:complexContent&gt;
-                	
+
             &lt;/xsd:complexType&gt;
-                  
+
             &lt;xsd:element name="CustId" type="aval:CustId_Type"/&gt;
-                  
+
             &lt;xsd:complexType name="CustId_Type"&gt;
-                		
+
                 &lt;xsd:sequence&gt;
-                    			
+
                     &lt;xsd:element minOccurs="0" ref="aval:CustPermId"/&gt;
-                    			
+
                     &lt;xsd:element minOccurs="0" ref="aval:CustLoginId"/&gt;
-                    			
+
                     &lt;xsd:element minOccurs="0" ref="aval:GovIssueIdent"/&gt;
-                    			
+
                     &lt;xsd:element maxOccurs="1" minOccurs="0" ref="aval:CustName"/&gt;
-                    		
+
                 &lt;/xsd:sequence&gt;
-                	
+
             &lt;/xsd:complexType&gt;
-                  
+
             &lt;complexType name="CustName_Type"&gt;
-                		
+
                 &lt;sequence&gt;
-                    			
+
                     &lt;element maxOccurs="1" minOccurs="0" ref="aval:LastName"/&gt;
-                    			
+
                     &lt;element maxOccurs="1" minOccurs="0" ref="aval:FirstName"/&gt;
-                    			
+
                     &lt;element maxOccurs="1" minOccurs="0" ref="aval:Nickname"/&gt;
-                    			
+
                     &lt;element maxOccurs="1" minOccurs="0" ref="aval:LegalName"/&gt;
-                    		
+
                 &lt;/sequence&gt;
-                	
+
             &lt;/complexType&gt;
-                  
+
             &lt;element name="CustName" type="aval:CustName_Type"/&gt;
-                  
+
             &lt;xsd:simpleType name="Nickname_Type"&gt;
-                		
+
                 &lt;xsd:restriction base="xsd:string"&gt;
 		&lt;/xsd:restriction&gt;
-                	
+
             &lt;/xsd:simpleType&gt;
-                  
+
             &lt;xsd:element name="Nickname" type="aval:Nickname_Type"/&gt;
-                  
+
             &lt;xsd:simpleType name="FirstName_Type"&gt;
-                		
+
                 &lt;xsd:restriction base="xsd:string"&gt;
 		&lt;/xsd:restriction&gt;
-                	
+
             &lt;/xsd:simpleType&gt;
-                  
+
             &lt;xsd:element name="FirstName" type="aval:FirstName_Type"/&gt;
-                  
+
             &lt;xsd:simpleType name="LastName_Type"&gt;
-                		
+
                 &lt;xsd:restriction base="xsd:string"&gt;
 		&lt;/xsd:restriction&gt;
-                	
+
             &lt;/xsd:simpleType&gt;
-                  
+
             &lt;xsd:element name="LastName" type="aval:LastName_Type"/&gt;
-                  
+
             &lt;xsd:element name="LegalName" type="aval:LegalName_Type"/&gt;
-                  
+
             &lt;xsd:simpleType name="LegalName_Type"&gt;
-                		
+
                 &lt;xsd:restriction base="xsd:string"&gt;
 		&lt;/xsd:restriction&gt;
-                	
+
             &lt;/xsd:simpleType&gt;
-                  
+
             &lt;xsd:complexType name="GovIssueIdent_Type"&gt;
-                		
+
                 &lt;xsd:sequence&gt;
-                    			
+
                     &lt;xsd:element ref="aval:GovIssueIdentType"/&gt;
-                    			
+
                     &lt;xsd:element ref="aval:IdentSerialNum"/&gt;
-                    			
+
                     &lt;xsd:element minOccurs="0" ref="aval:GovOrg"/&gt;
-                    			
+
                     &lt;xsd:element minOccurs="0" ref="aval:GovOrgName"/&gt;
-                    			
+
                     &lt;xsd:element minOccurs="0" ref="aval:GovRank"/&gt;
-                    			
+
                     &lt;xsd:element minOccurs="0" ref="aval:StateProv"/&gt;
-                    			
+
                     &lt;xsd:element minOccurs="0" ref="aval:Country"/&gt;
-                    			
+
                     &lt;xsd:element minOccurs="0" ref="aval:Desc"/&gt;
-                    			
+
                     &lt;xsd:element minOccurs="0" ref="aval:IssDt"/&gt;
-                    			
+
                     &lt;xsd:element minOccurs="0" ref="aval:ExpDt"/&gt;
-                    		
+
                 &lt;/xsd:sequence&gt;
-                	
+
             &lt;/xsd:complexType&gt;
-                  
+
             &lt;xsd:element name="GovIssueIdent" type="aval:GovIssueIdent_Type"/&gt;
-                  
+
             &lt;xsd:simpleType name="GovOrgName_Type"&gt;
-                		
+
                 &lt;xsd:restriction base="xsd:string"&gt;
 		&lt;/xsd:restriction&gt;
-                	
+
             &lt;/xsd:simpleType&gt;
-                  
+
             &lt;xsd:element name="GovOrgName" type="aval:GovOrgName_Type"/&gt;
-                  
+
             &lt;xsd:simpleType name="GovRank_Type"&gt;
-                		
+
                 &lt;xsd:restriction base="xsd:string"&gt;
 		&lt;/xsd:restriction&gt;
-                	
+
             &lt;/xsd:simpleType&gt;
-                  
+
             &lt;xsd:element name="GovRank" type="aval:GovRank_Type"/&gt;
-                  
+
             &lt;xsd:element name="DateTime" type="aval:DateTime_Type"/&gt;
-                  
+
             &lt;xsd:simpleType name="DateTime_Type"&gt;
-                		
+
                 &lt;xsd:restriction base="xsd:string"&gt;
-                    			
+
                     &lt;xsd:pattern value="[0-9]{4}-[0-9]{2}-[0-9]{2}(T[0-9]{2}:[0-9]{2}(:[0-9]{2}(\.[0-9]{6})?((-|\+)[0-9]{2}:[0-9]{2})?)?)?"/&gt;
-                    		
+
                 &lt;/xsd:restriction&gt;
-                	
+
             &lt;/xsd:simpleType&gt;
-                  
+
             &lt;xsd:complexType name="MsgRsHdr_Type"&gt;
-                		
+
                 &lt;xsd:sequence&gt;
-                    			
+
                     &lt;xsd:element minOccurs="0" ref="aval:TxCostAmt"/&gt;
-                    			
+
                     &lt;xsd:element minOccurs="0" ref="aval:EffDt"/&gt;
-                    			
+
                     &lt;xsd:element minOccurs="0" ref="aval:RemainRec"/&gt;
-                    		
+
                 &lt;/xsd:sequence&gt;
-                	
+
             &lt;/xsd:complexType&gt;
-                  
+
             &lt;xsd:element name="MsgRsHdr" type="aval:MsgRsHdr_Type"/&gt;
-                  
+
             &lt;xsd:complexType name="TxCostAmt_Type"&gt;
-                		
+
                 &lt;xsd:sequence&gt;
-                    			
+
                     &lt;xsd:element minOccurs="1" ref="aval:CurAmt"/&gt;
-                    		
+
                 &lt;/xsd:sequence&gt;
-                	
+
             &lt;/xsd:complexType&gt;
-                  
+
             &lt;xsd:element name="TxCostAmt" type="aval:TxCostAmt_Type"/&gt;
-                  
+
             &lt;xsd:element name="Abbr" type="aval:Abbr_Type"/&gt;
-                  
+
             &lt;xsd:simpleType name="Abbr_Type"&gt;
-                		
+
                 &lt;xsd:restriction base="xsd:string"/&gt;
-                	
+
             &lt;/xsd:simpleType&gt;
-                  
+
             &lt;xsd:complexType name="SvcRq_Type"&gt;
-                		
+
                 &lt;xsd:sequence&gt;
-                    			
+
                     &lt;xsd:element minOccurs="1" ref="aval:RqUID"/&gt;
-                    			
+
                     &lt;xsd:element minOccurs="0" ref="aval:MsgRqHdr"/&gt;
-                    			
+
                     &lt;xsd:element minOccurs="0" ref="aval:CustId"/&gt;
-                    		
+
                 &lt;/xsd:sequence&gt;
-                	
+
             &lt;/xsd:complexType&gt;
-                  
+
             &lt;xsd:element name="SvcRq" type="aval:SvcRq_Type"/&gt;
-                  
+
             &lt;xsd:simpleType name="IndustNum_Type"&gt;
-                		
+
                 &lt;xsd:restriction base="xsd:string"/&gt;
-                	
+
             &lt;/xsd:simpleType&gt;
-                  
+
             &lt;xsd:element name="IndustNum" type="aval:IndustNum_Type"/&gt;
-                  
+
             &lt;xsd:complexType name="CompositeCurAmt_Type"&gt;
-                		
+
                 &lt;xsd:sequence&gt;
-                    			
+
                     &lt;xsd:element minOccurs="0" ref="aval:CompositeCurAmtId"/&gt;
-                    			
+
                     &lt;xsd:element ref="aval:CompositeCurAmtType"/&gt;
-                    			
+
                     &lt;xsd:sequence&gt;
-                        				
+
                         &lt;xsd:element minOccurs="0" ref="aval:CurAmt"/&gt;
-                        				
+
                         &lt;xsd:element minOccurs="0" ref="aval:Rate"/&gt;
-                        			
+
                     &lt;/xsd:sequence&gt;
-                    			
+
                     &lt;xsd:element minOccurs="0" ref="aval:MinCurAmt"/&gt;
-                    			
+
                     &lt;xsd:element minOccurs="0" ref="aval:MaxCurAmt"/&gt;
-                    			
+
                     &lt;xsd:element minOccurs="0" ref="aval:SpecialHandling"/&gt;
-                    			
+
                     &lt;xsd:element minOccurs="0" ref="aval:Memo"/&gt;
-                    		
+
                 &lt;/xsd:sequence&gt;
-                	
+
             &lt;/xsd:complexType&gt;
-                  
+
             &lt;xsd:element name="CompositeCurAmt" type="aval:CompositeCurAmt_Type"/&gt;
-                  
+
             &lt;xsd:element name="CompositeCurAmtId" type="aval:Identifier_Type"/&gt;
-                  
+
             &lt;xsd:simpleType name="Memo_Type"&gt;
-                		
+
                 &lt;xsd:restriction base="xsd:string"&gt;
 		&lt;/xsd:restriction&gt;
-                	
+
             &lt;/xsd:simpleType&gt;
-                  
+
             &lt;xsd:element name="Memo" type="aval:Memo_Type"/&gt;
-                  
+
             &lt;xsd:complexType name="ContactInfo_Type"&gt;
-                		
+
                 &lt;xsd:sequence&gt;
-                    			
+
                     &lt;xsd:element maxOccurs="unbounded" minOccurs="0" ref="aval:PhoneNum"/&gt;
-                    			
+
                     &lt;xsd:element minOccurs="0" ref="aval:EmailAddr"/&gt;
-                    			
+
                     &lt;xsd:element minOccurs="0" ref="aval:PostAddr"/&gt;
-                    	
-			
+
+
                     &lt;xsd:element minOccurs="0" ref="aval:ActivationPhone"/&gt;
-                    			
+
                     &lt;xsd:element minOccurs="0" ref="aval:CustName"/&gt;
-                    	
-		
+
+
                 &lt;/xsd:sequence&gt;
-                	
+
             &lt;/xsd:complexType&gt;
-                  
+
             &lt;xsd:element name="ContactInfo" type="aval:ContactInfo_Type"/&gt;
-                  
+
             &lt;xsd:simpleType name="EmailAddr_Type"&gt;
-                		
+
                 &lt;xsd:restriction base="xsd:string"&gt;
 		&lt;/xsd:restriction&gt;
-                	
+
             &lt;/xsd:simpleType&gt;
-                  
+
             &lt;xsd:element name="EmailAddr" type="aval:EmailAddr_Type"/&gt;
-                  
+
             &lt;xsd:complexType name="ActivationPhone_Type"&gt;
-                		
+
                 &lt;xsd:sequence&gt;
-                    			
+
                     &lt;xsd:element minOccurs="0" ref="aval:PhoneNumber"/&gt;
-                    		
+
                 &lt;/xsd:sequence&gt;
-                	
+
             &lt;/xsd:complexType&gt;
-                  
+
             &lt;xsd:element name="ActivationPhone" type="aval:ActivationPhone_Type"/&gt;
-                  
+
             &lt;xsd:complexType name="PhoneNum_Type"&gt;
-                		
+
                 &lt;xsd:sequence&gt;
-                    			
+
                     &lt;xsd:element ref="aval:PhoneType"/&gt;
-                    			
+
                     &lt;xsd:element ref="aval:Phone"/&gt;
-                    		
+
                 &lt;/xsd:sequence&gt;
-                	
+
             &lt;/xsd:complexType&gt;
-                  
+
             &lt;xsd:element name="PhoneNum" type="aval:PhoneNum_Type"/&gt;
-                  
+
             &lt;xsd:simpleType name="ContactInfoType_Type"&gt;
-                		
+
                 &lt;xsd:restriction base="xsd:string"/&gt;
-                	
+
             &lt;/xsd:simpleType&gt;
-                  
+
             &lt;xsd:element name="ContactInfoType" type="aval:ContactInfoType_Type"/&gt;
-                  
+
             &lt;xsd:element name="TINInfo" type="aval:TINInfo_Type"/&gt;
-                  
+
             &lt;xsd:complexType name="TINInfo_Type"&gt;
-                    	
+
                 &lt;xsd:sequence&gt;
-                    			
+
                     &lt;xsd:element ref="aval:TINType"/&gt;
-                    			
+
                     &lt;xsd:element ref="aval:TaxId"/&gt;
-                    			
+
                     &lt;xsd:element ref="aval:CertCode"/&gt;
-                    		
+
                 &lt;/xsd:sequence&gt;
-                    
+
             &lt;/xsd:complexType&gt;
-                  
+
             &lt;xsd:complexType name="ContributionData_Type"&gt;
-                		
+
                 &lt;xsd:sequence&gt;
-                    			
+
                     &lt;xsd:element minOccurs="0" ref="aval:Code"/&gt;
-                    			
+
                     &lt;xsd:element minOccurs="0" ref="avalv2:Desc"/&gt;
-                    		
+
                 &lt;/xsd:sequence&gt;
-                	
+
             &lt;/xsd:complexType&gt;
-                  
+
             &lt;xsd:element name="ContributionData" type="aval:ContributionData_Type"/&gt;
-                  
+
             &lt;xsd:element name="Code" type="aval:Code_Type"/&gt;
-                  
+
             &lt;xsd:simpleType name="Code_Type"&gt;
-                		
+
                 &lt;xsd:restriction base="xsd:string"&gt;
 		&lt;/xsd:restriction&gt;
-                	
+
             &lt;/xsd:simpleType&gt;
-                  
+
             &lt;xsd:complexType name="Image_Type"&gt;
-                		
+
                 &lt;xsd:sequence&gt;
-                    			
+
                     &lt;xsd:element minOccurs="0" ref="aval:URL"/&gt;
-                    		
+
                 &lt;/xsd:sequence&gt;
-                	
+
             &lt;/xsd:complexType&gt;
-                  
+
             &lt;xsd:element name="Image" type="aval:Image_Type"/&gt;
-                  
+
             &lt;xsd:element name="DepAcctId" type="aval:DepAcctId_Type"/&gt;
-                  
+
             &lt;xsd:complexType name="DepAcctId_Type"&gt;
-                		
+
                 &lt;xsd:complexContent&gt;
-                    			
+
                     &lt;xsd:extension base="aval:GenericAcctId_Type"&gt;
-                        				
+
                         &lt;xsd:sequence/&gt;
-                        			
+
                     &lt;/xsd:extension&gt;
-                    		
+
                 &lt;/xsd:complexContent&gt;
-                	
+
             &lt;/xsd:complexType&gt;
-                  
+
             &lt;xsd:complexType name="CustPswd_Type"&gt;
-                		
+
                 &lt;xsd:sequence&gt;
-                    			
+
                     &lt;xsd:element ref="avalv2:Pswd"/&gt;
-                    		
+
                 &lt;/xsd:sequence&gt;
-                	
+
             &lt;/xsd:complexType&gt;
-                  
+
             &lt;xsd:element name="CustPswd" type="aval:CustPswd_Type"/&gt;
-                  
+
             &lt;xsd:complexType name="BillingPlan_Type"&gt;
-                		
+
                 &lt;xsd:sequence&gt;
-                    			
+
                     &lt;xsd:element minOccurs="0" ref="avalv2:Name"/&gt;
-                    			
+
                     &lt;xsd:element minOccurs="0" ref="avalv2:TrnNumber"/&gt;
-                    			
+
                     &lt;xsd:element minOccurs="0" ref="aval:DepAcctIdFrom"/&gt;
-                    			
+
                     &lt;xsd:element maxOccurs="unbounded" minOccurs="0" ref="aval:CompositeCurAmt"/&gt;
-                    		
+
                 &lt;/xsd:sequence&gt;
-                	
+
             &lt;/xsd:complexType&gt;
-                  
+
             &lt;xsd:element name="BillingPlan" type="aval:BillingPlan_Type"/&gt;
-                  
+
             &lt;xsd:complexType name="DepAcctIdFrom_Type"&gt;
-                		
+
                 &lt;xsd:complexContent&gt;
-                    			
+
                     &lt;xsd:extension base="aval:DepAcctId_Type"&gt;
 			&lt;/xsd:extension&gt;
-                    		
+
                 &lt;/xsd:complexContent&gt;
-                	
+
             &lt;/xsd:complexType&gt;
-                  
+
             &lt;xsd:element name="DepAcctIdFrom" type="aval:DepAcctIdFrom_Type"/&gt;
-                  
+
             &lt;xsd:element name="Term" type="aval:Term_Type"/&gt;
-                  
+
             &lt;xsd:complexType name="Term_Type"&gt;
-                		
+
                 &lt;xsd:sequence&gt;
-                    			
+
                     &lt;xsd:element minOccurs="0" ref="aval:Count"/&gt;
-                    			
+
                     &lt;xsd:element minOccurs="0" ref="aval:TermUnits"/&gt;
-                    			
+
                     &lt;xsd:element minOccurs="0" ref="aval:Desc"/&gt;
-                    			
+
                     &lt;xsd:element minOccurs="0" ref="aval:DaysCall"/&gt;
-                    		
+
                 &lt;/xsd:sequence&gt;
-                	
+
             &lt;/xsd:complexType&gt;
-                  
+
             &lt;xsd:simpleType name="TermUnits_Type"&gt;
-                		
+
                 &lt;xsd:restriction base="aval:OpenEnum_Type"&gt;
 		&lt;/xsd:restriction&gt;
-                	
+
             &lt;/xsd:simpleType&gt;
-                  
+
             &lt;xsd:element name="TermUnits" type="aval:TermUnits_Type"/&gt;
-                  
+
             &lt;xsd:complexType name="DepAcctIdTo_Type"&gt;
-                		
+
                 &lt;xsd:complexContent&gt;
-                    			
+
                     &lt;xsd:extension base="aval:DepAcctId_Type"&gt;
 			&lt;/xsd:extension&gt;
-                    		
+
                 &lt;/xsd:complexContent&gt;
-                	
+
             &lt;/xsd:complexType&gt;
-                  
+
             &lt;xsd:element name="DepAcctIdTo" type="aval:DepAcctIdTo_Type"/&gt;
-                
+
         &lt;/xsd:schema&gt;
-                
+
         &lt;xsd:schema xmlns:aval="urn://grupoaval.com/xsd/ifx/" xmlns:avalv2="urn://grupoaval.com/xsd/ifx/v2/" attributeFormDefault="unqualified" elementFormDefault="unqualified" targetNamespace="urn://grupoaval.com/xsd/ifx/v2/"&gt;
-                  
+
             &lt;xsd:import namespace="urn://grupoaval.com/xsd/ifx/"/&gt;
-                  
+
             &lt;xsd:element name="ChkImgFront" type="aval:Binary_Type"/&gt;
-                  
+
             &lt;xsd:element name="ChkBkType" type="aval:OpenEnum_Type"/&gt;
-                  
+
             &lt;xsd:element name="FileType" type="aval:OpenEnum_Type"/&gt;
-                  
+
             &lt;xsd:element name="SPRefId" type="aval:Identifier_Type"/&gt;
-                  
+
             &lt;xsd:element name="NoteNum" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="TokenQuantity" type="xsd:long"/&gt;
-                  
+
             &lt;xsd:element name="StartSecObjId" type="aval:Identifier_Type"/&gt;
-                  
+
             &lt;xsd:element name="DueDt" type="xsd:dateTime"/&gt;
-                  
+
             &lt;xsd:element name="InquireStatus" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="POSCaptureCapability" type="xsd:boolean"/&gt;
-                  
+
             &lt;xsd:element name="PreaproveInd" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="PmtType" type="aval:OpenEnum_Type"/&gt;
-                  
+
             &lt;xsd:element name="AvailableImage" type="xsd:boolean"/&gt;
-                  
+
             &lt;xsd:element name="CorrectAction" type="aval:OpenEnum_Type"/&gt;
-                  
+
             &lt;xsd:element name="PSSMsgEncryption" type="aval:OpenEnum_Type"/&gt;
-                  
+
             &lt;xsd:element name="IdentVerifyResults" type="aval:OpenEnum_Type"/&gt;
-                  
+
             &lt;xsd:element name="Desc" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="PeriodType" type="aval:OpenEnum_Type"/&gt;
-                  
+
             &lt;xsd:element name="LowCurAmt" type="aval:CurrencyAmount_Type"/&gt;
-                  
+
             &lt;xsd:element name="SecObjId" type="aval:Identifier_Type"/&gt;
-                  
+
             &lt;xsd:element name="UF_IndicLine" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="RowStatusDesc" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="BinLength" type="xsd:long"/&gt;
-                  
+
             &lt;xsd:element name="OrgIdNum" type="aval:Identifier_Type"/&gt;
-                  
+
             &lt;xsd:element name="IncCounts" type="xsd:boolean"/&gt;
-                  
+
             &lt;xsd:element name="MatchedRec" type="xsd:long"/&gt;
-                  
+
             &lt;xsd:element name="SecurityCode" type="aval:Identifier_Type"/&gt;
-                  
+
             &lt;xsd:element name="PartyAcctRelId" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="TrnType" type="aval:OpenEnum_Type"/&gt;
-                  
+
             &lt;xsd:element name="OptPmtCodServ" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="BillSummAmtType" type="aval:OpenEnum_Type"/&gt;
-                  
+
             &lt;xsd:element name="NoBillerMainReference" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="ChkAcceptStatusCode" type="aval:OpenEnum_Type"/&gt;
-                  
+
             &lt;xsd:element name="FileRqDt" type="xsd:dateTime"/&gt;
-                  
+
             &lt;xsd:element name="ValueMax" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="MaxCurAmt" type="aval:CurrencyAmount_Type"/&gt;
-                  
+
             &lt;xsd:element name="CardType" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="Portfolio" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="SpecialHandling" type="aval:OpenEnum_Type"/&gt;
-                  
+
             &lt;xsd:element name="CustInfoStatusCode" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="RowId" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="Amt" type="xsd:decimal"/&gt;
-                  
+
             &lt;xsd:element name="PrimaryAcct" type="xsd:boolean"/&gt;
-                  
+
             &lt;xsd:element name="ContactType" type="aval:OpenEnum_Type"/&gt;
-                  
+
             &lt;xsd:element name="Message" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="IdentVerifyEntity" type="aval:OpenEnum_Type"/&gt;
-                  
+
             &lt;xsd:element name="ActionType" type="aval:OpenEnum_Type"/&gt;
-                  
+
             &lt;xsd:element name="DaysCycle" type="xsd:long"/&gt;
-                  
+
             &lt;xsd:element name="DeliveryMethod" type="aval:OpenEnum_Type"/&gt;
-                  
+
             &lt;xsd:element name="RejectedRows" type="xsd:decimal"/&gt;
-                  
+
             &lt;xsd:element name="LoanPmtComplement" type="aval:OpenEnum_Type"/&gt;
-                  
+
             &lt;xsd:element name="RevReasonCode" type="aval:OpenEnum_Type"/&gt;
-                  
+
             &lt;xsd:element name="Org" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="Token" type="aval:Identifier_Type"/&gt;
-                  
+
             &lt;xsd:element name="ImmediatePmt" type="xsd:boolean"/&gt;
-                  
+
             &lt;xsd:element name="MinCurAmt" type="aval:CurrencyAmount_Type"/&gt;
-                  
+
             &lt;xsd:element name="PaidDt" type="xsd:dateTime"/&gt;
-                  
+
             &lt;xsd:element name="TransactionNumber" type="xsd:long"/&gt;
-                  
+
             &lt;xsd:element name="PmtDateServ" type="xsd:dateTime"/&gt;
-                  
+
             &lt;xsd:element name="BillSummAmtCode" type="aval:OpenEnum_Type"/&gt;
-                  
+
             &lt;xsd:element name="FileId" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="TerminalId" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="NetworkOwner" type="aval:OpenEnum_Type"/&gt;
-                  
+
             &lt;xsd:element name="CheckRout" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="Channel" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="LastModCustInfoDt" type="xsd:date"/&gt;
-                  
+
             &lt;xsd:element name="PmtMethod" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="SessKey" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="AllocateAllowed" type="xsd:boolean"/&gt;
-                  
+
             &lt;xsd:element name="FileControlId" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="PrefetchURL" type="aval:URL_Type"/&gt;
-                  
+
             &lt;xsd:element name="CloseDt" type="xsd:dateTime"/&gt;
-                  
+
             &lt;xsd:element name="NoBillerEntityCode" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="IdentServiceCode" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="DaysToEPost" type="xsd:long"/&gt;
-                  
+
             &lt;xsd:element name="TrnNumber" type="xsd:long"/&gt;
-                  
+
             &lt;xsd:element name="CustType" type="aval:OpenEnum_Type"/&gt;
-                  
+
             &lt;xsd:element name="LiquidationMethod" type="aval:OpenEnum_Type"/&gt;
-                  
+
             &lt;xsd:element name="RemainRec" type="xsd:boolean"/&gt;
-                  
+
             &lt;xsd:element name="OptDocType" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="TerminalType" type="aval:OpenEnum_Type"/&gt;
-                  
+
             &lt;xsd:element name="PmtCodServ" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="Cursor" type="aval:Binary_Type"/&gt;
-                  
+
             &lt;xsd:element name="FeeType" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="StateProvName" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="RegistrationId" type="aval:Identifier_Type"/&gt;
-                  
+
             &lt;xsd:element name="HelpMsg" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="UnitTime" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="CentralBankId" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="BillPmtStatusCode" type="aval:OpenEnum_Type"/&gt;
-                  
+
             &lt;xsd:element name="ServerTerminalSeqId" type="aval:Identifier_Type"/&gt;
-                  
+
             &lt;xsd:element name="PointAcctCount" type="xsd:long"/&gt;
-                  
+
             &lt;xsd:element name="PmtAuthId" type="aval:Identifier_Type"/&gt;
-                  
+
             &lt;xsd:element name="AgentType" type="aval:OpenEnum_Type"/&gt;
-                  
+
             &lt;xsd:element name="POSVerifyCapability" type="aval:OpenEnum_Type"/&gt;
-                  
+
             &lt;xsd:element name="ClientTerminalSeqId" type="aval:Identifier_Type"/&gt;
-                  
+
             &lt;xsd:element name="CustPermId" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="PayeeControl" type="xsd:boolean"/&gt;
-                  
+
             &lt;xsd:element name="NIE" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="IdentProgramId" type="aval:Identifier_Type"/&gt;
-                  
+
             &lt;xsd:element name="LastSettlementDt" type="xsd:dateTime"/&gt;
-                  
+
             &lt;xsd:element name="CausalType" type="aval:OpenEnum_Type"/&gt;
-                  
+
             &lt;xsd:element name="RecXferMod" type="xsd:boolean"/&gt;
-                  
+
             &lt;xsd:element name="NumEmployees" type="xsd:long"/&gt;
-                  
+
             &lt;xsd:element name="TaxId" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="CategoryName" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="CurDt" type="xsd:dateTime"/&gt;
-                  
+
             &lt;xsd:element name="TaxName" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="SumForm" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="BankSerial" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="ExtBalType" type="aval:OpenEnum_Type"/&gt;
-                  
+
             &lt;xsd:element name="Type" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="Category" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="MediaNum" type="aval:Identifier_Type"/&gt;
-                  
+
             &lt;xsd:element name="BillId" type="aval:UUID_Type"/&gt;
-                  
+
             &lt;xsd:element name="ServerStatusCode" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="PointAcctSum" type="xsd:long"/&gt;
-                  
+
             &lt;xsd:element name="PmtAgreementId" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="AdjType" type="aval:OpenEnum_Type"/&gt;
-                  
+
             &lt;xsd:element name="ClientCreateDt" type="xsd:dateTime"/&gt;
-                  
+
             &lt;xsd:element name="PostedDt" type="xsd:dateTime"/&gt;
-                  
+
             &lt;xsd:element name="PaidCurAmt" type="aval:CurrencyAmount_Type"/&gt;
-                  
+
             &lt;xsd:element name="Code" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="EntprId" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="StatusOverDraft" type="aval:OpenEnum_Type"/&gt;
-                  
+
             &lt;xsd:element name="ItemValue" type="xsd:boolean"/&gt;
-                  
+
             &lt;xsd:element name="CausalDesc" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="IdentPrevReadMethod" type="aval:OpenEnum_Type"/&gt;
-                  
+
             &lt;xsd:element name="NotifyWilling" type="xsd:boolean"/&gt;
-                  
+
             &lt;xsd:element name="CSPRefId" type="aval:Identifier_Type"/&gt;
-                  
+
             &lt;xsd:element name="RecPmtMod" type="xsd:boolean"/&gt;
-                  
+
             &lt;xsd:element name="RestrictedCreditListInd" type="xsd:boolean"/&gt;
-                  
+
             &lt;xsd:element name="StmtSummType" type="aval:OpenEnum_Type"/&gt;
-                  
+
             &lt;xsd:element name="SentRec" type="xsd:long"/&gt;
-                  
+
             &lt;xsd:element name="CurCode" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="AcctCountable" type="xsd:boolean"/&gt;
-                  
+
             &lt;xsd:element name="Editable" type="xsd:boolean"/&gt;
-                  
+
             &lt;xsd:element name="EstablishDt" type="xsd:dateTime"/&gt;
-                  
+
             &lt;xsd:element name="Active" type="xsd:boolean"/&gt;
-                  
+
             &lt;xsd:element name="ChannelId" type="xsd:long"/&gt;
-                  
+
             &lt;xsd:element name="BankShortCode" type="aval:OpenEnum_Type"/&gt;
-                  
+
             &lt;xsd:element name="BSPName" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="PmtCodNIE" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="BankIdType" type="aval:OpenEnum_Type"/&gt;
-                  
+
             &lt;xsd:element name="DeliveryDays" type="xsd:long"/&gt;
-                  
+
             &lt;xsd:element name="InvoicePremium" type="aval:CurrencyAmount_Type"/&gt;
-                  
+
             &lt;xsd:element name="PhoneNumber" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="GovOrg" type="aval:OpenEnum_Type"/&gt;
-                  
+
             &lt;xsd:element name="CityId" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="OwnerInd" type="xsd:boolean"/&gt;
-                  
+
             &lt;xsd:element name="DaysBefAft" type="xsd:long"/&gt;
-                  
+
             &lt;xsd:element name="StatusDesc" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="NotificationType" type="xsd:long"/&gt;
-                  
+
             &lt;xsd:element name="GroupCode" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="IsInvGen" type="xsd:boolean"/&gt;
-                  
+
             &lt;xsd:element name="POSOperation" type="aval:OpenEnum_Type"/&gt;
-                  
+
             &lt;xsd:element name="VoucherId" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="HistRetentionDays" type="xsd:long"/&gt;
-                  
+
             &lt;xsd:element name="Rate" type="xsd:decimal"/&gt;
-                  
+
             &lt;xsd:element name="LastAccess" type="xsd:long"/&gt;
-                  
+
             &lt;xsd:element name="CreateRefId" type="aval:Identifier_Type"/&gt;
-                  
+
             &lt;xsd:element name="SelRangePaidDt" type="aval:SelRangeDt_Type"/&gt;
-                  
+
             &lt;xsd:element name="OptServiceCode" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="VertPosit" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="AgrmType" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="EndDt" type="xsd:dateTime"/&gt;
-                  
+
             &lt;xsd:element name="FieldFormat" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="Brand" type="aval:OpenEnum_Type"/&gt;
-                  
+
             &lt;xsd:element name="AcctPayAcct" type="aval:Identifier_Type"/&gt;
-                  
+
             &lt;xsd:element name="IncSummary" type="xsd:boolean"/&gt;
-                  
+
             &lt;xsd:element name="LoanId" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="BankAcctStatusCode" type="aval:OpenEnum_Type"/&gt;
-                  
+
             &lt;xsd:element name="PendExpDays" type="xsd:long"/&gt;
-                  
+
             &lt;xsd:element name="XferId" type="aval:Identifier_Type"/&gt;
-                  
+
             &lt;xsd:element name="OrigIssueDt" type="xsd:dateTime"/&gt;
-                  
+
             &lt;xsd:element name="NextDay" type="xsd:dateTime"/&gt;
-                  
+
             &lt;xsd:element name="ChkIssueStatusCode" type="aval:OpenEnum_Type"/&gt;
-                  
+
             &lt;xsd:element name="ChkImgBack" type="aval:Binary_Type"/&gt;
-                  
+
             &lt;xsd:element name="ForExDealId" type="aval:Identifier_Type"/&gt;
-                  
+
             &lt;xsd:element name="StartDt" type="xsd:dateTime"/&gt;
-                  
+
             &lt;xsd:element name="NoteType" type="aval:OpenEnum_Type"/&gt;
-                  
+
             &lt;xsd:element name="EndSecObjId" type="aval:Identifier_Type"/&gt;
-                  
+
             &lt;xsd:element name="PayeeNotification" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="POSEntryCapability" type="aval:OpenEnum_Type"/&gt;
-                  
+
             &lt;xsd:element name="EmployeeInd" type="xsd:boolean"/&gt;
-                  
+
             &lt;xsd:element name="Count" type="xsd:long"/&gt;
-                  
+
             &lt;xsd:element name="PSSMsgMAC" type="aval:OpenEnum_Type"/&gt;
-                  
+
             &lt;xsd:element name="AvailDt" type="xsd:dateTime"/&gt;
-                  
+
             &lt;xsd:element name="PeriodCode" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="SecurID" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="TypeField" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="FieldLabel" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="OrgPhone" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="BranchId" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="IncDetail" type="xsd:boolean"/&gt;
-                  
+
             &lt;xsd:element name="MaxAmtDue" type="aval:CurrencyAmount_Type"/&gt;
-                  
+
             &lt;xsd:element name="LoanAuthType" type="aval:OpenEnum_Type"/&gt;
-                  
+
             &lt;xsd:element name="Version" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="PartyAcctRelType" type="aval:OpenEnum_Type"/&gt;
-                  
+
             &lt;xsd:element name="BillType" type="aval:OpenEnum_Type"/&gt;
-                  
+
             &lt;xsd:element name="OrigDt" type="xsd:dateTime"/&gt;
-                  
+
             &lt;xsd:element name="Reverse" type="xsd:boolean"/&gt;
-                  
+
             &lt;xsd:element name="ChkBkId" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="NoteDetail" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="FileStatus" type="aval:OpenEnum_Type"/&gt;
-                  
+
             &lt;xsd:element name="ValueMin" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="SPName" type="aval:Identifier_Type"/&gt;
-                  
+
             &lt;xsd:element name="CardBrand" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="POSAttended" type="xsd:boolean"/&gt;
-                  
+
             &lt;xsd:element name="RestrictedListInd" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="TrnStatusCode" type="aval:OpenEnum_Type"/&gt;
-                  
+
             &lt;xsd:element name="ApprovalId" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="ContentType" type="aval:OpenEnum_Type"/&gt;
-                  
+
             &lt;xsd:element name="PSSCATSecLevel" type="aval:OpenEnum_Type"/&gt;
-                  
+
             &lt;xsd:element name="IdentVerifyMethod" type="aval:OpenEnum_Type"/&gt;
-                  
+
             &lt;xsd:element name="TaxYear" type="xsd:long"/&gt;
-                  
+
             &lt;xsd:element name="MinAmtDue" type="aval:CurrencyAmount_Type"/&gt;
-                  
+
             &lt;xsd:element name="DepAcctStmtId" type="aval:Identifier_Type"/&gt;
-                  
+
             &lt;xsd:element name="CategCode" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="LoanPmtType" type="aval:OpenEnum_Type"/&gt;
-                  
+
             &lt;xsd:element name="RqUID" type="aval:UUID_Type"/&gt;
-                  
+
             &lt;xsd:element name="InProcessRows" type="xsd:decimal"/&gt;
-                  
+
             &lt;xsd:element name="TotalCurAmt" type="aval:CurrencyAmount_Type"/&gt;
-                  
+
             &lt;xsd:element name="OrgDt" type="xsd:dateTime"/&gt;
-                  
+
             &lt;xsd:element name="ImmediateXfer" type="xsd:boolean"/&gt;
-                  
+
             &lt;xsd:element name="MainDocType" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="PartyAcctRelDesc" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="TrnSrc" type="aval:OpenEnum_Type"/&gt;
-                  
+
             &lt;xsd:element name="FileKey" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="BillSummAmtId" type="aval:Identifier_Type"/&gt;
-                  
+
             &lt;xsd:element name="NextDt" type="xsd:dateTime"/&gt;
-                  
+
             &lt;xsd:element name="FileName" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="ValueStart" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="ChargeRegulation" type="aval:OpenEnum_Type"/&gt;
-                  
+
             &lt;xsd:element name="CardNumber" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="StatusCustInfo" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="PmtRefId" type="aval:Identifier_Type"/&gt;
-                  
+
             &lt;xsd:element name="SettlementMethod" type="aval:OpenEnum_Type"/&gt;
-                  
+
             &lt;xsd:element name="AllowsMultipleProducts" type="xsd:boolean"/&gt;
-                  
+
             &lt;xsd:element name="RowStatus" type="aval:OpenEnum_Type"/&gt;
-                  
+
             &lt;xsd:element name="PrenoteReqd" type="xsd:boolean"/&gt;
-                  
+
             &lt;xsd:element name="MaxRec" type="xsd:long"/&gt;
-                  
+
             &lt;xsd:element name="CompositeCurAmtType" type="aval:OpenEnum_Type"/&gt;
-                  
+
             &lt;xsd:element name="Address" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="IdentType" type="aval:OpenEnum_Type"/&gt;
-                  
+
             &lt;xsd:element name="DeliveryMessage" type="xsd:boolean"/&gt;
-                  
+
             &lt;xsd:element name="TotalRows" type="xsd:long"/&gt;
-                  
+
             &lt;xsd:element name="SecObjStatusCode" type="aval:OpenEnum_Type"/&gt;
-                  
+
             &lt;xsd:element name="LoanName" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="RemitId" type="aval:Identifier_Type"/&gt;
-                  
+
             &lt;xsd:element name="OptOrgIdNum" type="aval:Identifier_Type"/&gt;
-                  
+
             &lt;xsd:element name="TINType" type="aval:OpenEnum_Type"/&gt;
-                  
+
             &lt;xsd:element name="ImageURL" type="aval:URL_Type"/&gt;
-                  
+
             &lt;xsd:element name="PmtEntityServ" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="FileDesc" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="Required" type="xsd:boolean"/&gt;
-                  
+
             &lt;xsd:element name="Name" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="CityName" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="BillStatusCode" type="aval:OpenEnum_Type"/&gt;
-                  
+
             &lt;xsd:element name="CertCode" type="aval:OpenEnum_Type"/&gt;
-                  
+
             &lt;xsd:element name="AuthFactor" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="ServiceCode" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="PmtFormat" type="aval:OpenEnum_Type"/&gt;
-                  
+
             &lt;xsd:element name="Aging" type="aval:OpenEnum_Type"/&gt;
-                  
+
             &lt;xsd:element name="IntRate" type="xsd:decimal"/&gt;
-                  
+
             &lt;xsd:element name="PrcDt" type="xsd:dateTime"/&gt;
-                  
+
             &lt;xsd:element name="ClosedDt" type="xsd:dateTime"/&gt;
-                  
+
             &lt;xsd:element name="DaysCall" type="xsd:long"/&gt;
-                  
+
             &lt;xsd:element name="PayeeType" type="aval:OpenEnum_Type"/&gt;
-                  
+
             &lt;xsd:element name="FileHash" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="IdentReadMethod" type="aval:OpenEnum_Type"/&gt;
-                  
+
             &lt;xsd:element name="Pswd" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="LastTrnDt" type="xsd:dateTime"/&gt;
-                  
+
             &lt;xsd:element name="RefId" type="aval:Identifier_Type"/&gt;
-                  
+
             &lt;xsd:element name="OpenDt" type="xsd:dateTime"/&gt;
-                  
+
             &lt;xsd:element name="TaxType" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="CurRate" type="xsd:decimal"/&gt;
-                  
+
             &lt;xsd:element name="RemittanceCode" type="aval:OpenEnum_Type"/&gt;
-                  
+
             &lt;xsd:element name="Extensions" type="xsd:long"/&gt;
-                  
+
             &lt;xsd:element name="CampainId" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="Length" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="MediaType" type="aval:OpenEnum_Type"/&gt;
-                  
+
             &lt;xsd:element name="CentralBankDesc" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="ActivationTime" type="xsd:long"/&gt;
-                  
+
             &lt;xsd:element name="BillingAcct" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="ServerStatusDesc" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="PointAcctInstal" type="xsd:long"/&gt;
-                  
+
             &lt;xsd:element name="PmtAuthCount" type="xsd:long"/&gt;
-                  
+
             &lt;xsd:element name="AgentId" type="aval:Identifier_Type"/&gt;
-                  
+
             &lt;xsd:element name="ClientDt" type="xsd:dateTime"/&gt;
-                  
+
             &lt;xsd:element name="PostingSessionId" type="aval:Identifier_Type"/&gt;
-                  
+
             &lt;xsd:element name="CustLoginId" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="StmtRunningBal" type="aval:CurrencyAmount_Type"/&gt;
-                  
+
             &lt;xsd:element name="AlertStatus" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="Entpr" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="IdentPrevServiceCode" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="KeyAcctId" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="CurAmt" type="aval:CurrencyAmount_Type"/&gt;
-                  
+
             &lt;xsd:element name="CausalId" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="NumberOfInstalments" type="xsd:long"/&gt;
-                  
+
             &lt;xsd:element name="RecXferId" type="aval:Identifier_Type"/&gt;
-                  
+
             &lt;xsd:element name="CategoryCode" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="SvcId" type="aval:Identifier_Type"/&gt;
-                  
+
             &lt;xsd:element name="TaxCode" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="CurConvertRule" type="aval:OpenEnum_Type"/&gt;
-                  
+
             &lt;xsd:element name="Pin" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="ExpDt" type="xsd:dateTime"/&gt;
-                  
+
             &lt;xsd:element name="Format" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="ChanelName" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="CardVrfyData" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="BillDt" type="xsd:dateTime"/&gt;
-                  
+
             &lt;xsd:element name="SeqNum" type="xsd:long"/&gt;
-                  
+
             &lt;xsd:element name="DeliveryLocationType" type="aval:OpenEnum_Type"/&gt;
-                  
+
             &lt;xsd:element name="InvoiceNum" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="PhoneType" type="aval:OpenEnum_Type"/&gt;
-                  
+
             &lt;xsd:element name="HighCurAmt" type="aval:CurrencyAmount_Type"/&gt;
-                  
+
             &lt;xsd:element name="ClientBusinessDt" type="xsd:dateTime"/&gt;
-                  
+
             &lt;xsd:element name="AddrType" type="aval:OpenEnum_Type"/&gt;
-                  
+
             &lt;xsd:element name="OwnerPercent" type="xsd:decimal"/&gt;
-                  
+
             &lt;xsd:element name="BillerType" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="POSOutCapabilities" type="aval:OpenEnum_Type"/&gt;
-                  
+
             &lt;xsd:element name="StatusModBy" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="EntityCode" type="aval:Identifier_Type"/&gt;
-                  
+
             &lt;xsd:element name="IssDt" type="xsd:dateTime"/&gt;
-                  
+
             &lt;xsd:element name="NotifyReqd" type="xsd:boolean"/&gt;
-                  
+
             &lt;xsd:element name="NotificationStatusCode" type="aval:OpenEnum_Type"/&gt;
-                  
+
             &lt;xsd:element name="IdentConditions" type="aval:OpenEnum_Type"/&gt;
-                  
+
             &lt;xsd:element name="RecId" type="xsd:long"/&gt;
-                  
+
             &lt;xsd:element name="ReturnInd" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="CryptType" type="aval:OpenEnum_Type"/&gt;
-                  
+
             &lt;xsd:element name="SendNotificationDt" type="xsd:dateTime"/&gt;
-                  
+
             &lt;xsd:element name="Reference" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="ConfirmDouble" type="xsd:boolean"/&gt;
-                  
+
             &lt;xsd:element name="Memo" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="AgrmId" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="BSPCode" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="Environment" type="aval:OpenEnum_Type"/&gt;
-                  
+
             &lt;xsd:element name="AcctType" type="aval:OpenEnum_Type"/&gt;
-                  
+
             &lt;xsd:element name="BankId" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="EntityName" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="IncToken" type="xsd:boolean"/&gt;
-                  
+
             &lt;xsd:element name="XferStatusCode" type="aval:OpenEnum_Type"/&gt;
-                  
+
             &lt;xsd:element name="Phone" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="ChkNum" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="GovIssueIdentType" type="aval:OpenEnum_Type"/&gt;
-                  
+
             &lt;xsd:element name="OverDraftDays" type="xsd:long"/&gt;
-                  
+
             &lt;xsd:element name="Nickname" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="StatusCode" type="xsd:long"/&gt;
-                  
+
             &lt;xsd:element name="NotificationId" type="xsd:long"/&gt;
-                  
+
             &lt;xsd:element name="GroupName" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="IPAddr" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="POSLocation" type="aval:OpenEnum_Type"/&gt;
-                  
+
             &lt;xsd:element name="NotificationDt" type="xsd:dateTime"/&gt;
-                  
+
             &lt;xsd:element name="Neighborhood" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="PSSNetworkType" type="aval:OpenEnum_Type"/&gt;
-                  
+
             &lt;xsd:element name="CreatedDt" type="xsd:dateTime"/&gt;
-                  
+
             &lt;xsd:element name="BalType" type="aval:OpenEnum_Type"/&gt;
-                  
+
             &lt;xsd:element name="PropertyId" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="SelRangeDueDt" type="aval:SelRangeDt_Type"/&gt;
-                  
+
             &lt;xsd:element name="HorizPosit" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="UpdateDt" type="xsd:dateTime"/&gt;
-                  
+
             &lt;xsd:element name="EffDt" type="xsd:dateTime"/&gt;
-                  
+
             &lt;xsd:element name="FieldValue" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="OrigCurAmt" type="aval:CurrencyAmount_Type"/&gt;
-                  
+
             &lt;xsd:element name="BranchName" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="AcctId" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="IncHistory" type="xsd:boolean"/&gt;
-                  
+
             &lt;xsd:element name="LoanStatusCode" type="aval:OpenEnum_Type"/&gt;
-                  
+
             &lt;xsd:element name="PaymentForm" type="aval:OpenEnum_Type"/&gt;
-                  
+
             &lt;xsd:element name="ViewDtlPref" type="aval:OpenEnum_Type"/&gt;
-                  
+
             &lt;xsd:element name="OriginatorType" type="xsd:long"/&gt;
-                  
+
             &lt;xsd:element name="Language" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:complexType name="IndustId_Type"&gt;
-                		
+
                 &lt;xsd:sequence&gt;
-                    			
+
                     &lt;xsd:element minOccurs="0" ref="avalv2:Org"/&gt;
-                    			
+
                     &lt;xsd:element minOccurs="0" ref="aval:IndustNum"/&gt;
-                    		
+
                 &lt;/xsd:sequence&gt;
-                	
+
             &lt;/xsd:complexType&gt;
-                  
+
             &lt;xsd:element name="IndustId" type="avalv2:IndustId_Type"/&gt;
-                  
+
             &lt;xsd:complexType name="OrgInfo_Type"&gt;
-                		
+
                 &lt;xsd:sequence&gt;
-                    			
+
                     &lt;xsd:element minOccurs="0" ref="avalv2:IndustId"/&gt;
-                    			
+
                     &lt;xsd:element minOccurs="0" ref="avalv2:Name"/&gt;
-                    			
+
                     &lt;xsd:element minOccurs="0" ref="aval:LegalName"/&gt;
-                    			
+
                     &lt;xsd:element maxOccurs="unbounded" minOccurs="0" ref="avalv2:CompositeContactInfo"/&gt;
-                    			
+
                     &lt;xsd:element minOccurs="0" ref="aval:TINInfo"/&gt;
-                    			
+
                     &lt;xsd:element minOccurs="0" ref="avalv2:EstablishDt"/&gt;
-                    			
+
                     &lt;xsd:element minOccurs="0" ref="avalv2:NumEmployees"/&gt;
-                    			
+
                     &lt;xsd:element maxOccurs="unbounded" minOccurs="0" ref="aval:ContributionData"/&gt;
-                    			
+
                     &lt;xsd:element minOccurs="0" ref="aval:Abbr"/&gt;
-                    			
+
                     &lt;xsd:element minOccurs="0" ref="aval:Image"/&gt;
-                    			
+
                     &lt;xsd:element minOccurs="0" ref="avalv2:ImageURL"/&gt;
-                    		
+
                 &lt;/xsd:sequence&gt;
-                	
+
             &lt;/xsd:complexType&gt;
-                  
+
             &lt;xsd:element name="OrgInfo" type="avalv2:OrgInfo_Type"/&gt;
-                  
+
             &lt;xsd:element name="CompositeContactInfo" type="avalv2:CompositeContactInfo_Type"/&gt;
-                  
+
             &lt;xsd:complexType name="CompositeContactInfo_Type"&gt;
-                		
+
                 &lt;xsd:sequence&gt;
-                    			
+
                     &lt;xsd:element minOccurs="0" ref="aval:ContactInfoType"/&gt;
-                    			
+
                     &lt;xsd:element minOccurs="0" ref="aval:ContactInfo"/&gt;
-                    		
+
                 &lt;/xsd:sequence&gt;
-                	
+
             &lt;/xsd:complexType&gt;
-                  
+
             &lt;xsd:complexType name="CustInfo_Type"&gt;
-                		
+
                 &lt;xsd:sequence&gt;
-                    			
+
                     &lt;xsd:element minOccurs="0" ref="aval:ContactInfo"/&gt;
-                    			
+
                     &lt;xsd:element minOccurs="0" ref="aval:CustId"/&gt;
-                    			
+
                     &lt;xsd:element minOccurs="0" ref="aval:CustPswd"/&gt;
-                    			
+
                     &lt;xsd:element minOccurs="0" ref="avalv2:CustType"/&gt;
-                    			
+
                     &lt;xsd:element minOccurs="0" ref="avalv2:OrgInfo"/&gt;
-                    			
+
                     &lt;xsd:element minOccurs="0" ref="aval:UserId"/&gt;
-                    			
+
                     &lt;xsd:element minOccurs="0" ref="avalv2:PayeeControl"/&gt;
-                    			
+
                     &lt;xsd:element minOccurs="0" ref="aval:BillingPlan"/&gt;
-                    			
+
                     &lt;xsd:element minOccurs="0" ref="aval:CustName"/&gt;
-                    		
+
                 &lt;/xsd:sequence&gt;
-                	
+
             &lt;/xsd:complexType&gt;
-                  
+
             &lt;xsd:element name="CustInfo" type="avalv2:CustInfo_Type"/&gt;
-                
+
         &lt;/xsd:schema&gt;
-                
+
         &lt;xsd:schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:aval="urn://grupoaval.com/xsd/ifx/" xmlns:aval2="urn://grupoaval.com/xsd/ifx/v2" xmlns:aval3="urn://grupoaval.com/xsd/ifx/v3" xmlns:avalv2="urn://grupoaval.com/xsd/ifx/v2/" xmlns:avalv3="urn://grupoaval.com/xsd/ifx/v3/" attributeFormDefault="unqualified" elementFormDefault="unqualified" targetNamespace="urn://grupoaval.com/xsd/ifx/v3/"&gt;
-                  
+
             &lt;xsd:import namespace="urn://grupoaval.com/xsd/ifx/v2/"/&gt;
-                  
+
             &lt;xsd:import namespace="urn://grupoaval.com/xsd/ifx/"/&gt;
-                  
+
             &lt;xsd:element name="SecondLastName" type="avalv3:SecondLastName_Type"/&gt;
-                  
+
             &lt;xsd:simpleType name="SecondLastName_Type"&gt;
-                		
+
                 &lt;xsd:restriction base="xsd:string"&gt;
 		&lt;/xsd:restriction&gt;
-                	
+
             &lt;/xsd:simpleType&gt;
-                  
+
             &lt;xsd:element name="LevelEducation" type="xsd:long"/&gt;
-                  
+
             &lt;xsd:element name="TrnSrc" type="aval:OpenEnum_Type"/&gt;
-                  
+
             &lt;xsd:element name="BillType" type="aval:OpenEnum_Type"/&gt;
-                  
+
             &lt;xsd:element name="OrgDt" type="xsd:dateTime"/&gt;
-                  
+
             &lt;xsd:element name="FileKey" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="StatementInd" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="CardNumber" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="MainDocType" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="PartyAcctRelDesc" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="ChargeRegulation" type="aval:OpenEnum_Type"/&gt;
-                  
+
             &lt;xsd:element name="AllowsMultipleProducts" type="xsd:boolean"/&gt;
-                  
+
             &lt;xsd:element name="PmtRefId" type="aval:Identifier_Type"/&gt;
-                  
+
             &lt;xsd:element name="Address" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="TINType" type="aval:OpenEnum_Type"/&gt;
-                  
+
             &lt;xsd:element name="AcctCurrency" type="xsd:long"/&gt;
-                  
+
             &lt;xsd:element name="PrenoteReqd" type="xsd:boolean"/&gt;
-                  
+
             &lt;xsd:element name="IdentType" type="aval:OpenEnum_Type"/&gt;
-                  
+
             &lt;xsd:element name="AuthFactor" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="CityExp" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="MaxRec" type="xsd:long"/&gt;
-                  
+
             &lt;xsd:element name="OwnerInd" type="xsd:boolean"/&gt;
-                  
+
             &lt;xsd:element name="DeliveryMessage" type="xsd:boolean"/&gt;
-                  
+
             &lt;xsd:element name="ImageURL" type="aval:URL_Type"/&gt;
-                  
+
             &lt;xsd:element name="LoanName" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="RemitId" type="aval:Identifier_Type"/&gt;
-                  
+
             &lt;xsd:element name="MediaNum" type="aval:Identifier_Type"/&gt;
-                  
+
             &lt;xsd:element name="Required" type="xsd:boolean"/&gt;
-                  
+
             &lt;xsd:element name="ServiceCode" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="ArtWorkId" type="xsd:long"/&gt;
-                  
+
             &lt;xsd:element name="FileDesc" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="IntRate" type="xsd:decimal"/&gt;
-                  
+
             &lt;xsd:element name="BirthDt" type="xsd:dateTime"/&gt;
-                  
+
             &lt;xsd:element name="BillStatusCode" type="aval:OpenEnum_Type"/&gt;
-                  
+
             &lt;xsd:element name="Name" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="FileHash" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="Pswd" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="ClosedDt" type="xsd:dateTime"/&gt;
-                  
+
             &lt;xsd:element name="OpenDt" type="xsd:dateTime"/&gt;
-                  
+
             &lt;xsd:element name="RemittanceCode" type="aval:OpenEnum_Type"/&gt;
-                  
+
             &lt;xsd:element name="TypeContract" type="xsd:long"/&gt;
-                  
+
             &lt;xsd:element name="CampainId" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="CentralBankDesc" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="Entpr" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="PmtAuthCount" type="xsd:long"/&gt;
-                  
+
             &lt;xsd:element name="AgentId" type="aval:Identifier_Type"/&gt;
-                  
+
             &lt;xsd:element name="Kinship" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="Assets" type="xsd:long"/&gt;
-                  
+
             &lt;xsd:element name="SvcId" type="aval:Identifier_Type"/&gt;
-                  
+
             &lt;xsd:element name="ChanelName" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="IdentPrevServiceCode" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="PostingSessionId" type="aval:Identifier_Type"/&gt;
-                  
+
             &lt;xsd:element name="CustLoginId" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="KeyAcctId" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="RecXferId" type="aval:Identifier_Type"/&gt;
-                  
+
             &lt;xsd:element name="Format" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="SeqNum" type="xsd:long"/&gt;
-                  
+
             &lt;xsd:element name="AcctCodType" type="aval:OpenEnum_Type"/&gt;
-                  
+
             &lt;xsd:element name="ExpDt" type="xsd:dateTime"/&gt;
-                  
+
             &lt;xsd:element name="InvoiceNum" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="CurConvertRule" type="aval:OpenEnum_Type"/&gt;
-                  
+
             &lt;xsd:element name="OtherIncome" type="aval:CurrencyAmount_Type"/&gt;
-                  
+
             &lt;xsd:element name="ReturnInd" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="BillDt" type="xsd:dateTime"/&gt;
-                  
+
             &lt;xsd:element name="StatusModBy" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="HighCurAmt" type="aval:CurrencyAmount_Type"/&gt;
-                  
+
             &lt;xsd:element name="EntityCode" type="aval:Identifier_Type"/&gt;
-                  
+
             &lt;xsd:element name="NotificationStatusCode" type="aval:OpenEnum_Type"/&gt;
-                  
+
             &lt;xsd:element name="ClientBusinessDt" type="xsd:dateTime"/&gt;
-                  
+
             &lt;xsd:element name="NotifyReqd" type="xsd:boolean"/&gt;
-                  
+
             &lt;xsd:element name="Reference" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="CryptType" type="aval:OpenEnum_Type"/&gt;
-                  
+
             &lt;xsd:element name="Memo" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="XferStatusCode" type="aval:OpenEnum_Type"/&gt;
-                  
+
             &lt;xsd:element name="BSPCode" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="Nickname" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="HabeasDataInd" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="Phone" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="UpdateDt" type="xsd:dateTime"/&gt;
-                  
+
             &lt;xsd:element name="AcctType" type="aval:OpenEnum_Type"/&gt;
-                  
+
             &lt;xsd:element name="IPAddr" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="POSLocation" type="aval:OpenEnum_Type"/&gt;
-                  
+
             &lt;xsd:element name="PSSNetworkType" type="aval:OpenEnum_Type"/&gt;
-                  
+
             &lt;xsd:element name="HorizPosit" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="OTPValue" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="SelRangeDueDt" type="aval:SelRangeDt_Type"/&gt;
-                  
+
             &lt;xsd:element name="EffDt" type="xsd:dateTime"/&gt;
-                  
+
             &lt;xsd:element name="LoanStatusCode" type="aval:OpenEnum_Type"/&gt;
-                  
+
             &lt;xsd:element name="JobTitle" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="PreaproveInd" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="SPRefId" type="aval:Identifier_Type"/&gt;
-                  
+
             &lt;xsd:element name="BalType" type="aval:OpenEnum_Type"/&gt;
-                  
+
             &lt;xsd:element name="IncHistory" type="xsd:boolean"/&gt;
-                  
+
             &lt;xsd:element name="StartSecObjId" type="aval:Identifier_Type"/&gt;
-                  
+
             &lt;xsd:element name="FileType" type="aval:OpenEnum_Type"/&gt;
-                  
+
             &lt;xsd:element name="PmtType" type="aval:OpenEnum_Type"/&gt;
-                  
+
             &lt;xsd:element name="OriginatorType" type="xsd:long"/&gt;
-                  
+
             &lt;xsd:element name="ChkImgFront" type="aval:Binary_Type"/&gt;
-                  
+
             &lt;xsd:element name="NoteNum" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="PeriodType" type="aval:OpenEnum_Type"/&gt;
-                  
+
             &lt;xsd:element name="CorrectAction" type="aval:OpenEnum_Type"/&gt;
-                  
+
             &lt;xsd:element name="RowStatusDesc" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="TrnType" type="aval:OpenEnum_Type"/&gt;
-                  
+
             &lt;xsd:element name="BinLength" type="xsd:long"/&gt;
-                  
+
             &lt;xsd:element name="OrgIdNum" type="aval:Identifier_Type"/&gt;
-                  
+
             &lt;xsd:element name="OptPmtCodServ" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="Salary" type="xsd:long"/&gt;
-                  
+
             &lt;xsd:element name="CardType" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="MatchedRec" type="xsd:long"/&gt;
-                  
+
             &lt;xsd:element name="PartyAcctRelId" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="ChkAcceptStatusCode" type="aval:OpenEnum_Type"/&gt;
-                  
+
             &lt;xsd:element name="Portfolio" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="Amt" type="xsd:decimal"/&gt;
-                  
+
             &lt;xsd:element name="DaysCycle" type="xsd:long"/&gt;
-                  
+
             &lt;xsd:element name="Token" type="aval:Identifier_Type"/&gt;
-                  
+
             &lt;xsd:element name="BalanceAcct" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="PrimaryAcct" type="xsd:boolean"/&gt;
-                  
+
             &lt;xsd:element name="LastModCustInfoDt" type="xsd:date"/&gt;
-                  
+
             &lt;xsd:element name="MaritalStatus" type="aval:OpenEnum_Type"/&gt;
-                  
+
             &lt;xsd:element name="Message" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="OwnerPercent" type="xsd:decimal"/&gt;
-                  
+
             &lt;xsd:element name="ImmediatePmt" type="xsd:boolean"/&gt;
-                  
+
             &lt;xsd:element name="DeliveryMethod" type="aval:OpenEnum_Type"/&gt;
-                  
+
             &lt;xsd:element name="RevReasonCode" type="aval:OpenEnum_Type"/&gt;
-                  
+
             &lt;xsd:element name="LoanPmtComplement" type="aval:OpenEnum_Type"/&gt;
-                  
+
             &lt;xsd:element name="MediaType" type="aval:OpenEnum_Type"/&gt;
-                  
+
             &lt;xsd:element name="CheckRout" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="SessKey" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="DocumentSignature" type="xsd:long"/&gt;
-                  
+
             &lt;xsd:element name="FileId" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="DepAcctIdFrom" type="aval:DepAcctIdFrom_Type"/&gt;
-                  
+
             &lt;xsd:element name="FileControlId" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="BillSummAmtCode" type="aval:OpenEnum_Type"/&gt;
-                  
+
             &lt;xsd:element name="CityBirth" type="xsd:long"/&gt;
-                  
+
             &lt;xsd:element name="NetworkOwner" type="aval:OpenEnum_Type"/&gt;
-                  
+
             &lt;xsd:element name="TrnNumber" type="xsd:long"/&gt;
-                  
+
             &lt;xsd:element name="CustType" type="aval:OpenEnum_Type"/&gt;
-                  
+
             &lt;xsd:element name="CloseDt" type="xsd:dateTime"/&gt;
-                  
+
             &lt;xsd:element name="PmtCodServ" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="OptDocType" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="PartnerInd" type="xsd:long"/&gt;
-                  
+
             &lt;xsd:element name="StateProvName" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="CentralBankId" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="NIE" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="AgentType" type="aval:OpenEnum_Type"/&gt;
-                  
+
             &lt;xsd:element name="PmtAuthId" type="aval:Identifier_Type"/&gt;
-                  
+
             &lt;xsd:element name="TrnName" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="TaxId" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="Income" type="aval:CurrencyAmount_Type"/&gt;
-                  
+
             &lt;xsd:element name="Type" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="POSVerifyCapability" type="aval:OpenEnum_Type"/&gt;
-                  
+
             &lt;xsd:element name="IdentProgramId" type="aval:Identifier_Type"/&gt;
-                  
+
             &lt;xsd:element name="CustPermId" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="LastSettlementDt" type="xsd:dateTime"/&gt;
-                  
+
             &lt;xsd:element name="RecXferMod" type="xsd:boolean"/&gt;
-                  
+
             &lt;xsd:element name="IdentVerifyEntity" type="aval:OpenEnum_Type"/&gt;
-                  
+
             &lt;xsd:element name="SumForm" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="BillPackCode" type="xsd:long"/&gt;
-                  
+
             &lt;xsd:element name="ServerStatusCode" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="ExtBalType" type="aval:OpenEnum_Type"/&gt;
-                  
+
             &lt;xsd:element name="PointAcctSum" type="xsd:long"/&gt;
-                  
+
             &lt;xsd:element name="RequestCode" type="xsd:long"/&gt;
-                  
+
             &lt;xsd:element name="BillId" type="aval:UUID_Type"/&gt;
-                  
+
             &lt;xsd:element name="StatusOverDraft" type="aval:OpenEnum_Type"/&gt;
-                  
+
             &lt;xsd:element name="Code" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="CausalDesc" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="ClientCreateDt" type="xsd:dateTime"/&gt;
-                  
+
             &lt;xsd:element name="NotifyWilling" type="xsd:boolean"/&gt;
-                  
+
             &lt;xsd:element name="AcctCountable" type="xsd:boolean"/&gt;
-                  
+
             &lt;xsd:element name="CSPRefId" type="aval:Identifier_Type"/&gt;
-                  
+
             &lt;xsd:element name="BankShortCode" type="aval:OpenEnum_Type"/&gt;
-                  
+
             &lt;xsd:element name="DeliveryDays" type="xsd:long"/&gt;
-                  
+
             &lt;xsd:element name="BSPName" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="DaysBefAft" type="xsd:long"/&gt;
-                  
+
             &lt;xsd:element name="PhoneNumber" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="QuestionCode" type="xsd:long"/&gt;
-                  
+
             &lt;xsd:element name="Discount" type="xsd:long"/&gt;
-                  
+
             &lt;xsd:element name="Active" type="xsd:boolean"/&gt;
-                  
+
             &lt;xsd:element name="AgrmType" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="HistRetentionDays" type="xsd:long"/&gt;
-                  
+
             &lt;xsd:element name="CurDt" type="xsd:dateTime"/&gt;
-                  
+
             &lt;xsd:element name="POSOperation" type="aval:OpenEnum_Type"/&gt;
-                  
+
             &lt;xsd:element name="IsInvGen" type="xsd:boolean"/&gt;
-                  
+
             &lt;xsd:element name="Rate" type="xsd:decimal"/&gt;
-                  
+
             &lt;xsd:element name="VertPosit" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="Validity" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="SelRangePaidDt" type="aval:SelRangeDt_Type"/&gt;
-                  
+
             &lt;xsd:element name="LoanId" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="EndDt" type="xsd:dateTime"/&gt;
-                  
+
             &lt;xsd:element name="EmployeeInd" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="Commercial" type="xsd:long"/&gt;
-                  
+
             &lt;xsd:element name="StartDt" type="xsd:dateTime"/&gt;
-                  
+
             &lt;xsd:element name="BankAcctStatusCode" type="aval:OpenEnum_Type"/&gt;
-                  
+
             &lt;xsd:element name="IncSummary" type="xsd:boolean"/&gt;
-                  
+
             &lt;xsd:element name="EndSecObjId" type="aval:Identifier_Type"/&gt;
-                  
+
             &lt;xsd:element name="ForExDealId" type="aval:Identifier_Type"/&gt;
-                  
+
             &lt;xsd:element name="PayeeNotification" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="ChkIssueStatusCode" type="aval:OpenEnum_Type"/&gt;
-                  
+
             &lt;xsd:element name="OrigIssueDt" type="xsd:dateTime"/&gt;
-                  
+
             &lt;xsd:element name="PeriodCode" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="NoteType" type="aval:OpenEnum_Type"/&gt;
-                  
+
             &lt;xsd:element name="Count" type="xsd:long"/&gt;
-                  
+
             &lt;xsd:element name="FieldLabel" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="Version" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="BranchId" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="OrgPhone" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="Reverse" type="xsd:boolean"/&gt;
-                  
+
             &lt;xsd:element name="Experience" type="xsd:long"/&gt;
-                  
+
             &lt;xsd:element name="CardBrand" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="MaxAmtDue" type="aval:CurrencyAmount_Type"/&gt;
-                  
+
             &lt;xsd:element name="PartyAcctRelType" type="aval:OpenEnum_Type"/&gt;
-                  
+
             &lt;xsd:element name="POSAttended" type="xsd:boolean"/&gt;
-                  
+
             &lt;xsd:element name="ApprovalId" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="CategCode" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="TotalCurAmt" type="aval:CurrencyAmount_Type"/&gt;
-                  
+
             &lt;xsd:element name="IsPePInd" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="PSSCATSecLevel" type="aval:OpenEnum_Type"/&gt;
-                  
+
             &lt;xsd:element name="StatusCustInfo" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="DepAcctStmtId" type="aval:Identifier_Type"/&gt;
-                  
+
             &lt;xsd:element name="MinAmtDue" type="aval:CurrencyAmount_Type"/&gt;
-                  
+
             &lt;xsd:element name="PaidCurAmt" type="aval:CurrencyAmount_Type"/&gt;
-                  
+
             &lt;xsd:element name="RqUID" type="aval:UUID_Type"/&gt;
-                  
+
             &lt;xsd:element name="ImmediateXfer" type="xsd:boolean"/&gt;
-                  
+
             &lt;xsd:element name="LoanPmtType" type="aval:OpenEnum_Type"/&gt;
-                  
+
             &lt;xsd:element name="RegistrationId" type="aval:Identifier_Type"/&gt;
-                  
+
             &lt;xsd:element name="ValueStart" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="SettlementMethod" type="aval:OpenEnum_Type"/&gt;
-                  
+
             &lt;xsd:element name="Term" type="aval:Term_Type"/&gt;
-                  
+
             &lt;xsd:element name="FileName" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="RowStatus" type="aval:OpenEnum_Type"/&gt;
-                  
+
             &lt;xsd:element name="CountryBirth" type="xsd:long"/&gt;
-                  
+
             &lt;xsd:element name="ChkBkId" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="NextDt" type="xsd:dateTime"/&gt;
-                  
+
             &lt;xsd:element name="SecObjStatusCode" type="aval:OpenEnum_Type"/&gt;
-                  
+
             &lt;xsd:element name="TotalRows" type="xsd:long"/&gt;
-                  
+
             &lt;xsd:element name="CompositeCurAmtType" type="aval:OpenEnum_Type"/&gt;
-                  
+
             &lt;xsd:element name="PmtEntityServ" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="OptOrgIdNum" type="aval:Identifier_Type"/&gt;
-                  
+
             &lt;xsd:element name="BillSummAmtId" type="aval:Identifier_Type"/&gt;
-                  
+
             &lt;xsd:element name="Percent" type="xsd:long"/&gt;
-                  
+
             &lt;xsd:element name="CityName" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="CertCode" type="aval:OpenEnum_Type"/&gt;
-                  
+
             &lt;xsd:element name="Aging" type="aval:OpenEnum_Type"/&gt;
-                  
+
             &lt;xsd:element name="PmtFormat" type="aval:OpenEnum_Type"/&gt;
-                  
+
             &lt;xsd:element name="PayeeType" type="aval:OpenEnum_Type"/&gt;
-                  
+
             &lt;xsd:element name="AuthInd" type="xsd:boolean"/&gt;
-                  
+
             &lt;xsd:element name="InternationalTrnInd" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="TaxType" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="PrcDt" type="xsd:dateTime"/&gt;
-                  
+
             &lt;xsd:element name="IdentReadMethod" type="aval:OpenEnum_Type"/&gt;
-                  
+
             &lt;xsd:element name="ActivationTime" type="xsd:long"/&gt;
-                  
+
             &lt;xsd:element name="DaysCall" type="xsd:long"/&gt;
-                  
+
             &lt;xsd:element name="LastTrnDt" type="xsd:dateTime"/&gt;
-                  
+
             &lt;xsd:element name="RefId" type="aval:Identifier_Type"/&gt;
-                  
+
             &lt;xsd:element name="IdentVerifyMethod" type="aval:OpenEnum_Type"/&gt;
-                  
+
             &lt;xsd:element name="Length" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="RequiredGMF" type="xsd:long"/&gt;
-                  
+
             &lt;xsd:element name="ServerStatusDesc" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="Extensions" type="xsd:long"/&gt;
-                  
+
             &lt;xsd:element name="PointAcctInstal" type="xsd:long"/&gt;
-                  
+
             &lt;xsd:element name="RestrictedCreditListInd" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="BillingAcct" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="StmtRunningBal" type="aval:CurrencyAmount_Type"/&gt;
-                  
+
             &lt;xsd:element name="AlertStatus" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="CausalId" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="ClientDt" type="xsd:dateTime"/&gt;
-                  
+
             &lt;xsd:element name="CurAmt" type="aval:CurrencyAmount_Type"/&gt;
-                  
+
             &lt;xsd:element name="NumberOfInstalments" type="xsd:long"/&gt;
-                  
+
             &lt;xsd:element name="TaxCode" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="Dependents" type="xsd:long"/&gt;
-                  
+
             &lt;xsd:element name="Pin" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="DeliveryLocationType" type="aval:OpenEnum_Type"/&gt;
-                  
+
             &lt;xsd:element name="CardVrfyData" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="BillerType" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="PhoneType" type="aval:OpenEnum_Type"/&gt;
-                  
+
             &lt;xsd:element name="QuestionDesc" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="Rental" type="xsd:long"/&gt;
-                  
+
             &lt;xsd:element name="AddrType" type="aval:OpenEnum_Type"/&gt;
-                  
+
             &lt;xsd:element name="AgrmId" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="POSOutCapabilities" type="aval:OpenEnum_Type"/&gt;
-                  
+
             &lt;xsd:element name="IdentConditions" type="aval:OpenEnum_Type"/&gt;
-                  
+
             &lt;xsd:element name="CurRate" type="xsd:decimal"/&gt;
-                  
+
             &lt;xsd:element name="IssDt" type="xsd:dateTime"/&gt;
-                  
+
             &lt;xsd:element name="RecId" type="xsd:long"/&gt;
-                  
+
             &lt;xsd:element name="ConfirmDouble" type="xsd:boolean"/&gt;
-                  
+
             &lt;xsd:element name="SendNotificationDt" type="xsd:dateTime"/&gt;
-                  
+
             &lt;xsd:element name="Period" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="EntityName" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="Environment" type="aval:OpenEnum_Type"/&gt;
-                  
+
             &lt;xsd:element name="Neighborhood" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="State" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="BankId" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="StatusCode" type="xsd:long"/&gt;
-                  
+
             &lt;xsd:element name="IncToken" type="xsd:boolean"/&gt;
-                  
+
             &lt;xsd:element name="GroupName" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="GovIssueIdentType" type="aval:OpenEnum_Type"/&gt;
-                  
+
             &lt;xsd:element name="ChkNum" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="NotificationDt" type="xsd:dateTime"/&gt;
-                  
+
             &lt;xsd:element name="OverDraftDays" type="xsd:long"/&gt;
-                  
+
             &lt;xsd:element name="NotificationId" type="xsd:long"/&gt;
-                  
+
             &lt;xsd:element name="PropertyId" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="CreatedDt" type="xsd:dateTime"/&gt;
-                  
+
             &lt;xsd:element name="FieldValue" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="ViewDtlPref" type="aval:OpenEnum_Type"/&gt;
-                  
+
             &lt;xsd:element name="BranchName" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="OrigCurAmt" type="aval:CurrencyAmount_Type"/&gt;
-                  
+
             &lt;xsd:element name="AcctId" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="Language" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="ActCode" type="xsd:long"/&gt;
-                  
+
             &lt;xsd:element name="PaymentForm" type="aval:OpenEnum_Type"/&gt;
-                  
+
             &lt;xsd:element name="InquireStatus" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="POSCaptureCapability" type="xsd:boolean"/&gt;
-                  
+
             &lt;xsd:element name="UF_IndicLine" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="PSSMsgEncryption" type="aval:OpenEnum_Type"/&gt;
-                  
+
             &lt;xsd:element name="IsFATCAInd" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="Desc" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="CustInfoStatusCode" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="SecObjId" type="aval:Identifier_Type"/&gt;
-                  
+
             &lt;xsd:element name="EmploymentStatus" type="aval:OpenEnum_Type"/&gt;
-                  
+
             &lt;xsd:element name="LowCurAmt" type="aval:CurrencyAmount_Type"/&gt;
-                  
+
             &lt;xsd:element name="IncCounts" type="xsd:boolean"/&gt;
-                  
+
             &lt;xsd:element name="SecurityCode" type="aval:Identifier_Type"/&gt;
-                  
+
             &lt;xsd:element name="AvailableImage" type="xsd:boolean"/&gt;
-                  
+
             &lt;xsd:element name="SpecialHandling" type="aval:OpenEnum_Type"/&gt;
-                  
+
             &lt;xsd:element name="ValueMax" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="ProductTermination" type="xsd:long"/&gt;
-                  
+
             &lt;xsd:element name="FileRqDt" type="xsd:dateTime"/&gt;
-                  
+
             &lt;xsd:element name="RowId" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="ChkBkType" type="aval:OpenEnum_Type"/&gt;
-                  
+
             &lt;xsd:element name="NoBillerMainReference" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="MaxCurAmt" type="aval:CurrencyAmount_Type"/&gt;
-                  
+
             &lt;xsd:element name="ActionType" type="aval:OpenEnum_Type"/&gt;
-                  
+
             &lt;xsd:element name="RejectedRows" type="xsd:decimal"/&gt;
-                  
+
             &lt;xsd:element name="ContactType" type="aval:OpenEnum_Type"/&gt;
-                  
+
             &lt;xsd:element name="TransactionNumber" type="xsd:long"/&gt;
-                  
+
             &lt;xsd:element name="Org" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="BillSummAmtType" type="aval:OpenEnum_Type"/&gt;
-                  
+
             &lt;xsd:element name="PmtDateServ" type="xsd:dateTime"/&gt;
-                  
+
             &lt;xsd:element name="ReferenceType" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="TerminalId" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="MinCurAmt" type="aval:CurrencyAmount_Type"/&gt;
-                  
+
             &lt;xsd:element name="PaidDt" type="xsd:dateTime"/&gt;
-                  
+
             &lt;xsd:element name="Channel" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="AllocateAllowed" type="xsd:boolean"/&gt;
-                  
+
             &lt;xsd:element name="PmtMethod" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="NoBillerEntityCode" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="AcctCurrencyForeignInd" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="IdentServiceCode" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="TerminalType" type="aval:OpenEnum_Type"/&gt;
-                  
+
             &lt;xsd:element name="PrefetchURL" type="aval:URL_Type"/&gt;
-                  
+
             &lt;xsd:element name="UnitTime" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="DaysToEPost" type="xsd:long"/&gt;
-                  
+
             &lt;xsd:element name="RemainRec" type="xsd:boolean"/&gt;
-                  
+
             &lt;xsd:element name="IdentVerifyResults" type="aval:OpenEnum_Type"/&gt;
-                  
+
             &lt;xsd:element name="LiquidationMethod" type="aval:OpenEnum_Type"/&gt;
-                  
+
             &lt;xsd:element name="HelpMsg" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="CondHandlingCode" type="xsd:long"/&gt;
-                  
+
             &lt;xsd:element name="ServerTerminalSeqId" type="aval:Identifier_Type"/&gt;
-                  
+
             &lt;xsd:element name="FeeType" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="PointAcctCount" type="xsd:long"/&gt;
-                  
+
             &lt;xsd:element name="Gender" type="aval:OpenEnum_Type"/&gt;
-                  
+
             &lt;xsd:element name="BillPmtStatusCode" type="aval:OpenEnum_Type"/&gt;
-                  
+
             &lt;xsd:element name="PayeeControl" type="xsd:boolean"/&gt;
-                  
+
             &lt;xsd:element name="CausalType" type="aval:OpenEnum_Type"/&gt;
-                  
+
             &lt;xsd:element name="ClientTerminalSeqId" type="aval:Identifier_Type"/&gt;
-                  
+
             &lt;xsd:element name="NumEmployees" type="xsd:long"/&gt;
-                  
+
             &lt;xsd:element name="TaxName" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="CustCategory" type="xsd:long"/&gt;
-                  
+
             &lt;xsd:element name="BankSerial" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="Category" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="EntprId" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="PmtAgreementId" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="QuestionAnswer" type="xsd:long"/&gt;
-                  
+
             &lt;xsd:element name="Expenses" type="xsd:long"/&gt;
-                  
+
             &lt;xsd:element name="AdjType" type="aval:OpenEnum_Type"/&gt;
-                  
+
             &lt;xsd:element name="ChannelId" type="xsd:long"/&gt;
-                  
+
             &lt;xsd:element name="StmtSummType" type="aval:OpenEnum_Type"/&gt;
-                  
+
             &lt;xsd:element name="PostedDt" type="xsd:dateTime"/&gt;
-                  
+
             &lt;xsd:element name="IdentPrevReadMethod" type="aval:OpenEnum_Type"/&gt;
-                  
+
             &lt;xsd:element name="Cursor" type="aval:Binary_Type"/&gt;
-                  
+
             &lt;xsd:element name="ItemValue" type="xsd:boolean"/&gt;
-                  
+
             &lt;xsd:element name="RecPmtMod" type="xsd:boolean"/&gt;
-                  
+
             &lt;xsd:element name="Editable" type="xsd:boolean"/&gt;
-                  
+
             &lt;xsd:element name="SentRec" type="xsd:long"/&gt;
-                  
+
             &lt;xsd:element name="MeetingDt" type="xsd:dateTime"/&gt;
-                  
+
             &lt;xsd:element name="EstablishDt" type="xsd:dateTime"/&gt;
-                  
+
             &lt;xsd:element name="PmtCodNIE" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="CurCode" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="LastAccess" type="xsd:long"/&gt;
-                  
+
             &lt;xsd:element name="PropType" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="BankIdType" type="aval:OpenEnum_Type"/&gt;
-                  
+
             &lt;xsd:element name="StatusDesc" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="GovOrg" type="aval:OpenEnum_Type"/&gt;
-                  
+
             &lt;xsd:element name="GroupCode" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="InvoicePremium" type="aval:CurrencyAmount_Type"/&gt;
-                  
+
             &lt;xsd:element name="VoucherId" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="CityId" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="NotificationType" type="xsd:long"/&gt;
-                  
+
             &lt;xsd:element name="OptServiceCode" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="CreateRefId" type="aval:Identifier_Type"/&gt;
-                  
+
             &lt;xsd:element name="FieldFormat" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="XferId" type="aval:Identifier_Type"/&gt;
-                  
+
             &lt;xsd:element name="Brand" type="aval:OpenEnum_Type"/&gt;
-                  
+
             &lt;xsd:element name="NextDay" type="xsd:dateTime"/&gt;
-                  
+
             &lt;xsd:element name="ActDesc" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="PendExpDays" type="xsd:long"/&gt;
-                  
+
             &lt;xsd:element name="TokenQuantity" type="xsd:long"/&gt;
-                  
+
             &lt;xsd:element name="AcctPayAcct" type="aval:Identifier_Type"/&gt;
-                  
+
             &lt;xsd:element name="POSEntryCapability" type="aval:OpenEnum_Type"/&gt;
-                  
+
             &lt;xsd:element name="TypeField" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="PSSMsgMAC" type="aval:OpenEnum_Type"/&gt;
-                  
+
             &lt;xsd:element name="OTPType" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="SecurID" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="DueDt" type="xsd:dateTime"/&gt;
-                  
+
             &lt;xsd:element name="Occupation" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="RestrictedListInd" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="LoanAuthType" type="aval:OpenEnum_Type"/&gt;
-                  
+
             &lt;xsd:element name="IncDetail" type="xsd:boolean"/&gt;
-                  
+
             &lt;xsd:element name="AvailDt" type="xsd:dateTime"/&gt;
-                  
+
             &lt;xsd:element name="SPName" type="aval:Identifier_Type"/&gt;
-                  
+
             &lt;xsd:element name="ValueMin" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="DepAcctIdTo" type="aval:DepAcctIdTo_Type"/&gt;
-                  
+
             &lt;xsd:element name="OrigDt" type="xsd:dateTime"/&gt;
-                  
+
             &lt;xsd:element name="TrnStatusCode" type="aval:OpenEnum_Type"/&gt;
-                  
+
             &lt;xsd:element name="FileStatus" type="aval:OpenEnum_Type"/&gt;
-                  
+
             &lt;xsd:element name="ChkImgBack" type="aval:Binary_Type"/&gt;
-                  
+
             &lt;xsd:element name="NoteDetail" type="xsd:string"/&gt;
-                  
+
             &lt;xsd:element name="TaxYear" type="xsd:long"/&gt;
-                  
+
             &lt;xsd:element name="InProcessRows" type="xsd:decimal"/&gt;
-                  
+
             &lt;xsd:element name="ContentType" type="aval:OpenEnum_Type"/&gt;
-                  
+
             &lt;xsd:complexType name="Application_Type"&gt;
-                		
+
                 &lt;xsd:sequence&gt;
-                    			
+
                     &lt;xsd:element minOccurs="0" ref="avalv3:Name"/&gt;
-                    			
+
                     &lt;xsd:element minOccurs="0" ref="avalv3:Desc"/&gt;
-                    			
+
                     &lt;xsd:element minOccurs="0" ref="avalv3:Type"/&gt;
-                    			
+
                     &lt;xsd:element minOccurs="0" ref="avalv3:StatusCode"/&gt;
-                                
+
                     &lt;xsd:element minOccurs="0" ref="avalv3:LastAccess"/&gt;
-                                
+
                     &lt;xsd:element minOccurs="0" ref="avalv3:UpdateDt"/&gt;
-                                
+
                     &lt;xsd:element minOccurs="0" ref="avalv3:StatusDesc"/&gt;
-                                
+
                     &lt;xsd:element minOccurs="0" ref="avalv3:ReturnInd"/&gt;
-                                
+
                     &lt;xsd:element minOccurs="0" ref="avalv3:UnitTime"/&gt;
-                                
+
                     &lt;xsd:element minOccurs="0" ref="avalv3:ActivationTime"/&gt;
-                                
+
                     &lt;xsd:element minOccurs="0" ref="avalv3:RequestCode"/&gt;
-                    		
+
                 &lt;/xsd:sequence&gt;
-                	
+
             &lt;/xsd:complexType&gt;
-                  
+
             &lt;xsd:element name="ApplicationInfo" type="avalv3:Application_Type"/&gt;
-                  
+
             &lt;xsd:complexType name="Channel_Type"&gt;
-                		
+
                 &lt;xsd:sequence&gt;
-                    			
+
                     &lt;xsd:element minOccurs="0" ref="avalv3:ChannelId"/&gt;
-                    			
+
                     &lt;xsd:element minOccurs="0" ref="avalv3:Name"/&gt;
-                    			
+
                     &lt;xsd:element minOccurs="0" ref="avalv3:Desc"/&gt;
-                    			
+
                     &lt;xsd:element minOccurs="0" ref="avalv3:Type"/&gt;
-                    			
+
                     &lt;xsd:element minOccurs="0" ref="avalv3:StatusDesc"/&gt;
-                                
+
                     &lt;xsd:element minOccurs="0" ref="avalv3:LastAccess"/&gt;
-                                
+
                     &lt;xsd:element minOccurs="0" ref="avalv3:UpdateDt"/&gt;
-                                
+
                     &lt;xsd:element minOccurs="0" ref="avalv3:UnitTime"/&gt;
-                                
+
                     &lt;xsd:element minOccurs="0" ref="avalv3:ActivationTime"/&gt;
-                    		
+
                 &lt;/xsd:sequence&gt;
-                	
+
             &lt;/xsd:complexType&gt;
-                  
+
             &lt;xsd:element name="ChannelInfo" type="avalv3:Channel_Type"/&gt;
-                  
+
             &lt;xsd:complexType name="CustInfo_Type"&gt;
-                		
+
                 &lt;xsd:sequence&gt;
-                    			
+
                     &lt;xsd:element minOccurs="0" ref="aval:ContactInfo"/&gt;
-                    			
+
                     &lt;xsd:element minOccurs="0" ref="aval:CustId"/&gt;
-                    			
+
                     &lt;xsd:element minOccurs="0" ref="aval:CustPswd"/&gt;
-                    			
+
                     &lt;xsd:element minOccurs="0" ref="avalv3:CustType"/&gt;
-                    			
+
                     &lt;xsd:element minOccurs="0" ref="avalv2:OrgInfo"/&gt;
-                    			
+
                     &lt;xsd:element minOccurs="0" ref="aval:UserId"/&gt;
-                    			
+
                     &lt;xsd:element minOccurs="0" ref="avalv3:PayeeControl"/&gt;
-                    			
+
                     &lt;xsd:element minOccurs="0" ref="aval:BillingPlan"/&gt;
-                    			
+
                     &lt;xsd:element minOccurs="0" ref="avalv3:CustName"/&gt;
-                    			
+
                     &lt;xsd:element minOccurs="0" ref="aval:CustStatusCode"/&gt;
-                    			
+
                     &lt;xsd:element minOccurs="0" ref="avalv3:CustInfoStatusCode"/&gt;
-                    			
+
                     &lt;xsd:element minOccurs="0" ref="avalv3:LastModCustInfoDt"/&gt;
-                    			
+
                     &lt;xsd:element minOccurs="0" ref="avalv3:AuthFactor"/&gt;
-                    			
+
                     &lt;xsd:element minOccurs="0" ref="avalv3:EmployeeInd"/&gt;
-                    			
+
                     &lt;xsd:element minOccurs="0" ref="avalv3:RestrictedListInd"/&gt;
-                    			
+
                     &lt;xsd:element minOccurs="0" ref="avalv3:RestrictedCreditListInd"/&gt;
-                    			
+
                     &lt;xsd:element minOccurs="0" ref="avalv3:PreaproveInd"/&gt;
-                    		
+
                 &lt;/xsd:sequence&gt;
-                	
+
             &lt;/xsd:complexType&gt;
-                  
+
             &lt;xsd:element name="CustInfo" type="avalv3:CustInfo_Type"/&gt;
-                  
+
             &lt;complexType name="CustName_Type"&gt;
-                		
+
                 &lt;sequence&gt;
-                    			
+
                     &lt;element maxOccurs="1" minOccurs="0" ref="aval:LastName"/&gt;
-                    			
+
                     &lt;element maxOccurs="1" minOccurs="0" ref="avalv3:SecondLastName"/&gt;
-                    			
+
                     &lt;element maxOccurs="1" minOccurs="0" ref="aval:FirstName"/&gt;
-                    			
+
                     &lt;element maxOccurs="1" minOccurs="0" ref="avalv3:SecondName"/&gt;
-                    			
+
                     &lt;element maxOccurs="1" minOccurs="0" ref="aval:Nickname"/&gt;
-                    			
+
                     &lt;element maxOccurs="1" minOccurs="0" ref="aval:LegalName"/&gt;
-                    		
+
                 &lt;/sequence&gt;
-                	
+
             &lt;/complexType&gt;
-                  
+
             &lt;element name="CustName" type="avalv3:CustName_Type"/&gt;
-                  
+
             &lt;xsd:simpleType name="SecondName_Type"&gt;
-                		
+
                 &lt;xsd:restriction base="xsd:string"&gt;
 		&lt;/xsd:restriction&gt;
-                	
+
             &lt;/xsd:simpleType&gt;
-                  
+
             &lt;xsd:element name="SecondName" type="avalv3:SecondName_Type"/&gt;
-                
+
         &lt;/xsd:schema&gt;
-            
+
     &lt;/wsdl:types&gt;
-      
+
     &lt;wsdl:message name="CustomerConditionsInqRequest"&gt;
-            
+
         &lt;wsdl:part element="tns:CustomerConditionsRequest" name="CustomerConditionsInqRq"/&gt;
-          
+
     &lt;/wsdl:message&gt;
-      
+
     &lt;wsdl:message name="CustomerConditionsInqResponse"&gt;
-            
+
         &lt;wsdl:part element="tns:CustomerConditionsResponse" name="CustomerConditionsInqRs"/&gt;
-          
+
     &lt;/wsdl:message&gt;
-      
+
     &lt;wsdl:portType name="CustomerConditionsInquirySvc"&gt;
-            
+
         &lt;wsdl:operation name="getCustomerCondition"&gt;
-                  
+
             &lt;wsdl:input message="tns:CustomerConditionsInqRequest"/&gt;
-                  
+
             &lt;wsdl:output message="tns:CustomerConditionsInqResponse"/&gt;
-                
+
         &lt;/wsdl:operation&gt;
-          
+
     &lt;/wsdl:portType&gt;
-      
+
     &lt;wsdl:binding name="CustomerConditionsInquirySvcBinding" type="tns:CustomerConditionsInquirySvc"&gt;
-            
+
         &lt;soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/&gt;
-            
+
         &lt;wsdl:operation name="getCustomerCondition"&gt;
-                  
+
             &lt;soap:operation soapAction="urn://grupoaval.com/customers/v2/getCustomerCondition"/&gt;
-                  
+
             &lt;wsdl:input&gt;
-                        
+
                 &lt;soap:body use="literal"/&gt;
-                      
+
             &lt;/wsdl:input&gt;
-                  
+
             &lt;wsdl:output&gt;
-                        
+
                 &lt;soap:body use="literal"/&gt;
-                      
+
             &lt;/wsdl:output&gt;
-                
+
         &lt;/wsdl:operation&gt;
-          
+
     &lt;/wsdl:binding&gt;
-      
+
     &lt;wsdl:service name="CustomerConditionsInquirySvc"&gt;
-            
+
         &lt;wsdl:port binding="tns:CustomerConditionsInquirySvcBinding" name="CustomerConditionsInquirySvcPort"&gt;
-                  
+
             &lt;soap:address location="http://ESBATH:7800/customers/CustomerConditionsInquirySvc"/&gt;
-                
+
         &lt;/wsdl:port&gt;
-          
+
     &lt;/wsdl:service&gt;
-    
+
 &lt;/wsdl:definitions&gt;
 </content>
             <id>G3sJJl</id>

@@ -23,18 +23,6 @@
         </method>
         <method>
             <currentResponseSequenceIndex>0</currentResponseSequenceIndex>
-            <httpMethod>GET</httpMethod>
-            <id>Z9BiKb</id>
-            <mockResponses/>
-            <name>get</name>
-            <networkDelay>0</networkDelay>
-            <resourceId>KAqGCv</resourceId>
-            <responseStrategy>RANDOM</responseStrategy>
-            <simulateNetworkDelay>false</simulateNetworkDelay>
-            <status>MOCKED</status>
-        </method>
-        <method>
-            <currentResponseSequenceIndex>0</currentResponseSequenceIndex>
             <httpMethod>PUT</httpMethod>
             <id>eWgRbu</id>
             <mockResponses/>
@@ -71,6 +59,20 @@
             <simulateNetworkDelay>false</simulateNetworkDelay>
             <status>MOCKED</status>
         </method>
+        <method>
+            <currentResponseSequenceIndex>0</currentResponseSequenceIndex>
+            <defaultMockResponseId></defaultMockResponseId>
+            <forwardedEndpoint>http://proxy:8080/https://apicapi-gateway-qa.appsptqa.ath.com.co/org-qa/api-pb/paymentsManagement/v1/Inquiries_Pse/Pse/Companies</forwardedEndpoint>
+            <httpMethod>GET</httpMethod>
+            <id>Z9BiKb</id>
+            <mockResponses/>
+            <name>get</name>
+            <networkDelay>0</networkDelay>
+            <resourceId>KAqGCv</resourceId>
+            <responseStrategy>RANDOM</responseStrategy>
+            <simulateNetworkDelay>false</simulateNetworkDelay>
+            <status>MOCKED</status>
+        </method>
     </methods>
     <mockResponses>
         <mockResponse>
@@ -82,14 +84,303 @@
   scope: 'scope1'&#13;
 }</body>
             <contentEncodings/>
+            <headerQueries/>
             <httpHeaders/>
             <httpStatusCode>200</httpStatusCode>
             <id>z0pYUq</id>
+            <jsonPathExpressions/>
             <methodId>ZiTvqE</methodId>
             <name>ok</name>
             <parameterQueries/>
             <status>ENABLED</status>
             <usingExpressions>false</usingExpressions>
+            <xpathExpressions/>
+        </mockResponse>
+        <mockResponse>
+            <body>{&#13;
+	"MsgRsHdr": {&#13;
+		"Status": {&#13;
+			"StatusCode": "206",&#13;
+			"AdditionalStatus": {&#13;
+				"StatusCode": "206",&#13;
+				"StatusDesc": "FAIL_INVALIDTRAZABILITYCODE"&#13;
+			},&#13;
+			"StatusDesc": "FAIL_INVALIDTRAZABILITYCODE",&#13;
+			"EndDt": "2020-09-09T20:05:20"&#13;
+		},&#13;
+		"EndDt": "2020-09-09T20:05:20"&#13;
+	}&#13;
+}</body>
+            <contentEncodings/>
+            <headerQueries/>
+            <httpHeaders/>
+            <httpStatusCode>206</httpStatusCode>
+            <id>CdewWI</id>
+            <jsonPathExpressions/>
+            <methodId>eWgRbu</methodId>
+            <name>service_error</name>
+            <parameterQueries/>
+            <status>DISABLED</status>
+            <usingExpressions>false</usingExpressions>
+            <xpathExpressions/>
+        </mockResponse>
+        <mockResponse>
+            <body>{&#13;
+	"StatusCode": "500",&#13;
+	"StatusDesc": "Error Inesperado"&#13;
+}</body>
+            <contentEncodings/>
+            <headerQueries/>
+            <httpHeaders/>
+            <httpStatusCode>500</httpStatusCode>
+            <id>Lre9fX</id>
+            <jsonPathExpressions/>
+            <methodId>eWgRbu</methodId>
+            <name>server_error</name>
+            <parameterQueries/>
+            <status>DISABLED</status>
+            <usingExpressions>false</usingExpressions>
+            <xpathExpressions/>
+        </mockResponse>
+        <mockResponse>
+            <body></body>
+            <contentEncodings/>
+            <headerQueries/>
+            <httpHeaders/>
+            <httpStatusCode>204</httpStatusCode>
+            <id>z1y5SA</id>
+            <jsonPathExpressions/>
+            <methodId>eWgRbu</methodId>
+            <name>OK</name>
+            <parameterQueries/>
+            <status>ENABLED</status>
+            <usingExpressions>false</usingExpressions>
+            <xpathExpressions/>
+        </mockResponse>
+        <mockResponse>
+            <body>{&#13;
+	"MsgRsHdr": {&#13;
+		"Status": {&#13;
+			"StatusCode": "300",&#13;
+			"Severity": "Error",&#13;
+			"StatusDesc": "No es posible procesar la transacción.",&#13;
+			"AdditionalStatus": {&#13;
+				"StatusCode": "300",&#13;
+				"Severity": "Error",&#13;
+				"StatusDesc": "No es posible procesar la transacción."&#13;
+			},&#13;
+			"EndDt": "2020-03-27T15:57:05"&#13;
+		},&#13;
+		"EndDt": "2020-03-27T15:57:05"&#13;
+	}&#13;
+}</body>
+            <contentEncodings/>
+            <headerQueries/>
+            <httpHeaders/>
+            <httpStatusCode>206</httpStatusCode>
+            <id>6sXi4i</id>
+            <jsonPathExpressions/>
+            <methodId>BSifQY</methodId>
+            <name>transaction_error</name>
+            <parameterQueries/>
+            <status>DISABLED</status>
+            <usingExpressions>false</usingExpressions>
+            <xpathExpressions/>
+        </mockResponse>
+        <mockResponse>
+            <body>{&#13;
+	"StatusCode": "500",&#13;
+	"StatusDesc": "Error Inesperado"&#13;
+}</body>
+            <contentEncodings/>
+            <headerQueries/>
+            <httpHeaders/>
+            <httpStatusCode>500</httpStatusCode>
+            <id>NuSDkF</id>
+            <jsonPathExpressions/>
+            <methodId>BSifQY</methodId>
+            <name>server_error</name>
+            <parameterQueries/>
+            <status>DISABLED</status>
+            <usingExpressions>false</usingExpressions>
+            <xpathExpressions/>
+        </mockResponse>
+        <mockResponse>
+            <body>{&#13;
+	"Transaction": {&#13;
+		"TrnRqUID": "1866062",&#13;
+		"TrnType": "1"&#13;
+	},&#13;
+	"DepAcctStmtRec": {&#13;
+		"URL": "https://registro.desarrollo.pse.com.co/PSEUserRegister/StartTransaction.htm?enc=V%2brHQIwzrDzFvDKfmDEJ7lpXVYnEfLwM2OyHGKrbXFhcZvAoTudmp5nuzgo6kNfB"&#13;
+	}&#13;
+}</body>
+            <contentEncodings/>
+            <headerQueries/>
+            <httpHeaders/>
+            <httpStatusCode>201</httpStatusCode>
+            <id>ey0ODh</id>
+            <jsonPathExpressions/>
+            <methodId>BSifQY</methodId>
+            <name>OK</name>
+            <parameterQueries/>
+            <status>ENABLED</status>
+            <usingExpressions>true</usingExpressions>
+            <xpathExpressions/>
+        </mockResponse>
+        <mockResponse>
+            <body>{&#13;
+	"StatusCode": "500",&#13;
+	"StatusDesc": "Error Inesperado"&#13;
+}</body>
+            <contentEncodings/>
+            <headerQueries/>
+            <httpHeaders/>
+            <httpStatusCode>500</httpStatusCode>
+            <id>cWcKF8</id>
+            <jsonPathExpressions/>
+            <methodId>QfC8wv</methodId>
+            <name>server_error</name>
+            <parameterQueries/>
+            <status>DISABLED</status>
+            <usingExpressions>false</usingExpressions>
+            <xpathExpressions/>
+        </mockResponse>
+        <mockResponse>
+            <body>{&#13;
+	"Transaction": {&#13;
+		"Code": "1",&#13;
+		"ClientDt": "2021-03-16T11:28:35.000-05:00",&#13;
+		"LastTrnDt": "2021-03-16T11:31:28.000-05:00"&#13;
+	}&#13;
+}</body>
+            <contentEncodings/>
+            <headerQueries/>
+            <httpHeaders/>
+            <httpStatusCode>200</httpStatusCode>
+            <id>YwqSe2</id>
+            <jsonPathExpressions/>
+            <methodId>QfC8wv</methodId>
+            <name>transaction_not_authorized</name>
+            <parameterQueries/>
+            <status>DISABLED</status>
+            <usingExpressions>false</usingExpressions>
+            <xpathExpressions/>
+        </mockResponse>
+        <mockResponse>
+            <body>{&#13;
+	"MsgRsHdr": {&#13;
+		"Status": {&#13;
+			"StatusCode": "206",&#13;
+			"AdditionalStatus": {&#13;
+				"StatusCode": "206",&#13;
+				"StatusDesc": "FAIL_INVALIDTRAZABILITYCODE"&#13;
+			},&#13;
+			"StatusDesc": "FAIL_INVALIDTRAZABILITYCODE",&#13;
+			"EndDt": "2020-09-09T20:05:20"&#13;
+		},&#13;
+		"EndDt": "2020-09-09T20:05:20"&#13;
+	}&#13;
+}</body>
+            <contentEncodings/>
+            <headerQueries/>
+            <httpHeaders/>
+            <httpStatusCode>206</httpStatusCode>
+            <id>VgXjVn</id>
+            <jsonPathExpressions/>
+            <methodId>QfC8wv</methodId>
+            <name>service_error</name>
+            <parameterQueries/>
+            <status>DISABLED</status>
+            <usingExpressions>false</usingExpressions>
+            <xpathExpressions/>
+        </mockResponse>
+        <mockResponse>
+            <body>{&#13;
+    "Transaction": {&#13;
+        "Code": "1",&#13;
+        "ClientDt": "2021-03-16T11:28:35.000-05:00",&#13;
+        "LastTrnDt": "2021-03-16T11:31:28.000-05:00",&#13;
+       "ApprovalId" : "false"&#13;
+    }&#13;
+}</body>
+            <contentEncodings/>
+            <headerQueries/>
+            <httpHeaders/>
+            <httpStatusCode>200</httpStatusCode>
+            <id>iHMRev</id>
+            <jsonPathExpressions/>
+            <methodId>QfC8wv</methodId>
+            <name>transaction_failed</name>
+            <parameterQueries/>
+            <status>DISABLED</status>
+            <usingExpressions>false</usingExpressions>
+            <xpathExpressions/>
+        </mockResponse>
+        <mockResponse>
+            <body>{&#13;
+	"Transaction": {&#13;
+		"Code": "0",&#13;
+		"ClientDt": "2021-03-16T11:28:35.000-05:00",&#13;
+		"LastTrnDt": "2021-03-16T11:31:28.000-05:00",&#13;
+                "ApprovalId" : "true"&#13;
+	}&#13;
+}</body>
+            <contentEncodings/>
+            <headerQueries/>
+            <httpHeaders/>
+            <httpStatusCode>200</httpStatusCode>
+            <id>idvZUF</id>
+            <jsonPathExpressions/>
+            <methodId>QfC8wv</methodId>
+            <name>transaction_ok</name>
+            <parameterQueries/>
+            <status>ENABLED</status>
+            <usingExpressions>false</usingExpressions>
+            <xpathExpressions/>
+        </mockResponse>
+        <mockResponse>
+            <body>{&#13;
+	"Transaction": {&#13;
+		"Code": "0",&#13;
+		"ClientDt": "2021-03-16T11:28:35.000-05:00",&#13;
+		"LastTrnDt": "2021-03-16T11:31:28.000-05:00"&#13;
+	}&#13;
+}</body>
+            <contentEncodings/>
+            <headerQueries/>
+            <httpHeaders/>
+            <httpStatusCode>200</httpStatusCode>
+            <id>SDXiGu</id>
+            <jsonPathExpressions/>
+            <methodId>QfC8wv</methodId>
+            <name>transaction_pending</name>
+            <parameterQueries/>
+            <status>DISABLED</status>
+            <usingExpressions>false</usingExpressions>
+            <xpathExpressions/>
+        </mockResponse>
+        <mockResponse>
+            <body>{&#13;
+    "Transaction": {&#13;
+        "Code": "0",&#13;
+        "ClientDt": "2021-03-16T11:28:35.000-05:00",&#13;
+        "LastTrnDt": "2021-03-16T11:31:28.000-05:00",&#13;
+        "ApprovalId" : "false"&#13;
+    }&#13;
+}</body>
+            <contentEncodings/>
+            <headerQueries/>
+            <httpHeaders/>
+            <httpStatusCode>200</httpStatusCode>
+            <id>mJCz61</id>
+            <jsonPathExpressions/>
+            <methodId>QfC8wv</methodId>
+            <name>transaction_fail_approval_id_false</name>
+            <parameterQueries/>
+            <status>DISABLED</status>
+            <usingExpressions>false</usingExpressions>
+            <xpathExpressions/>
         </mockResponse>
         <mockResponse>
             <body>{&#13;
@@ -269,14 +560,17 @@
 	]&#13;
 }</body>
             <contentEncodings/>
+            <headerQueries/>
             <httpHeaders/>
             <httpStatusCode>200</httpStatusCode>
             <id>SNDDOx</id>
+            <jsonPathExpressions/>
             <methodId>Z9BiKb</methodId>
             <name>ok prod</name>
             <parameterQueries/>
             <status>ENABLED</status>
             <usingExpressions>false</usingExpressions>
+            <xpathExpressions/>
         </mockResponse>
         <mockResponse>
             <body>[&#13;
@@ -447,261 +741,17 @@
 ]&#13;
 </body>
             <contentEncodings/>
+            <headerQueries/>
             <httpHeaders/>
             <httpStatusCode>200</httpStatusCode>
             <id>uM53v6</id>
+            <jsonPathExpressions/>
             <methodId>Z9BiKb</methodId>
             <name>ok</name>
             <parameterQueries/>
             <status>DISABLED</status>
             <usingExpressions>false</usingExpressions>
-        </mockResponse>
-        <mockResponse>
-            <body></body>
-            <contentEncodings/>
-            <httpHeaders/>
-            <httpStatusCode>204</httpStatusCode>
-            <id>z1y5SA</id>
-            <methodId>eWgRbu</methodId>
-            <name>OK</name>
-            <parameterQueries/>
-            <status>ENABLED</status>
-            <usingExpressions>false</usingExpressions>
-        </mockResponse>
-        <mockResponse>
-            <body>{&#13;
-	"StatusCode": "500",&#13;
-	"StatusDesc": "Error Inesperado"&#13;
-}</body>
-            <contentEncodings/>
-            <httpHeaders/>
-            <httpStatusCode>500</httpStatusCode>
-            <id>Lre9fX</id>
-            <methodId>eWgRbu</methodId>
-            <name>server_error</name>
-            <parameterQueries/>
-            <status>DISABLED</status>
-            <usingExpressions>false</usingExpressions>
-        </mockResponse>
-        <mockResponse>
-            <body>{&#13;
-	"MsgRsHdr": {&#13;
-		"Status": {&#13;
-			"StatusCode": "206",&#13;
-			"AdditionalStatus": {&#13;
-				"StatusCode": "206",&#13;
-				"StatusDesc": "FAIL_INVALIDTRAZABILITYCODE"&#13;
-			},&#13;
-			"StatusDesc": "FAIL_INVALIDTRAZABILITYCODE",&#13;
-			"EndDt": "2020-09-09T20:05:20"&#13;
-		},&#13;
-		"EndDt": "2020-09-09T20:05:20"&#13;
-	}&#13;
-}</body>
-            <contentEncodings/>
-            <httpHeaders/>
-            <httpStatusCode>206</httpStatusCode>
-            <id>CdewWI</id>
-            <methodId>eWgRbu</methodId>
-            <name>service_error</name>
-            <parameterQueries/>
-            <status>DISABLED</status>
-            <usingExpressions>false</usingExpressions>
-        </mockResponse>
-        <mockResponse>
-            <body>{&#13;
-	"StatusCode": "500",&#13;
-	"StatusDesc": "Error Inesperado"&#13;
-}</body>
-            <contentEncodings/>
-            <httpHeaders/>
-            <httpStatusCode>500</httpStatusCode>
-            <id>NuSDkF</id>
-            <methodId>BSifQY</methodId>
-            <name>server_error</name>
-            <parameterQueries/>
-            <status>DISABLED</status>
-            <usingExpressions>false</usingExpressions>
-        </mockResponse>
-        <mockResponse>
-            <body>{&#13;
-	"MsgRsHdr": {&#13;
-		"Status": {&#13;
-			"StatusCode": "300",&#13;
-			"Severity": "Error",&#13;
-			"StatusDesc": "No es posible procesar la transacción.",&#13;
-			"AdditionalStatus": {&#13;
-				"StatusCode": "300",&#13;
-				"Severity": "Error",&#13;
-				"StatusDesc": "No es posible procesar la transacción."&#13;
-			},&#13;
-			"EndDt": "2020-03-27T15:57:05"&#13;
-		},&#13;
-		"EndDt": "2020-03-27T15:57:05"&#13;
-	}&#13;
-}</body>
-            <contentEncodings/>
-            <httpHeaders/>
-            <httpStatusCode>206</httpStatusCode>
-            <id>6sXi4i</id>
-            <methodId>BSifQY</methodId>
-            <name>transaction_error</name>
-            <parameterQueries/>
-            <status>DISABLED</status>
-            <usingExpressions>false</usingExpressions>
-        </mockResponse>
-        <mockResponse>
-            <body>{&#13;
-	"Transaction": {&#13;
-		"TrnRqUID": "1866062",&#13;
-		"TrnType": "1"&#13;
-	},&#13;
-	"DepAcctStmtRec": {&#13;
-		"URL": "https://registro.desarrollo.pse.com.co/PSEUserRegister/StartTransaction.htm?enc=V%2brHQIwzrDzFvDKfmDEJ7lpXVYnEfLwM2OyHGKrbXFhcZvAoTudmp5nuzgo6kNfB"&#13;
-	}&#13;
-}</body>
-            <contentEncodings/>
-            <httpHeaders/>
-            <httpStatusCode>201</httpStatusCode>
-            <id>ey0ODh</id>
-            <methodId>BSifQY</methodId>
-            <name>OK</name>
-            <parameterQueries/>
-            <status>ENABLED</status>
-            <usingExpressions>true</usingExpressions>
-        </mockResponse>
-        <mockResponse>
-            <body>{&#13;
-	"Transaction": {&#13;
-		"Code": "0",&#13;
-		"ClientDt": "2021-03-16T11:28:35.000-05:00",&#13;
-		"LastTrnDt": "2021-03-16T11:31:28.000-05:00"&#13;
-	}&#13;
-}</body>
-            <contentEncodings/>
-            <httpHeaders/>
-            <httpStatusCode>200</httpStatusCode>
-            <id>SDXiGu</id>
-            <methodId>QfC8wv</methodId>
-            <name>transaction_pending</name>
-            <parameterQueries/>
-            <status>DISABLED</status>
-            <usingExpressions>false</usingExpressions>
-        </mockResponse>
-        <mockResponse>
-            <body>{&#13;
-	"Transaction": {&#13;
-		"Code": "1",&#13;
-		"ClientDt": "2021-03-16T11:28:35.000-05:00",&#13;
-		"LastTrnDt": "2021-03-16T11:31:28.000-05:00"&#13;
-	}&#13;
-}</body>
-            <contentEncodings/>
-            <httpHeaders/>
-            <httpStatusCode>200</httpStatusCode>
-            <id>YwqSe2</id>
-            <methodId>QfC8wv</methodId>
-            <name>transaction_not_authorized</name>
-            <parameterQueries/>
-            <status>DISABLED</status>
-            <usingExpressions>false</usingExpressions>
-        </mockResponse>
-        <mockResponse>
-            <body>{&#13;
-	"StatusCode": "500",&#13;
-	"StatusDesc": "Error Inesperado"&#13;
-}</body>
-            <contentEncodings/>
-            <httpHeaders/>
-            <httpStatusCode>500</httpStatusCode>
-            <id>cWcKF8</id>
-            <methodId>QfC8wv</methodId>
-            <name>server_error</name>
-            <parameterQueries/>
-            <status>DISABLED</status>
-            <usingExpressions>false</usingExpressions>
-        </mockResponse>
-        <mockResponse>
-            <body>{&#13;
-    "Transaction": {&#13;
-        "Code": "0",&#13;
-        "ClientDt": "2021-03-16T11:28:35.000-05:00",&#13;
-        "LastTrnDt": "2021-03-16T11:31:28.000-05:00",&#13;
-        "ApprovalId" : "false"&#13;
-    }&#13;
-}</body>
-            <contentEncodings/>
-            <httpHeaders/>
-            <httpStatusCode>200</httpStatusCode>
-            <id>mJCz61</id>
-            <methodId>QfC8wv</methodId>
-            <name>transaction_fail_approval_id_false</name>
-            <parameterQueries/>
-            <status>DISABLED</status>
-            <usingExpressions>false</usingExpressions>
-        </mockResponse>
-        <mockResponse>
-            <body>{&#13;
-	"MsgRsHdr": {&#13;
-		"Status": {&#13;
-			"StatusCode": "206",&#13;
-			"AdditionalStatus": {&#13;
-				"StatusCode": "206",&#13;
-				"StatusDesc": "FAIL_INVALIDTRAZABILITYCODE"&#13;
-			},&#13;
-			"StatusDesc": "FAIL_INVALIDTRAZABILITYCODE",&#13;
-			"EndDt": "2020-09-09T20:05:20"&#13;
-		},&#13;
-		"EndDt": "2020-09-09T20:05:20"&#13;
-	}&#13;
-}</body>
-            <contentEncodings/>
-            <httpHeaders/>
-            <httpStatusCode>206</httpStatusCode>
-            <id>VgXjVn</id>
-            <methodId>QfC8wv</methodId>
-            <name>service_error</name>
-            <parameterQueries/>
-            <status>DISABLED</status>
-            <usingExpressions>false</usingExpressions>
-        </mockResponse>
-        <mockResponse>
-            <body>{&#13;
-	"Transaction": {&#13;
-		"Code": "0",&#13;
-		"ClientDt": "2021-03-16T11:28:35.000-05:00",&#13;
-		"LastTrnDt": "2021-03-16T11:31:28.000-05:00",&#13;
-                "ApprovalId" : "true"&#13;
-	}&#13;
-}</body>
-            <contentEncodings/>
-            <httpHeaders/>
-            <httpStatusCode>200</httpStatusCode>
-            <id>idvZUF</id>
-            <methodId>QfC8wv</methodId>
-            <name>transaction_ok</name>
-            <parameterQueries/>
-            <status>ENABLED</status>
-            <usingExpressions>false</usingExpressions>
-        </mockResponse>
-        <mockResponse>
-            <body>{&#13;
-    "Transaction": {&#13;
-        "Code": "1",&#13;
-        "ClientDt": "2021-03-16T11:28:35.000-05:00",&#13;
-        "LastTrnDt": "2021-03-16T11:31:28.000-05:00",&#13;
-       "ApprovalId" : "false"&#13;
-    }&#13;
-}</body>
-            <contentEncodings/>
-            <httpHeaders/>
-            <httpStatusCode>200</httpStatusCode>
-            <id>iHMRev</id>
-            <methodId>QfC8wv</methodId>
-            <name>transaction_failed</name>
-            <parameterQueries/>
-            <status>DISABLED</status>
-            <usingExpressions>false</usingExpressions>
+            <xpathExpressions/>
         </mockResponse>
     </mockResponses>
     <project>
@@ -720,17 +770,17 @@
         </resource>
         <resource>
             <applicationId>Ckgm7o</applicationId>
-            <id>KAqGCv</id>
-            <methods/>
-            <name>Inquiries_Pse</name>
-            <uri>/Inquiries_Pse/Pse/Companies</uri>
-        </resource>
-        <resource>
-            <applicationId>Ckgm7o</applicationId>
             <id>zWE45X</id>
             <methods/>
             <name>Administration_Cpv</name>
             <uri>/test</uri>
+        </resource>
+        <resource>
+            <applicationId>Ckgm7o</applicationId>
+            <id>KAqGCv</id>
+            <methods/>
+            <name>Inquiries_Pse</name>
+            <uri>/Inquiries_Pse/Pse/Companies</uri>
         </resource>
     </resources>
 </restExportContainer>
