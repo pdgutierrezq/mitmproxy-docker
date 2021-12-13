@@ -9,7 +9,7 @@ def request(flow: http.HTTPFlow) -> None:
     # otherwise.
 #     if flow.request.pretty_host == "10.5.10.169":
     if flow.request.pretty_host == "proxy":
-      basePath=flow.request.path.split("/")
+      basePath=flow.request.path.split("/",1)
       host = basePath[0]
       path = basePath[1]
       ctx.log.info("Output: domain: " + basePath[1] +
