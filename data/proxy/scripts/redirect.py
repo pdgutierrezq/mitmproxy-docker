@@ -9,10 +9,10 @@ def request(flow: http.HTTPFlow) -> None:
     # otherwise.
 #     if flow.request.pretty_host == "10.5.10.169":
     if flow.request.pretty_host == "proxy":
-      path = flow.request.path.split('/',1)[1]
-#    host = host.split('/')[0]
-#    path = flow.request.path.replace(host,'')
-      ctx.log.info("Request domain: " + flow.request.pretty_host +
+      basePath=flow.request.path.split('/',1)
+      host = basePath[0]
+      path = basePath[1]
+      ctx.log.info("Output: domain: " + host +
                     ", path: " + path)
       if flow.request.path == '/192.168.135.28/PFBA_Crm31/sca/WSBA_Crm_consultarCondicionesCliente':
         flow.request.host = '192.168.135.28'
