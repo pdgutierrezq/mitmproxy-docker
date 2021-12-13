@@ -12,8 +12,8 @@ def request(flow: http.HTTPFlow) -> None:
       basePath=flow.request.path.split("/")
       host = basePath[0]
       path = basePath[1]
-      ctx.log.info("Output: domain: " + basePath[0] +
-                    ", path: " + basePath[1])
+      ctx.log.info("Output: domain: " + basePath[1] +
+                    ", path: " + basePath[2])
       if flow.request.path == '/192.168.135.28/PFBA_Crm31/sca/WSBA_Crm_consultarCondicionesCliente':
         flow.request.host = '192.168.135.28'
         flow.request.scheme = "https"
