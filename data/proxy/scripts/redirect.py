@@ -14,10 +14,10 @@ def request(flow: http.HTTPFlow) -> None:
     ctx.log.info("Output: domain: " + basePath.host +
                  ", path: " + basePath.path)
     if flow.request.path == '/192.168.135.28/PFBA_Crm31/sca/WSBA_Crm_consultarCondicionesCliente':
-      flow.request.host = '192.168.135.28'
+      flow.request.host = basePath.host
       flow.request.scheme = "https"
       flow.request.port = 442
-      flow.request.path = '/PFBA_Crm31/sca/WSBA_Crm_consultarCondicionesCliente'
+      flow.request.path = basePath.path
     if flow.request.path == '/mock':
       #         flow.request.host = "rb-dev-alb-ecs-ext-525169194.us-east-2.elb.amazonaws.com"
       flow.request.host = "localhost"
@@ -28,7 +28,7 @@ class BasePath:
   def __init__(self, path):
     initialPath = path.split('/', 2)
     self.host = initialPath[1]
-    self.path = initialPath[2]
+    self.path = '/'+initialPath[2]
 
 
 # print(BasePath('/192.168.135.28/PFBA_Crm31/sca/WSBA_Crm_consultarCondicionesCliente').path)
