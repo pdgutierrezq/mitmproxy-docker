@@ -15,6 +15,9 @@ ssh -i "rb-pb-dev-ecs-auto.pem" "ec2-user@$EC2" <<'ENDSSH'
   curl --location --request DELETE "http://$CASTLEMOCK_HOST/castlemock/api/rest/core/project/soap/WHtzrB" \
   --header 'accept: */*' \
   --header 'Authorization: Basic YWRtaW46YWRtaW4='
+  curl --location --request DELETE "http://$CASTLEMOCK_HOST/castlemock/api/rest/core/project/soap/wn0iz3" \
+  --header 'accept: */*' \
+  --header 'Authorization: Basic YWRtaW46YWRtaW4='
   curl --location --request POST "http://$CASTLEMOCK_HOST/castlemock/api/rest/core/project/soap/import" \
   --header 'accept: */*' \
   --header 'Authorization: Basic YWRtaW46YWRtaW4=' \
