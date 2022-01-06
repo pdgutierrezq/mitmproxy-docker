@@ -62,7 +62,7 @@
         <method>
             <currentResponseSequenceIndex>0</currentResponseSequenceIndex>
             <defaultMockResponseId></defaultMockResponseId>
-            <forwardedEndpoint>http://proxy:8080/https://apicapi-gateway-qa.appsptqa.ath.com.co/org-qa/api-pb/paymentsManagement/v1/Inquiries_Pse/Pse/Companies</forwardedEndpoint>
+            <forwardedEndpoint>http://proxy:8080/https://apicapi-gateway-qa.appsptqa.ath.com.co/org-qa/api-pb/paymentsManagement/v1</forwardedEndpoint>
             <httpMethod>GET</httpMethod>
             <id>Z9BiKb</id>
             <mockResponses/>
