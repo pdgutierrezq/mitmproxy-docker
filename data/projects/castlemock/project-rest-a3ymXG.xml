@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<restExportContainer>
+    <applications>
+        <application>
+            <id>R99bqa</id>
+            <name>UserIdentity</name>
+            <projectId>a3ymXG</projectId>
+            <resources/>
+        </application>
+    </applications>
+    <methods>
+        <method>
+            <currentResponseSequenceIndex>0</currentResponseSequenceIndex>
+            <forwardedEndpoint>http://proxy:8080/https://adl-habilitadora-stg-api.avaldigitallabs.com/securityManagement/v1/User_Identity</forwardedEndpoint>
+            <httpMethod>POST</httpMethod>
+            <id>Kagz7v</id>
+            <mockResponses/>
+            <name>CREATE</name>
+            <networkDelay>0</networkDelay>
+            <resourceId>6gO8xL</resourceId>
+            <responseStrategy>RANDOM</responseStrategy>
+            <simulateNetworkDelay>false</simulateNetworkDelay>
+            <status>MOCKED</status>
+        </method>
+        <method>
+            <currentResponseSequenceIndex>0</currentResponseSequenceIndex>
+            <defaultQueryMockResponseId></defaultQueryMockResponseId>
+            <forwardedEndpoint></forwardedEndpoint>
+            <forwardedEndpoint>http://proxy:8080/https://adl-habilitadora-stg-api.avaldigitallabs.com/securityManagement/v1/User_Identity</forwardedEndpoint>
+            <httpMethod>PUT</httpMethod>
+            <id>i0FL9J</id>
+            <mockResponses/>
+            <name>validate</name>
+            <networkDelay>0</networkDelay>
+            <resourceId>j2AVvI</resourceId>
+            <responseStrategy>RANDOM</responseStrategy>
+            <simulateNetworkDelay>false</simulateNetworkDelay>
+            <status>MOCKED</status>
+        </method>
+    </methods>
+    <mockResponses>
+        <mockResponse>
+            <body>{&#13;
+  "Desc": "Error Server"&#13;
+}</body>
+            <contentEncodings/>
+            <httpHeaders/>
+            <httpStatusCode>500</httpStatusCode>
+            <id>rC9u5v</id>
+            <methodId>Kagz7v</methodId>
+            <name>Error response</name>
+            <parameterQueries/>
+            <status>DISABLED</status>
+            <usingExpressions>false</usingExpressions>
+        </mockResponse>
+        <mockResponse>
+            <body>{&#13;
+	"OtpInfo": {&#13;
+		"Desc": "4243c998-f33f-4229-90ab-b83901a9f629",&#13;
+		"Validity": {&#13;
+			"ValidityPeriod": "Segundo",&#13;
+			"ValidityTime": 180&#13;
+		}&#13;
+	}&#13;
+}</body>
+            <contentEncodings/>
+            <httpHeaders/>
+            <httpStatusCode>201</httpStatusCode>
+            <id>sq0tGS</id>
+            <methodId>Kagz7v</methodId>
+            <name>Success response</name>
+            <parameterQueries/>
+            <status>ENABLED</status>
+            <usingExpressions>false</usingExpressions>
+        </mockResponse>
+        <mockResponse>
+            <body>{&#13;
+    "RqUID": "549886983",&#13;
+    "Status": {&#13;
+        "StatusCode": "06",&#13;
+        "StatusDesc": "Mismatched phone number CIFIN"&#13;
+    }&#13;
+}</body>
+            <contentEncodings/>
+            <httpHeaders/>
+            <httpStatusCode>206</httpStatusCode>
+            <id>07VjV8</id>
+            <methodId>Kagz7v</methodId>
+            <name>Error business</name>
+            <parameterQueries/>
+            <status>DISABLED</status>
+            <usingExpressions>false</usingExpressions>
+        </mockResponse>
+        <mockResponse>
+            <body>{&#13;
+	"RqUID": "2161077595",&#13;
+	"Status": {&#13;
+		"StatusCode": "57",&#13;
+		"StatusDesc": "La autenticación no es válida"&#13;
+	}&#13;
+}</body>
+            <contentEncodings/>
+            <httpHeaders/>
+            <httpStatusCode>206</httpStatusCode>
+            <id>vhnWQh</id>
+            <methodId>i0FL9J</methodId>
+            <name>unkown business error</name>
+            <parameterQueries/>
+            <status>DISABLED</status>
+            <usingExpressions>false</usingExpressions>
+        </mockResponse>
+        <mockResponse>
+            <body>{&#13;
+	"RqUID": "2161077595",&#13;
+	"Status": {&#13;
+		"StatusCode": "56",&#13;
+		"StatusDesc": "La autenticación no es válida"&#13;
+	}&#13;
+}</body>
+            <contentEncodings/>
+            <httpHeaders/>
+            <httpStatusCode>206</httpStatusCode>
+            <id>XOCvgO</id>
+            <methodId>i0FL9J</methodId>
+            <name>Error business</name>
+            <parameterQueries/>
+            <status>DISABLED</status>
+            <usingExpressions>false</usingExpressions>
+        </mockResponse>
+        <mockResponse>
+            <body></body>
+            <contentEncodings/>
+            <httpHeaders/>
+            <httpStatusCode>204</httpStatusCode>
+            <id>DIX4NA</id>
+            <methodId>i0FL9J</methodId>
+            <name>Success response</name>
+            <parameterQueries/>
+            <status>ENABLED</status>
+            <usingExpressions>false</usingExpressions>
+        </mockResponse>
+        <mockResponse>
+            <body>{&#13;
+	"error": "Error service mock"&#13;
+}</body>
+            <contentEncodings/>
+            <httpHeaders/>
+            <httpStatusCode>500</httpStatusCode>
+            <id>SIWdHZ</id>
+            <methodId>i0FL9J</methodId>
+            <name>validate_error</name>
+            <parameterQueries/>
+            <status>DISABLED</status>
+            <usingExpressions>false</usingExpressions>
+        </mockResponse>
+    </mockResponses>
+    <project>
+        <description></description>
+        <id>a3ymXG</id>
+        <name>Identification PASIVO</name>
+        <applications/>
+    </project>
+    <resources>
+        <resource>
+            <applicationId>R99bqa</applicationId>
+            <id>6gO8xL</id>
+            <methods/>
+            <name>create</name>
+            <uri>/create/Identity</uri>
+        </resource>
+        <resource>
+            <applicationId>R99bqa</applicationId>
+            <id>j2AVvI</id>
+            <methods/>
+            <name>validate</name>
+            <uri>/validate/Identity</uri>
+        </resource>
+    </resources>
+</restExportContainer>
