@@ -40,5 +40,5 @@ ssh -i "rb-pb-dev-ecs-auto.pem" "ec2-user@$EC2" <<'ENDSSH'
   curl --location --request POST "http://$CASTLEMOCK_HOST/castlemock/api/rest/core/project/rest/import" \
   --header 'accept: */*' \
   --header 'Authorization: Basic YWRtaW46YWRtaW4=' \
-  --form 'file=@"project-soap-a3ymXG.xml"'
+  --form 'file=@"project-rest-a3ymXG.xml"'
 ENDSSH
