@@ -11,7 +11,6 @@
     <methods>
         <method>
             <currentResponseSequenceIndex>0</currentResponseSequenceIndex>
-            <forwardedEndpoint>http://proxy:8080/https://adl-habilitadora-stg-api.avaldigitallabs.com/securityManagement/v1/User_Identity</forwardedEndpoint>
             <httpMethod>POST</httpMethod>
             <id>Kagz7v</id>
             <mockResponses/>
@@ -26,7 +25,6 @@
             <currentResponseSequenceIndex>0</currentResponseSequenceIndex>
             <defaultQueryMockResponseId></defaultQueryMockResponseId>
             <forwardedEndpoint></forwardedEndpoint>
-            <forwardedEndpoint>http://proxy:8080/https://adl-habilitadora-stg-api.avaldigitallabs.com/securityManagement/v1/User_Identity</forwardedEndpoint>
             <httpMethod>PUT</httpMethod>
             <id>i0FL9J</id>
             <mockResponses/>
