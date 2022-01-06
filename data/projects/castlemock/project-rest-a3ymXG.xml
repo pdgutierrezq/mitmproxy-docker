@@ -12,7 +12,7 @@
         <method>
             <currentResponseSequenceIndex>0</currentResponseSequenceIndex>
             <httpMethod>POST</httpMethod>
-            <forwardedEndpoint>http://proxy:8080/https://digital-stg-api.avaldigitallabs.com/securityManagement/v1/User_Identity</forwardedEndpoint>
+            <forwardedEndpoint>http://proxy:8080/https://digital-stg-api.avaldigitallabs.com/securityManagement/v1/User_Identity/Identity</forwardedEndpoint>
             <id>Kagz7v</id>
             <mockResponses/>
             <name>CREATE</name>
@@ -25,7 +25,7 @@
         <method>
             <currentResponseSequenceIndex>0</currentResponseSequenceIndex>
             <defaultQueryMockResponseId></defaultQueryMockResponseId>
-            <forwardedEndpoint>http://proxy:8080/https://digital-stg-api.avaldigitallabs.com/securityManagement/v1/User_Identity</forwardedEndpoint>
+            <forwardedEndpoint>http://proxy:8080/https://digital-stg-api.avaldigitallabs.com/securityManagement/v1/User_Identity/Identity</forwardedEndpoint>
             <httpMethod>PUT</httpMethod>
             <id>i0FL9J</id>
             <mockResponses/>
