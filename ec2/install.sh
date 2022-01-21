@@ -11,7 +11,7 @@ ssh -o StrictHostKeyChecking=no -i "rb-pb-dev-ecs-auto.pem" "ec2-user@$EC2" <<'E
   sudo chmod +x /usr/local/bin/docker-compose
   docker-compose version
 ENDSSH
-sh ./test.sh
+sh ./proxy.sh
 sh ./castlemock.sh
 
 
