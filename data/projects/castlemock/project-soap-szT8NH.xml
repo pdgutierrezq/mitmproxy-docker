@@ -2370,7 +2370,7 @@
       &lt;web:getCustomerResult&gt;?&lt;/web:getCustomerResult&gt;
    &lt;/soapenv:Body&gt;
 &lt;/soapenv:Envelope&gt;</defaultBody>
-            <forwardedEndpoint>https://192.168.135.28:442/PFBA_Crm32/sca/WSBA_Crm_consultarDatosClienteV03</forwardedEndpoint>
+            <forwardedEndpoint>http://proxy:8080/https://192.168.135.28:442/PFBA_Crm32/sca/WSBA_Crm_consultarDatosClienteV03</forwardedEndpoint>
             <httpMethod>POST</httpMethod>
             <id>03RUDD</id>
             <identifyStrategy>ELEMENT_NAMESPACE</identifyStrategy>
