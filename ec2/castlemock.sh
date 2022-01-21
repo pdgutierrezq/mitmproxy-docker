@@ -7,7 +7,7 @@ import_project(){
    curl --location --request DELETE "http://$CASTLEMOCK_HOST/castlemock/api/rest/core/project/$PROJECT_TYPE/$PROJECT_ID" \
    --header 'accept: */*' \
    --header 'Authorization: Basic YWRtaW46YWRtaW4='
-   curl --location --request POST "http://$CASTLEMOCK_HOST/castlemock/api/rest/core/project/rest/import" \
+   curl --location --request POST "http://$CASTLEMOCK_HOST/castlemock/api/rest/core/project/$PROJECT_TYPE/import" \
    --header 'accept: */*' \
    --header 'Authorization: Basic YWRtaW46YWRtaW4=' \
    --form "file=@\"project-$PROJECT_TYPE-$PROJECT_ID.xml\""
