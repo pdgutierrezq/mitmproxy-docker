@@ -20,7 +20,7 @@ services:
 
   castlemock:
     container_name: castlemock
-    image: castlemock/castlemock:1.51
+    image: dajucastro/castlemock:1.51
     restart: always
     links:
       - "proxy:proxy"
