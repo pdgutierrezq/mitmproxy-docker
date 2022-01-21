@@ -2,8 +2,8 @@
 sh ./git.sh
 ssh -i "rb-pb-dev-ecs-auto.pem" "ec2-user@$EC2" <<'ENDSSH'
 import_project(){
-   PROJECT_ID=$1
-   PROJECT_TYPE=$2
+   PROJECT_TYPE=$1
+   PROJECT_ID=$2
    curl --location --request DELETE "http://$CASTLEMOCK_HOST/castlemock/api/rest/core/project/$PROJECT_TYPE/$PROJECT_ID" \
    --header 'accept: */*' \
    --header 'Authorization: Basic YWRtaW46YWRtaW4='
