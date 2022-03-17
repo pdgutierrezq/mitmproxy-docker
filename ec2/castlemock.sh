@@ -25,4 +25,5 @@ ssh -i "rb-pb-dev-ecs-auto.pem" "ec2-user@$EC2" <<'ENDSSH'
   import_project soap szT8NH
   import_project soap WHtzrB
   import_project soap wn0iz3
+  import_project rest mz8eSA
 ENDSSH
