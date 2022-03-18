@@ -129,7 +129,7 @@
     <project>
         <description></description>
         <id>mz8eSA</id>
-        <name>[Banco AV Villas] Insurance validation</name>
+        <name>rb-pasivo-dev-insurance-validation</name>
         <applications/>
     </project>
     <resources>

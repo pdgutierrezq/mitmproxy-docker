@@ -612,7 +612,7 @@
         <created>2020-02-20T20:49:34.972Z</created>
         <description>PASIBO --- Consultar cuentas por cliente</description>
         <id>wn0iz3</id>
-        <name>CUENTAS_POR_CLIENTE Pasivo</name>
+        <name>rb-pasivo-dev-read-customer-accounts</name>
         <updated>2020-02-20T20:49:34.972Z</updated>
         <ports/>
         <resources/>
