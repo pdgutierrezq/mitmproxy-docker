@@ -1,0 +1,908 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<soapExportContainer>
+    <mockResponses>
+        <mockResponse>
+            <body>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&#13;
+&lt;S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/"&gt;&#13;
+	&lt;S:Header&gt;&#13;
+		&lt;wsse:Security S:mustUnderstand="1" xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd"&gt;&#13;
+			&lt;wsu:Timestamp wsu:Id="Timestamp-9fc641bf-7aa8-4138-aea2-50424e905694" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd"&gt;&#13;
+				&lt;wsu:Created&gt;2022-03-18T18:19:10Z&lt;/wsu:Created&gt;&#13;
+				&lt;wsu:Expires&gt;2022-03-18T18:24:10Z&lt;/wsu:Expires&gt;&#13;
+			&lt;/wsu:Timestamp&gt;&#13;
+			&lt;wsse:BinarySecurityToken wsu:Id="SecurityToken-027e6f7b-0a45-4d35-9b7f-50424e90abad" EncodingType="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-soap-message-security-1.0#Base64Binary" ValueType="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-x509-token-profile-1.0#X509v3" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd"&gt;MIIIbjCCBlagAwIBAgITcwAAArK8bjSDqtXPWwAAAAACsjANBgkqhkiG9w0BAQsFADBfMRMwEQYKCZImiZPyLGQBGRYDbmV0MR0wGwYKCZImiZPyLGQBGRYNQmFuY29BVnZpbGxhczEpMCcGA1UEAxMgUEtJMkJhbmNvQXZ2aWxsYXMtUHJ1ZWJhc0Rlc2EtQ0EwHhcNMjEwOTA5MjEwMzA4WhcNMjMwOTA5MjEwMzA4WjCBtjELMAkGA1UEBhMCQ08xDzANBgNVBAcTBkJvZ290YTEXMBUGA1UEChMOQmFuY28gQXZ2aWxsYXMxITAfBgNVBAsTGEdlcmVuY2lhIEluZnJhZXN0cnVjdHVyYTEkMCIGA1UEAwwbQVZfQkFfU1Y1NTBUX0RQVzAwMV9DMDAxX1dTMTQwMgYJKoZIhvcNAQkBFiVTeXN0ZW1Qcm9ncmFtbWVyQGJhbmNvYXZ2aWxsYXMuY29tLmNvMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAsu2ExO6HGuPOtFaTd8XN3imsbpBir5NErowo2SAy1wee9OrWZYY9mYIYvYTyypAh8Ml36FVKJl/J6TFBW4OO0RvMbyXV9GgKfmVPjiw21nfbT1BVc1J8G8i2eI8rSlK0mX6i5w/6zKrjfya0PDqymGE7bVqxudzdMuuhePEspBNiD2HsLlb3mJMnpjt0HzMQmaajLTmSMFcaRKcmkNnzoEGC6lxKpDxVT0zmEyjo5muEwyUI1XSUhQFLxYbbh2nAA8G+T4OI563rX30t85S/Zon//VDXxIDFdonTAcCD98aF8fZ+XPOnOSwJTTuKxZDVHzqdNrtHjU+ei2MZ7E22+wIDAQABo4IDyTCCA8UwHQYDVR0OBBYEFJLMQKyVJkxPrlsAmdzCs/DUkg7pMB8GA1UdIwQYMBaAFEkY0Pk1oLlpMxgyquMM1keO1Ci2MIIBOAYDVR0fBIIBLzCCASswggEnoIIBI6CCAR+GgctsZGFwOi8vL0NOPVBLSTJCYW5jb0F2dmlsbGFzLVBydWViYXNEZXNhLUNBLENOPUFkaWdoZSxDTj1DRFAsQ049UHVibGljJTIwS2V5JTIwU2VydmljZXMsQ049U2VydmljZXMsQ049Q29uZmlndXJhdGlvbixEQz1vcmdhbml6YWNpb24sREM9bmV0P2NlcnRpZmljYXRlUmV2b2NhdGlvbkxpc3Q/YmFzZT9vYmplY3RDbGFzcz1jUkxEaXN0cmlidXRpb25Qb2ludIZPaHR0cDovL0FkaWdoZS5CYW5jb0FWdmlsbGFzLm5ldC9DZXJ0RW5yb2xsL1BLSTJCYW5jb0F2dmlsbGFzLVBydWViYXNEZXNhLUNBLmNybDCCAccGCCsGAQUFBwEBBIIBuTCCAbUwgcQGCCsGAQUFBzAChoG3bGRhcDovLy9DTj1QS0kyQmFuY29BdnZpbGxhcy1QcnVlYmFzRGVzYS1DQSxDTj1BSUEsQ049UHVibGljJTIwS2V5JTIwU2VydmljZXMsQ049U2VydmljZXMsQ049Q29uZmlndXJhdGlvbixEQz1vcmdhbml6YWNpb24sREM9bmV0P2NBQ2VydGlmaWNhdGU/YmFzZT9vYmplY3RDbGFzcz1jZXJ0aWZpY2F0aW9uQXV0aG9yaXR5MHQGCCsGAQUFBzAChmhodHRwOi8vQWRpZ2hlLkJhbmNvQVZ2aWxsYXMubmV0L0NlcnRFbnJvbGwvQWRpZ2hlLkJhbmNvQVZ2aWxsYXMubmV0X1BLSTJCYW5jb0F2dmlsbGFzLVBydWViYXNEZXNhLUNBLmNydDB2BggrBgEFBQcwAoZqZmlsZTovLy8vQWRpZ2hlLkJhbmNvQVZ2aWxsYXMubmV0L0NlcnRFbnJvbGwvQWRpZ2hlLkJhbmNvQVZ2aWxsYXMubmV0X1BLSTJCYW5jb0F2dmlsbGFzLVBydWViYXNEZXNhLUNBLmNydDALBgNVHQ8EBAMCBaAwPQYJKwYBBAGCNxUHBDAwLgYmKwYBBAGCNxUIhLuUQIKnpn6DlZsJlIYVheacToEvgfi+KILy8gwCAWQCAS4wEwYDVR0lBAwwCgYIKwYBBQUHAwEwGwYJKwYBBAGCNxUKBA4wDDAKBggrBgEFBQcDATANBgkqhkiG9w0BAQsFAAOCAgEACUGWYpEHPoUOexhXgM0qgKS2FjnXhSysXZUi12BysVs1gzq0QLrlKZQ8Xhff5qoqVFl+JiVw7DD7GBauzD0Q5/175vFq3ZPJ2HmihayfdLK04isTDnPoc3C5eXTtTsTWIn7Uox1j3hnY1kOVw5WRMgLv4jypbT2L51AjXLS+gOdtKSBXOAKTIwJnAhE7DuSvgGOeJhUr/LRRZXP/DYN8LjY40Wt83kPZ283gUhMjp5vwvcWjckNcND7UI9aqsTbIAgpoAZa07zNtP21NDJEew/by+t/uiYMuCx5RKLW1DDs6ghsTSwAJPC4Gx3Up3IvkRcv83RypisQLNtEdp1pX5LAtIMx0uts+7KHvGnn2uXznjY4Y1MLeLqM5Lb4JHNBND2fEfd16YT8jOjZJHjmXqYMa1QfMg2kH2JK/zz5SPVlVJahRHazBeW89KfHSyYOlGDS/9VmgGOxuua+guzZXwNC7K5LRsCrJTv+o8yo7A7v3AVNNbwT7FyNq7+qQzccuRQV9aUDbwQ1cQm2TkiqYbU7YajgCJQo6JCzQIaG7ms6gXsH+AqPi/mgrLZOQADkOK9AvGQuaSTGn4e/vZb43wXMfcpXyPU7qXH835+jX1W5bwgzoFNCi4F5hgFE/lzhuPK6U9KgG5zjXNbsrARYuBGwT4t7hf/n9GZmUhCZs95Q=&lt;/wsse:BinarySecurityToken&gt;&#13;
+			&lt;Signature xmlns="http://www.w3.org/2000/09/xmldsig#"&gt;&#13;
+				&lt;SignedInfo&gt;&#13;
+					&lt;CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/&gt;&#13;
+					&lt;SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/&gt;&#13;
+					&lt;Reference URI="#Timestamp-9fc641bf-7aa8-4138-aea2-50424e905694"&gt;&#13;
+						&lt;Transforms&gt;&#13;
+							&lt;Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/&gt;&#13;
+						&lt;/Transforms&gt;&#13;
+						&lt;DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/&gt;&#13;
+						&lt;DigestValue&gt;lEOY/5oG4Zgb0M4Yci2YcKUCd5s=&lt;/DigestValue&gt;&#13;
+					&lt;/Reference&gt;&#13;
+					&lt;Reference URI="#Body-af379492-b5b2-42e9-bccc-50424e904019"&gt;&#13;
+						&lt;Transforms&gt;&#13;
+							&lt;Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/&gt;&#13;
+						&lt;/Transforms&gt;&#13;
+						&lt;DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/&gt;&#13;
+						&lt;DigestValue&gt;tBk6AiecKrkROgZvLw/OeD1kw0E=&lt;/DigestValue&gt;&#13;
+					&lt;/Reference&gt;&#13;
+				&lt;/SignedInfo&gt;&#13;
+				&lt;SignatureValue&gt;HYFpW6vjPoY///lmED0d4uoAlOsvfMAmHiwd8jGBuvAoSUVYnObeFz8XVrQzbB3XkwkzDTB/ANmHh/rr02jdDasuipcQ3k33T2VuJ9SrQW7mvX+LL9lTAFnxj/+4jnF5n54Do6LGEUaunig2X5zZhmA2IOxX5goijirLIsIKu/ROAW3dY+csOpV6/6RKkq0bLSLzjxjUE7M2cSO9w0S4ZZqO5gYydwRVrkTBMI7PtMtNymsOWwOc/9PsM10MYMPApaiG5dI0exkJWGd5zGjPzhF4T+5tiQr5cxGgYaTFFsbRY9xn0WF8JxP/uRSxXzIvlE38ZT0F2B5OYeT4JFizJw==&lt;/SignatureValue&gt;&#13;
+				&lt;KeyInfo&gt;&#13;
+					&lt;wsse:SecurityTokenReference xmlns=""&gt;&#13;
+						&lt;wsse:Reference URI="#SecurityToken-027e6f7b-0a45-4d35-9b7f-50424e90abad" ValueType="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-x509-token-profile-1.0#X509v3"/&gt;&#13;
+					&lt;/wsse:SecurityTokenReference&gt;&#13;
+				&lt;/KeyInfo&gt;&#13;
+			&lt;/Signature&gt;&#13;
+		&lt;/wsse:Security&gt;&#13;
+	&lt;/S:Header&gt;&#13;
+	&lt;S:Body wsu:Id="Body-af379492-b5b2-42e9-bccc-50424e904019" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd"&gt;&#13;
+		&lt;ns0:firmarDocumentosResponse xmlns:ns0="http://logica_negocio.avvillas.com/"&gt;&#13;
+			&lt;os_firmarDocumentos&gt;&#13;
+				&lt;codRedOrigen&gt;AVV&lt;/codRedOrigen&gt;&#13;
+				&lt;identificacionDispositivo&gt;3.13.132.40&lt;/identificacionDispositivo&gt;&#13;
+				&lt;fechaTransaccion&gt;20220318&lt;/fechaTransaccion&gt;&#13;
+				&lt;horaTransaccion&gt;18185600&lt;/horaTransaccion&gt;&#13;
+				&lt;nroSecuencia&gt;1&lt;/nroSecuencia&gt;&#13;
+				&lt;codTransaccionMonitor&gt;700770&lt;/codTransaccionMonitor&gt;&#13;
+				&lt;codServicioMonitor&gt;700770&lt;/codServicioMonitor&gt;&#13;
+				&lt;fechaCompensacion&gt;20220318&lt;/fechaCompensacion&gt;&#13;
+				&lt;nroAutorizacion&gt;0&lt;/nroAutorizacion&gt;&#13;
+				&lt;codRespuesta&gt;0&lt;/codRespuesta&gt;&#13;
+				&lt;msjRespuesta&gt;Transaccion Exitosa&lt;/msjRespuesta&gt;&#13;
+				&lt;costoTransaccion&gt;0&lt;/costoTransaccion&gt;&#13;
+			&lt;/os_firmarDocumentos&gt;&#13;
+		&lt;/ns0:firmarDocumentosResponse&gt;&#13;
+	&lt;/S:Body&gt;&#13;
+&lt;/S:Envelope&gt;</body>
+            <contentEncodings/>
+            <httpHeaders/>
+            <httpStatusCode>200</httpStatusCode>
+            <id>hmucA8</id>
+            <name>ok</name>
+            <operationId>8IJfd1</operationId>
+            <status>ENABLED</status>
+            <usingExpressions>false</usingExpressions>
+            <xpathExpressions/>
+        </mockResponse>
+        <mockResponse>
+            <body>&lt;soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://logica_negocio.avvillas.com/"&gt;&#13;
+   &lt;soapenv:Header/&gt;&#13;
+   &lt;soapenv:Body&gt;&#13;
+      &lt;web:firmarDocumentosResponse&gt;?&lt;/web:firmarDocumentosResponse&gt;&#13;
+   &lt;/soapenv:Body&gt;&#13;
+&lt;/soapenv:Envelope&gt;</body>
+            <contentEncodings/>
+            <httpHeaders/>
+            <httpStatusCode>200</httpStatusCode>
+            <id>6kCcVH</id>
+            <name>ko</name>
+            <operationId>8IJfd1</operationId>
+            <status>DISABLED</status>
+            <usingExpressions>false</usingExpressions>
+            <xpathExpressions/>
+        </mockResponse>
+    </mockResponses>
+    <operations>
+        <operation>
+            <currentResponseSequenceIndex>0</currentResponseSequenceIndex>
+            <defaultBody>&lt;soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://logica_negocio.avvillas.com/"&gt;
+   &lt;soapenv:Header/&gt;
+   &lt;soapenv:Body&gt;
+      &lt;web:firmarDocumentosResponse&gt;?&lt;/web:firmarDocumentosResponse&gt;
+   &lt;/soapenv:Body&gt;
+&lt;/soapenv:Envelope&gt;</defaultBody>
+            <defaultMockResponseId></defaultMockResponseId>
+            <forwardedEndpoint>http://proxy:8080/https://192.168.135.28:442/PJBA_Multiaplicacion_ejecutarFirmaDigital/WSBA_Multiaplicacion_ejecutarFirmaDigitalV2</forwardedEndpoint>
+            <httpMethod>POST</httpMethod>
+            <id>8IJfd1</id>
+            <identifyStrategy>ELEMENT_NAMESPACE</identifyStrategy>
+            <mockOnFailure>false</mockOnFailure>
+            <mockResponses/>
+            <name>firmarDocumentos</name>
+            <networkDelay>0</networkDelay>
+            <operationIdentifier>
+                <name>firmarDocumentosRequest</name>
+                <namespace>http://logica_negocio.avvillas.com/</namespace>
+            </operationIdentifier>
+            <originalEndpoint>http://10.10.9.193:7003/PJBA_Multiaplicacion_ejecutarFirmaDigital/WSBA_Multiaplicacion_ejecutarFirmaDigital</originalEndpoint>
+            <portId>OOQ9Bb</portId>
+            <responseStrategy>RANDOM</responseStrategy>
+            <simulateNetworkDelay>false</simulateNetworkDelay>
+            <soapVersion>SOAP11</soapVersion>
+            <status>FORWARDED</status>
+        </operation>
+    </operations>
+    <ports>
+        <port>
+            <id>OOQ9Bb</id>
+            <name>WSBA_Multiaplicacion_ejecutarFirmaDigitalPort</name>
+            <operations/>
+            <projectId>E5KUlt</projectId>
+            <uri>WSBA_Multiaplicacion_ejecutarFirmaDigitalPort</uri>
+        </port>
+    </ports>
+    <project>
+        <created>2022-03-18T17:34:47.481Z</created>
+        <description></description>
+        <id>E5KUlt</id>
+        <name>rb-pasivo-dev-digital-signature</name>
+        <updated>2022-03-18T17:34:47.481Z</updated>
+        <ports/>
+        <resources/>
+    </project>
+    <resources>
+        <resource>
+            <content>&lt;?xml version="1.0" encoding="UTF-8" standalone="no"?&gt;
+&lt;!-- Published by JAX-WS RI (http://jax-ws.java.net). RI's version is JAX-WS RI 2.2.11-b150616.1732 svn-revision#a247ba216861f2c0baac9a3657c5690bce0c744d. --&gt;&lt;wsdl:definitions xmlns:bons0="http://logica_negocio.avvillas.com/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://logica_negocio.avvillas.com/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="WSBA_Multiaplicacion_ejecutarFirmaDigital" targetNamespace="http://logica_negocio.avvillas.com/"&gt;
+      
+    &lt;wsdl:types&gt;
+            
+        &lt;xsd:schema xmlns:bons1="http://logica_negocio.avvillas.com/" targetNamespace="http://logica_negocio.avvillas.com/"&gt;
+                  
+            &lt;xsd:element name="firmarDocumentosRequest"&gt;
+                        
+                &lt;xsd:complexType&gt;
+                              
+                    &lt;xsd:sequence&gt;
+                                    
+                        &lt;xsd:element name="oe_firmarDocumentos" nillable="true" type="bons0:oe_firmarDocumentos"/&gt;
+                                  
+                    &lt;/xsd:sequence&gt;
+                            
+                &lt;/xsd:complexType&gt;
+                      
+            &lt;/xsd:element&gt;
+                  
+            &lt;xsd:element name="firmarDocumentosResponse"&gt;
+                        
+                &lt;xsd:complexType&gt;
+                              
+                    &lt;xsd:sequence&gt;
+                                    
+                        &lt;xsd:element name="os_firmarDocumentos" nillable="true" type="bons0:os_firmarDocumentos"/&gt;
+                                  
+                    &lt;/xsd:sequence&gt;
+                            
+                &lt;/xsd:complexType&gt;
+                      
+            &lt;/xsd:element&gt;
+                  
+            &lt;xsd:complexType name="oe_firmarDocumentos"&gt;
+                        
+                &lt;xsd:sequence&gt;
+                              
+                    &lt;xsd:element minOccurs="1" name="codRedOrigen"&gt;
+                                    
+                        &lt;xsd:simpleType&gt;
+                                          
+                            &lt;xsd:restriction base="xsd:string"&gt;
+                                                
+                                &lt;xsd:minLength value="1"/&gt;
+                                                
+                                &lt;xsd:maxLength value="3"/&gt;
+                                                
+                                &lt;xsd:whiteSpace value="collapse"/&gt;
+                                              
+                            &lt;/xsd:restriction&gt;
+                                        
+                        &lt;/xsd:simpleType&gt;
+                                  
+                    &lt;/xsd:element&gt;
+                              
+                    &lt;xsd:element minOccurs="1" name="tipoCanalDispositivo"&gt;
+                                    
+                        &lt;xsd:simpleType&gt;
+                                          
+                            &lt;xsd:restriction base="xsd:string"&gt;
+                                                
+                                &lt;xsd:maxLength value="3"/&gt;
+                                                
+                                &lt;xsd:minLength value="1"/&gt;
+                                              
+                            &lt;/xsd:restriction&gt;
+                                        
+                        &lt;/xsd:simpleType&gt;
+                                  
+                    &lt;/xsd:element&gt;
+                              
+                    &lt;xsd:element minOccurs="1" name="tipoCanalLocalizacion"&gt;
+                                    
+                        &lt;xsd:simpleType&gt;
+                                          
+                            &lt;xsd:restriction base="xsd:string"&gt;
+                                                
+                                &lt;xsd:length value="1"/&gt;
+                                              
+                            &lt;/xsd:restriction&gt;
+                                        
+                        &lt;/xsd:simpleType&gt;
+                                  
+                    &lt;/xsd:element&gt;
+                              
+                    &lt;xsd:element minOccurs="1" name="identificacionDispositivo"&gt;
+                                    
+                        &lt;xsd:simpleType&gt;
+                                          
+                            &lt;xsd:restriction base="xsd:string"&gt;
+                                                
+                                &lt;xsd:maxLength value="15"/&gt;
+                                                
+                                &lt;xsd:minLength value="1"/&gt;
+                                              
+                            &lt;/xsd:restriction&gt;
+                                        
+                        &lt;/xsd:simpleType&gt;
+                                  
+                    &lt;/xsd:element&gt;
+                              
+                    &lt;xsd:element minOccurs="1" name="fechaTransaccion"&gt;
+                                    
+                        &lt;xsd:simpleType&gt;
+                                          
+                            &lt;xsd:restriction base="xsd:int"&gt;
+                                                
+                                &lt;xsd:minInclusive value="0"/&gt;
+                                                
+                                &lt;xsd:maxInclusive value="99999999"/&gt;
+                                              
+                            &lt;/xsd:restriction&gt;
+                                        
+                        &lt;/xsd:simpleType&gt;
+                                  
+                    &lt;/xsd:element&gt;
+                              
+                    &lt;xsd:element minOccurs="1" name="horaTransaccion"&gt;
+                                    
+                        &lt;xsd:simpleType&gt;
+                                          
+                            &lt;xsd:restriction base="xsd:int"&gt;
+                                                
+                                &lt;xsd:maxInclusive value="99999999"/&gt;
+                                                
+                                &lt;xsd:minInclusive value="0"/&gt;
+                                              
+                            &lt;/xsd:restriction&gt;
+                                        
+                        &lt;/xsd:simpleType&gt;
+                                  
+                    &lt;/xsd:element&gt;
+                              
+                    &lt;xsd:element minOccurs="1" name="nroSecuencia"&gt;
+                                    
+                        &lt;xsd:simpleType&gt;
+                                          
+                            &lt;xsd:restriction base="xsd:int"&gt;
+                                                
+                                &lt;xsd:minInclusive value="0"/&gt;
+                                                
+                                &lt;xsd:maxInclusive value="99999999"/&gt;
+                                              
+                            &lt;/xsd:restriction&gt;
+                                        
+                        &lt;/xsd:simpleType&gt;
+                                  
+                    &lt;/xsd:element&gt;
+                              
+                    &lt;xsd:element minOccurs="1" name="fechaCompensacion"&gt;
+                                    
+                        &lt;xsd:simpleType&gt;
+                                          
+                            &lt;xsd:restriction base="xsd:int"&gt;
+                                                
+                                &lt;xsd:minInclusive value="0"/&gt;
+                                                
+                                &lt;xsd:maxInclusive value="99999999"/&gt;
+                                              
+                            &lt;/xsd:restriction&gt;
+                                        
+                        &lt;/xsd:simpleType&gt;
+                                  
+                    &lt;/xsd:element&gt;
+                              
+                    &lt;xsd:element minOccurs="1" name="tipoDocumento"&gt;
+                                    
+                        &lt;xsd:simpleType&gt;
+                                          
+                            &lt;xsd:restriction base="xsd:string"&gt;
+                                                
+                                &lt;xsd:length value="1"/&gt;
+                                                
+                                &lt;xsd:whiteSpace value="collapse"/&gt;
+                                              
+                            &lt;/xsd:restriction&gt;
+                                        
+                        &lt;/xsd:simpleType&gt;
+                                  
+                    &lt;/xsd:element&gt;
+                              
+                    &lt;xsd:element minOccurs="1" name="nroDocumento"&gt;
+                                    
+                        &lt;xsd:simpleType&gt;
+                                          
+                            &lt;xsd:restriction base="xsd:long"&gt;
+                                                
+                                &lt;xsd:minInclusive value="0"/&gt;
+                                                
+                                &lt;xsd:maxInclusive value="9999999999999999"/&gt;
+                                              
+                            &lt;/xsd:restriction&gt;
+                                        
+                        &lt;/xsd:simpleType&gt;
+                                  
+                    &lt;/xsd:element&gt;
+                              
+                    &lt;xsd:element minOccurs="1" name="clave"&gt;
+                                    
+                        &lt;xsd:simpleType&gt;
+                                          
+                            &lt;xsd:restriction base="xsd:string"&gt;
+                                                
+                                &lt;xsd:minLength value="1"/&gt;
+                                                
+                                &lt;xsd:maxLength value="16"/&gt;
+                                                
+                                &lt;xsd:whiteSpace value="collapse"/&gt;
+                                              
+                            &lt;/xsd:restriction&gt;
+                                        
+                        &lt;/xsd:simpleType&gt;
+                                  
+                    &lt;/xsd:element&gt;
+                              
+                    &lt;xsd:element minOccurs="1" name="claveAlterna"&gt;
+                                    
+                        &lt;xsd:simpleType&gt;
+                                          
+                            &lt;xsd:restriction base="xsd:string"&gt;
+                                                
+                                &lt;xsd:minLength value="1"/&gt;
+                                                
+                                &lt;xsd:maxLength value="16"/&gt;
+                                              
+                            &lt;/xsd:restriction&gt;
+                                        
+                        &lt;/xsd:simpleType&gt;
+                                  
+                    &lt;/xsd:element&gt;
+                              
+                    &lt;xsd:element minOccurs="1" name="codTransaccionMonitor"&gt;
+                                    
+                        &lt;xsd:simpleType&gt;
+                                          
+                            &lt;xsd:restriction base="xsd:int"&gt;
+                                                
+                                &lt;xsd:minInclusive value="0"/&gt;
+                                                
+                                &lt;xsd:maxInclusive value="999999"/&gt;
+                                              
+                            &lt;/xsd:restriction&gt;
+                                        
+                        &lt;/xsd:simpleType&gt;
+                                  
+                    &lt;/xsd:element&gt;
+                              
+                    &lt;xsd:element minOccurs="1" name="codServicioMonitor"&gt;
+                                    
+                        &lt;xsd:simpleType&gt;
+                                          
+                            &lt;xsd:restriction base="xsd:int"&gt;
+                                                
+                                &lt;xsd:minInclusive value="0"/&gt;
+                                                
+                                &lt;xsd:maxInclusive value="999999"/&gt;
+                                              
+                            &lt;/xsd:restriction&gt;
+                                        
+                        &lt;/xsd:simpleType&gt;
+                                  
+                    &lt;/xsd:element&gt;
+                              
+                    &lt;xsd:element minOccurs="1" name="modoEntrada"&gt;
+                                    
+                        &lt;xsd:simpleType&gt;
+                                          
+                            &lt;xsd:restriction base="xsd:int"&gt;
+                                                
+                                &lt;xsd:minInclusive value="0"/&gt;
+                                                
+                                &lt;xsd:maxInclusive value="9"/&gt;
+                                              
+                            &lt;/xsd:restriction&gt;
+                                        
+                        &lt;/xsd:simpleType&gt;
+                                  
+                    &lt;/xsd:element&gt;
+                              
+                    &lt;xsd:element minOccurs="1" name="modoTransaccion"&gt;
+                                    
+                        &lt;xsd:simpleType&gt;
+                                          
+                            &lt;xsd:restriction base="xsd:string"&gt;
+                                                
+                                &lt;xsd:length value="1"/&gt;
+                                                
+                                &lt;xsd:whiteSpace value="collapse"/&gt;
+                                              
+                            &lt;/xsd:restriction&gt;
+                                        
+                        &lt;/xsd:simpleType&gt;
+                                  
+                    &lt;/xsd:element&gt;
+                              
+                    &lt;xsd:element minOccurs="1" name="codOficina"&gt;
+                                    
+                        &lt;xsd:simpleType&gt;
+                                          
+                            &lt;xsd:restriction base="xsd:string"&gt;
+                                                
+                                &lt;xsd:minLength value="1"/&gt;
+                                                
+                                &lt;xsd:maxLength value="3"/&gt;
+                                                
+                                &lt;xsd:whiteSpace value="collapse"/&gt;
+                                              
+                            &lt;/xsd:restriction&gt;
+                                        
+                        &lt;/xsd:simpleType&gt;
+                                  
+                    &lt;/xsd:element&gt;
+                              
+                    &lt;xsd:element minOccurs="1" name="nroDocumentoAsesor"&gt;
+                                    
+                        &lt;xsd:simpleType&gt;
+                                          
+                            &lt;xsd:restriction base="xsd:long"&gt;
+                                                
+                                &lt;xsd:minInclusive value="0"/&gt;
+                                                
+                                &lt;xsd:maxInclusive value="9999999999999999"/&gt;
+                                              
+                            &lt;/xsd:restriction&gt;
+                                        
+                        &lt;/xsd:simpleType&gt;
+                                  
+                    &lt;/xsd:element&gt;
+                              
+                    &lt;xsd:element minOccurs="1" name="codConvenio"&gt;
+                                    
+                        &lt;xsd:simpleType&gt;
+                                          
+                            &lt;xsd:restriction base="xsd:string"&gt;
+                                                
+                                &lt;xsd:minLength value="1"/&gt;
+                                                
+                                &lt;xsd:maxLength value="3"/&gt;
+                                                
+                                &lt;xsd:whiteSpace value="collapse"/&gt;
+                                              
+                            &lt;/xsd:restriction&gt;
+                                        
+                        &lt;/xsd:simpleType&gt;
+                                  
+                    &lt;/xsd:element&gt;
+                              
+                    &lt;xsd:element minOccurs="1" name="factorAutenticacion"&gt;
+                                    
+                        &lt;xsd:simpleType&gt;
+                                          
+                            &lt;xsd:restriction base="xsd:int"&gt;
+                                                
+                                &lt;xsd:minInclusive value="0"/&gt;
+                                                
+                                &lt;xsd:maxInclusive value="99999"/&gt;
+                                              
+                            &lt;/xsd:restriction&gt;
+                                        
+                        &lt;/xsd:simpleType&gt;
+                                  
+                    &lt;/xsd:element&gt;
+                              
+                    &lt;xsd:element minOccurs="1" name="valorFactorAutenticacion"&gt;
+                                    
+                        &lt;xsd:simpleType&gt;
+                                          
+                            &lt;xsd:restriction base="xsd:string"&gt;
+                                                
+                                &lt;xsd:minLength value="1"/&gt;
+                                                
+                                &lt;xsd:maxLength value="1024"/&gt;
+                                                
+                                &lt;xsd:whiteSpace value="collapse"/&gt;
+                                              
+                            &lt;/xsd:restriction&gt;
+                                        
+                        &lt;/xsd:simpleType&gt;
+                                  
+                    &lt;/xsd:element&gt;
+                              
+                    &lt;xsd:element minOccurs="1" name="tipoProducto"&gt;
+                                    
+                        &lt;xsd:simpleType&gt;
+                                          
+                            &lt;xsd:restriction base="xsd:int"&gt;
+                                                
+                                &lt;xsd:minInclusive value="0"/&gt;
+                                                
+                                &lt;xsd:maxInclusive value="999"/&gt;
+                                              
+                            &lt;/xsd:restriction&gt;
+                                        
+                        &lt;/xsd:simpleType&gt;
+                                  
+                    &lt;/xsd:element&gt;
+                              
+                    &lt;xsd:element minOccurs="1" name="subTipoProducto"&gt;
+                                    
+                        &lt;xsd:simpleType&gt;
+                                          
+                            &lt;xsd:restriction base="xsd:int"&gt;
+                                                
+                                &lt;xsd:minInclusive value="0"/&gt;
+                                                
+                                &lt;xsd:maxInclusive value="999"/&gt;
+                                              
+                            &lt;/xsd:restriction&gt;
+                                        
+                        &lt;/xsd:simpleType&gt;
+                                  
+                    &lt;/xsd:element&gt;
+                              
+                    &lt;xsd:element minOccurs="1" name="nroProducto"&gt;
+                                    
+                        &lt;xsd:simpleType&gt;
+                                          
+                            &lt;xsd:restriction base="xsd:long"&gt;
+                                                
+                                &lt;xsd:minInclusive value="0"/&gt;
+                                                
+                                &lt;xsd:maxInclusive value="9999999999999999"/&gt;
+                                              
+                            &lt;/xsd:restriction&gt;
+                                        
+                        &lt;/xsd:simpleType&gt;
+                                  
+                    &lt;/xsd:element&gt;
+                              
+                    &lt;xsd:element minOccurs="1" name="paqueteDocumentos"&gt;
+                                    
+                        &lt;xsd:simpleType&gt;
+                                          
+                            &lt;xsd:restriction base="xsd:int"&gt;
+                                                
+                                &lt;xsd:minInclusive value="0"/&gt;
+                                                
+                                &lt;xsd:maxInclusive value="999999"/&gt;
+                                              
+                            &lt;/xsd:restriction&gt;
+                                        
+                        &lt;/xsd:simpleType&gt;
+                                  
+                    &lt;/xsd:element&gt;
+                              
+                    &lt;xsd:element maxOccurs="15" minOccurs="1" name="datosAdicionales" type="bons1:oe_datosAdicionales"/&gt;
+                            
+                &lt;/xsd:sequence&gt;
+                      
+            &lt;/xsd:complexType&gt;
+                  
+            &lt;xsd:complexType name="oe_datosAdicionales"&gt;
+                        
+                &lt;xsd:sequence&gt;
+                              
+                    &lt;xsd:element maxOccurs="1" minOccurs="1" name="llave"&gt;
+                                    
+                        &lt;xsd:simpleType&gt;
+                                          
+                            &lt;xsd:restriction base="xsd:string"&gt;
+                                                
+                                &lt;xsd:minLength value="1"/&gt;
+                                                
+                                &lt;xsd:maxLength value="30"/&gt;
+                                                
+                                &lt;xsd:whiteSpace value="collapse"/&gt;
+                                              
+                            &lt;/xsd:restriction&gt;
+                                        
+                        &lt;/xsd:simpleType&gt;
+                                  
+                    &lt;/xsd:element&gt;
+                              
+                    &lt;xsd:element minOccurs="1" name="valor"&gt;
+                                    
+                        &lt;xsd:simpleType&gt;
+                                          
+                            &lt;xsd:restriction base="xsd:string"&gt;
+                                                
+                                &lt;xsd:maxLength value="64"/&gt;
+                                                
+                                &lt;xsd:minLength value="1"/&gt;
+                                              
+                            &lt;/xsd:restriction&gt;
+                                        
+                        &lt;/xsd:simpleType&gt;
+                                  
+                    &lt;/xsd:element&gt;
+                            
+                &lt;/xsd:sequence&gt;
+                      
+            &lt;/xsd:complexType&gt;
+                  
+            &lt;xsd:complexType name="os_firmarDocumentos"&gt;
+                        
+                &lt;xsd:sequence&gt;
+                              
+                    &lt;xsd:element minOccurs="1" name="codRedOrigen"&gt;
+                                    
+                        &lt;xsd:simpleType&gt;
+                                          
+                            &lt;xsd:restriction base="xsd:string"&gt;
+                                                
+                                &lt;xsd:minLength value="1"/&gt;
+                                                
+                                &lt;xsd:maxLength value="3"/&gt;
+                                                
+                                &lt;xsd:whiteSpace value="collapse"/&gt;
+                                              
+                            &lt;/xsd:restriction&gt;
+                                        
+                        &lt;/xsd:simpleType&gt;
+                                  
+                    &lt;/xsd:element&gt;
+                              
+                    &lt;xsd:element minOccurs="1" name="identificacionDispositivo"&gt;
+                                    
+                        &lt;xsd:simpleType&gt;
+                                          
+                            &lt;xsd:restriction base="xsd:string"&gt;
+                                                
+                                &lt;xsd:minLength value="1"/&gt;
+                                                
+                                &lt;xsd:maxLength value="3"/&gt;
+                                              
+                            &lt;/xsd:restriction&gt;
+                                        
+                        &lt;/xsd:simpleType&gt;
+                                  
+                    &lt;/xsd:element&gt;
+                              
+                    &lt;xsd:element minOccurs="1" name="fechaTransaccion"&gt;
+                                    
+                        &lt;xsd:simpleType&gt;
+                                          
+                            &lt;xsd:restriction base="xsd:int"&gt;
+                                                
+                                &lt;xsd:minInclusive value="0"/&gt;
+                                                
+                                &lt;xsd:maxInclusive value="99999999"/&gt;
+                                              
+                            &lt;/xsd:restriction&gt;
+                                        
+                        &lt;/xsd:simpleType&gt;
+                                  
+                    &lt;/xsd:element&gt;
+                              
+                    &lt;xsd:element minOccurs="1" name="horaTransaccion"&gt;
+                                    
+                        &lt;xsd:simpleType&gt;
+                                          
+                            &lt;xsd:restriction base="xsd:int"&gt;
+                                                
+                                &lt;xsd:minInclusive value="0"/&gt;
+                                                
+                                &lt;xsd:maxInclusive value="99999999"/&gt;
+                                              
+                            &lt;/xsd:restriction&gt;
+                                        
+                        &lt;/xsd:simpleType&gt;
+                                  
+                    &lt;/xsd:element&gt;
+                              
+                    &lt;xsd:element minOccurs="1" name="nroSecuencia"&gt;
+                                    
+                        &lt;xsd:simpleType&gt;
+                                          
+                            &lt;xsd:restriction base="xsd:int"&gt;
+                                                
+                                &lt;xsd:minInclusive value="0"/&gt;
+                                                
+                                &lt;xsd:maxInclusive value="99999999"/&gt;
+                                              
+                            &lt;/xsd:restriction&gt;
+                                        
+                        &lt;/xsd:simpleType&gt;
+                                  
+                    &lt;/xsd:element&gt;
+                              
+                    &lt;xsd:element minOccurs="1" name="codTransaccionMonitor"&gt;
+                                    
+                        &lt;xsd:simpleType&gt;
+                                          
+                            &lt;xsd:restriction base="xsd:int"&gt;
+                                                
+                                &lt;xsd:minInclusive value="0"/&gt;
+                                                
+                                &lt;xsd:maxInclusive value="999999"/&gt;
+                                              
+                            &lt;/xsd:restriction&gt;
+                                        
+                        &lt;/xsd:simpleType&gt;
+                                  
+                    &lt;/xsd:element&gt;
+                              
+                    &lt;xsd:element minOccurs="1" name="codServicioMonitor"&gt;
+                                    
+                        &lt;xsd:simpleType&gt;
+                                          
+                            &lt;xsd:restriction base="xsd:int"&gt;
+                                                
+                                &lt;xsd:minInclusive value="0"/&gt;
+                                                
+                                &lt;xsd:maxInclusive value="999999"/&gt;
+                                              
+                            &lt;/xsd:restriction&gt;
+                                        
+                        &lt;/xsd:simpleType&gt;
+                                  
+                    &lt;/xsd:element&gt;
+                              
+                    &lt;xsd:element minOccurs="1" name="fechaCompensacion"&gt;
+                                    
+                        &lt;xsd:simpleType&gt;
+                                          
+                            &lt;xsd:restriction base="xsd:int"&gt;
+                                                
+                                &lt;xsd:minInclusive value="0"/&gt;
+                                                
+                                &lt;xsd:maxInclusive value="99999999"/&gt;
+                                              
+                            &lt;/xsd:restriction&gt;
+                                        
+                        &lt;/xsd:simpleType&gt;
+                                  
+                    &lt;/xsd:element&gt;
+                              
+                    &lt;xsd:element minOccurs="1" name="nroAutorizacion"&gt;
+                                    
+                        &lt;xsd:simpleType&gt;
+                                          
+                            &lt;xsd:restriction base="xsd:long"&gt;
+                                                
+                                &lt;xsd:minInclusive value="0"/&gt;
+                                                
+                                &lt;xsd:maxInclusive value="9999999999"/&gt;
+                                              
+                            &lt;/xsd:restriction&gt;
+                                        
+                        &lt;/xsd:simpleType&gt;
+                                  
+                    &lt;/xsd:element&gt;
+                              
+                    &lt;xsd:element minOccurs="1" name="codRespuesta"&gt;
+                                    
+                        &lt;xsd:simpleType&gt;
+                                          
+                            &lt;xsd:restriction base="xsd:int"&gt;
+                                                
+                                &lt;xsd:minInclusive value="0"/&gt;
+                                                
+                                &lt;xsd:maxInclusive value="99999"/&gt;
+                                              
+                            &lt;/xsd:restriction&gt;
+                                        
+                        &lt;/xsd:simpleType&gt;
+                                  
+                    &lt;/xsd:element&gt;
+                              
+                    &lt;xsd:element minOccurs="1" name="msjRespuesta"&gt;
+                                    
+                        &lt;xsd:simpleType&gt;
+                                          
+                            &lt;xsd:restriction base="xsd:string"&gt;
+                                                
+                                &lt;xsd:minLength value="1"/&gt;
+                                                
+                                &lt;xsd:maxLength value="50"/&gt;
+                                                
+                                &lt;xsd:whiteSpace value="collapse"/&gt;
+                                              
+                            &lt;/xsd:restriction&gt;
+                                        
+                        &lt;/xsd:simpleType&gt;
+                                  
+                    &lt;/xsd:element&gt;
+                              
+                    &lt;xsd:element minOccurs="1" name="costoTransaccion"&gt;
+                                    
+                        &lt;xsd:simpleType&gt;
+                                          
+                            &lt;xsd:restriction base="xsd:long"&gt;
+                                                
+                                &lt;xsd:minInclusive value="0"/&gt;
+                                                
+                                &lt;xsd:maxInclusive value="999999999999999999"/&gt;
+                                              
+                            &lt;/xsd:restriction&gt;
+                                        
+                        &lt;/xsd:simpleType&gt;
+                                  
+                    &lt;/xsd:element&gt;
+                            
+                &lt;/xsd:sequence&gt;
+                      
+            &lt;/xsd:complexType&gt;
+                
+        &lt;/xsd:schema&gt;
+          
+    &lt;/wsdl:types&gt;
+      
+    &lt;wsdl:message name="firmarDocumentosRequestMsg"&gt;
+            
+        &lt;wsdl:part element="bons0:firmarDocumentosRequest" name="firmarDocumentosRq"/&gt;
+          
+    &lt;/wsdl:message&gt;
+      
+    &lt;wsdl:message name="firmarDocumentosResponseMsg"&gt;
+            
+        &lt;wsdl:part element="bons0:firmarDocumentosResponse" name="firmarDocumentosRs"/&gt;
+          
+    &lt;/wsdl:message&gt;
+      
+    &lt;wsdl:portType name="WSBA_Multiaplicacion_ejecutarFirmaDigital"&gt;
+            
+        &lt;wsdl:operation name="firmarDocumentos"&gt;
+                  
+            &lt;wsdl:input message="bons0:firmarDocumentosRequestMsg"/&gt;
+                  
+            &lt;wsdl:output message="bons0:firmarDocumentosResponseMsg"/&gt;
+                
+        &lt;/wsdl:operation&gt;
+          
+    &lt;/wsdl:portType&gt;
+      
+    &lt;wsdl:binding name="WSBA_Multiaplicacion_ejecutarFirmaDigitalBinding" type="bons0:WSBA_Multiaplicacion_ejecutarFirmaDigital"&gt;
+            
+        &lt;soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/&gt;
+            
+        &lt;wsdl:operation name="firmarDocumentos"&gt;
+                  
+            &lt;soap:operation soapAction="http://logica_negocio.avvillas.com/firmarDocumentos"/&gt;
+                  
+            &lt;wsdl:input&gt;
+                        
+                &lt;soap:body use="literal"/&gt;
+                      
+            &lt;/wsdl:input&gt;
+                  
+            &lt;wsdl:output&gt;
+                        
+                &lt;soap:body use="literal"/&gt;
+                      
+            &lt;/wsdl:output&gt;
+                
+        &lt;/wsdl:operation&gt;
+          
+    &lt;/wsdl:binding&gt;
+      
+    &lt;wsdl:service name="WSBA_Multiaplicacion_ejecutarFirmaDigital"&gt;
+            
+        &lt;wsdl:port binding="bons0:WSBA_Multiaplicacion_ejecutarFirmaDigitalBinding" name="WSBA_Multiaplicacion_ejecutarFirmaDigitalPort"&gt;
+                  
+            &lt;soap:address location="http://10.10.9.193:7003/PJBA_Multiaplicacion_ejecutarFirmaDigital/WSBA_Multiaplicacion_ejecutarFirmaDigital"/&gt;
+                
+        &lt;/wsdl:port&gt;
+          
+    &lt;/wsdl:service&gt;
+    
+&lt;/wsdl:definitions&gt;
+</content>
+            <id>T3YY8m</id>
+            <name>Upload-2022-03-18-05-58-04.788</name>
+            <projectId>E5KUlt</projectId>
+            <type>WSDL</type>
+        </resource>
+    </resources>
+</soapExportContainer>
