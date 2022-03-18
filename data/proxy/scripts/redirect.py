@@ -16,7 +16,7 @@ def request(flow: http.HTTPFlow) -> None:
     flow.request.scheme = request.scheme
     flow.request.port = request.port
     flow.request.path = request.path
-    if flow.request.path == '/https://192.168.135.28:542/PFBA_AhorrosyCtaCte40/WRBA_AhorrosyCtaCte_validarSeguros':
+    if flow.request.path == '/PFBA_AhorrosyCtaCte40/WRBA_AhorrosyCtaCte_validarSeguros':
       flow.request.headers["content-type"] = "application/x-www-form-urlencoded"
     # if flow.request.path == '/https://192.168.135.28:442/PFBA_Crm31/sca/WSBA_Crm_consultarCondicionesCliente':
     # if flow.request.path == '/mock':
