@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<soapExportContainer>
+    <mockResponses>
+        <mockResponse>
+            <body>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&#13;
+&lt;soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"&gt;&#13;
+	&lt;soapenv:Header&gt;&#13;
+		&lt;wsse:Security soapenv:mustUnderstand="1" xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd"&gt;&#13;
+			&lt;wsu:Timestamp wsu:Id="Timestamp-88251bcf-d375-40d6-ad42-50424e905f7d" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd"&gt;&#13;
+				&lt;wsu:Created&gt;2022-03-18T18:33:38Z&lt;/wsu:Created&gt;&#13;
+				&lt;wsu:Expires&gt;2022-03-18T18:38:38Z&lt;/wsu:Expires&gt;&#13;
+			&lt;/wsu:Timestamp&gt;&#13;
+			&lt;wsse:BinarySecurityToken wsu:Id="SecurityToken-a5090610-4f3f-48dd-900d-50424e90e69d" EncodingType="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-soap-message-security-1.0#Base64Binary" ValueType="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-x509-token-profile-1.0#X509v3" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd"&gt;MIIIbjCCBlagAwIBAgITcwAAArK8bjSDqtXPWwAAAAACsjANBgkqhkiG9w0BAQsFADBfMRMwEQYKCZImiZPyLGQBGRYDbmV0MR0wGwYKCZImiZPyLGQBGRYNQmFuY29BVnZpbGxhczEpMCcGA1UEAxMgUEtJMkJhbmNvQXZ2aWxsYXMtUHJ1ZWJhc0Rlc2EtQ0EwHhcNMjEwOTA5MjEwMzA4WhcNMjMwOTA5MjEwMzA4WjCBtjELMAkGA1UEBhMCQ08xDzANBgNVBAcTBkJvZ290YTEXMBUGA1UEChMOQmFuY28gQXZ2aWxsYXMxITAfBgNVBAsTGEdlcmVuY2lhIEluZnJhZXN0cnVjdHVyYTEkMCIGA1UEAwwbQVZfQkFfU1Y1NTBUX0RQVzAwMV9DMDAxX1dTMTQwMgYJKoZIhvcNAQkBFiVTeXN0ZW1Qcm9ncmFtbWVyQGJhbmNvYXZ2aWxsYXMuY29tLmNvMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAsu2ExO6HGuPOtFaTd8XN3imsbpBir5NErowo2SAy1wee9OrWZYY9mYIYvYTyypAh8Ml36FVKJl/J6TFBW4OO0RvMbyXV9GgKfmVPjiw21nfbT1BVc1J8G8i2eI8rSlK0mX6i5w/6zKrjfya0PDqymGE7bVqxudzdMuuhePEspBNiD2HsLlb3mJMnpjt0HzMQmaajLTmSMFcaRKcmkNnzoEGC6lxKpDxVT0zmEyjo5muEwyUI1XSUhQFLxYbbh2nAA8G+T4OI563rX30t85S/Zon//VDXxIDFdonTAcCD98aF8fZ+XPOnOSwJTTuKxZDVHzqdNrtHjU+ei2MZ7E22+wIDAQABo4IDyTCCA8UwHQYDVR0OBBYEFJLMQKyVJkxPrlsAmdzCs/DUkg7pMB8GA1UdIwQYMBaAFEkY0Pk1oLlpMxgyquMM1keO1Ci2MIIBOAYDVR0fBIIBLzCCASswggEnoIIBI6CCAR+GgctsZGFwOi8vL0NOPVBLSTJCYW5jb0F2dmlsbGFzLVBydWViYXNEZXNhLUNBLENOPUFkaWdoZSxDTj1DRFAsQ049UHVibGljJTIwS2V5JTIwU2VydmljZXMsQ049U2VydmljZXMsQ049Q29uZmlndXJhdGlvbixEQz1vcmdhbml6YWNpb24sREM9bmV0P2NlcnRpZmljYXRlUmV2b2NhdGlvbkxpc3Q/YmFzZT9vYmplY3RDbGFzcz1jUkxEaXN0cmlidXRpb25Qb2ludIZPaHR0cDovL0FkaWdoZS5CYW5jb0FWdmlsbGFzLm5ldC9DZXJ0RW5yb2xsL1BLSTJCYW5jb0F2dmlsbGFzLVBydWViYXNEZXNhLUNBLmNybDCCAccGCCsGAQUFBwEBBIIBuTCCAbUwgcQGCCsGAQUFBzAChoG3bGRhcDovLy9DTj1QS0kyQmFuY29BdnZpbGxhcy1QcnVlYmFzRGVzYS1DQSxDTj1BSUEsQ049UHVibGljJTIwS2V5JTIwU2VydmljZXMsQ049U2VydmljZXMsQ049Q29uZmlndXJhdGlvbixEQz1vcmdhbml6YWNpb24sREM9bmV0P2NBQ2VydGlmaWNhdGU/YmFzZT9vYmplY3RDbGFzcz1jZXJ0aWZpY2F0aW9uQXV0aG9yaXR5MHQGCCsGAQUFBzAChmhodHRwOi8vQWRpZ2hlLkJhbmNvQVZ2aWxsYXMubmV0L0NlcnRFbnJvbGwvQWRpZ2hlLkJhbmNvQVZ2aWxsYXMubmV0X1BLSTJCYW5jb0F2dmlsbGFzLVBydWViYXNEZXNhLUNBLmNydDB2BggrBgEFBQcwAoZqZmlsZTovLy8vQWRpZ2hlLkJhbmNvQVZ2aWxsYXMubmV0L0NlcnRFbnJvbGwvQWRpZ2hlLkJhbmNvQVZ2aWxsYXMubmV0X1BLSTJCYW5jb0F2dmlsbGFzLVBydWViYXNEZXNhLUNBLmNydDALBgNVHQ8EBAMCBaAwPQYJKwYBBAGCNxUHBDAwLgYmKwYBBAGCNxUIhLuUQIKnpn6DlZsJlIYVheacToEvgfi+KILy8gwCAWQCAS4wEwYDVR0lBAwwCgYIKwYBBQUHAwEwGwYJKwYBBAGCNxUKBA4wDDAKBggrBgEFBQcDATANBgkqhkiG9w0BAQsFAAOCAgEACUGWYpEHPoUOexhXgM0qgKS2FjnXhSysXZUi12BysVs1gzq0QLrlKZQ8Xhff5qoqVFl+JiVw7DD7GBauzD0Q5/175vFq3ZPJ2HmihayfdLK04isTDnPoc3C5eXTtTsTWIn7Uox1j3hnY1kOVw5WRMgLv4jypbT2L51AjXLS+gOdtKSBXOAKTIwJnAhE7DuSvgGOeJhUr/LRRZXP/DYN8LjY40Wt83kPZ283gUhMjp5vwvcWjckNcND7UI9aqsTbIAgpoAZa07zNtP21NDJEew/by+t/uiYMuCx5RKLW1DDs6ghsTSwAJPC4Gx3Up3IvkRcv83RypisQLNtEdp1pX5LAtIMx0uts+7KHvGnn2uXznjY4Y1MLeLqM5Lb4JHNBND2fEfd16YT8jOjZJHjmXqYMa1QfMg2kH2JK/zz5SPVlVJahRHazBeW89KfHSyYOlGDS/9VmgGOxuua+guzZXwNC7K5LRsCrJTv+o8yo7A7v3AVNNbwT7FyNq7+qQzccuRQV9aUDbwQ1cQm2TkiqYbU7YajgCJQo6JCzQIaG7ms6gXsH+AqPi/mgrLZOQADkOK9AvGQuaSTGn4e/vZb43wXMfcpXyPU7qXH835+jX1W5bwgzoFNCi4F5hgFE/lzhuPK6U9KgG5zjXNbsrARYuBGwT4t7hf/n9GZmUhCZs95Q=&lt;/wsse:BinarySecurityToken&gt;&#13;
+			&lt;Signature xmlns="http://www.w3.org/2000/09/xmldsig#"&gt;&#13;
+				&lt;SignedInfo&gt;&#13;
+					&lt;CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/&gt;&#13;
+					&lt;SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/&gt;&#13;
+					&lt;Reference URI="#Timestamp-88251bcf-d375-40d6-ad42-50424e905f7d"&gt;&#13;
+						&lt;Transforms&gt;&#13;
+							&lt;Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/&gt;&#13;
+						&lt;/Transforms&gt;&#13;
+						&lt;DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/&gt;&#13;
+						&lt;DigestValue&gt;2/ccVTDuXzLJZs2Dr2hsWe8omVQ=&lt;/DigestValue&gt;&#13;
+					&lt;/Reference&gt;&#13;
+					&lt;Reference URI="#Body-e8406857-afd5-4d57-a01c-50424e90d399"&gt;&#13;
+						&lt;Transforms&gt;&#13;
+							&lt;Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/&gt;&#13;
+						&lt;/Transforms&gt;&#13;
+						&lt;DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/&gt;&#13;
+						&lt;DigestValue&gt;l20Sff4Lk4jO3TzSgeooybHXRdA=&lt;/DigestValue&gt;&#13;
+					&lt;/Reference&gt;&#13;
+				&lt;/SignedInfo&gt;&#13;
+				&lt;SignatureValue&gt;LR5TQ4tM24fZcjt6e22LG/wx+zlvUhBLvc1RA5BMp1PHyLHgts7px0HAUFyV/ReKMEZ5k88NMBtw1SFv6sIDUEo+zH/4k97amSeF/U9EO6GG5bsnMR9it3CLyG+ekCuB/UqtFWzkXHw93zMvyJsu2PtRvKl2wY6Ezb01SlFxsgLvCOZKhu+W33C7pWBw1KkdwLR+FfyfO3U2k8PdcfNCo2hOrXKtRjGPHKt10O3xeWDoKOQ54dD+KA0IMvi76LmNwvQ7e9qKlSQE/XZ1K9ikviGSvdaKoeDbyvwNXpCC0hJjE+BtUIXnzM3nHTWFnj485lbMwxdXqAP8fybQUCujfQ==&lt;/SignatureValue&gt;&#13;
+				&lt;KeyInfo&gt;&#13;
+					&lt;wsse:SecurityTokenReference xmlns=""&gt;&#13;
+						&lt;wsse:Reference URI="#SecurityToken-a5090610-4f3f-48dd-900d-50424e90e69d" ValueType="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-x509-token-profile-1.0#X509v3"/&gt;&#13;
+					&lt;/wsse:SecurityTokenReference&gt;&#13;
+				&lt;/KeyInfo&gt;&#13;
+			&lt;/Signature&gt;&#13;
+		&lt;/wsse:Security&gt;&#13;
+	&lt;/soapenv:Header&gt;&#13;
+	&lt;soapenv:Body wsu:Id="Body-e8406857-afd5-4d57-a01c-50424e90d399" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd"&gt;&#13;
+		&lt;out:modCustomerResponse xmlns:out="urn://grupoaval.com/customers/v1/" xmlns:out2="urn://grupoaval.com/xsd/ifx/v2/" xmlns:out3="urn://grupoaval.com/xsd/ifx/v3/" xmlns:out5="urn://grupoaval.com/xsd/ifx/"&gt;&#13;
+			&lt;out:CustomerDataStatusRs&gt;&#13;
+				&lt;out5:Status&gt;&#13;
+					&lt;out5:StatusCode&gt;0&lt;/out5:StatusCode&gt;&#13;
+					&lt;out5:ServerStatusCode&gt;0&lt;/out5:ServerStatusCode&gt;&#13;
+					&lt;out5:Severity&gt;Info&lt;/out5:Severity&gt;&#13;
+					&lt;out5:StatusDesc&gt;TRANSACCION CORRECTA&lt;/out5:StatusDesc&gt;&#13;
+					&lt;out5:AdditionalStatus&gt;&#13;
+						&lt;out5:StatusCode&gt;0&lt;/out5:StatusCode&gt;&#13;
+						&lt;out5:ServerStatusCode&gt;0&lt;/out5:ServerStatusCode&gt;&#13;
+						&lt;out5:Severity&gt;Info&lt;/out5:Severity&gt;&#13;
+						&lt;out5:StatusDesc&gt;TRANSACCION CORRECTA&lt;/out5:StatusDesc&gt;&#13;
+					&lt;/out5:AdditionalStatus&gt;&#13;
+				&lt;/out5:Status&gt;&#13;
+				&lt;out5:ApprovalId&gt;523338&lt;/out5:ApprovalId&gt;&#13;
+				&lt;out5:RqUID&gt;16476284&lt;/out5:RqUID&gt;&#13;
+				&lt;out5:MsgRqHdr&gt;&#13;
+					&lt;out2:Reverse&gt;false&lt;/out2:Reverse&gt;&#13;
+					&lt;out2:Language/&gt;&#13;
+				&lt;/out5:MsgRqHdr&gt;&#13;
+				&lt;out5:MsgRsHdr&gt;&#13;
+					&lt;out5:TxCostAmt&gt;&#13;
+						&lt;out5:CurAmt&gt;&#13;
+							&lt;out5:Amt&gt;0.0&lt;/out5:Amt&gt;&#13;
+							&lt;out5:CurCode&gt;COP&lt;/out5:CurCode&gt;&#13;
+						&lt;/out5:CurAmt&gt;&#13;
+					&lt;/out5:TxCostAmt&gt;&#13;
+					&lt;out5:RemainRec&gt;false&lt;/out5:RemainRec&gt;&#13;
+				&lt;/out5:MsgRsHdr&gt;&#13;
+				&lt;out3:FinancialData&gt;&#13;
+					&lt;out3:CustCategory&gt;0&lt;/out3:CustCategory&gt;&#13;
+				&lt;/out3:FinancialData&gt;&#13;
+				&lt;NS1:RqUID xmlns:NS1="ns10"&gt;1647628414116&lt;/NS1:RqUID&gt;&#13;
+			&lt;/out:CustomerDataStatusRs&gt;&#13;
+		&lt;/out:modCustomerResponse&gt;&#13;
+	&lt;/soapenv:Body&gt;&#13;
+&lt;/soapenv:Envelope&gt;</body>
+            <contentEncodings/>
+            <httpHeaders/>
+            <httpStatusCode>200</httpStatusCode>
+            <id>3vSpQO</id>
+            <name>ok</name>
+            <operationId>dgGE2Q</operationId>
+            <status>ENABLED</status>
+            <usingExpressions>false</usingExpressions>
+            <xpathExpressions/>
+        </mockResponse>
+    </mockResponses>
+    <operations>
+        <operation>
+            <currentResponseSequenceIndex>0</currentResponseSequenceIndex>
+            <defaultBody>&lt;soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="urn://grupoaval.com/customers/v1/"&gt;
+   &lt;soapenv:Header/&gt;
+   &lt;soapenv:Body&gt;
+      &lt;web:modCustomerResponse&gt;?&lt;/web:modCustomerResponse&gt;
+   &lt;/soapenv:Body&gt;
+&lt;/soapenv:Envelope&gt;</defaultBody>
+            <defaultMockResponseId></defaultMockResponseId>
+            <forwardedEndpoint>http://proxy:8080/https://192.168.135.28:442/PFBA_Crm34/sca/WSBA_Crm_actualizarDatosClienteV03IFX</forwardedEndpoint>
+            <httpMethod>POST</httpMethod>
+            <id>dgGE2Q</id>
+            <identifyStrategy>ELEMENT_NAMESPACE</identifyStrategy>
+            <mockOnFailure>false</mockOnFailure>
+            <mockResponses/>
+            <name>modCustomer</name>
+            <networkDelay>0</networkDelay>
+            <operationIdentifier>
+                <name>modCustomerRequest</name>
+                <namespace>urn://grupoaval.com/customers/v1/</namespace>
+            </operationIdentifier>
+            <originalEndpoint>http://ESBATH:7800/Customers/CustomerDataStatusSvc</originalEndpoint>
+            <portId>mgfKD4</portId>
+            <responseStrategy>RANDOM</responseStrategy>
+            <simulateNetworkDelay>false</simulateNetworkDelay>
+            <soapVersion>SOAP11</soapVersion>
+            <status>FORWARDED</status>
+        </operation>
+    </operations>
+    <ports>
+        <port>
+            <id>mgfKD4</id>
+            <name>CustomerDataStatusSvcPort</name>
+            <operations/>
+            <projectId>DNJ8nW</projectId>
+            <uri>CustomerDataStatusSvcPort</uri>
+        </port>
+    </ports>
+    <project>
+        <created>2022-03-18T19:19:11.746Z</created>
+        <description></description>
+        <id>DNJ8nW</id>
+        <name>rb-pasivo-dev-update-data-crm</name>
+        <updated>2022-03-18T19:19:11.746Z</updated>
+        <ports/>
+        <resources/>
+    </project>
+    <resources>
+        <resource>
+            <content>&lt;?xml version="1.0" encoding="UTF-8" standalone="no"?&gt;
+&lt;wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="urn://grupoaval.com/customers/v1/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="CustomerDataStatusSvc" targetNamespace="urn://grupoaval.com/customers/v1/"&gt;
+      
+    &lt;wsdl:documentation&gt;
+            
+        &lt;wsdl:appinfo source="WMQI_APPINFO"&gt;
+                  
+            &lt;MRWSDLAppInfo imported="true"&gt;
+                        
+                &lt;generatedXSD location="CustomerDataStatusSvc_InlineSchema1.xsd"/&gt;
+                        
+                &lt;generatedXSD location="CustomerDataStatusSvc_InlineSchema2.xsd"/&gt;
+                        
+                &lt;generatedXSD location="CustomerDataStatusSvc_InlineSchema3.xsd"/&gt;
+                        
+                &lt;generatedXSD location="CustomerDataStatusSvc_InlineSchema4.xsd"/&gt;
+                        
+                &lt;generatedXSD location="CustomerDataStatusSvc_InlineSchema5.xsd"/&gt;
+                        
+                &lt;binding hasEncoding="false" imported="true" name="CustomerDataStatusSvcBinding" originalBindingStyle="document"/&gt;
+                      
+            &lt;/MRWSDLAppInfo&gt;
+                
+        &lt;/wsdl:appinfo&gt;
+          
+    &lt;/wsdl:documentation&gt;
+    	
+  
+    &lt;wsdl:types&gt;
+            
+        &lt;xsd:schema xmlns:aval="urn://grupoaval.com/xsd/ifx/" xmlns:avalv3="urn://grupoaval.com/xsd/ifx/v3/" xmlns:avalv4="urn://grupoaval.com/xsd/ifx/v4/" targetNamespace="urn://grupoaval.com/customers/v1/"&gt;
+            
+            &lt;xsd:import namespace="urn://grupoaval.com/xsd/ifx/v4/" schemaLocation="CustomerDataStatusSvc_InlineSchema5.xsd"/&gt;
+            
+            &lt;xsd:import namespace="urn://grupoaval.com/xsd/ifx/v3/" schemaLocation="CustomerDataStatusSvc_InlineSchema4.xsd"/&gt;
+            
+            &lt;xsd:import namespace="urn://grupoaval.com/xsd/ifx/"/&gt;
+            
+            &lt;xsd:include schemaLocation="CustomerDataStatusSvc_InlineSchema1.xsd"/&gt;
+                
+        &lt;/xsd:schema&gt;
+                
+        &lt;xsd:schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:aval="urn://grupoaval.com/xsd/ifx/" xmlns:avalv2="urn://grupoaval.com/xsd/ifx/v2/" xmlns:pref="urn://grupoaval.com/xsd/ifx/v2/" attributeFormDefault="unqualified" elementFormDefault="unqualified" targetNamespace="urn://grupoaval.com/xsd/ifx/"&gt;
+            
+            &lt;xsd:import namespace="urn://grupoaval.com/xsd/ifx/v2/" schemaLocation="CustomerDataStatusSvc_InlineSchema3.xsd"/&gt;
+            
+            &lt;xsd:include schemaLocation="CustomerDataStatusSvc_InlineSchema2.xsd"/&gt;
+                
+        &lt;/xsd:schema&gt;
+                
+        &lt;xsd:schema xmlns:aval="urn://grupoaval.com/xsd/ifx/" xmlns:avalv2="urn://grupoaval.com/xsd/ifx/v2/" attributeFormDefault="unqualified" elementFormDefault="unqualified" targetNamespace="urn://grupoaval.com/xsd/ifx/v2/"&gt;
+            
+            &lt;xsd:import namespace="urn://grupoaval.com/xsd/ifx/" schemaLocation="CustomerDataStatusSvc_InlineSchema2.xsd"/&gt;
+            
+            &lt;xsd:include schemaLocation="CustomerDataStatusSvc_InlineSchema3.xsd"/&gt;
+                
+        &lt;/xsd:schema&gt;
+                
+        &lt;xsd:schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:aval="urn://grupoaval.com/xsd/ifx/" xmlns:aval2="urn://grupoaval.com/xsd/ifx/v2" xmlns:aval3="urn://grupoaval.com/xsd/ifx/v3" xmlns:avalv2="urn://grupoaval.com/xsd/ifx/v2/" xmlns:avalv3="urn://grupoaval.com/xsd/ifx/v3/" attributeFormDefault="unqualified" elementFormDefault="unqualified" targetNamespace="urn://grupoaval.com/xsd/ifx/v3/"&gt;
+            
+            &lt;xsd:import namespace="urn://grupoaval.com/xsd/ifx/" schemaLocation="CustomerDataStatusSvc_InlineSchema2.xsd"/&gt;
+            
+            &lt;xsd:import namespace="urn://grupoaval.com/xsd/ifx/v2/" schemaLocation="CustomerDataStatusSvc_InlineSchema3.xsd"/&gt;
+            
+            &lt;xsd:include schemaLocation="CustomerDataStatusSvc_InlineSchema4.xsd"/&gt;
+                
+        &lt;/xsd:schema&gt;
+                
+        &lt;xsd:schema xmlns:aval="urn://grupoaval.com/xsd/ifx/" xmlns:aval2="urn://grupoaval.com/xsd/ifx/v2/" xmlns:aval3="urn://grupoaval.com/xsd/ifx/v3/" xmlns:aval4="urn://grupoaval.com/xsd/ifx/v4/" xmlns:avalv2="urn://grupoaval.com/xsd/ifx/v2/" xmlns:avalv3="urn://grupoaval.com/xsd/ifx/v3/" xmlns:avalv4="urn://grupoaval.com/xsd/ifx/v4/" attributeFormDefault="unqualified" elementFormDefault="unqualified" targetNamespace="urn://grupoaval.com/xsd/ifx/v4/"&gt;
+            
+            &lt;xsd:import namespace="urn://grupoaval.com/xsd/ifx/v2/"/&gt;
+            
+            &lt;xsd:import namespace="urn://grupoaval.com/xsd/ifx/"/&gt;
+            
+            &lt;xsd:import namespace="urn://grupoaval.com/xsd/ifx/v3/" schemaLocation="CustomerDataStatusSvc_InlineSchema4.xsd"/&gt;
+            
+            &lt;xsd:include schemaLocation="CustomerDataStatusSvc_InlineSchema5.xsd"/&gt;
+                
+        &lt;/xsd:schema&gt;
+            
+    &lt;/wsdl:types&gt;
+      
+    
+    &lt;wsdl:message name="modCustomerRequest"&gt;
+            
+        &lt;wsdl:part element="tns:modCustomerRequest" name="CustomerDataStatusRq"/&gt;
+          
+    &lt;/wsdl:message&gt;
+      
+    &lt;wsdl:message name="modCustomerResponse"&gt;
+            
+        &lt;wsdl:part element="tns:modCustomerResponse" name="CustomerDataStatusRs"/&gt;
+          
+    &lt;/wsdl:message&gt;
+      
+
+    &lt;wsdl:portType name="CustomerDataStatusSvc"&gt;
+            
+        &lt;wsdl:operation name="modCustomer"&gt;
+                  
+            &lt;wsdl:input message="tns:modCustomerRequest"/&gt;
+                  
+            &lt;wsdl:output message="tns:modCustomerResponse"/&gt;
+                
+        &lt;/wsdl:operation&gt;
+          
+    &lt;/wsdl:portType&gt;
+      
+ 
+    &lt;wsdl:binding name="CustomerDataStatusSvcBinding" type="tns:CustomerDataStatusSvc"&gt;
+            
+        &lt;soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/&gt;
+            
+        &lt;wsdl:operation name="modCustomer"&gt;
+                  
+            &lt;soap:operation soapAction="urn://grupoaval.com/CustomerDataStatus/v1/modCustomer"/&gt;
+                  
+            &lt;wsdl:input&gt;
+                        
+                &lt;soap:body use="literal"/&gt;
+                      
+            &lt;/wsdl:input&gt;
+                  
+            &lt;wsdl:output&gt;
+                        
+                &lt;soap:body use="literal"/&gt;
+                      
+            &lt;/wsdl:output&gt;
+                
+        &lt;/wsdl:operation&gt;
+          
+    &lt;/wsdl:binding&gt;
+      
+  
+    &lt;wsdl:service name="CustomerDataStatusSvc"&gt;
+            
+        &lt;wsdl:port binding="tns:CustomerDataStatusSvcBinding" name="CustomerDataStatusSvcPort"&gt;
+                  
+            &lt;soap:address location="http://ESBATH:7800/Customers/CustomerDataStatusSvc"/&gt;
+                
+        &lt;/wsdl:port&gt;
+          
+    &lt;/wsdl:service&gt;
+    
+&lt;/wsdl:definitions&gt;
+</content>
+            <id>iRHg9U</id>
+            <name>Upload-2022-03-18-07-19-30.891</name>
+            <projectId>DNJ8nW</projectId>
+            <type>WSDL</type>
+        </resource>
+    </resources>
+</soapExportContainer>
