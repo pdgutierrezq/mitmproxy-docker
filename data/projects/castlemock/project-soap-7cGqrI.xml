@@ -641,7 +641,7 @@
         <created>2019-12-16T21:34:35.203Z</created>
         <description>Obtiene info listas restrictivas, si es o no cliente y si tiene los datos actualizados</description>
         <id>7cGqrI</id>
-        <name>Customer conditions Pasivo</name>
+        <name>rb-pasivo-dev-read-customer-conditions</name>
         <updated>2019-12-16T21:34:35.203Z</updated>
         <ports/>
         <resources/>
