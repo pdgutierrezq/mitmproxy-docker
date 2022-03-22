@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<restExportContainer>
+    <applications>
+        <application>
+            <id>rsOya6</id>
+            <name>client-accounts</name>
+            <projectId>KNqM2U</projectId>
+            <resources/>
+        </application>
+    </applications>
+    <methods>
+        <method>
+            <currentResponseSequenceIndex>0</currentResponseSequenceIndex>
+            <defaultMockResponseId></defaultMockResponseId>
+            <forwardedEndpoint>http://proxy:8080/https://192.168.135.28:542</forwardedEndpoint>
+            <httpMethod>POST</httpMethod>
+            <id>MilYVO</id>
+            <mockResponses/>
+            <name>post</name>
+            <networkDelay>0</networkDelay>
+            <resourceId>yzAgTf</resourceId>
+            <responseStrategy>RANDOM</responseStrategy>
+            <simulateNetworkDelay>false</simulateNetworkDelay>
+            <status>FORWARDED</status>
+        </method>
+    </methods>
+    <mockResponses>
+        <mockResponse>
+            <body>{&#13;
+	"codRedOrigen": "ADL",&#13;
+	"identificacionDispositivo": "3.13.132.40",&#13;
+	"fechaTransaccion": 20220322,&#13;
+	"horaTransaccion": 15204564,&#13;
+	"nroSecuencia": 56410160,&#13;
+	"fechaCompensacion": 20220322,&#13;
+	"nroAutorizacion": 0,&#13;
+	"codRespuesta": 0,&#13;
+	"mensajeRespuesta": "TRANSACCION EXITOSA",&#13;
+	"costoTransaccion": 0,&#13;
+	"productos": [&#13;
+		{&#13;
+			"nroProducto": 640824872,&#13;
+			"tipoProducto": "SDA",&#13;
+			"subTipoProducto": 48,&#13;
+			"indResultado": "N"&#13;
+		},&#13;
+		{&#13;
+			"nroProducto": 640824939,&#13;
+			"tipoProducto": "SDA",&#13;
+			"subTipoProducto": 48,&#13;
+			"indResultado": "N"&#13;
+		},&#13;
+		{&#13;
+			"nroProducto": 640824947,&#13;
+			"tipoProducto": "SDA",&#13;
+			"subTipoProducto": 48,&#13;
+			"indResultado": "N"&#13;
+		},&#13;
+		{&#13;
+			"nroProducto": 640825043,&#13;
+			"tipoProducto": "SDA",&#13;
+			"subTipoProducto": 48,&#13;
+			"indResultado": "S"&#13;
+		},&#13;
+		{&#13;
+			"nroProducto": 640825050,&#13;
+			"tipoProducto": "SDA",&#13;
+			"subTipoProducto": 48,&#13;
+			"indResultado": "S"&#13;
+		},&#13;
+		{&#13;
+			"nroProducto": 640825878,&#13;
+			"tipoProducto": "SDA",&#13;
+			"subTipoProducto": 48,&#13;
+			"indResultado": "N"&#13;
+		},&#13;
+		{&#13;
+			"nroProducto": 640826728,&#13;
+			"tipoProducto": "SDA",&#13;
+			"subTipoProducto": 48,&#13;
+			"indResultado": "N"&#13;
+		},&#13;
+		{&#13;
+			"nroProducto": 640828047,&#13;
+			"tipoProducto": "SDA",&#13;
+			"subTipoProducto": 48,&#13;
+			"indResultado": "N"&#13;
+		},&#13;
+		{&#13;
+			"nroProducto": 640828070,&#13;
+			"tipoProducto": "SDA",&#13;
+			"subTipoProducto": 48,&#13;
+			"indResultado": "N"&#13;
+		},&#13;
+		{&#13;
+			"nroProducto": 640828088,&#13;
+			"tipoProducto": "SDA",&#13;
+			"subTipoProducto": 48,&#13;
+			"indResultado": "S"&#13;
+		},&#13;
+		{&#13;
+			"nroProducto": 640828153,&#13;
+			"tipoProducto": "SDA",&#13;
+			"subTipoProducto": 48,&#13;
+			"indResultado": "S"&#13;
+		},&#13;
+		{&#13;
+			"nroProducto": 640828161,&#13;
+			"tipoProducto": "SDA",&#13;
+			"subTipoProducto": 48,&#13;
+			"indResultado": "N"&#13;
+		},&#13;
+		{&#13;
+			"nroProducto": 640828468,&#13;
+			"tipoProducto": "SDA",&#13;
+			"subTipoProducto": 48,&#13;
+			"indResultado": "N"&#13;
+		},&#13;
+		{&#13;
+			"nroProducto": 640828492,&#13;
+			"tipoProducto": "SDA",&#13;
+			"subTipoProducto": 48,&#13;
+			"indResultado": "N"&#13;
+		},&#13;
+		{&#13;
+			"nroProducto": 640828500,&#13;
+			"tipoProducto": "SDA",&#13;
+			"subTipoProducto": 48,&#13;
+			"indResultado": "N"&#13;
+		},&#13;
+		{&#13;
+			"nroProducto": 640828518,&#13;
+			"tipoProducto": "SDA",&#13;
+			"subTipoProducto": 48,&#13;
+			"indResultado": "N"&#13;
+		},&#13;
+		{&#13;
+			"nroProducto": 640828526,&#13;
+			"tipoProducto": "SDA",&#13;
+			"subTipoProducto": 48,&#13;
+			"indResultado": "N"&#13;
+		},&#13;
+		{&#13;
+			"nroProducto": 640828534,&#13;
+			"tipoProducto": "SDA",&#13;
+			"subTipoProducto": 48,&#13;
+			"indResultado": "N"&#13;
+		},&#13;
+		{&#13;
+			"nroProducto": 640828542,&#13;
+			"tipoProducto": "SDA",&#13;
+			"subTipoProducto": 48,&#13;
+			"indResultado": "N"&#13;
+		},&#13;
+		{&#13;
+			"nroProducto": 640828617,&#13;
+			"tipoProducto": "SDA",&#13;
+			"subTipoProducto": 48,&#13;
+			"indResultado": "N"&#13;
+		}&#13;
+	]&#13;
+}</body>
+            <contentEncodings/>
+            <headerQueries/>
+            <httpHeaders/>
+            <httpStatusCode>200</httpStatusCode>
+            <id>Nbp4jL</id>
+            <jsonPathExpressions/>
+            <methodId>MilYVO</methodId>
+            <name>ok</name>
+            <parameterQueries/>
+            <status>ENABLED</status>
+            <usingExpressions>false</usingExpressions>
+            <xpathExpressions/>
+        </mockResponse>
+    </mockResponses>
+    <project>
+        <description></description>
+        <id>KNqM2U</id>
+        <name>rb-pasivo-dev-client-accounts</name>
+        <applications/>
+    </project>
+    <resources>
+        <resource>
+            <applicationId>rsOya6</applicationId>
+            <id>yzAgTf</id>
+            <methods/>
+            <name>account</name>
+            <uri>/PFBA_AhorrosyCtaCte41/WRBA_AhorrosyCtaCte_consultarCuentasCDT</uri>
+        </resource>
+    </resources>
+</restExportContainer>
