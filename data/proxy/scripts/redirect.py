@@ -18,6 +18,8 @@ def request(flow: http.HTTPFlow) -> None:
     flow.request.path = request.path
     if flow.request.path == '/PFBA_AhorrosyCtaCte40/WRBA_AhorrosyCtaCte_validarSeguros':
       flow.request.headers["content-type"] = "application/x-www-form-urlencoded"
+    if flow.request.path == '/PFBA_AhorrosyCtaCte41/WRBA_AhorrosyCtaCte_consultarCuentasCDT':
+      flow.request.headers["content-type"] = "text/plain"
     # if flow.request.path == '/https://192.168.135.28:442/PFBA_Crm31/sca/WSBA_Crm_consultarCondicionesCliente':
     # if flow.request.path == '/mock':
     #   #         flow.request.host = "rb-dev-alb-ecs-ext-525169194.us-east-2.elb.amazonaws.com"
