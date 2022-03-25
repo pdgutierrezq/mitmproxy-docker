@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 sh ./git.sh
-ssh -i "rb-pb-dev-ecs-auto.pem" "ec2-user@$EC2" <<'ENDSSH'
+ssh -i "$KEY" "ec2-user@$EC2" <<'ENDSSH'
    #commands to run on remote host
    cd mitmproxy-docker
    docker ps
