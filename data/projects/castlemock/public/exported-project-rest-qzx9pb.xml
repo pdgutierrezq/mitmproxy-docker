@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<restExportContainer>
+    <applications>
+        <application>
+            <id>e39Sid</id>
+            <name>token</name>
+            <projectId>qzx9pb</projectId>
+            <resources/>
+        </application>
+    </applications>
+    <methods>
+        <method>
+            <currentResponseSequenceIndex>0</currentResponseSequenceIndex>
+            <defaultMockResponseId></defaultMockResponseId>
+            <forwardedEndpoint>http://proxy:8080/https://apicapi-bavvpb.apps.ath.com.co</forwardedEndpoint>
+            <httpMethod>POST</httpMethod>
+            <id>DFtYzX</id>
+            <mockResponses/>
+            <name>post</name>
+            <networkDelay>0</networkDelay>
+            <resourceId>YIwhZD</resourceId>
+            <responseStrategy>RANDOM</responseStrategy>
+            <simulateNetworkDelay>false</simulateNetworkDelay>
+            <status>MOCKED</status>
+        </method>
+    </methods>
+    <mockResponses>
+        <mockResponse>
+            <body>{&#13;
+	"token_type": "Bearer",&#13;
+	"access_token": "AAIgMmUyYTI2NGQ0MTYyY2YwYTcxOTk0YmVhMjQ0NjQ3YWRnO3fvvEy5kbemXwLqAJ9VgaA2-FaBx8ykYFc2AJUCFbkZYSCN63vn87lyKFaI-Bhzp4pz0VlEbHlwXWa9VtFUWjLIb4wGBjPK1TxSO1AJbmW32kl9BbaFpQIplPZb6Js",&#13;
+	"expires_in": 3600,&#13;
+	"consented_on": 1647482119,&#13;
+	"scope": "scope1"&#13;
+}</body>
+            <contentEncodings/>
+            <headerQueries/>
+            <httpHeaders/>
+            <httpStatusCode>200</httpStatusCode>
+            <id>Psan09</id>
+            <jsonPathExpressions/>
+            <methodId>DFtYzX</methodId>
+            <name>ok</name>
+            <parameterQueries/>
+            <status>ENABLED</status>
+            <usingExpressions>false</usingExpressions>
+            <xpathExpressions/>
+        </mockResponse>
+    </mockResponses>
+    <project>
+        <description></description>
+        <id>qzx9pb</id>
+        <name>rb-pasivo-dev-ath</name>
+        <applications/>
+    </project>
+    <resources>
+        <resource>
+            <applicationId>e39Sid</applicationId>
+            <id>YIwhZD</id>
+            <methods/>
+            <name>Token</name>
+            <uri>/org-ath/api-pb-bavv/v1/Authentication/oauth2/token</uri>
+        </resource>
+    </resources>
+</restExportContainer>
