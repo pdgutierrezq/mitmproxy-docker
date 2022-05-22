@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<restExportContainer>
+    <applications>
+        <application>
+            <id>EviVdS</id>
+            <name>sadbox</name>
+            <projectId>MvGKro</projectId>
+            <resources/>
+        </application>
+    </applications>
+    <methods>
+        <method>
+            <currentResponseSequenceIndex>0</currentResponseSequenceIndex>
+            <defaultMockResponseId></defaultMockResponseId>
+            <forwardedEndpoint>https://xbpjskgord.execute-api.us-east-2.amazonaws.com/dev</forwardedEndpoint>
+            <httpMethod>POST</httpMethod>
+            <id>I3tyAX</id>
+            <mockResponses/>
+            <name>post</name>
+            <networkDelay>0</networkDelay>
+            <resourceId>jzmmCh</resourceId>
+            <responseStrategy>RANDOM</responseStrategy>
+            <simulateNetworkDelay>false</simulateNetworkDelay>
+            <status>FORWARDED</status>
+        </method>
+    </methods>
+    <mockResponses>
+        <mockResponse>
+            <body>{&#13;
+  responseCode: 1,&#13;
+  responseMessage: 'El campo NroProductoOrigen es obligatorio\n' +&#13;
+    'El campo NroSolicitud es obligatorio',&#13;
+  product: 'PRUEBAS'&#13;
+}</body>
+            <contentEncodings/>
+            <headerQueries/>
+            <httpHeaders/>
+            <httpStatusCode>200</httpStatusCode>
+            <id>nNlAWe</id>
+            <jsonPathExpressions/>
+            <methodId>I3tyAX</methodId>
+            <name>ko</name>
+            <parameterQueries/>
+            <status>DISABLED</status>
+            <usingExpressions>false</usingExpressions>
+            <xpathExpressions/>
+        </mockResponse>
+        <mockResponse>
+            <body>{&#13;
+	"idSession": "5bfcab26-62ee-4469-a191-ae3ac1c34ad6",&#13;
+	"allowedDocumentExtensions": [&#13;
+		"PDF",&#13;
+		"JPG",&#13;
+		"JPEG",&#13;
+		"PNG"&#13;
+	],&#13;
+	"clientDocuments": [],&#13;
+	"responseCode": 0,&#13;
+	"product": "CDA"&#13;
+}</body>
+            <contentEncodings/>
+            <headerQueries/>
+            <httpHeaders/>
+            <httpStatusCode>200</httpStatusCode>
+            <id>74wk1V</id>
+            <jsonPathExpressions/>
+            <methodId>I3tyAX</methodId>
+            <name>ok</name>
+            <parameterQueries/>
+            <status>ENABLED</status>
+            <usingExpressions>false</usingExpressions>
+            <xpathExpressions/>
+        </mockResponse>
+    </mockResponses>
+    <project>
+        <description></description>
+        <id>MvGKro</id>
+        <name>rb-pasivo-dev-get-documents-to-charge</name>
+        <applications/>
+    </project>
+    <resources>
+        <resource>
+            <applicationId>EviVdS</applicationId>
+            <id>jzmmCh</id>
+            <methods/>
+            <name>initiate</name>
+            <uri>/sandbox/initiate</uri>
+        </resource>
+    </resources>
+</restExportContainer>
