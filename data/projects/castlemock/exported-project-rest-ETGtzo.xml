@@ -12,7 +12,7 @@
         <method>
             <currentResponseSequenceIndex>0</currentResponseSequenceIndex>
             <defaultMockResponseId></defaultMockResponseId>
-            <forwardedEndpoint>https://apicapi-gateway-qa.appsptqa.ath.com.co</forwardedEndpoint>
+            <forwardedEndpoint>http://proxy:8080/https://apicapi-gateway-qa.appsptqa.ath.com.co</forwardedEndpoint>
             <httpMethod>GET</httpMethod>
             <id>16spFb</id>
             <mockResponses/>
@@ -21,7 +21,7 @@
             <resourceId>0S17Dw</resourceId>
             <responseStrategy>RANDOM</responseStrategy>
             <simulateNetworkDelay>false</simulateNetworkDelay>
-            <status>MOCKED</status>
+            <status>FORWARDED</status>
         </method>
     </methods>
     <mockResponses>
