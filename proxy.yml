@@ -8,7 +8,7 @@ services:
     - "bc-host:127.0.0.1"
     - "default:127.0.0.1"
     restart: always
-    command: mitmweb --set client_certs=/data/ssl/client_certs --web-host 0.0.0.0 --web-port 8081 -s /data/scripts/redirect.py --no-http2 -s /data/scripts/modify_response.py
+    command: mitmweb --ssl-insecure --set client_certs=/data/ssl/client_certs  --web-host 0.0.0.0 --web-port 8081 -s /data/scripts/redirect.py --no-http2 -s /data/scripts/modify_response.py
     environment:
       - TZ="America/Bogota"
       - SSH_PORT=41
