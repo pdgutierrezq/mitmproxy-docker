@@ -13,10 +13,10 @@ rules = {
         "status_code": 400,
         "content": lambda: file("invalid_token.json"), # you can use a lambda and load the response from a json file located in /content folder
     },
-    "/.*": { # match URL with a regular expression
-        "status_code": 503, # replace response code
-        "content": '{"error": "service_unavailable"}', # replace content
-    },
+    # "/.*": { # match URL with a regular expression
+    #     "status_code": 503, # replace response code
+    #     "content": '{"error": "service_unavailable"}', # replace content
+    # },
 }
 
 # this is called for incoming request before sending to the destination host
