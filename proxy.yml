@@ -8,7 +8,7 @@ services:
     - "bc-host:127.0.0.1"
     - "default:127.0.0.1"
     restart: always
-    command: mitmweb --ssl-insecure --certs apicapi-gateway-qa.appsptqa.ath.com.co=/data/proxy/ssl/client_certs/bavv.pem --cert-passphrase gP%LQX*3Pf3JESTG*#YXe5dnUrS --web-host 0.0.0.0 --web-port 8081 -s /data/scripts/redirect.py --no-http2 -s /data/scripts/modify_response.py
+    command: mitmweb --ssl-insecure --certs apicapi-gateway-qa.appsptqa.ath.com.co=data/ssl/client_certs/apicapi-gateway-qa.appsptqa.ath.com.co.pem --cert-passphrase gP%LQX*3Pf3JESTG*#YXe5dnUrS --web-host 0.0.0.0 --web-port 8081 -s /data/scripts/redirect.py --no-http2 -s /data/scripts/modify_response.py
     environment:
       - TZ="America/Bogota"
       - SSH_PORT=41
