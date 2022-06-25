@@ -23,6 +23,6 @@ ssh -i "$KEY" "ec2-user@$EC2" <<'ENDSSH'
     do
      IFS='-|.'
      read -ra arr <<< "$line"
-     import_project "${arr[1]}" "${arr[2]}"
+     import_project "${arr[0]}" "${arr[1]}"
     done
 ENDSSH

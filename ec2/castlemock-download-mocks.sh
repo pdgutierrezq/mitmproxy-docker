@@ -6,7 +6,7 @@ export_project(){
    --header 'accept: */*' \
    --header 'Authorization: Basic YWRtaW46YWRtaW4=' \
    -H "Cookie: $COOKIE" \
-   > "project-$PROJECT_TYPE-$PROJECT_ID.xml"
+   > "$PROJECT_TYPE-$PROJECT_ID.xml"
    RESULT="$PROJECT_ID exported correctly!!!"
    echo $RESULT
 }
@@ -15,6 +15,6 @@ for line in `ls`;
   do
    IFS='-|.'
    read -ra arr <<< "$line"
-   export_project "${arr[1]}" "${arr[2]}"
+   export_project "${arr[0]}" "${arr[1]}"
   done
 
