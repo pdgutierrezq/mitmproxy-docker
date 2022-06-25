@@ -21,7 +21,7 @@
             <resourceId>tA567C</resourceId>
             <responseStrategy>RANDOM</responseStrategy>
             <simulateNetworkDelay>false</simulateNetworkDelay>
-            <status>FORWARDED</status>
+            <status>MOCKED</status>
         </method>
     </methods>
     <mockResponses>

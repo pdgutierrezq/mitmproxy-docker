@@ -12,7 +12,7 @@
         <method>
             <currentResponseSequenceIndex>0</currentResponseSequenceIndex>
             <defaultMockResponseId></defaultMockResponseId>
-            <forwardedEndpoint>http://proxy:8080/https://apicapi-bavvpb.apps.ath.com.co</forwardedEndpoint>
+            <forwardedEndpoint>http://proxy:8080/https://apicapi-gateway-qa.appsptqa.ath.com.co</forwardedEndpoint>
             <httpMethod>POST</httpMethod>
             <id>DFtYzX</id>
             <mockResponses/>
@@ -21,7 +21,7 @@
             <resourceId>YIwhZD</resourceId>
             <responseStrategy>RANDOM</responseStrategy>
             <simulateNetworkDelay>false</simulateNetworkDelay>
-            <status>MOCKED</status>
+            <status>FORWARDED</status>
         </method>
     </methods>
     <mockResponses>
@@ -59,7 +59,7 @@
             <id>YIwhZD</id>
             <methods/>
             <name>Token</name>
-            <uri>/org-ath/api-pb-bavv/v1/Authentication/oauth2/token</uri>
+            <uri>/org-qa/api-pb/v1/Authentication/oauth2/token</uri>
         </resource>
     </resources>
 </restExportContainer>

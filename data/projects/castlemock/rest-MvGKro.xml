@@ -12,7 +12,7 @@
         <method>
             <currentResponseSequenceIndex>0</currentResponseSequenceIndex>
             <defaultMockResponseId></defaultMockResponseId>
-            <forwardedEndpoint>https://xbpjskgord.execute-api.us-east-2.amazonaws.com/dev</forwardedEndpoint>
+            <forwardedEndpoint>http://proxy:8080/https://xbpjskgord.execute-api.us-east-2.amazonaws.com/dev</forwardedEndpoint>
             <httpMethod>POST</httpMethod>
             <id>I3tyAX</id>
             <mockResponses/>
@@ -21,7 +21,7 @@
             <resourceId>jzmmCh</resourceId>
             <responseStrategy>RANDOM</responseStrategy>
             <simulateNetworkDelay>false</simulateNetworkDelay>
-            <status>FORWARDED</status>
+            <status>MOCKED</status>
         </method>
     </methods>
     <mockResponses>
