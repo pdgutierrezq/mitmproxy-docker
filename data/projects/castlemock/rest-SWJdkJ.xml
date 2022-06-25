@@ -27,20 +27,17 @@
     <mockResponses>
         <mockResponse>
             <body>{&#13;
-                "Transaction": {&#13;
-                "Code": "1",&#13;
-                "ClientDt": "2021-03-16T11:28:35.000-05:00",&#13;
-                "LastTrnDt": "2021-03-16T11:31:28.000-05:00"&#13;
-                }&#13;
+                "StatusCode": "500",&#13;
+                "StatusDesc": "Error Inesperado"&#13;
                 }</body>
             <contentEncodings/>
             <headerQueries/>
             <httpHeaders/>
-            <httpStatusCode>200</httpStatusCode>
-            <id>swqSe2</id>
+            <httpStatusCode>500</httpStatusCode>
+            <id>sWcKF8</id>
             <jsonPathExpressions/>
             <methodId>TcGmcb</methodId>
-            <name>transaction_not_authorized</name>
+            <name>server_error</name>
             <parameterQueries/>
             <status>DISABLED</status>
             <usingExpressions>false</usingExpressions>
@@ -63,24 +60,6 @@
             <jsonPathExpressions/>
             <methodId>TcGmcb</methodId>
             <name>transaction_failed</name>
-            <parameterQueries/>
-            <status>DISABLED</status>
-            <usingExpressions>false</usingExpressions>
-            <xpathExpressions/>
-        </mockResponse>
-        <mockResponse>
-            <body>{&#13;
-                "StatusCode": "500",&#13;
-                "StatusDesc": "Error Inesperado"&#13;
-                }</body>
-            <contentEncodings/>
-            <headerQueries/>
-            <httpHeaders/>
-            <httpStatusCode>500</httpStatusCode>
-            <id>sWcKF8</id>
-            <jsonPathExpressions/>
-            <methodId>TcGmcb</methodId>
-            <name>server_error</name>
             <parameterQueries/>
             <status>DISABLED</status>
             <usingExpressions>false</usingExpressions>
@@ -117,22 +96,43 @@
         <mockResponse>
             <body>{&#13;
                 "Transaction": {&#13;
-                "Code": "0",&#13;
+                "Code": "1",&#13;
                 "ClientDt": "2021-03-16T11:28:35.000-05:00",&#13;
-                "LastTrnDt": "2021-03-16T11:31:28.000-05:00",&#13;
-                "ApprovalId" : "true"&#13;
+                "LastTrnDt": "2021-03-16T11:31:28.000-05:00"&#13;
                 }&#13;
                 }</body>
             <contentEncodings/>
             <headerQueries/>
             <httpHeaders/>
             <httpStatusCode>200</httpStatusCode>
-            <id>sdvZUF</id>
+            <id>swqSe2</id>
             <jsonPathExpressions/>
             <methodId>TcGmcb</methodId>
-            <name>transaction_ok</name>
+            <name>transaction_not_authorized</name>
             <parameterQueries/>
-            <status>ENABLED</status>
+            <status>DISABLED</status>
+            <usingExpressions>false</usingExpressions>
+            <xpathExpressions/>
+        </mockResponse>
+        <mockResponse>
+            <body>{&#13;
+                "Transaction": {&#13;
+                "Code": "0",&#13;
+                "ClientDt": "2021-03-16T11:28:35.000-05:00",&#13;
+                "LastTrnDt": "2021-03-16T11:31:28.000-05:00",&#13;
+                "ApprovalId" : "false"&#13;
+                }&#13;
+                }</body>
+            <contentEncodings/>
+            <headerQueries/>
+            <httpHeaders/>
+            <httpStatusCode>200</httpStatusCode>
+            <id>sJCz61</id>
+            <jsonPathExpressions/>
+            <methodId>TcGmcb</methodId>
+            <name>transaction_fail_approval_id_false</name>
+            <parameterQueries/>
+            <status>DISABLED</status>
             <usingExpressions>false</usingExpressions>
             <xpathExpressions/>
         </mockResponse>
@@ -163,19 +163,19 @@
                 "Code": "0",&#13;
                 "ClientDt": "2021-03-16T11:28:35.000-05:00",&#13;
                 "LastTrnDt": "2021-03-16T11:31:28.000-05:00",&#13;
-                "ApprovalId" : "false"&#13;
+                "ApprovalId" : "true"&#13;
                 }&#13;
                 }</body>
             <contentEncodings/>
             <headerQueries/>
             <httpHeaders/>
             <httpStatusCode>200</httpStatusCode>
-            <id>sJCz61</id>
+            <id>sdvZUF</id>
             <jsonPathExpressions/>
             <methodId>TcGmcb</methodId>
-            <name>transaction_fail_approval_id_false</name>
+            <name>transaction_ok</name>
             <parameterQueries/>
-            <status>DISABLED</status>
+            <status>ENABLED</status>
             <usingExpressions>false</usingExpressions>
             <xpathExpressions/>
         </mockResponse>

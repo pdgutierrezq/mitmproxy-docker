@@ -600,7 +600,7 @@
     </mockResponses>
     <operations>
         <operation>
-            <currentResponseSequenceIndex>1</currentResponseSequenceIndex>
+            <currentResponseSequenceIndex>0</currentResponseSequenceIndex>
             <defaultBody>&lt;soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://schemas.xmlsoap.org/wsdl/"&gt;
    &lt;soapenv:Header/&gt;
    &lt;soapenv:Body&gt;

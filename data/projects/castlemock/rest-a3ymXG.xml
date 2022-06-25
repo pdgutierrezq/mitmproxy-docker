@@ -40,23 +40,6 @@
     <mockResponses>
         <mockResponse>
             <body>{&#13;
-	"error": "Error service mock"&#13;
-}</body>
-            <contentEncodings/>
-            <headerQueries/>
-            <httpHeaders/>
-            <httpStatusCode>500</httpStatusCode>
-            <id>SIWdHZ</id>
-            <jsonPathExpressions/>
-            <methodId>i0FL9J</methodId>
-            <name>validate_error</name>
-            <parameterQueries/>
-            <status>DISABLED</status>
-            <usingExpressions>false</usingExpressions>
-            <xpathExpressions/>
-        </mockResponse>
-        <mockResponse>
-            <body>{&#13;
 	"RqUID": "2161077595",&#13;
 	"Status": {&#13;
 		"StatusCode": "57",&#13;
@@ -107,6 +90,23 @@
             <jsonPathExpressions/>
             <methodId>i0FL9J</methodId>
             <name>Error business</name>
+            <parameterQueries/>
+            <status>DISABLED</status>
+            <usingExpressions>false</usingExpressions>
+            <xpathExpressions/>
+        </mockResponse>
+        <mockResponse>
+            <body>{&#13;
+	"error": "Error service mock"&#13;
+}</body>
+            <contentEncodings/>
+            <headerQueries/>
+            <httpHeaders/>
+            <httpStatusCode>500</httpStatusCode>
+            <id>SIWdHZ</id>
+            <jsonPathExpressions/>
+            <methodId>i0FL9J</methodId>
+            <name>validate_error</name>
             <parameterQueries/>
             <status>DISABLED</status>
             <usingExpressions>false</usingExpressions>

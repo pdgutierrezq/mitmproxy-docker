@@ -27,29 +27,6 @@
     <mockResponses>
         <mockResponse>
             <body>{&#13;
-                "Transaction": {&#13;
-                "TrnRqUID": "1866062",&#13;
-                "TrnType": "1"&#13;
-                },&#13;
-                "DepAcctStmtRec": {&#13;
-                "URL": "https://registro.desarrollo.pse.com.co/PSEUserRegister/StartTransaction.htm?enc=V%2brHQIwzrDzFvDKfmDEJ7lpXVYnEfLwM2OyHGKrbXFhcZvAoTudmp5nuzgo6kNfB"&#13;
-                }&#13;
-                }</body>
-            <contentEncodings/>
-            <headerQueries/>
-            <httpHeaders/>
-            <httpStatusCode>201</httpStatusCode>
-            <id>uy0ODh</id>
-            <jsonPathExpressions/>
-            <methodId>q4ebnc</methodId>
-            <name>ok</name>
-            <parameterQueries/>
-            <status>ENABLED</status>
-            <usingExpressions>true</usingExpressions>
-            <xpathExpressions/>
-        </mockResponse>
-        <mockResponse>
-            <body>{&#13;
                 "MsgRsHdr": {&#13;
                 "Status": {&#13;
                 "StatusCode": "300",&#13;
@@ -76,6 +53,29 @@
             <parameterQueries/>
             <status>DISABLED</status>
             <usingExpressions>false</usingExpressions>
+            <xpathExpressions/>
+        </mockResponse>
+        <mockResponse>
+            <body>{&#13;
+                "Transaction": {&#13;
+                "TrnRqUID": "1866062",&#13;
+                "TrnType": "1"&#13;
+                },&#13;
+                "DepAcctStmtRec": {&#13;
+                "URL": "https://registro.desarrollo.pse.com.co/PSEUserRegister/StartTransaction.htm?enc=V%2brHQIwzrDzFvDKfmDEJ7lpXVYnEfLwM2OyHGKrbXFhcZvAoTudmp5nuzgo6kNfB"&#13;
+                }&#13;
+                }</body>
+            <contentEncodings/>
+            <headerQueries/>
+            <httpHeaders/>
+            <httpStatusCode>201</httpStatusCode>
+            <id>uy0ODh</id>
+            <jsonPathExpressions/>
+            <methodId>q4ebnc</methodId>
+            <name>ok</name>
+            <parameterQueries/>
+            <status>ENABLED</status>
+            <usingExpressions>true</usingExpressions>
             <xpathExpressions/>
         </mockResponse>
         <mockResponse>

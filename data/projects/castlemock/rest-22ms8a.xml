@@ -26,6 +26,21 @@
     </methods>
     <mockResponses>
         <mockResponse>
+            <body>{}</body>
+            <contentEncodings/>
+            <headerQueries/>
+            <httpHeaders/>
+            <httpStatusCode>500</httpStatusCode>
+            <id>LzkIZS</id>
+            <jsonPathExpressions/>
+            <methodId>BVjOyR</methodId>
+            <name>ko</name>
+            <parameterQueries/>
+            <status>DISABLED</status>
+            <usingExpressions>false</usingExpressions>
+            <xpathExpressions/>
+        </mockResponse>
+        <mockResponse>
             <body>{&#13;
 	"body": {&#13;
 		"nroSecuencia": 44910171,&#13;
@@ -45,21 +60,6 @@
             <name>ok</name>
             <parameterQueries/>
             <status>ENABLED</status>
-            <usingExpressions>false</usingExpressions>
-            <xpathExpressions/>
-        </mockResponse>
-        <mockResponse>
-            <body>{}</body>
-            <contentEncodings/>
-            <headerQueries/>
-            <httpHeaders/>
-            <httpStatusCode>500</httpStatusCode>
-            <id>LzkIZS</id>
-            <jsonPathExpressions/>
-            <methodId>BVjOyR</methodId>
-            <name>ko</name>
-            <parameterQueries/>
-            <status>DISABLED</status>
             <usingExpressions>false</usingExpressions>
             <xpathExpressions/>
         </mockResponse>
