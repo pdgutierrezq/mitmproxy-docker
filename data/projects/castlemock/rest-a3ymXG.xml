@@ -11,21 +11,6 @@
     <methods>
         <method>
             <currentResponseSequenceIndex>0</currentResponseSequenceIndex>
-            <defaultMockResponseId></defaultMockResponseId>
-            <forwardedEndpoint>https://digital-stg-api.avaldigitallabs.com/securityManagement/v1</forwardedEndpoint>
-            <httpMethod>POST</httpMethod>
-            <id>Kagz7v</id>
-            <mockResponses/>
-            <name>CREATE</name>
-            <networkDelay>0</networkDelay>
-            <resourceId>6gO8xL</resourceId>
-            <responseStrategy>RANDOM</responseStrategy>
-            <simulateNetworkDelay>false</simulateNetworkDelay>
-            <status>MOCKED</status>
-        </method>
-        <method>
-            <currentResponseSequenceIndex>0</currentResponseSequenceIndex>
-            <defaultMockResponseId></defaultMockResponseId>
             <defaultQueryMockResponseId></defaultQueryMockResponseId>
             <forwardedEndpoint>https://digital-stg-api.avaldigitallabs.com/securityManagement/v1</forwardedEndpoint>
             <httpMethod>PUT</httpMethod>
@@ -38,20 +23,90 @@
             <simulateNetworkDelay>false</simulateNetworkDelay>
             <status>MOCKED</status>
         </method>
+        <method>
+            <currentResponseSequenceIndex>0</currentResponseSequenceIndex>
+            <forwardedEndpoint>https://digital-stg-api.avaldigitallabs.com/securityManagement/v1</forwardedEndpoint>
+            <httpMethod>POST</httpMethod>
+            <id>Kagz7v</id>
+            <mockResponses/>
+            <name>CREATE</name>
+            <networkDelay>0</networkDelay>
+            <resourceId>6gO8xL</resourceId>
+            <responseStrategy>RANDOM</responseStrategy>
+            <simulateNetworkDelay>false</simulateNetworkDelay>
+            <status>MOCKED</status>
+        </method>
     </methods>
     <mockResponses>
         <mockResponse>
             <body>{&#13;
-  "Desc": "Error Server"&#13;
+	"error": "Error service mock"&#13;
 }</body>
             <contentEncodings/>
             <headerQueries/>
             <httpHeaders/>
             <httpStatusCode>500</httpStatusCode>
-            <id>rC9u5v</id>
+            <id>SIWdHZ</id>
             <jsonPathExpressions/>
-            <methodId>Kagz7v</methodId>
-            <name>Error response</name>
+            <methodId>i0FL9J</methodId>
+            <name>validate_error</name>
+            <parameterQueries/>
+            <status>DISABLED</status>
+            <usingExpressions>false</usingExpressions>
+            <xpathExpressions/>
+        </mockResponse>
+        <mockResponse>
+            <body>{&#13;
+	"RqUID": "2161077595",&#13;
+	"Status": {&#13;
+		"StatusCode": "57",&#13;
+		"StatusDesc": "La autenticación no es válida"&#13;
+	}&#13;
+}</body>
+            <contentEncodings/>
+            <headerQueries/>
+            <httpHeaders/>
+            <httpStatusCode>206</httpStatusCode>
+            <id>vhnWQh</id>
+            <jsonPathExpressions/>
+            <methodId>i0FL9J</methodId>
+            <name>unkown business error</name>
+            <parameterQueries/>
+            <status>DISABLED</status>
+            <usingExpressions>false</usingExpressions>
+            <xpathExpressions/>
+        </mockResponse>
+        <mockResponse>
+            <body></body>
+            <contentEncodings/>
+            <headerQueries/>
+            <httpHeaders/>
+            <httpStatusCode>204</httpStatusCode>
+            <id>DIX4NA</id>
+            <jsonPathExpressions/>
+            <methodId>i0FL9J</methodId>
+            <name>Success response</name>
+            <parameterQueries/>
+            <status>ENABLED</status>
+            <usingExpressions>false</usingExpressions>
+            <xpathExpressions/>
+        </mockResponse>
+        <mockResponse>
+            <body>{&#13;
+	"RqUID": "2161077595",&#13;
+	"Status": {&#13;
+		"StatusCode": "56",&#13;
+		"StatusDesc": "La autenticación no es válida"&#13;
+	}&#13;
+}</body>
+            <contentEncodings/>
+            <headerQueries/>
+            <httpHeaders/>
+            <httpStatusCode>206</httpStatusCode>
+            <id>XOCvgO</id>
+            <jsonPathExpressions/>
+            <methodId>i0FL9J</methodId>
+            <name>Error business</name>
             <parameterQueries/>
             <status>DISABLED</status>
             <usingExpressions>false</usingExpressions>
@@ -82,20 +137,16 @@
         </mockResponse>
         <mockResponse>
             <body>{&#13;
-    "RqUID": "549886983",&#13;
-    "Status": {&#13;
-        "StatusCode": "40",&#13;
-        "StatusDesc": "Depleted seeds"&#13;
-    }&#13;
+  "Desc": "Error Server"&#13;
 }</body>
             <contentEncodings/>
             <headerQueries/>
             <httpHeaders/>
-            <httpStatusCode>206</httpStatusCode>
-            <id>QPPxU7</id>
+            <httpStatusCode>500</httpStatusCode>
+            <id>rC9u5v</id>
             <jsonPathExpressions/>
             <methodId>Kagz7v</methodId>
-            <name>Error seed</name>
+            <name>Error response</name>
             <parameterQueries/>
             <status>DISABLED</status>
             <usingExpressions>false</usingExpressions>
@@ -122,80 +173,6 @@
             <usingExpressions>false</usingExpressions>
             <xpathExpressions/>
         </mockResponse>
-        <mockResponse>
-            <body>{&#13;
-	"RqUID": "2161077595",&#13;
-	"Status": {&#13;
-		"StatusCode": "57",&#13;
-		"StatusDesc": "La autenticación no es válida"&#13;
-	}&#13;
-}</body>
-            <contentEncodings/>
-            <headerQueries/>
-            <httpHeaders/>
-            <httpStatusCode>206</httpStatusCode>
-            <id>vhnWQh</id>
-            <jsonPathExpressions/>
-            <methodId>i0FL9J</methodId>
-            <name>unkown business error</name>
-            <parameterQueries/>
-            <status>DISABLED</status>
-            <usingExpressions>false</usingExpressions>
-            <xpathExpressions/>
-        </mockResponse>
-        <mockResponse>
-            <body>{&#13;
-	"RqUID": "2161077595",&#13;
-	"Status": {&#13;
-		"StatusCode": "56",&#13;
-		"StatusDesc": "La autenticación no es válida"&#13;
-	}&#13;
-}</body>
-            <contentEncodings/>
-            <headerQueries/>
-            <httpHeaders/>
-            <httpStatusCode>206</httpStatusCode>
-            <id>XOCvgO</id>
-            <jsonPathExpressions/>
-            <methodId>i0FL9J</methodId>
-            <name>Error business</name>
-            <parameterQueries/>
-            <status>DISABLED</status>
-            <usingExpressions>false</usingExpressions>
-            <xpathExpressions/>
-        </mockResponse>
-        <mockResponse>
-            <body></body>
-            <contentEncodings/>
-            <headerQueries/>
-            <httpHeaders/>
-            <httpStatusCode>204</httpStatusCode>
-            <id>DIX4NA</id>
-            <jsonPathExpressions/>
-            <methodId>i0FL9J</methodId>
-            <name>Success response</name>
-            <parameterQueries/>
-            <status>ENABLED</status>
-            <usingExpressions>false</usingExpressions>
-            <xpathExpressions/>
-        </mockResponse>
-        <mockResponse>
-            <body>{&#13;
-	"error": "Error service mock"&#13;
-}</body>
-            <contentEncodings/>
-            <headerQueries/>
-            <httpHeaders/>
-            <httpStatusCode>500</httpStatusCode>
-            <id>SIWdHZ</id>
-            <jsonPathExpressions/>
-            <methodId>i0FL9J</methodId>
-            <name>validate_error</name>
-            <parameterQueries/>
-            <status>DISABLED</status>
-            <usingExpressions>false</usingExpressions>
-            <xpathExpressions/>
-        </mockResponse>
     </mockResponses>
     <project>
         <description></description>
@@ -206,16 +183,16 @@
     <resources>
         <resource>
             <applicationId>R99bqa</applicationId>
-            <id>6gO8xL</id>
+            <id>j2AVvI</id>
             <methods/>
-            <name>create</name>
+            <name>validate</name>
             <uri>/User_Identity/Identity</uri>
         </resource>
         <resource>
             <applicationId>R99bqa</applicationId>
-            <id>j2AVvI</id>
+            <id>6gO8xL</id>
             <methods/>
-            <name>validate</name>
+            <name>create</name>
             <uri>/User_Identity/Identity</uri>
         </resource>
     </resources>

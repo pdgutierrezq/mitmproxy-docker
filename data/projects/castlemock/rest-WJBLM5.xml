@@ -159,6 +159,24 @@
         </mockResponse>
         <mockResponse>
             <body>{&#13;
+	"StatusCode": "500",&#13;
+	"StatusDesc": "Error Inesperado"&#13;
+}</body>
+            <contentEncodings/>
+            <headerQueries/>
+            <httpHeaders/>
+            <httpStatusCode>500</httpStatusCode>
+            <id>NuSDkF</id>
+            <jsonPathExpressions/>
+            <methodId>BSifQY</methodId>
+            <name>server_error</name>
+            <parameterQueries/>
+            <status>DISABLED</status>
+            <usingExpressions>false</usingExpressions>
+            <xpathExpressions/>
+        </mockResponse>
+        <mockResponse>
+            <body>{&#13;
 	"MsgRsHdr": {&#13;
 		"Status": {&#13;
 			"StatusCode": "300",&#13;
@@ -189,24 +207,6 @@
         </mockResponse>
         <mockResponse>
             <body>{&#13;
-	"StatusCode": "500",&#13;
-	"StatusDesc": "Error Inesperado"&#13;
-}</body>
-            <contentEncodings/>
-            <headerQueries/>
-            <httpHeaders/>
-            <httpStatusCode>500</httpStatusCode>
-            <id>NuSDkF</id>
-            <jsonPathExpressions/>
-            <methodId>BSifQY</methodId>
-            <name>server_error</name>
-            <parameterQueries/>
-            <status>DISABLED</status>
-            <usingExpressions>false</usingExpressions>
-            <xpathExpressions/>
-        </mockResponse>
-        <mockResponse>
-            <body>{&#13;
 	"Transaction": {&#13;
 		"TrnRqUID": "1866062",&#13;
 		"TrnType": "1"&#13;
@@ -230,24 +230,6 @@
         </mockResponse>
         <mockResponse>
             <body>{&#13;
-	"StatusCode": "500",&#13;
-	"StatusDesc": "Error Inesperado"&#13;
-}</body>
-            <contentEncodings/>
-            <headerQueries/>
-            <httpHeaders/>
-            <httpStatusCode>500</httpStatusCode>
-            <id>cWcKF8</id>
-            <jsonPathExpressions/>
-            <methodId>QfC8wv</methodId>
-            <name>server_error</name>
-            <parameterQueries/>
-            <status>DISABLED</status>
-            <usingExpressions>false</usingExpressions>
-            <xpathExpressions/>
-        </mockResponse>
-        <mockResponse>
-            <body>{&#13;
 	"Transaction": {&#13;
 		"Code": "1",&#13;
 		"ClientDt": "2021-03-16T11:28:35.000-05:00",&#13;
@@ -262,6 +244,46 @@
             <jsonPathExpressions/>
             <methodId>QfC8wv</methodId>
             <name>transaction_not_authorized</name>
+            <parameterQueries/>
+            <status>DISABLED</status>
+            <usingExpressions>false</usingExpressions>
+            <xpathExpressions/>
+        </mockResponse>
+        <mockResponse>
+            <body>{&#13;
+    "Transaction": {&#13;
+        "Code": "1",&#13;
+        "ClientDt": "2021-03-16T11:28:35.000-05:00",&#13;
+        "LastTrnDt": "2021-03-16T11:31:28.000-05:00",&#13;
+       "ApprovalId" : "false"&#13;
+    }&#13;
+}</body>
+            <contentEncodings/>
+            <headerQueries/>
+            <httpHeaders/>
+            <httpStatusCode>200</httpStatusCode>
+            <id>iHMRev</id>
+            <jsonPathExpressions/>
+            <methodId>QfC8wv</methodId>
+            <name>transaction_failed</name>
+            <parameterQueries/>
+            <status>DISABLED</status>
+            <usingExpressions>false</usingExpressions>
+            <xpathExpressions/>
+        </mockResponse>
+        <mockResponse>
+            <body>{&#13;
+	"StatusCode": "500",&#13;
+	"StatusDesc": "Error Inesperado"&#13;
+}</body>
+            <contentEncodings/>
+            <headerQueries/>
+            <httpHeaders/>
+            <httpStatusCode>500</httpStatusCode>
+            <id>cWcKF8</id>
+            <jsonPathExpressions/>
+            <methodId>QfC8wv</methodId>
+            <name>server_error</name>
             <parameterQueries/>
             <status>DISABLED</status>
             <usingExpressions>false</usingExpressions>
@@ -290,28 +312,6 @@
             <jsonPathExpressions/>
             <methodId>QfC8wv</methodId>
             <name>service_error</name>
-            <parameterQueries/>
-            <status>DISABLED</status>
-            <usingExpressions>false</usingExpressions>
-            <xpathExpressions/>
-        </mockResponse>
-        <mockResponse>
-            <body>{&#13;
-    "Transaction": {&#13;
-        "Code": "1",&#13;
-        "ClientDt": "2021-03-16T11:28:35.000-05:00",&#13;
-        "LastTrnDt": "2021-03-16T11:31:28.000-05:00",&#13;
-       "ApprovalId" : "false"&#13;
-    }&#13;
-}</body>
-            <contentEncodings/>
-            <headerQueries/>
-            <httpHeaders/>
-            <httpStatusCode>200</httpStatusCode>
-            <id>iHMRev</id>
-            <jsonPathExpressions/>
-            <methodId>QfC8wv</methodId>
-            <name>transaction_failed</name>
             <parameterQueries/>
             <status>DISABLED</status>
             <usingExpressions>false</usingExpressions>

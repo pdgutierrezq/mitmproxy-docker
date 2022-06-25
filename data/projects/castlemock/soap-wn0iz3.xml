@@ -242,27 +242,10 @@
             <contentEncodings/>
             <httpHeaders/>
             <httpStatusCode>200</httpStatusCode>
-            <id>K8UHUA</id>
-            <name>TIENE CAT</name>
+            <id>KyA87x</id>
+            <name>NO TIENE CAT</name>
             <operationId>qMvhBc</operationId>
             <status>ENABLED</status>
-            <usingExpressions>false</usingExpressions>
-            <xpathExpressions/>
-        </mockResponse>
-        <mockResponse>
-            <body>&lt;soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://schemas.xmlsoap.org/wsdl/"&gt;&#13;
-   &lt;soapenv:Header/&gt;&#13;
-   &lt;soapenv:Body&gt;&#13;
-      &lt;web:getCustomerProductResult&gt;?&lt;/web:getCustomerProductResult&gt;&#13;
-   &lt;/soapenv:Body&gt;&#13;
-&lt;/soapenv:Envelope&gt;</body>
-            <contentEncodings/>
-            <httpHeaders/>
-            <httpStatusCode>500</httpStatusCode>
-            <id>ppyNv1</id>
-            <name>Error 500</name>
-            <operationId>qMvhBc</operationId>
-            <status>DISABLED</status>
             <usingExpressions>false</usingExpressions>
             <xpathExpressions/>
         </mockResponse>
@@ -507,8 +490,25 @@
             <contentEncodings/>
             <httpHeaders/>
             <httpStatusCode>200</httpStatusCode>
-            <id>KyA87x</id>
-            <name>NO TIENE CAT</name>
+            <id>K8UHUA</id>
+            <name>TIENE CAT</name>
+            <operationId>qMvhBc</operationId>
+            <status>DISABLED</status>
+            <usingExpressions>false</usingExpressions>
+            <xpathExpressions/>
+        </mockResponse>
+        <mockResponse>
+            <body>&lt;soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://schemas.xmlsoap.org/wsdl/"&gt;&#13;
+   &lt;soapenv:Header/&gt;&#13;
+   &lt;soapenv:Body&gt;&#13;
+      &lt;web:getCustomerProductResult&gt;?&lt;/web:getCustomerProductResult&gt;&#13;
+   &lt;/soapenv:Body&gt;&#13;
+&lt;/soapenv:Envelope&gt;</body>
+            <contentEncodings/>
+            <httpHeaders/>
+            <httpStatusCode>500</httpStatusCode>
+            <id>ppyNv1</id>
+            <name>Error 500</name>
             <operationId>qMvhBc</operationId>
             <status>DISABLED</status>
             <usingExpressions>false</usingExpressions>
@@ -516,34 +516,6 @@
         </mockResponse>
     </mockResponses>
     <operations>
-        <operation>
-            <currentResponseSequenceIndex>0</currentResponseSequenceIndex>
-            <defaultBody>&lt;soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://schemas.xmlsoap.org/wsdl/"&gt;
-   &lt;soapenv:Header/&gt;
-   &lt;soapenv:Body&gt;
-      &lt;web:getCustomerProductResult&gt;?&lt;/web:getCustomerProductResult&gt;
-   &lt;/soapenv:Body&gt;
-&lt;/soapenv:Envelope&gt;</defaultBody>
-            <defaultXPathMockResponseId></defaultXPathMockResponseId>
-            <forwardedEndpoint>http://proxy:8080/https://192.168.135.28:442/PFBA_AhorrosyCtaCte20/sca/WSBA_AhorrosyCtaCte_consultarCuentasClienteV02</forwardedEndpoint>
-            <httpMethod>POST</httpMethod>
-            <id>qMvhBc</id>
-            <identifyStrategy>ELEMENT_NAMESPACE</identifyStrategy>
-            <mockOnFailure>false</mockOnFailure>
-            <mockResponses/>
-            <name>getCustomerProduct</name>
-            <networkDelay>10000</networkDelay>
-            <operationIdentifier>
-                <name>getCustomerProductRequest</name>
-                <namespace>urn://grupoaval.com/customers/v1/</namespace>
-            </operationIdentifier>
-            <originalEndpoint>http://proxy:8080/https://192.168.135.28:442/PFBA_AhorrosyCtaCte20/sca/WSBA_AhorrosyCtaCte_consultarCuentasClienteV02</originalEndpoint>
-            <portId>8YV2kk</portId>
-            <responseStrategy>RANDOM</responseStrategy>
-            <simulateNetworkDelay>false</simulateNetworkDelay>
-            <soapVersion>SOAP11</soapVersion>
-            <status>MOCKED</status>
-        </operation>
         <operation>
             <currentResponseSequenceIndex>0</currentResponseSequenceIndex>
             <defaultBody>&lt;soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://schemas.xmlsoap.org/wsdl/"&gt;
@@ -598,6 +570,34 @@
             <soapVersion>SOAP11</soapVersion>
             <status>MOCKED</status>
         </operation>
+        <operation>
+            <currentResponseSequenceIndex>0</currentResponseSequenceIndex>
+            <defaultBody>&lt;soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://schemas.xmlsoap.org/wsdl/"&gt;
+   &lt;soapenv:Header/&gt;
+   &lt;soapenv:Body&gt;
+      &lt;web:getCustomerProductResult&gt;?&lt;/web:getCustomerProductResult&gt;
+   &lt;/soapenv:Body&gt;
+&lt;/soapenv:Envelope&gt;</defaultBody>
+            <defaultXPathMockResponseId></defaultXPathMockResponseId>
+            <forwardedEndpoint>http://proxy:8080/https://192.168.135.28:442/PFBA_AhorrosyCtaCte20/sca/WSBA_AhorrosyCtaCte_consultarCuentasClienteV02</forwardedEndpoint>
+            <httpMethod>POST</httpMethod>
+            <id>qMvhBc</id>
+            <identifyStrategy>ELEMENT_NAMESPACE</identifyStrategy>
+            <mockOnFailure>false</mockOnFailure>
+            <mockResponses/>
+            <name>getCustomerProduct</name>
+            <networkDelay>10000</networkDelay>
+            <operationIdentifier>
+                <name>getCustomerProductRequest</name>
+                <namespace>urn://grupoaval.com/customers/v1/</namespace>
+            </operationIdentifier>
+            <originalEndpoint>http://proxy:8080/https://192.168.135.28:442/PFBA_AhorrosyCtaCte20/sca/WSBA_AhorrosyCtaCte_consultarCuentasClienteV02</originalEndpoint>
+            <portId>8YV2kk</portId>
+            <responseStrategy>RANDOM</responseStrategy>
+            <simulateNetworkDelay>false</simulateNetworkDelay>
+            <soapVersion>SOAP11</soapVersion>
+            <status>MOCKED</status>
+        </operation>
     </operations>
     <ports>
         <port>
@@ -610,7 +610,7 @@
     </ports>
     <project>
         <created>2020-02-20T20:49:34.972Z</created>
-        <description>PASIBO --- Consultar cuentas por cliente</description>
+        <description>PASIVO --- Consultar cuentas por cliente</description>
         <id>wn0iz3</id>
         <name>rb-pasivo-dev-read-customer-accounts</name>
         <updated>2020-02-20T20:49:34.972Z</updated>

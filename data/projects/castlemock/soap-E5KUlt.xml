@@ -113,7 +113,7 @@
             <responseStrategy>RANDOM</responseStrategy>
             <simulateNetworkDelay>false</simulateNetworkDelay>
             <soapVersion>SOAP11</soapVersion>
-            <status>FORWARDED</status>
+            <status>MOCKED</status>
         </operation>
     </operations>
     <ports>
