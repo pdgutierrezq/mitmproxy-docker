@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<restExportContainer>
+    <applications>
+        <application>
+            <id>aFK0la</id>
+            <name>pse-create-transaction</name>
+            <projectId>UxpIdP</projectId>
+            <resources/>
+        </application>
+    </applications>
+    <methods>
+        <method>
+            <currentResponseSequenceIndex>0</currentResponseSequenceIndex>
+            <defaultMockResponseId></defaultMockResponseId>
+            <forwardedEndpoint>http://proxy:8080/https://apicapi-gateway-qa.appsptqa.ath.com.co</forwardedEndpoint>
+            <httpMethod>POST</httpMethod>
+            <id>q4ebnc</id>
+            <mockResponses/>
+            <name>post</name>
+            <networkDelay>0</networkDelay>
+            <resourceId>xOw1HO</resourceId>
+            <responseStrategy>RANDOM</responseStrategy>
+            <simulateNetworkDelay>false</simulateNetworkDelay>
+            <status>FORWARDED</status>
+        </method>
+    </methods>
+    <mockResponses>
+        <mockResponse>
+            <body>{&#13;
+                "Transaction": {&#13;
+                "TrnRqUID": "1866062",&#13;
+                "TrnType": "1"&#13;
+                },&#13;
+                "DepAcctStmtRec": {&#13;
+                "URL": "https://registro.desarrollo.pse.com.co/PSEUserRegister/StartTransaction.htm?enc=V%2brHQIwzrDzFvDKfmDEJ7lpXVYnEfLwM2OyHGKrbXFhcZvAoTudmp5nuzgo6kNfB"&#13;
+                }&#13;
+                }</body>
+            <contentEncodings/>
+            <headerQueries/>
+            <httpHeaders/>
+            <httpStatusCode>201</httpStatusCode>
+            <id>uy0ODh</id>
+            <jsonPathExpressions/>
+            <methodId>q4ebnc</methodId>
+            <name>ok</name>
+            <parameterQueries/>
+            <status>ENABLED</status>
+            <usingExpressions>true</usingExpressions>
+            <xpathExpressions/>
+        </mockResponse>
+        <mockResponse>
+            <body>{&#13;
+                "MsgRsHdr": {&#13;
+                "Status": {&#13;
+                "StatusCode": "300",&#13;
+                "Severity": "Error",&#13;
+                "StatusDesc": "No es posible procesar la transacción.",&#13;
+                "AdditionalStatus": {&#13;
+                "StatusCode": "300",&#13;
+                "Severity": "Error",&#13;
+                "StatusDesc": "No es posible procesar la transacción."&#13;
+                },&#13;
+                "EndDt": "2020-03-27T15:57:05"&#13;
+                },&#13;
+                "EndDt": "2020-03-27T15:57:05"&#13;
+                }&#13;
+                }</body>
+            <contentEncodings/>
+            <headerQueries/>
+            <httpHeaders/>
+            <httpStatusCode>206</httpStatusCode>
+            <id>usXi4i</id>
+            <jsonPathExpressions/>
+            <methodId>q4ebnc</methodId>
+            <name>ko-transaction_error</name>
+            <parameterQueries/>
+            <status>DISABLED</status>
+            <usingExpressions>false</usingExpressions>
+            <xpathExpressions/>
+        </mockResponse>
+        <mockResponse>
+            <body>{&#13;
+                "StatusCode": "500",&#13;
+                "StatusDesc": "Error Inesperado"&#13;
+                }</body>
+            <contentEncodings/>
+            <headerQueries/>
+            <httpHeaders/>
+            <httpStatusCode>500</httpStatusCode>
+            <id>uuSDkF</id>
+            <jsonPathExpressions/>
+            <methodId>q4ebnc</methodId>
+            <name>ko-server_error</name>
+            <parameterQueries/>
+            <status>DISABLED</status>
+            <usingExpressions>false</usingExpressions>
+            <xpathExpressions/>
+        </mockResponse>
+    </mockResponses>
+    <project>
+        <description>Pasivo - servicios PSE (crear transacción)</description>
+        <id>UxpIdP</id>
+        <name>rb-pasivo-dev-pse-create-transaction</name>
+        <applications/>
+    </project>
+    <resources>
+        <resource>
+            <applicationId>aFK0la</applicationId>
+            <id>xOw1HO</id>
+            <methods/>
+            <name>pse</name>
+            <uri>/org-qa/api-pb/paymentsManagement/v1/Administration_Cpv/Trn</uri>
+        </resource>
+    </resources>
+</restExportContainer>

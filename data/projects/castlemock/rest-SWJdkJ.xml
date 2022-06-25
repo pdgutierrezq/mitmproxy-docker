@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<restExportContainer>
+    <applications>
+        <application>
+            <id>KFwWdb</id>
+            <name>pse-transaction-status</name>
+            <projectId>SWJdkJ</projectId>
+            <resources/>
+        </application>
+    </applications>
+    <methods>
+        <method>
+            <currentResponseSequenceIndex>0</currentResponseSequenceIndex>
+            <defaultMockResponseId></defaultMockResponseId>
+            <forwardedEndpoint>http://proxy:8080/https://apicapi-gateway-qa.appsptqa.ath.com.co</forwardedEndpoint>
+            <httpMethod>GET</httpMethod>
+            <id>TcGmcb</id>
+            <mockResponses/>
+            <name>get</name>
+            <networkDelay>0</networkDelay>
+            <resourceId>tA567C</resourceId>
+            <responseStrategy>RANDOM</responseStrategy>
+            <simulateNetworkDelay>false</simulateNetworkDelay>
+            <status>FORWARDED</status>
+        </method>
+    </methods>
+    <mockResponses>
+        <mockResponse>
+            <body>{&#13;
+                "Transaction": {&#13;
+                "Code": "1",&#13;
+                "ClientDt": "2021-03-16T11:28:35.000-05:00",&#13;
+                "LastTrnDt": "2021-03-16T11:31:28.000-05:00"&#13;
+                }&#13;
+                }</body>
+            <contentEncodings/>
+            <headerQueries/>
+            <httpHeaders/>
+            <httpStatusCode>200</httpStatusCode>
+            <id>swqSe2</id>
+            <jsonPathExpressions/>
+            <methodId>TcGmcb</methodId>
+            <name>transaction_not_authorized</name>
+            <parameterQueries/>
+            <status>DISABLED</status>
+            <usingExpressions>false</usingExpressions>
+            <xpathExpressions/>
+        </mockResponse>
+        <mockResponse>
+            <body>{&#13;
+                "Transaction": {&#13;
+                "Code": "1",&#13;
+                "ClientDt": "2021-03-16T11:28:35.000-05:00",&#13;
+                "LastTrnDt": "2021-03-16T11:31:28.000-05:00",&#13;
+                "ApprovalId" : "false"&#13;
+                }&#13;
+                }</body>
+            <contentEncodings/>
+            <headerQueries/>
+            <httpHeaders/>
+            <httpStatusCode>200</httpStatusCode>
+            <id>sHMRev</id>
+            <jsonPathExpressions/>
+            <methodId>TcGmcb</methodId>
+            <name>transaction_failed</name>
+            <parameterQueries/>
+            <status>DISABLED</status>
+            <usingExpressions>false</usingExpressions>
+            <xpathExpressions/>
+        </mockResponse>
+        <mockResponse>
+            <body>{&#13;
+                "StatusCode": "500",&#13;
+                "StatusDesc": "Error Inesperado"&#13;
+                }</body>
+            <contentEncodings/>
+            <headerQueries/>
+            <httpHeaders/>
+            <httpStatusCode>500</httpStatusCode>
+            <id>sWcKF8</id>
+            <jsonPathExpressions/>
+            <methodId>TcGmcb</methodId>
+            <name>server_error</name>
+            <parameterQueries/>
+            <status>DISABLED</status>
+            <usingExpressions>false</usingExpressions>
+            <xpathExpressions/>
+        </mockResponse>
+        <mockResponse>
+            <body>{&#13;
+                "MsgRsHdr": {&#13;
+                "Status": {&#13;
+                "StatusCode": "206",&#13;
+                "AdditionalStatus": {&#13;
+                "StatusCode": "206",&#13;
+                "StatusDesc": "FAIL_INVALIDTRAZABILITYCODE"&#13;
+                },&#13;
+                "StatusDesc": "FAIL_INVALIDTRAZABILITYCODE",&#13;
+                "EndDt": "2020-09-09T20:05:20"&#13;
+                },&#13;
+                "EndDt": "2020-09-09T20:05:20"&#13;
+                }&#13;
+                }</body>
+            <contentEncodings/>
+            <headerQueries/>
+            <httpHeaders/>
+            <httpStatusCode>206</httpStatusCode>
+            <id>sgXjVn</id>
+            <jsonPathExpressions/>
+            <methodId>TcGmcb</methodId>
+            <name>service_error</name>
+            <parameterQueries/>
+            <status>DISABLED</status>
+            <usingExpressions>false</usingExpressions>
+            <xpathExpressions/>
+        </mockResponse>
+        <mockResponse>
+            <body>{&#13;
+                "Transaction": {&#13;
+                "Code": "0",&#13;
+                "ClientDt": "2021-03-16T11:28:35.000-05:00",&#13;
+                "LastTrnDt": "2021-03-16T11:31:28.000-05:00",&#13;
+                "ApprovalId" : "true"&#13;
+                }&#13;
+                }</body>
+            <contentEncodings/>
+            <headerQueries/>
+            <httpHeaders/>
+            <httpStatusCode>200</httpStatusCode>
+            <id>sdvZUF</id>
+            <jsonPathExpressions/>
+            <methodId>TcGmcb</methodId>
+            <name>transaction_ok</name>
+            <parameterQueries/>
+            <status>ENABLED</status>
+            <usingExpressions>false</usingExpressions>
+            <xpathExpressions/>
+        </mockResponse>
+        <mockResponse>
+            <body>{&#13;
+                "Transaction": {&#13;
+                "Code": "0",&#13;
+                "ClientDt": "2021-03-16T11:28:35.000-05:00",&#13;
+                "LastTrnDt": "2021-03-16T11:31:28.000-05:00"&#13;
+                }&#13;
+                }</body>
+            <contentEncodings/>
+            <headerQueries/>
+            <httpHeaders/>
+            <httpStatusCode>200</httpStatusCode>
+            <id>mDXiGu</id>
+            <jsonPathExpressions/>
+            <methodId>TcGmcb</methodId>
+            <name>transaction_pending</name>
+            <parameterQueries/>
+            <status>DISABLED</status>
+            <usingExpressions>false</usingExpressions>
+            <xpathExpressions/>
+        </mockResponse>
+        <mockResponse>
+            <body>{&#13;
+                "Transaction": {&#13;
+                "Code": "0",&#13;
+                "ClientDt": "2021-03-16T11:28:35.000-05:00",&#13;
+                "LastTrnDt": "2021-03-16T11:31:28.000-05:00",&#13;
+                "ApprovalId" : "false"&#13;
+                }&#13;
+                }</body>
+            <contentEncodings/>
+            <headerQueries/>
+            <httpHeaders/>
+            <httpStatusCode>200</httpStatusCode>
+            <id>sJCz61</id>
+            <jsonPathExpressions/>
+            <methodId>TcGmcb</methodId>
+            <name>transaction_fail_approval_id_false</name>
+            <parameterQueries/>
+            <status>DISABLED</status>
+            <usingExpressions>false</usingExpressions>
+            <xpathExpressions/>
+        </mockResponse>
+    </mockResponses>
+    <project>
+        <description>Pasivo - servicios PSE (estado transacción)</description>
+        <id>SWJdkJ</id>
+        <name>rb-pasivo-dev-pse-transaction-status</name>
+        <applications/>
+    </project>
+    <resources>
+        <resource>
+            <applicationId>KFwWdb</applicationId>
+            <id>tA567C</id>
+            <methods/>
+            <name>pse</name>
+            <uri>/org-qa/api-pb/paymentsManagement/v1/Administration_Cpv/Trn</uri>
+        </resource>
+    </resources>
+</restExportContainer>

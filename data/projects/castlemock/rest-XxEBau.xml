@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<restExportContainer>
+    <applications>
+        <application>
+            <id>fHDVSd</id>
+            <name>pse-finish-transaction</name>
+            <projectId>XxEBau</projectId>
+            <resources/>
+        </application>
+    </applications>
+    <methods>
+        <method>
+            <currentResponseSequenceIndex>0</currentResponseSequenceIndex>
+            <defaultMockResponseId></defaultMockResponseId>
+            <forwardedEndpoint>http://proxy:8080/https://apicapi-gateway-qa.appsptqa.ath.com.co</forwardedEndpoint>
+            <httpMethod>PUT</httpMethod>
+            <id>USnhqZ</id>
+            <mockResponses/>
+            <name>put</name>
+            <networkDelay>0</networkDelay>
+            <resourceId>ljRtgD</resourceId>
+            <responseStrategy>RANDOM</responseStrategy>
+            <simulateNetworkDelay>false</simulateNetworkDelay>
+            <status>FORWARDED</status>
+        </method>
+    </methods>
+    <mockResponses>
+        <mockResponse>
+            <body>{&#13;
+                "MsgRsHdr": {&#13;
+                "Status": {&#13;
+                "StatusCode": "206",&#13;
+                "AdditionalStatus": {&#13;
+                "StatusCode": "206",&#13;
+                "StatusDesc": "FAIL_INVALIDTRAZABILITYCODE"&#13;
+                },&#13;
+                "StatusDesc": "FAIL_INVALIDTRAZABILITYCODE",&#13;
+                "EndDt": "2020-09-09T20:05:20"&#13;
+                },&#13;
+                "EndDt": "2020-09-09T20:05:20"&#13;
+                }&#13;
+                }</body>
+            <contentEncodings/>
+            <headerQueries/>
+            <httpHeaders/>
+            <httpStatusCode>206</httpStatusCode>
+            <id>ldewWI</id>
+            <jsonPathExpressions/>
+            <methodId>USnhqZ</methodId>
+            <name>service_error</name>
+            <parameterQueries/>
+            <status>DISABLED</status>
+            <usingExpressions>false</usingExpressions>
+            <xpathExpressions/>
+        </mockResponse>
+        <mockResponse>
+            <body>{&#13;
+                "StatusCode": "500",&#13;
+                "StatusDesc": "Error Inesperado"&#13;
+                }</body>
+            <contentEncodings/>
+            <headerQueries/>
+            <httpHeaders/>
+            <httpStatusCode>500</httpStatusCode>
+            <id>dre9fX</id>
+            <jsonPathExpressions/>
+            <methodId>USnhqZ</methodId>
+            <name>server_error</name>
+            <parameterQueries/>
+            <status>DISABLED</status>
+            <usingExpressions>false</usingExpressions>
+            <xpathExpressions/>
+        </mockResponse>
+        <mockResponse>
+            <body></body>
+            <contentEncodings/>
+            <headerQueries/>
+            <httpHeaders/>
+            <httpStatusCode>204</httpStatusCode>
+            <id>d1y5SA</id>
+            <jsonPathExpressions/>
+            <methodId>USnhqZ</methodId>
+            <name>OK</name>
+            <parameterQueries/>
+            <status>ENABLED</status>
+            <usingExpressions>false</usingExpressions>
+            <xpathExpressions/>
+        </mockResponse>
+    </mockResponses>
+    <project>
+        <description>Pasivo - servicios PSE (finalizar transacción)</description>
+        <id>XxEBau</id>
+        <name>rb-pasivo-dev-pse-finish-transaction</name>
+        <applications/>
+    </project>
+    <resources>
+        <resource>
+            <applicationId>fHDVSd</applicationId>
+            <id>ljRtgD</id>
+            <methods/>
+            <name>pse</name>
+            <uri>/org-qa/api-pb/paymentsManagement/v1/Administration_Cpv/Trn</uri>
+        </resource>
+    </resources>
+</restExportContainer>
