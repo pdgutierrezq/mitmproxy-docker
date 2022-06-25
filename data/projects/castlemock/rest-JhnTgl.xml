@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<restExportContainer>
+    <applications>
+        <application>
+            <id>JGdT8y</id>
+            <name>product-configuration</name>
+            <projectId>JhnTgl</projectId>
+            <resources/>
+        </application>
+    </applications>
+    <methods>
+        <method>
+            <currentResponseSequenceIndex>0</currentResponseSequenceIndex>
+            <defaultMockResponseId></defaultMockResponseId>
+            <forwardedEndpoint>https://ovysjs5mlh.execute-api.us-east-2.amazonaws.com/securityManagement/get-product-configuration</forwardedEndpoint>
+            <httpMethod>GET</httpMethod>
+            <id>BQLCd0</id>
+            <mockResponses/>
+            <name>configuration</name>
+            <networkDelay>0</networkDelay>
+            <resourceId>IEN8bq</resourceId>
+            <responseStrategy>RANDOM</responseStrategy>
+            <simulateNetworkDelay>false</simulateNetworkDelay>
+            <status>MOCKED</status>
+        </method>
+    </methods>
+    <mockResponses>
+        <mockResponse>
+            <body>{&#13;
+	"statusCode": 500,&#13;
+	"headers": {&#13;
+		"Content-Type": "application/json"&#13;
+	},&#13;
+	"body": "Cannot read properties of undefined (reading 'length')"&#13;
+}</body>
+            <contentEncodings/>
+            <headerQueries/>
+            <httpHeaders/>
+            <httpStatusCode>500</httpStatusCode>
+            <id>I7eQqC</id>
+            <jsonPathExpressions/>
+            <methodId>BQLCd0</methodId>
+            <name>Error</name>
+            <parameterQueries/>
+            <status>DISABLED</status>
+            <usingExpressions>false</usingExpressions>
+            <xpathExpressions/>
+        </mockResponse>
+        <mockResponse>
+            <body>{&#13;
+	"statusCode": 200,&#13;
+	"headers": {&#13;
+		"Content-Type": "application/json"&#13;
+	},&#13;
+	"body": {&#13;
+		"invalidParameters": [],&#13;
+		"parameters": [&#13;
+			{&#13;
+				"Name": "/rb-pasivo-dev/product-configuration/digital-deposit-exoneration",&#13;
+				"Type": "SecureString",&#13;
+				"Value": "2.470.260",&#13;
+				"Version": 1,&#13;
+				"LastModifiedDate": "2022-04-21T21:22:31.171Z",&#13;
+				"ARN": "arn:aws:ssm:us-east-2:983903018317:parameter/rb-pasivo-dev/product-configuration/digital-deposit-exoneration",&#13;
+				"DataType": "text"&#13;
+			},&#13;
+			{&#13;
+				"Name": "/rb-pasivo-dev/product-configuration/digital-deposit-exoneration-uvt",&#13;
+				"Type": "SecureString",&#13;
+				"Value": "65 UVT",&#13;
+				"Version": 1,&#13;
+				"LastModifiedDate": "2022-04-21T21:22:31.232Z",&#13;
+				"ARN": "arn:aws:ssm:us-east-2:983903018317:parameter/rb-pasivo-dev/product-configuration/digital-deposit-exoneration-uvt",&#13;
+				"DataType": "text"&#13;
+			},&#13;
+			{&#13;
+				"Name": "/rb-pasivo-dev/product-configuration/digital-deposit-limit",&#13;
+				"Type": "String",&#13;
+				"Value": "8000000",&#13;
+				"Version": 1,&#13;
+				"LastModifiedDate": "2022-04-12T16:23:28.948Z",&#13;
+				"ARN": "arn:aws:ssm:us-east-2:11111:parameter/rb-pasivo-dev/product-configuration/digital-deposit-limit",&#13;
+				"DataType": "text"&#13;
+			},&#13;
+			{&#13;
+				"Name": "/rb-pasivo-dev/product-configuration/pse-off",&#13;
+				"Type": "String",&#13;
+				"Value": "false",&#13;
+				"Version": 1,&#13;
+				"LastModifiedDate": "2022-04-12T16:29:57.020Z",&#13;
+				"ARN": "arn:aws:ssm:us-east-2:11111:parameter/rb-pasivo-dev/product-configuration/pse-off",&#13;
+				"DataType": "text"&#13;
+			},&#13;
+			{&#13;
+				"Name": "/rb-pasivo-dev/product-configuration/pse-retake",&#13;
+				"Type": "String",&#13;
+				"Value": "true",&#13;
+				"Version": 1,&#13;
+				"LastModifiedDate": "2022-04-12T16:31:14.360Z",&#13;
+				"ARN": "arn:aws:ssm:us-east-2:11111:parameter/rb-pasivo-dev/product-configuration/pse-retake",&#13;
+				"DataType": "text"&#13;
+			},&#13;
+			{&#13;
+				"Name": "/rb-pasivo-dev/product-configuration/smmlv",&#13;
+				"Type": "String",&#13;
+				"Value": "1000000",&#13;
+				"Version": 1,&#13;
+				"LastModifiedDate": "2022-04-12T16:18:43.397Z",&#13;
+				"ARN": "arn:aws:ssm:us-east-2:11111:parameter/rb-pasivo-dev/product-configuration/smmlv",&#13;
+				"DataType": "text"&#13;
+			},&#13;
+		]&#13;
+	}&#13;
+}</body>
+            <contentEncodings/>
+            <headerQueries/>
+            <httpHeaders/>
+            <httpStatusCode>200</httpStatusCode>
+            <id>XCnZx3</id>
+            <jsonPathExpressions/>
+            <methodId>BQLCd0</methodId>
+            <name>OK</name>
+            <parameterQueries/>
+            <status>ENABLED</status>
+            <usingExpressions>false</usingExpressions>
+            <xpathExpressions/>
+        </mockResponse>
+        <mockResponse>
+            <body>{&#13;
+	"statusCode": 400,&#13;
+	"headers": {&#13;
+		"Content-Type": "application/json"&#13;
+	},&#13;
+	"body": {&#13;
+		"invalidParameters": [&#13;
+			"/rb-pasivo-dev/product-configuration/digital-deposit-limit",&#13;
+			"/rb-pasivo-dev/product-configuration/pse-off"&#13;
+		],&#13;
+		"parameters": [&#13;
+			{&#13;
+				"Name": "/rb-pasivo-dev/product-configuration/pse-retake",&#13;
+				"Type": "String",&#13;
+				"Value": "true",&#13;
+				"Version": 1,&#13;
+				"LastModifiedDate": "2022-04-12T16:31:14.360Z",&#13;
+				"ARN": "arn:aws:ssm:us-east-2:11111:parameter/rb-pasivo-dev/product-configuration/pse-retake",&#13;
+				"DataType": "text"&#13;
+			},&#13;
+			{&#13;
+				"Name": "/rb-pasivo-dev/product-configuration/smmlv",&#13;
+				"Type": "String",&#13;
+				"Value": "1000000",&#13;
+				"Version": 1,&#13;
+				"LastModifiedDate": "2022-04-12T16:18:43.397Z",&#13;
+				"ARN": "arn:aws:ssm:us-east-2:11111:parameter/rb-pasivo-dev/product-configuration/smmlv",&#13;
+				"DataType": "text"&#13;
+			},&#13;
+			{&#13;
+				"Name": "/rb-pasivo-dev/product-configuration/digital-deposit-exoneration",&#13;
+				"Type": "SecureString",&#13;
+				"Value": "2.470.260",&#13;
+				"Version": 1,&#13;
+				"LastModifiedDate": "2022-04-21T21:22:31.171Z",&#13;
+				"ARN": "arn:aws:ssm:us-east-2:983903018317:parameter/rb-pasivo-dev/product-configuration/digital-deposit-exoneration",&#13;
+				"DataType": "text"&#13;
+			},&#13;
+			{&#13;
+				"Name": "/rb-pasivo-dev/product-configuration/digital-deposit-exoneration-uvt",&#13;
+				"Type": "SecureString",&#13;
+				"Value": "65 UVT",&#13;
+				"Version": 1,&#13;
+				"LastModifiedDate": "2022-04-21T21:22:31.232Z",&#13;
+				"ARN": "arn:aws:ssm:us-east-2:983903018317:parameter/rb-pasivo-dev/product-configuration/digital-deposit-exoneration-uvt",&#13;
+				"DataType": "text"&#13;
+			}&#13;
+		]&#13;
+	}&#13;
+}</body>
+            <contentEncodings/>
+            <headerQueries/>
+            <httpHeaders/>
+            <httpStatusCode>400</httpStatusCode>
+            <id>wajs9i</id>
+            <jsonPathExpressions/>
+            <methodId>BQLCd0</methodId>
+            <name>Not at all OK</name>
+            <parameterQueries/>
+            <status>DISABLED</status>
+            <usingExpressions>false</usingExpressions>
+            <xpathExpressions/>
+        </mockResponse>
+    </mockResponses>
+    <project>
+        <description>PASIVO - Lambda creada con el fin de probar la consulta de parametros iniciales con las que van a cargar los diferentes productos</description>
+        <id>JhnTgl</id>
+        <name>rb-pasivo-dev-product-configuration</name>
+        <applications/>
+    </project>
+    <resources>
+        <resource>
+            <applicationId>JGdT8y</applicationId>
+            <id>IEN8bq</id>
+            <methods/>
+            <name>configuration</name>
+            <uri>/</uri>
+        </resource>
+    </resources>
+</restExportContainer>

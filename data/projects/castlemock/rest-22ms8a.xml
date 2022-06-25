@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<restExportContainer>
+    <applications>
+        <application>
+            <id>fIOkoU</id>
+            <name>refund</name>
+            <projectId>22ms8a</projectId>
+            <resources/>
+        </application>
+    </applications>
+    <methods>
+        <method>
+            <currentResponseSequenceIndex>0</currentResponseSequenceIndex>
+            <defaultMockResponseId></defaultMockResponseId>
+            <forwardedEndpoint>http://proxy:8080/https://192.168.135.28:542</forwardedEndpoint>
+            <httpMethod>POST</httpMethod>
+            <id>BVjOyR</id>
+            <mockResponses/>
+            <name>refund</name>
+            <networkDelay>0</networkDelay>
+            <resourceId>JfLzc5</resourceId>
+            <responseStrategy>RANDOM</responseStrategy>
+            <simulateNetworkDelay>false</simulateNetworkDelay>
+            <status>MOCKED</status>
+        </method>
+    </methods>
+    <mockResponses>
+        <mockResponse>
+            <body>{&#13;
+	"body": {&#13;
+		"nroSecuencia": 44910171,&#13;
+		"nroAutorizacion": 52170432,&#13;
+		"codRespuesta": 0,&#13;
+		"mensajeRespuesta": "TRANSACCION EXITOSA",&#13;
+		"fechaTransaccion": "2022-04-01T17:57:20"&#13;
+	}&#13;
+}</body>
+            <contentEncodings/>
+            <headerQueries/>
+            <httpHeaders/>
+            <httpStatusCode>200</httpStatusCode>
+            <id>f0wNv5</id>
+            <jsonPathExpressions/>
+            <methodId>BVjOyR</methodId>
+            <name>ok</name>
+            <parameterQueries/>
+            <status>ENABLED</status>
+            <usingExpressions>false</usingExpressions>
+            <xpathExpressions/>
+        </mockResponse>
+        <mockResponse>
+            <body>{}</body>
+            <contentEncodings/>
+            <headerQueries/>
+            <httpHeaders/>
+            <httpStatusCode>500</httpStatusCode>
+            <id>LzkIZS</id>
+            <jsonPathExpressions/>
+            <methodId>BVjOyR</methodId>
+            <name>ko</name>
+            <parameterQueries/>
+            <status>DISABLED</status>
+            <usingExpressions>false</usingExpressions>
+            <xpathExpressions/>
+        </mockResponse>
+    </mockResponses>
+    <project>
+        <description>PASIVO - Servicio para devolución de dinero fondeado por medio de PSE</description>
+        <id>22ms8a</id>
+        <name>rb-pasivo-dev-refund-money-pse-cdt</name>
+        <applications/>
+    </project>
+    <resources>
+        <resource>
+            <applicationId>fIOkoU</applicationId>
+            <id>JfLzc5</id>
+            <methods/>
+            <name>refund</name>
+            <uri>/PFBA_Cdts06/WRBA_Cdts_reversarCDT</uri>
+        </resource>
+    </resources>
+</restExportContainer>
