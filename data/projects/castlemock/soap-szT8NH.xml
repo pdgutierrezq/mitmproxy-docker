@@ -2436,7 +2436,7 @@
         <created>2020-11-09T22:29:50.973Z</created>
         <description>PASIVO - servicio que lee la información de un cliente en CRM</description>
         <id>szT8NH</id>
-        <name>bavv-pasivo-read-customer-data</name>
+        <name>rb-pasivo-dev-read-customer-data</name>
         <updated>2020-11-09T22:29:50.973Z</updated>
         <ports/>
         <resources/>
