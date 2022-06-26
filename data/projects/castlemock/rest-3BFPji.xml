@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<restExportContainer>
+    <applications>
+        <application>
+            <id>RE2DCk</id>
+            <name>create-sds-user</name>
+            <projectId>3BFPji</projectId>
+            <resources/>
+        </application>
+    </applications>
+    <methods>
+        <method>
+            <currentResponseSequenceIndex>0</currentResponseSequenceIndex>
+            <defaultMockResponseId></defaultMockResponseId>
+            <forwardedEndpoint>http://proxy:8080/https://apicapi-gateway-qa.appsptqa.ath.com.co</forwardedEndpoint>
+            <httpMethod>POST</httpMethod>
+            <id>13krEA</id>
+            <mockResponses/>
+            <name>post</name>
+            <networkDelay>0</networkDelay>
+            <resourceId>Zrr08I</resourceId>
+            <responseStrategy>RANDOM</responseStrategy>
+            <simulateNetworkDelay>false</simulateNetworkDelay>
+            <status>FORWARDED</status>
+        </method>
+    </methods>
+    <mockResponses>
+        <mockResponse>
+            <body>{&#13;
+	"MsgRsHdr": {&#13;
+		"Status": {&#13;
+			"StatusCode": "113",&#13;
+			"Severity": "Error",&#13;
+			"StatusDesc": "Usuario ya esta registrado",&#13;
+			"EndDt": "2022-06-26T22:49:17",&#13;
+			"AdditionalStatus": {&#13;
+				"StatusCode": "113",&#13;
+				"StatusDesc": "Usuario ya esta registrado"&#13;
+			}&#13;
+		},&#13;
+		"EndDt": "2022-06-26T22:49:17"&#13;
+	}&#13;
+}</body>
+            <contentEncodings/>
+            <headerQueries/>
+            <httpHeaders/>
+            <httpStatusCode>200</httpStatusCode>
+            <id>whlalp</id>
+            <jsonPathExpressions/>
+            <methodId>13krEA</methodId>
+            <name>ok-registered_user</name>
+            <parameterQueries/>
+            <status>ENABLED</status>
+            <usingExpressions>false</usingExpressions>
+            <xpathExpressions/>
+        </mockResponse>
+    </mockResponses>
+    <project>
+        <description></description>
+        <id>3BFPji</id>
+        <name>rb-pasivo-dev-create-sds-user</name>
+        <applications/>
+    </project>
+    <resources>
+        <resource>
+            <applicationId>RE2DCk</applicationId>
+            <id>Zrr08I</id>
+            <methods/>
+            <name>enrollment</name>
+            <uri>/org-qa/api-pb/securityManagement/v3/Enrollment_Customer/SDS</uri>
+        </resource>
+    </resources>
+</restExportContainer>
