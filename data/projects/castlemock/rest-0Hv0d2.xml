@@ -54,8 +54,24 @@
             <xpathExpressions/>
         </mockResponse>
         <mockResponse>
-            <body>{ "MsgRsHdr":{ "Status":{ "StatusCode":"90005", "ServerStatusCode":"90005", "StatusDesc":"DOCUMENTO INVALIDO", "Severity":"Error", "AdditionalStatus":{ "StatusCode":"100", "ServerStatusCode":"100", "StatusDesc":"DOCUMENTO INVALIDO", "Severity":"Error" }, "EndDt":"2022-06-26T18:25:57" }, "EndDt":"2022-06-26T18:25:57" } }
-</body>
+            <body>{&#13;
+	"MsgRsHdr": {&#13;
+		"Status": {&#13;
+			"StatusCode": "90005",&#13;
+			"ServerStatusCode": "90005",&#13;
+			"StatusDesc": "DOCUMENTO INVALIDO",&#13;
+			"Severity": "Error",&#13;
+			"AdditionalStatus": {&#13;
+				"StatusCode": "100",&#13;
+				"ServerStatusCode": "100",&#13;
+				"StatusDesc": "DOCUMENTO INVALIDO",&#13;
+				"Severity": "Error"&#13;
+			},&#13;
+			"EndDt": "2022-06-26T18:25:57"&#13;
+		},&#13;
+		"EndDt": "2022-06-26T18:25:57"&#13;
+	}&#13;
+}</body>
             <contentEncodings/>
             <headerQueries/>
             <httpHeaders>
@@ -132,9 +148,9 @@
             <id>7I50ZO</id>
             <jsonPathExpressions/>
             <methodId>9YC9vK</methodId>
-            <name>Recorded response 2022/06/26 23:25:57</name>
+            <name>ok-documeto-invalido</name>
             <parameterQueries/>
-            <status>ENABLED</status>
+            <status>DISABLED</status>
             <usingExpressions>false</usingExpressions>
             <xpathExpressions/>
         </mockResponse>
