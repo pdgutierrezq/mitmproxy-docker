@@ -245,7 +245,7 @@
             <id>KyA87x</id>
             <name>NO TIENE CAT</name>
             <operationId>qMvhBc</operationId>
-            <status>DISABLED</status>
+            <status>ENABLED</status>
             <usingExpressions>false</usingExpressions>
             <xpathExpressions/>
         </mockResponse>
@@ -510,7 +510,7 @@
             <id>ppyNv1</id>
             <name>Error 500</name>
             <operationId>qMvhBc</operationId>
-            <status>ENABLED</status>
+            <status>DISABLED</status>
             <usingExpressions>false</usingExpressions>
             <xpathExpressions/>
         </mockResponse>
@@ -610,7 +610,7 @@
     </ports>
     <project>
         <created>2020-02-20T20:49:34.972Z</created>
-        <description>PASIBO --- Consultar cuentas por cliente</description>
+        <description>PASIVO --- Consultar cuentas por cliente</description>
         <id>wn0iz3</id>
         <name>rb-pasivo-dev-read-customer-accounts</name>
         <updated>2020-02-20T20:49:34.972Z</updated>

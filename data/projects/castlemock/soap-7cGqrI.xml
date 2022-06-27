@@ -70,7 +70,7 @@
             <id>7BGCma</id>
             <name>cliente OK Code 003</name>
             <operationId>BovFg2</operationId>
-            <status>ENABLED</status>
+            <status>DISABLED</status>
             <usingExpressions>false</usingExpressions>
             <xpathExpressions/>
         </mockResponse>
@@ -520,7 +520,7 @@
             <id>bLDOeu</id>
             <name>cliente OK Code 0</name>
             <operationId>BovFg2</operationId>
-            <status>DISABLED</status>
+            <status>ENABLED</status>
             <usingExpressions>false</usingExpressions>
             <xpathExpressions/>
         </mockResponse>
