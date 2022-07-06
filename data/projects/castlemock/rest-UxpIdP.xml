@@ -21,7 +21,7 @@
             <resourceId>xOw1HO</resourceId>
             <responseStrategy>RANDOM</responseStrategy>
             <simulateNetworkDelay>false</simulateNetworkDelay>
-            <status>MOCKED</status>
+            <status>FORWARDED</status>
         </method>
     </methods>
     <mockResponses>
