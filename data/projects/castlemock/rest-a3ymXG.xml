@@ -156,6 +156,30 @@
         </mockResponse>
         <mockResponse>
             <body>{&#13;
+	"RqUID": "219528305",&#13;
+	"Status": {&#13;
+		"StatusCode": "41",&#13;
+		"StatusDesc": "Error asignacion semilla"&#13;
+	},&#13;
+	"statusResponse": 206,&#13;
+	"isOtpVoiceActive": true,&#13;
+	"sentVoiceOtp": false&#13;
+}</body>
+            <contentEncodings/>
+            <headerQueries/>
+            <httpHeaders/>
+            <httpStatusCode>206</httpStatusCode>
+            <id>zc162K</id>
+            <jsonPathExpressions/>
+            <methodId>Kagz7v</methodId>
+            <name>ko-tech-41</name>
+            <parameterQueries/>
+            <status>DISABLED</status>
+            <usingExpressions>false</usingExpressions>
+            <xpathExpressions/>
+        </mockResponse>
+        <mockResponse>
+            <body>{&#13;
     "RqUID": "549886983",&#13;
     "Status": {&#13;
         "StatusCode": "06",&#13;
@@ -170,6 +194,30 @@
             <jsonPathExpressions/>
             <methodId>Kagz7v</methodId>
             <name>Error business</name>
+            <parameterQueries/>
+            <status>DISABLED</status>
+            <usingExpressions>false</usingExpressions>
+            <xpathExpressions/>
+        </mockResponse>
+        <mockResponse>
+            <body>{&#13;
+	"RqUID": "219528305",&#13;
+	"Status": {&#13;
+		"StatusCode": "40",&#13;
+		"StatusDesc": "Error asignacion semilla"&#13;
+	},&#13;
+	"statusResponse": 206,&#13;
+	"isOtpVoiceActive": true,&#13;
+	"sentVoiceOtp": false&#13;
+}</body>
+            <contentEncodings/>
+            <headerQueries/>
+            <httpHeaders/>
+            <httpStatusCode>206</httpStatusCode>
+            <id>HcV3uv</id>
+            <jsonPathExpressions/>
+            <methodId>Kagz7v</methodId>
+            <name>ko-tech-40</name>
             <parameterQueries/>
             <status>DISABLED</status>
             <usingExpressions>false</usingExpressions>
