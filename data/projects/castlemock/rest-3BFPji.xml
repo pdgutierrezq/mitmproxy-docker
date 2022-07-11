@@ -21,7 +21,7 @@
             <resourceId>Zrr08I</resourceId>
             <responseStrategy>RANDOM</responseStrategy>
             <simulateNetworkDelay>false</simulateNetworkDelay>
-            <status>FORWARDED</status>
+            <status>MOCKED</status>
         </method>
     </methods>
     <mockResponses>
@@ -44,7 +44,7 @@
             <contentEncodings/>
             <headerQueries/>
             <httpHeaders/>
-            <httpStatusCode>200</httpStatusCode>
+            <httpStatusCode>206</httpStatusCode>
             <id>whlalp</id>
             <jsonPathExpressions/>
             <methodId>13krEA</methodId>
