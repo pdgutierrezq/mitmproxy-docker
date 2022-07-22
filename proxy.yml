@@ -28,12 +28,3 @@ services:
       - "./data/castlemock:/root/.castlemock"
     ports:
       - 80:8080
-
-  static:
-    container_name: static
-    image: halverneus/static-file-server:latest
-    restart: always
-    volumes:
-      - "./data/static/web:/web"
-    ports:
-      - 81:8080
