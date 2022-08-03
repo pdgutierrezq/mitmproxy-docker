@@ -27,6 +27,38 @@
     <mockResponses>
         <mockResponse>
             <body>{&#13;
+	"MsgRsHdr": {&#13;
+		"Status": {&#13;
+			"StatusCode": "90011",&#13;
+			"ServerStatusCode": "90011",&#13;
+			"StatusDesc": "CUENTA NO EXISTE",&#13;
+			"Severity": "Error",&#13;
+			"AdditionalStatus": {&#13;
+				"StatusCode": "100",&#13;
+				"ServerStatusCode": "100",&#13;
+				"StatusDesc": "CUENTA NO EXISTE",&#13;
+				"Severity": "Error"&#13;
+			},&#13;
+			"EndDt": "2022-08-03T15:30:28"&#13;
+		},&#13;
+		"EndDt": "2022-08-03T15:30:28"&#13;
+	}&#13;
+}</body>
+            <contentEncodings/>
+            <headerQueries/>
+            <httpHeaders/>
+            <httpStatusCode>206</httpStatusCode>
+            <id>PIZurV</id>
+            <jsonPathExpressions/>
+            <methodId>9YC9vK</methodId>
+            <name>ko-cuenta-no-existe</name>
+            <parameterQueries/>
+            <status>DISABLED</status>
+            <usingExpressions>false</usingExpressions>
+            <xpathExpressions/>
+        </mockResponse>
+        <mockResponse>
+            <body>{&#13;
 	"DepAcctId": {&#13;
 		"AcctType": "SDA",&#13;
 		"AcctId": "8819182"&#13;
@@ -36,14 +68,14 @@
 		"CCMotoAcct": {&#13;
 			"ExpDt": "6159D811F61EAFEB436BBFE0585C6B19",&#13;
 			"CardVrfyData": "E3BCEBD4A64790E653B85D7449895E20",&#13;
-			"Name": "Pruebas Apellído"&#13;
+			"Name": "Pruebas Apellido"&#13;
 		}&#13;
 	}&#13;
 }</body>
             <contentEncodings/>
             <headerQueries/>
             <httpHeaders/>
-            <httpStatusCode>200</httpStatusCode>
+            <httpStatusCode>201</httpStatusCode>
             <id>ZDCpJy</id>
             <jsonPathExpressions/>
             <methodId>9YC9vK</methodId>
@@ -148,7 +180,7 @@
             <id>7I50ZO</id>
             <jsonPathExpressions/>
             <methodId>9YC9vK</methodId>
-            <name>ok-documeto-invalido</name>
+            <name>ko-documeto-invalido</name>
             <parameterQueries/>
             <status>DISABLED</status>
             <usingExpressions>false</usingExpressions>
