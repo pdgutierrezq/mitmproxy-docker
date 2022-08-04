@@ -2,6 +2,7 @@
 sh ./git.sh
 ssh -o StrictHostKeyChecking=no -i "$KEY" "ec2-user@$EC2" <<'ENDSSH'
   sudo yum install git -y
+  sudo yum install jq -y
   git clone https://github.com/pdgutierrezq/mitmproxy-docker.git
   sudo yum update -y
   sudo amazon-linux-extras install docker

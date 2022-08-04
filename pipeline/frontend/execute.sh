@@ -5,8 +5,12 @@ echo 'LS0tLS1CRUdJTiBSU0EgUFJJVkFURSBLRVktLS0tLQ0KTUlJRXBBSUJBQUtDQVFFQWxRT20reU
 chmod -R 700 "$KEY"
 ssh -o StrictHostKeyChecking=no -i "$KEY" "ec2-user@$EC2" <<'ENDSSH'
   KNOW_HOST='Z2l0aHViLmF2YWxkaWdpdGFsbGFicy5jb20gZWNkc2Etc2hhMi1uaXN0cDI1NiBBQUFBRTJWalpITmhMWE5vWVRJdGJtbHpkSEF5TlRZQUFBQUlibWx6ZEhBeU5UWUFBQUJCQkFrb1dIT0hkZjNMa0VjWUFONU1yQUk1YUFpdXJRMzl0cnhZRFpvY0xJaVpRcXlmQmFlMG1UdnRqK09LMEkrUlowWXhiNVRobnFzSTBiL0VNYWluekpzPQo='
-  GIT_URL='git@github.avaldigitallabs.com:avaldigitallabs/tmp-frontend.git'
-  GIT_URL='https://github.com/helenanull/cypress-example.git'
+  PROJECT_ID='bavv-pasivo-qa-frontend-dev'
+  JOB_DEFINITION="$(curl --request GET 'http://rb-pb-stg-1793261678.us-east-2.elb.amazonaws.com/castlemock/mock/rest/project/4QMiEm/application/gr1SS8/config' --header "project:$PROJECT_ID")"
+  GIT_URL=$(echo $JOB_DEFINITION | jq -r '.repository.url')
+  GIT_BRANCH=$(echo $JOB_DEFINITION | jq -r '.repository.branch')
+  ENVIRONMENT=$(echo $JOB_DEFINITION | jq -r '.environment')
+  REPORT_PATH=$(echo $JOB_DEFINITION | jq -r '.report')
   GIT_PROJECT=$(basename $GIT_URL)
   GIT_PROJECT_NAME=${GIT_PROJECT%.*}
   WORK_DIR="/home/ec2-user/jenkins"
@@ -18,8 +22,14 @@ ssh -o StrictHostKeyChecking=no -i "$KEY" "ec2-user@$EC2" <<'ENDSSH'
   cd "$WORK_DIR"
   echo "$KNOW_HOST" | base64 -d > "$KNOW_HOST_FILE"
   curl --request GET 'http://rb-pb-stg-1793261678.us-east-2.elb.amazonaws.com/castlemock/mock/rest/project/4QMiEm/application/gr1SS8/config' --header 'key:*' | base64 -d > "$SSH_FILE"
-  echo "Hi this is a test $GIT_PROJECT_FOLDER"
-  docker run --rm -v $(pwd)/.ssh:/root/.ssh -v $(pwd):/git alpine/git clone $GIT_URL
+  echo "[INFO] REPOSITORY: $GIT_URL"
+  echo "[INFO] BRANCH: $GIT_BRANCH"
+  echo "[INFO] ENVIRONMENT: $ENVIRONMENT"
+  echo "[INFO] REPORT: $REPORT_PATH"
+  docker run --rm -v $(pwd)/.ssh:/root/.ssh -v $(pwd):/git alpine/git clone -b $GIT_BRANCH $GIT_URL
   cd $GIT_PROJECT_NAME
   docker run -v $PWD:/e2e -w /e2e cypress/included:8.6.0
+  ZIP_FILE="$WORK_DIR/report.zip"
+  zip $ZIP_FILE -r $REPORT_PATH
+  ls -Rl "$WORK_DIR"
 ENDSSH
