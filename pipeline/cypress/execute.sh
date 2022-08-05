@@ -38,5 +38,6 @@ ssh -o StrictHostKeyChecking=no -i "$KEY" "ec2-user@$EC2" <<'ENDSSH'
   docker run --rm -v $(pwd)/.ssh:/root/.ssh -v $(pwd):/git alpine/git clone -b $GIT_BRANCH $GIT_URL
   cd $GIT_PROJECT_NAME
   docker run --rm -v $PWD:/app bitnami/node:$NODEJS_VERSION npm install
-  docker run --rm -v $PWD:/e2e -w /e2e cypress/included:$CYPRESS_VERSION run -b ${CYPRESS_BROWSER} --headless  --env configFile=$ENVIRONMENT -s "cypress/integration/features/flows/CDA/account/Cliente actualizado enrolado CON seguro.js"
+  docker run --rm -v $PWD:/e2e -w /e2e cypress/included:$CYPRESS_VERSION run -b ${CYPRESS_BROWSER} --headless --reporter cypress-multi-reporters --reporter-options configFile=cypress.json --env configFile=$ENVIRONMENT -s "cypress/integration/features/flows/CDA/account/Cliente actualizado enrolado CON seguro.js"
+  docker run --rm -v $PWD:/app bitnami/node:$NODEJS_VERSION npm run generate-reports
 ENDSSH
