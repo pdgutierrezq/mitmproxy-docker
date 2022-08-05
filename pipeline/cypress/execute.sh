@@ -10,7 +10,8 @@ ssh -o StrictHostKeyChecking=no -i "$KEY" "ec2-user@$EC2" <<'ENDSSH'
   GIT_URL=$(echo $JOB_DEFINITION | jq -r '.repository.url')
   GIT_BRANCH=$(echo $JOB_DEFINITION | jq -r '.repository.branch')
   ENVIRONMENT=$(echo $JOB_DEFINITION | jq -r '.environment')
-  REPORT_PATH=$(echo $JOB_DEFINITION | jq -r '.report')
+  REPORT_PATH=$(echo $JOB_DEFINITION | jq -r '.cypress.report')
+  CYPRESS_VERSION=$(echo $JOB_DEFINITION | jq -r '.cypress.version')
   GIT_PROJECT=$(basename $GIT_URL)
   GIT_PROJECT_NAME=${GIT_PROJECT%.*}
   WORK_DIR="/home/ec2-user/jenkins"
@@ -24,10 +25,11 @@ ssh -o StrictHostKeyChecking=no -i "$KEY" "ec2-user@$EC2" <<'ENDSSH'
   echo "export REPORT_PATH=$REPORT_PATH" >> env
   echo "$KNOW_HOST" | base64 -d > "$KNOW_HOST_FILE"
   curl --request GET 'http://rb-pb-stg-1793261678.us-east-2.elb.amazonaws.com/castlemock/mock/rest/project/4QMiEm/application/gr1SS8/config' --header 'key:*' | base64 -d > "$SSH_FILE"
+  echo "[INFO] CYPRESS_VERSION: $CYPRESS_VERSION"
   echo "[INFO] REPOSITORY: $GIT_URL"
   echo "[INFO] BRANCH: $GIT_BRANCH"
   echo "[INFO] ENVIRONMENT: $ENVIRONMENT"
   docker run --rm -v $(pwd)/.ssh:/root/.ssh -v $(pwd):/git alpine/git clone -b $GIT_BRANCH $GIT_URL
   cd $GIT_PROJECT_NAME
-  docker run -v $PWD:/e2e -w /e2e cypress/included:8.6.0
+  docker run -v $PWD:/e2e -w /e2e cypress/included:$CYPRESS_VERSION
 ENDSSH
