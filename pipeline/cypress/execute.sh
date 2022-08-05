@@ -11,7 +11,10 @@ ssh -o StrictHostKeyChecking=no -i "$KEY" "ec2-user@$EC2" <<'ENDSSH'
   GIT_BRANCH=$(echo $JOB_DEFINITION | jq -r '.repository.branch')
   ENVIRONMENT=$(echo $JOB_DEFINITION | jq -r '.environment')
   REPORT_PATH=$(echo $JOB_DEFINITION | jq -r '.cypress.report')
+  NODEJS_VERSION=$(echo $JOB_DEFINITION | jq -r '.nodejs.version')
   CYPRESS_VERSION=$(echo $JOB_DEFINITION | jq -r '.cypress.version')
+  CYPRESS_SPEC=$(echo $JOB_DEFINITION | jq -r '.cypress.spec')
+  CYPRESS_BROWSER=$(echo $JOB_DEFINITION | jq -r '.cypress.browser')
   GIT_PROJECT=$(basename $GIT_URL)
   GIT_PROJECT_NAME=${GIT_PROJECT%.*}
   WORK_DIR="/home/ec2-user/jenkins"
@@ -25,11 +28,15 @@ ssh -o StrictHostKeyChecking=no -i "$KEY" "ec2-user@$EC2" <<'ENDSSH'
   echo "export REPORT_PATH=$REPORT_PATH" >> env
   echo "$KNOW_HOST" | base64 -d > "$KNOW_HOST_FILE"
   curl --request GET 'http://rb-pb-stg-1793261678.us-east-2.elb.amazonaws.com/castlemock/mock/rest/project/4QMiEm/application/gr1SS8/config' --header 'key:*' | base64 -d > "$SSH_FILE"
-  echo "[INFO] CYPRESS_VERSION: $CYPRESS_VERSION"
   echo "[INFO] REPOSITORY: $GIT_URL"
   echo "[INFO] BRANCH: $GIT_BRANCH"
   echo "[INFO] ENVIRONMENT: $ENVIRONMENT"
+  echo "[INFO] NODEJS VERSION: $NODEJS_VERSION"
+  echo "[INFO] CYPRESS VERSION: $CYPRESS_VERSION"
+  echo "[INFO] CYPRESS SPEC: $CYPRESS_SPEC"
+  echo "[INFO] CYPRESS BROWSER: $CYPRESS_BROWSER"
   docker run --rm -v $(pwd)/.ssh:/root/.ssh -v $(pwd):/git alpine/git clone -b $GIT_BRANCH $GIT_URL
   cd $GIT_PROJECT_NAME
-  docker run -v $PWD:/e2e -w /e2e cypress/included:$CYPRESS_VERSION
+  docker run --rm -v $PWD:/app bitnami/node:$NODEJS_VERSION npm install
+  docker run --rm -v $PWD:/e2e -w /e2e cypress/included:$CYPRESS_VERSION run -b ${CYPRESS_BROWSER} --headless  --env configFile=$ENVIRONMENT -s "cypress/integration/features/flows/CDA/account/Cliente actualizado enrolado CON seguro.js"
 ENDSSH
