@@ -17,19 +17,17 @@ ssh -o StrictHostKeyChecking=no -i "$KEY" "ec2-user@$EC2" <<'ENDSSH'
   SSH_DIR="$WORK_DIR/.ssh"
   SSH_FILE="$SSH_DIR/id_rsa"
   KNOW_HOST_FILE="$SSH_DIR/known_hosts"
-  sudo rm -R "$WORK_DIR"
+  sudo rm -rf "$WORK_DIR"
   mkdir -p "$SSH_DIR"
   cd "$WORK_DIR"
+  echo "export GIT_PROJECT_NAME=$GIT_PROJECT_NAME" >> env
+  echo "export REPORT_PATH=$REPORT_PATH" >> env
   echo "$KNOW_HOST" | base64 -d > "$KNOW_HOST_FILE"
   curl --request GET 'http://rb-pb-stg-1793261678.us-east-2.elb.amazonaws.com/castlemock/mock/rest/project/4QMiEm/application/gr1SS8/config' --header 'key:*' | base64 -d > "$SSH_FILE"
   echo "[INFO] REPOSITORY: $GIT_URL"
   echo "[INFO] BRANCH: $GIT_BRANCH"
   echo "[INFO] ENVIRONMENT: $ENVIRONMENT"
-  echo "[INFO] REPORT: $REPORT_PATH"
   docker run --rm -v $(pwd)/.ssh:/root/.ssh -v $(pwd):/git alpine/git clone -b $GIT_BRANCH $GIT_URL
   cd $GIT_PROJECT_NAME
   docker run -v $PWD:/e2e -w /e2e cypress/included:8.6.0
-  ZIP_FILE="$WORK_DIR/report.zip"
-  zip $ZIP_FILE -r $REPORT_PATH
-  ls -Rl "$WORK_DIR"
 ENDSSH
