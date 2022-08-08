@@ -39,5 +39,5 @@ ssh -o StrictHostKeyChecking=no -i "$KEY" "ec2-user@$EC2" <<'ENDSSH'
   cd $GIT_PROJECT_NAME
   docker run --rm -v $PWD:/app bitnami/node:$NODEJS_VERSION npm install
   docker run --rm -v $PWD:/e2e -w /e2e cypress/included:$CYPRESS_VERSION run -b ${CYPRESS_BROWSER} --headless --reporter cypress-multi-reporters --reporter-options configFile=cypress.json --env configFile=$ENVIRONMENT -s "cypress/integration/features/flows/CDA/account/Cliente actualizado enrolado CON seguro.js"
-  docker run --rm -v $PWD:/app bitnami/node:$NODEJS_VERSION npm run generate-reports
+  docker run --rm -v $PWD:/app bitnami/node:$NODEJS_VERSION /bin/bash -c "apt update && apt-get install -y software-properties-common && add-apt-repository 'deb http://security.debian.org/debian-security stretch/updates main' && apt update && apt install -y openjdk-8-jdk && npm run generate-reports"
 ENDSSH
