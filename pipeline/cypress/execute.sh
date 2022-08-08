@@ -24,20 +24,20 @@ ssh -o StrictHostKeyChecking=no -i "$KEY" "ec2-user@$EC2" <<'ENDSSH'
   sudo rm -rf "$WORK_DIR"
   mkdir -p "$SSH_DIR"
   cd "$WORK_DIR"
-  echo "export GIT_PROJECT_NAME=$GIT_PROJECT_NAME" >> env
-  echo "export REPORT_PATH=$REPORT_PATH" >> env
   echo "$KNOW_HOST" | base64 -d > "$KNOW_HOST_FILE"
   curl --request GET 'http://rb-pb-stg-1793261678.us-east-2.elb.amazonaws.com/castlemock/mock/rest/project/4QMiEm/application/gr1SS8/config' --header 'key:*' | base64 -d > "$SSH_FILE"
-  echo "[INFO] REPOSITORY: $GIT_URL"
-  echo "[INFO] BRANCH: $GIT_BRANCH"
-  echo "[INFO] ENVIRONMENT: $ENVIRONMENT"
-  echo "[INFO] NODEJS VERSION: $NODEJS_VERSION"
-  echo "[INFO] CYPRESS VERSION: $CYPRESS_VERSION"
-  echo "[INFO] CYPRESS SPEC: $CYPRESS_SPEC"
-  echo "[INFO] CYPRESS BROWSER: $CYPRESS_BROWSER"
+  echo "export GIT_URL=$GIT_URL" > env
+  echo "export GIT_BRANCH=$GIT_BRANCH" >> env
+  echo "export GIT_PROJECT_NAME=$GIT_PROJECT_NAME" >> env
+  echo "export REPORT_PATH=$REPORT_PATH" >> env
+  echo "export ENVIRONMENT=$ENVIRONMENT" >> env
+  echo "export NODEJS_VERSION=$NODEJS_VERSION" >> env
+  echo "export CYPRESS_VERSION=$CYPRESS_VERSION" >> env
+  echo "export CYPRESS_SPEC=$CYPRESS_SPEC" >> env
+  echo "export CYPRESS_BROWSER=$CYPRESS_BROWSER" >> env
+  cat env
   docker run --rm -v $(pwd)/.ssh:/root/.ssh -v $(pwd):/git alpine/git clone -b $GIT_BRANCH $GIT_URL
   cd $GIT_PROJECT_NAME
   docker run --rm -v $PWD:/app bitnami/node:$NODEJS_VERSION npm install
-  docker run --rm -v $PWD:/e2e -w /e2e cypress/included:$CYPRESS_VERSION run -b ${CYPRESS_BROWSER} --headless --reporter cypress-multi-reporters --reporter-options configFile=cypress.json --env configFile=$ENVIRONMENT -s "cypress/integration/features/flows/CDA/account/Cliente actualizado enrolado CON seguro.js"
-  docker run --rm -v $PWD:/app bitnami/node:$NODEJS_VERSION /bin/bash -c "apt update && apt-get install -y software-properties-common && add-apt-repository 'deb http://security.debian.org/debian-security stretch/updates main' && apt update && apt install -y openjdk-8-jdk && npm run generate-reports"
+  docker run --rm -v $PWD:/e2e -w /e2e cypress/included:$CYPRESS_VERSION run -b ${CYPRESS_BROWSER} --headless --reporter cypress-multi-reporters --reporter-options configFile=cypress.json --env configFile=$ENVIRONMENT -s "$CYPRESS_SPEC"
 ENDSSH
