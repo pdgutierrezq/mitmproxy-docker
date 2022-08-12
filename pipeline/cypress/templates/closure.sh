@@ -1,6 +1,3 @@
-#!/usr/bin/env bash
-KEY=machine.pem
-EC2=rb-pb-dev-tcp-3310d9a6094bf5a8.elb.us-east-2.amazonaws.com
 ssh -o StrictHostKeyChecking=no -i "$KEY" "ec2-user@$EC2" <<'ENDSSH'
   WORK_DIR="/home/ec2-user/jenkins"
   . "$WORK_DIR/env"
