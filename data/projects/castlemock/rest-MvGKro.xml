@@ -27,6 +27,123 @@
     <mockResponses>
         <mockResponse>
             <body>{&#13;
+	"idSession": "e6c5c64c-65fd-4a9e-ad87-ce06727f7737",&#13;
+	"allowedDocumentExtensions": [&#13;
+		"PDF",&#13;
+		"JPG",&#13;
+		"JPEG",&#13;
+		"PNG"&#13;
+	],&#13;
+	"clientDocuments": [&#13;
+		{&#13;
+			"documentaryCode": 254,&#13;
+			"documentDescription": "Documento Identificacisn (CC,CE,TI,RC)",&#13;
+			"requiredIndicator": false,&#13;
+			"filesDocumentNumber": 5,&#13;
+			"fileSize": 3&#13;
+		},&#13;
+		{&#13;
+			"documentaryCode": 255,&#13;
+			"documentDescription": "Original del Certificado Laboral",&#13;
+			"requiredIndicator": false,&#13;
+			"filesDocumentNumber": 5,&#13;
+			"fileSize": 3&#13;
+		},&#13;
+		{&#13;
+			"documentaryCode": 256,&#13;
+			"documentDescription": "Comprobantes Pago Nomina/ Egreso",&#13;
+			"requiredIndicator": false,&#13;
+			"filesDocumentNumber": 5,&#13;
+			"fileSize": 3&#13;
+		},&#13;
+		{&#13;
+			"documentaryCode": 260,&#13;
+			"documentDescription": "Declaracion de Renta",&#13;
+			"requiredIndicator": false,&#13;
+			"filesDocumentNumber": 5,&#13;
+			"fileSize": 3&#13;
+		},&#13;
+		{&#13;
+			"documentaryCode": 631,&#13;
+			"documentDescription": "Certificacion de Ingresos y Retenciones",&#13;
+			"requiredIndicator": false,&#13;
+			"filesDocumentNumber": 5,&#13;
+			"fileSize": 3&#13;
+		}&#13;
+	],&#13;
+	"responseCode": 0,&#13;
+	"product": "CDA"&#13;
+}</body>
+            <contentEncodings/>
+            <headerQueries/>
+            <httpHeaders/>
+            <httpStatusCode>200</httpStatusCode>
+            <id>tiH3sO</id>
+            <jsonPathExpressions/>
+            <methodId>I3tyAX</methodId>
+            <name>ok-cc:false-finantial_docs:false</name>
+            <parameterQueries/>
+            <status>ENABLED</status>
+            <usingExpressions>false</usingExpressions>
+            <xpathExpressions/>
+        </mockResponse>
+        <mockResponse>
+            <body>{&#13;
+	"idSession": "ece22045-d30c-45c7-954c-fa85661d2593",&#13;
+	"allowedDocumentExtensions": [&#13;
+		"PDF",&#13;
+		"JPG",&#13;
+		"JPEG",&#13;
+		"PNG"&#13;
+	],&#13;
+	"clientDocuments": [&#13;
+		{&#13;
+			"documentaryCode": 255,&#13;
+			"documentDescription": "Original del Certificado Laboral",&#13;
+			"requiredIndicator": false,&#13;
+			"filesDocumentNumber": 5,&#13;
+			"fileSize": 3&#13;
+		},&#13;
+		{&#13;
+			"documentaryCode": 256,&#13;
+			"documentDescription": "Comprobantes Pago Nomina/ Egreso",&#13;
+			"requiredIndicator": false,&#13;
+			"filesDocumentNumber": 5,&#13;
+			"fileSize": 3&#13;
+		},&#13;
+		{&#13;
+			"documentaryCode": 260,&#13;
+			"documentDescription": "Declaracion de Renta",&#13;
+			"requiredIndicator": false,&#13;
+			"filesDocumentNumber": 5,&#13;
+			"fileSize": 3&#13;
+		},&#13;
+		{&#13;
+			"documentaryCode": 631,&#13;
+			"documentDescription": "Certificacion de Ingresos y Retenciones",&#13;
+			"requiredIndicator": false,&#13;
+			"filesDocumentNumber": 5,&#13;
+			"fileSize": 3&#13;
+		}&#13;
+	],&#13;
+	"responseCode": 0,&#13;
+	"product": "CDA"&#13;
+}</body>
+            <contentEncodings/>
+            <headerQueries/>
+            <httpHeaders/>
+            <httpStatusCode>200</httpStatusCode>
+            <id>aZWt0B</id>
+            <jsonPathExpressions/>
+            <methodId>I3tyAX</methodId>
+            <name>ok-cc:true-finantial_docs:false</name>
+            <parameterQueries/>
+            <status>DISABLED</status>
+            <usingExpressions>false</usingExpressions>
+            <xpathExpressions/>
+        </mockResponse>
+        <mockResponse>
+            <body>{&#13;
   responseCode: 1,&#13;
   responseMessage: 'El campo NroProductoOrigen es obligatorio\n' +&#13;
     'El campo NroSolicitud es obligatorio',&#13;
@@ -40,6 +157,40 @@
             <jsonPathExpressions/>
             <methodId>I3tyAX</methodId>
             <name>ko</name>
+            <parameterQueries/>
+            <status>DISABLED</status>
+            <usingExpressions>false</usingExpressions>
+            <xpathExpressions/>
+        </mockResponse>
+        <mockResponse>
+            <body>{&#13;
+	"idSession": "ebc515f9-29ce-40db-afe6-9faac7a92d65",&#13;
+	"allowedDocumentExtensions": [&#13;
+		"PDF",&#13;
+		"JPG",&#13;
+		"JPEG",&#13;
+		"PNG"&#13;
+	],&#13;
+	"clientDocuments": [&#13;
+		{&#13;
+			"documentaryCode": 254,&#13;
+			"documentDescription": "Documento Identificacisn (CC,CE,TI,RC)",&#13;
+			"requiredIndicator": false,&#13;
+			"filesDocumentNumber": 5,&#13;
+			"fileSize": 3&#13;
+		}&#13;
+	],&#13;
+	"responseCode": 0,&#13;
+	"product": "CDA"&#13;
+}</body>
+            <contentEncodings/>
+            <headerQueries/>
+            <httpHeaders/>
+            <httpStatusCode>200</httpStatusCode>
+            <id>yoAjKl</id>
+            <jsonPathExpressions/>
+            <methodId>I3tyAX</methodId>
+            <name>ok-cc:false-finantial_docs:true</name>
             <parameterQueries/>
             <status>DISABLED</status>
             <usingExpressions>false</usingExpressions>
@@ -65,9 +216,9 @@
             <id>74wk1V</id>
             <jsonPathExpressions/>
             <methodId>I3tyAX</methodId>
-            <name>ok</name>
+            <name>ok-cc:true-finantial_docs:true</name>
             <parameterQueries/>
-            <status>ENABLED</status>
+            <status>DISABLED</status>
             <usingExpressions>false</usingExpressions>
             <xpathExpressions/>
         </mockResponse>
