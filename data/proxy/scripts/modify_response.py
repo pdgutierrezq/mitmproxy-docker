@@ -2,7 +2,7 @@
 This example shows how to modify responses.
 """
 # from types import FunctionType
-# from mitmproxy import http, ctx
+from mitmproxy import http, ctx
 # import json
 # import os
 # import re
@@ -59,3 +59,7 @@ This example shows how to modify responses.
 #     with open(file_path) as json_file:
 #         json_data = json.load(json_file)
 #         return json.dumps(json_data)
+
+def response(flow: http.HTTPFlow) -> None:
+  # this script does nothing
+  return
