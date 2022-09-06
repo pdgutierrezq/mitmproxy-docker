@@ -140,7 +140,7 @@
             <id>KnrviU</id>
             <methods/>
             <name>REST</name>
-            <uri>/org-qa/api-pb/securityManagement/v1/Administration_Devices/Registry</uri>
+            <uri>/org-qa/api-pb/securityManagement/v1/Administration_Devices/Registry/BankNotification</uri>
         </resource>
     </resources>
 </restExportContainer>
