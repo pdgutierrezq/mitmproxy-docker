@@ -26,6 +26,21 @@
     </methods>
     <mockResponses>
         <mockResponse>
+            <body></body>
+            <contentEncodings/>
+            <headerQueries/>
+            <httpHeaders/>
+            <httpStatusCode>204</httpStatusCode>
+            <id>bYSKPV</id>
+            <jsonPathExpressions/>
+            <methodId>13krEA</methodId>
+            <name>ok</name>
+            <parameterQueries/>
+            <status>ENABLED</status>
+            <usingExpressions>false</usingExpressions>
+            <xpathExpressions/>
+        </mockResponse>
+        <mockResponse>
             <body>{&#13;
 	"MsgRsHdr": {&#13;
 		"Status": {&#13;

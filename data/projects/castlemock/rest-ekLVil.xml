@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<restExportContainer>
+    <applications>
+        <application>
+            <id>7cAkE6</id>
+            <name>Registry Operation</name>
+            <projectId>ekLVil</projectId>
+            <resources/>
+        </application>
+    </applications>
+    <methods>
+        <method>
+            <currentResponseSequenceIndex>0</currentResponseSequenceIndex>
+            <defaultMockResponseId></defaultMockResponseId>
+            <forwardedEndpoint>http://proxy:8080/https://apicapi-gateway-qa.appsptqa.ath.com.co</forwardedEndpoint>
+            <httpMethod>POST</httpMethod>
+            <id>TechZ6</id>
+            <mockResponses/>
+            <name>Method</name>
+            <networkDelay>0</networkDelay>
+            <resourceId>KnrviU</resourceId>
+            <responseStrategy>RANDOM</responseStrategy>
+            <simulateNetworkDelay>false</simulateNetworkDelay>
+            <status>FORWARDED</status>
+        </method>
+    </methods>
+    <mockResponses>
+        <mockResponse>
+            <body>{&#13;
+	"MsgRsHdr": {&#13;
+		"Status": {&#13;
+			"StatusCode": "21",&#13;
+			"ServerStatusCode": "21",&#13;
+			"Severity": "Error",&#13;
+			"StatusDesc": "GEK70071 CLIENTE NO POSEE CONTACTOS",&#13;
+			"AdditionalStatus": {&#13;
+				"StatusDesc": "GEK70071 CLIENTE NO POSEE CONTACTOS",&#13;
+				"ServerStatusCode": "21",&#13;
+				"StatusCode": "21"&#13;
+			}&#13;
+		},&#13;
+		"EndDt": "2019-02-28T10:48:40.000Z"&#13;
+	}&#13;
+}</body>
+            <contentEncodings/>
+            <headerQueries/>
+            <httpHeaders>
+                <httpHeader>
+                    <name>X-RqUID</name>
+                    <value>201908141614</value>
+                </httpHeader>
+                <httpHeader>
+                    <name>X-ApprovalId</name>
+                    <value>0</value>
+                </httpHeader>
+            </httpHeaders>
+            <httpStatusCode>500</httpStatusCode>
+            <id>XhEn42</id>
+            <jsonPathExpressions/>
+            <methodId>TechZ6</methodId>
+            <name>ko</name>
+            <parameterQueries/>
+            <status>DISABLED</status>
+            <usingExpressions>false</usingExpressions>
+            <xpathExpressions/>
+        </mockResponse>
+        <mockResponse>
+            <body>{&#13;
+	"MsgRsHdr": {&#13;
+		"Status": {&#13;
+			"StatusCode": "21",&#13;
+			"ServerStatusCode": "21",&#13;
+			"Severity": "Error",&#13;
+			"StatusDesc": "GEK70071 CLIENTE NO POSEE CONTACTOS",&#13;
+			"AdditionalStatus": {&#13;
+				"StatusDesc": "GEK70071 CLIENTE NO POSEE CONTACTOS",&#13;
+				"ServerStatusCode": "21",&#13;
+				"StatusCode": "21"&#13;
+			}&#13;
+		},&#13;
+		"EndDt": "2019-02-28T10:48:40.000Z"&#13;
+	}&#13;
+}</body>
+            <contentEncodings/>
+            <headerQueries/>
+            <httpHeaders>
+                <httpHeader>
+                    <name>X-RqUID</name>
+                    <value>201908141614</value>
+                </httpHeader>
+                <httpHeader>
+                    <name>X-ApprovalId</name>
+                    <value>0</value>
+                </httpHeader>
+            </httpHeaders>
+            <httpStatusCode>206</httpStatusCode>
+            <id>JybVi1</id>
+            <jsonPathExpressions/>
+            <methodId>TechZ6</methodId>
+            <name>ko-206</name>
+            <parameterQueries/>
+            <status>DISABLED</status>
+            <usingExpressions>false</usingExpressions>
+            <xpathExpressions/>
+        </mockResponse>
+        <mockResponse>
+            <body></body>
+            <contentEncodings/>
+            <headerQueries/>
+            <httpHeaders>
+                <httpHeader>
+                    <name>X-RqUID</name>
+                    <value>201908141614</value>
+                </httpHeader>
+                <httpHeader>
+                    <name>X-ApprovalId</name>
+                    <value>0</value>
+                </httpHeader>
+            </httpHeaders>
+            <httpStatusCode>204</httpStatusCode>
+            <id>W8ZGRm</id>
+            <jsonPathExpressions/>
+            <methodId>TechZ6</methodId>
+            <name>ok</name>
+            <parameterQueries/>
+            <status>ENABLED</status>
+            <usingExpressions>false</usingExpressions>
+            <xpathExpressions/>
+        </mockResponse>
+    </mockResponses>
+    <project>
+        <description>Servicio que notifica el registro a Banco de nuevos canales</description>
+        <id>ekLVil</id>
+        <name>rb-commons-dev-create-sds-user-enrollment-registry</name>
+        <applications/>
+    </project>
+    <resources>
+        <resource>
+            <applicationId>7cAkE6</applicationId>
+            <id>KnrviU</id>
+            <methods/>
+            <name>REST</name>
+            <uri>/org-qa/api-pb/securityManagement/v1/Administration_Devices/Registry</uri>
+        </resource>
+    </resources>
+</restExportContainer>
