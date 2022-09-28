@@ -3,7 +3,7 @@ ssh -o StrictHostKeyChecking=no -i "$KEY" "ec2-user@$EC2" <<'ENDSSH'
   . "$WORK_DIR/env"
   REPORT_ABSOLUTE_PATH="$WORK_DIR/$GIT_PROJECT_NAME/$REPORT_PATH"
   cd "$WORK_DIR/$GIT_PROJECT_NAME"
-  docker run --rm -v $PWD:/app bitnami/node:$NODEJS_VERSION /bin/bash -c "apt update && apt-get install -y software-properties-common && add-apt-repository 'deb http://security.debian.org/debian-security stretch/updates main' && apt update && apt install -y openjdk-8-jdk && npm run test:reports"
+  docker run --rm -v $PWD:/app -e TESTRAIL_TESTRUN_NAME="$TESTRAIL_TESTRUN_NAME" -e TESTRAIL_USERNAME=$TESTRAIL_USERNAME -e TESTRAIL_PASSWORD=$TESTRAIL_PASSWORD bitnami/node:$NODEJS_VERSION /bin/bash -c "apt update && apt-get install -y software-properties-common && add-apt-repository 'deb http://security.debian.org/debian-security stretch/updates main' && apt update && apt install -y openjdk-8-jdk && npm run test:reports"
   cd $REPORT_ABSOLUTE_PATH
   REPORT_INDEX_FILE=$(find . -type f -regex ".*.html" | head -n 1)
   echo "[INFO] REPORT PATH: $WORK_DIR/$GIT_PROJECT_NAME/$REPORT_PATH"

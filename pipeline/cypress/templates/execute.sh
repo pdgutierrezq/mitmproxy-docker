@@ -12,6 +12,9 @@ ssh -o StrictHostKeyChecking=no -i "$KEY" "ec2-user@$EC2" <<'ENDSSH'
   CYPRESS_VERSION=$(echo $JOB_DEFINITION | jq -r '.cypress.version')
   CYPRESS_SPEC=$(echo $JOB_DEFINITION | jq -r '.cypress.spec')
   CYPRESS_BROWSER=$(echo $JOB_DEFINITION | jq -r '.cypress.browser')
+  TESTRAIL_TESTRUN_NAME=$(echo $JOB_DEFINITION | jq -r '.testrail.testrun.name')
+  TESTRAIL_USERNAME=$(echo $JOB_DEFINITION | jq -r '.testrail.username')
+  TESTRAIL_PASSWORD=$(echo $JOB_DEFINITION | jq -r '.testrail.password')
   GIT_PROJECT=$(basename $GIT_URL)
   GIT_PROJECT_NAME=${GIT_PROJECT%.*}
   WORK_DIR="/home/ec2-user/jenkins"
@@ -32,6 +35,9 @@ ssh -o StrictHostKeyChecking=no -i "$KEY" "ec2-user@$EC2" <<'ENDSSH'
   echo "export CYPRESS_VERSION=$CYPRESS_VERSION" >> env
   echo "export CYPRESS_SPEC=$CYPRESS_SPEC" >> env
   echo "export CYPRESS_BROWSER=$CYPRESS_BROWSER" >> env
+  echo "export TESTRAIL_TESTRUN_NAME=\"$TESTRAIL_TESTRUN_NAME\"" >> env
+  echo "export TESTRAIL_USERNAME=$TESTRAIL_USERNAME" >> env
+  echo "export TESTRAIL_PASSWORD=$TESTRAIL_PASSWORD" >> env
   cat env
   docker run --rm -v $(pwd)/.ssh:/root/.ssh -v $(pwd):/git alpine/git clone -b $GIT_BRANCH $GIT_URL
   cd $GIT_PROJECT_NAME
