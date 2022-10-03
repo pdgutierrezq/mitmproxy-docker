@@ -169,6 +169,35 @@
             <methodId>MilYVO</methodId>
             <name>ok</name>
             <parameterQueries/>
+            <status>DISABLED</status>
+            <usingExpressions>false</usingExpressions>
+            <xpathExpressions/>
+        </mockResponse>
+        <mockResponse>
+            <body>{&#13;
+	"codRedOrigen": "ADL",&#13;
+	"identificacionDispositivo": "3.13.132.40",&#13;
+	"fechaTransaccion": 20220322,&#13;
+	"horaTransaccion": 15204564,&#13;
+	"nroSecuencia": 56410160,&#13;
+	"fechaCompensacion": 20220322,&#13;
+	"nroAutorizacion": 0,&#13;
+	"codRespuesta": 0,&#13;
+	"mensajeRespuesta": "TRANSACCION EXITOSA",&#13;
+	"costoTransaccion": 0,&#13;
+	"productos": [&#13;
+	&#13;
+	]&#13;
+}</body>
+            <contentEncodings/>
+            <headerQueries/>
+            <httpHeaders/>
+            <httpStatusCode>200</httpStatusCode>
+            <id>TSB7lZ</id>
+            <jsonPathExpressions/>
+            <methodId>MilYVO</methodId>
+            <name>Sin cuentas</name>
+            <parameterQueries/>
             <status>ENABLED</status>
             <usingExpressions>false</usingExpressions>
             <xpathExpressions/>
