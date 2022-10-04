@@ -294,6 +294,79 @@
             <xpathExpressions/>
         </mockResponse>
         <mockResponse>
+            <body>&lt;soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"&gt;&#13;
+	&lt;soapenv:Body&gt;&#13;
+		&lt;v1:CustomerConditionsResponse xmlns:ifx="urn://grupoaval.com/xsd/ifx/" xmlns:v1="urn://grupoaval.com/customers/v1/" xmlns:v2="urn://grupoaval.com/xsd/ifx/v2/" xmlns:v3="urn://grupoaval.com/xsd/ifx/v3/"&gt;&#13;
+			&lt;v1:CustomerConditionsInqRs&gt;&#13;
+				&lt;ifx:Status&gt;&#13;
+					&lt;ifx:StatusCode&gt;0&lt;/ifx:StatusCode&gt;&#13;
+					&lt;ifx:StatusDesc&gt;TRANSACCION CORRECTA&lt;/ifx:StatusDesc&gt;&#13;
+					&lt;ifx:AdditionalStatus&gt;&#13;
+						&lt;ifx:StatusDesc&gt;TRANSACCION CORRECTA&lt;/ifx:StatusDesc&gt;&#13;
+					&lt;/ifx:AdditionalStatus&gt;&#13;
+				&lt;/ifx:Status&gt;&#13;
+				&lt;ifx:ApprovalId&gt;5254564566&lt;/ifx:ApprovalId&gt;&#13;
+				&lt;ifx:RqUID&gt;54564566&lt;/ifx:RqUID&gt;&#13;
+				&lt;ifx:MsgRqHdr&gt;&#13;
+					&lt;ifx:ClientApp&gt;&#13;
+						&lt;ifx:Org/&gt;&#13;
+						&lt;ifx:Name/&gt;&#13;
+						&lt;ifx:Version/&gt;&#13;
+					&lt;/ifx:ClientApp&gt;&#13;
+					&lt;v2:Channel&gt;INT&lt;/v2:Channel&gt;&#13;
+					&lt;ifx:BankInfo&gt;&#13;
+						&lt;ifx:BankId/&gt;&#13;
+					&lt;/ifx:BankInfo&gt;&#13;
+					&lt;v2:ClientDt&gt;2017-07-01T00:38:10.508Z&lt;/v2:ClientDt&gt;&#13;
+					&lt;v2:IPAddr&gt;10.10.17.76&lt;/v2:IPAddr&gt;&#13;
+					&lt;v2:SessKey/&gt;&#13;
+					&lt;ifx:UserId&gt;&#13;
+						&lt;ifx:GovIssueIdent&gt;&#13;
+							&lt;ifx:GovIssueIdentType&gt;CC&lt;/ifx:GovIssueIdentType&gt;&#13;
+							&lt;ifx:IdentSerialNum&gt;1022679474&lt;/ifx:IdentSerialNum&gt;&#13;
+						&lt;/ifx:GovIssueIdent&gt;&#13;
+					&lt;/ifx:UserId&gt;&#13;
+					&lt;v2:Reverse&gt;false&lt;/v2:Reverse&gt;&#13;
+					&lt;v2:Language/&gt;&#13;
+					&lt;v2:NextDay&gt;2017-06-30T00:00:00.000Z&lt;/v2:NextDay&gt;&#13;
+				&lt;/ifx:MsgRqHdr&gt;&#13;
+				&lt;ifx:MsgRsHdr&gt;&#13;
+					&lt;ifx:TxCostAmt&gt;&#13;
+						&lt;ifx:CurAmt&gt;&#13;
+							&lt;ifx:Amt&gt;0.00&lt;/ifx:Amt&gt;&#13;
+							&lt;ifx:CurCode&gt;COP&lt;/ifx:CurCode&gt;&#13;
+						&lt;/ifx:CurAmt&gt;&#13;
+					&lt;/ifx:TxCostAmt&gt;&#13;
+					&lt;ifx:EffDt&gt;2017-06-30T19:54:40.000Z&lt;/ifx:EffDt&gt;&#13;
+				&lt;/ifx:MsgRsHdr&gt;&#13;
+				&lt;v3:CustInfo&gt;&#13;
+					&lt;ifx:CustStatusCode&gt;1&lt;/ifx:CustStatusCode&gt;&#13;
+					&lt;v3:CustInfoStatusCode&gt;S&lt;/v3:CustInfoStatusCode&gt;&#13;
+					&lt;v3:LastModCustInfoDt&gt;2019-12-13&lt;/v3:LastModCustInfoDt&gt;&#13;
+					&lt;v3:AuthFactor&gt;N&lt;/v3:AuthFactor&gt;&#13;
+					&lt;v3:EmployeeInd/&gt;&#13;
+					&lt;v3:RestrictedListInd&gt;F&lt;/v3:RestrictedListInd&gt;&#13;
+					&lt;v3:RestrictedCreditListInd&gt;N&lt;/v3:RestrictedCreditListInd&gt;&#13;
+					&lt;v3:PreaproveInd&gt;N&lt;/v3:PreaproveInd&gt;&#13;
+				&lt;/v3:CustInfo&gt;&#13;
+				&lt;v3:ApplicationInfo&gt;&#13;
+					&lt;v3:ReturnInd&gt;S&lt;/v3:ReturnInd&gt;&#13;
+				&lt;/v3:ApplicationInfo&gt;&#13;
+			&lt;/v1:CustomerConditionsInqRs&gt;&#13;
+		&lt;/v1:CustomerConditionsResponse&gt;&#13;
+	&lt;/soapenv:Body&gt;&#13;
+&lt;/soapenv:Envelope&gt;</body>
+            <contentEncodings/>
+            <httpHeaders/>
+            <httpStatusCode>200</httpStatusCode>
+            <id>GT5GpG</id>
+            <name>cliente con retoma</name>
+            <operationId>BovFg2</operationId>
+            <status>ENABLED</status>
+            <usingExpressions>false</usingExpressions>
+            <xpathExpressions/>
+        </mockResponse>
+        <mockResponse>
             <body></body>
             <contentEncodings/>
             <httpHeaders/>
