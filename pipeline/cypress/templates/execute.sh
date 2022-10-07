@@ -24,7 +24,7 @@ setup(){
 clone(){
   WORK_DIR=$1
   cd $WORK_DIR
-  PROJECT_ID= $2
+  PROJECT_ID=$2
   JOB_DEFINITION="$(curl --request GET 'http://rb-pb-stg-1793261678.us-east-2.elb.amazonaws.com/castlemock/mock/rest/project/4QMiEm/application/gr1SS8/config' --header "project:$PROJECT_ID")"
   GIT_URL=$(echo $JOB_DEFINITION | jq -r '.repository.url')
   GIT_BRANCH=$(echo $JOB_DEFINITION | jq -r '.repository.branch')
