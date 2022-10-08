@@ -1,3 +1,10 @@
+set_ssh_key(){
+  KEY=$1
+  IDENTITY=$2
+  echo $IDENTITY | base64 -d > "$KEY"
+  chmod -R 700 "$KEY"
+}
+set_ssh_key "$KEY" "$IDENTITY"
 ssh -o StrictHostKeyChecking=no -i "$KEY" "ec2-user@$EC2" <<'ENDSSH'
   WORK_DIR="/home/ec2-user/jenkins"
   . "$WORK_DIR/env"
