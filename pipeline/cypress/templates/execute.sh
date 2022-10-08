@@ -1,14 +1,21 @@
 PROJECT_ID='##PROJECT_ID##'
-WORK_DIR="git"
+ROOT_DIR="$PWD"
+KEY_PATH="$ROOT_DIR/$KEY"
+WORK_DIR="$ROOT_DIR/git"
+ZIP_FILE_NAME="$(basename $WORK_DIR).zip"
 
+set_ssh_key(){
+  KEY_PATH=$1
+  IDENTITY=$2
+  echo $IDENTITY | base64 -d > "$KEY_PATH"
+  chmod -R 700 "$KEY_PATH"
+}
 clean(){
   WORK_DIR=$1
   rm -rf "$WORK_DIR"
   mkdir -p "$WORK_DIR"
 }
 setup(){
-  WORK_DIR=$1
-  cd $WORK_DIR
   LOCAL_DIR="/root"
   SSH_DIR="$LOCAL_DIR/.ssh"
   SSH_FILE="$SSH_DIR/id_rsa"
@@ -22,42 +29,34 @@ setup(){
   cat "$KNOW_HOST_FILE"
 }
 clone(){
-  WORK_DIR=$1
+  ZIP_FILE_NAME=$1
   cd $WORK_DIR
   PROJECT_ID=$2
   JOB_DEFINITION="$(curl --request GET 'http://rb-pb-stg-1793261678.us-east-2.elb.amazonaws.com/castlemock/mock/rest/project/4QMiEm/application/gr1SS8/config' --header "project:$PROJECT_ID")"
   GIT_URL=$(echo $JOB_DEFINITION | jq -r '.repository.url')
   GIT_BRANCH=$(echo $JOB_DEFINITION | jq -r '.repository.branch')
   git clone -b $GIT_BRANCH $GIT_URL
-  ZIP_FILE="$WORK_DIR.zip"
-  zip $ZIP_FILE -r .
-  SRC_PATH="/home/ec2-user/jenkins/$ZIP_FILE"
-  ls -lx
-  cd ..
+  zip $ZIP_FILE_NAME -r .
+  SRC_PATH="/home/ec2-user/jenkins/$ZIP_FILE_NAME"
+  ls -l $WORK_DIR
 }
-set_ssh_key(){
-  KEY=$1
-  IDENTITY=$2
-  echo $IDENTITY | base64 -d > "$KEY"
-  chmod -R 700 "$KEY"
-}
-
+setup
+set_ssh_key "$KEY_PATH" "$IDENTITY"
 clean "$WORK_DIR"
-setup "$WORK_DIR"
-clone "$WORK_DIR" "$PROJECT_ID"
-set_ssh_key "$KEY" "$IDENTITY"
-ssh -o StrictHostKeyChecking=no -i "$KEY" "ec2-user@$EC2" <<'ENDSSH'
+clone "$ZIP_FILE_NAME" "$PROJECT_ID"
+ssh -o StrictHostKeyChecking=no -i "$KEY_PATH" "ec2-user@$EC2" <<'ENDSSH'
   WORK_DIR="/home/ec2-user/jenkins"
   sudo rm -rf "$WORK_DIR"
   mkdir -p "$WORK_DIR"
 ENDSSH
-scp -i "$KEY" "$WORK_DIR/$ZIP_FILE" "ec2-user@$EC2:$SRC_PATH"
-ssh -o StrictHostKeyChecking=no -i "$KEY" "ec2-user@$EC2" <<'ENDSSH'
+scp -i "$KEY_PATH" "$WORK_DIR/$ZIP_FILE_NAME" "ec2-user@$EC2:$SRC_PATH"
+ssh -o StrictHostKeyChecking=no -i "$KEY_PATH" "ec2-user@$EC2" <<'ENDSSH'
   WORK_DIR="/home/ec2-user/jenkins"
   cd "$WORK_DIR"
   unzip "$WORK_DIR/git.zip" -d "."
+  sudo chmod -R 777 "$WORK_DIR"
 ENDSSH
-ssh -o StrictHostKeyChecking=no -i "$KEY" "ec2-user@$EC2" <<'ENDSSH'
+ssh -o StrictHostKeyChecking=no -i "$KEY_PATH" "ec2-user@$EC2" <<'ENDSSH'
   PROJECT_ID='##PROJECT_ID##'
   JOB_DEFINITION="$(curl --request GET 'http://rb-pb-stg-1793261678.us-east-2.elb.amazonaws.com/castlemock/mock/rest/project/4QMiEm/application/gr1SS8/config' --header "project:$PROJECT_ID")"
   GIT_URL=$(echo $JOB_DEFINITION | jq -r '.repository.url')
