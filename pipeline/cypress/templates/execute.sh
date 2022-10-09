@@ -88,6 +88,6 @@ ssh -o StrictHostKeyChecking=no -i "$KEY_PATH" "ec2-user@$EC2" <<'ENDSSH'
   echo "export TESTRAIL_PASSWORD=$TESTRAIL_PASSWORD" >> env
   cat env
   cd $GIT_PROJECT_NAME
-  docker run --rm -v $PWD:/app bitnami/node:$NODEJS_VERSION chmod -R 777 /root && npm install
+  docker run --rm -v $PWD:/app -w /app node:$NODEJS_VERSION chmod -R 777 /root && npm install
   docker run --rm -v $PWD:/e2e -w /e2e cypress/included:$CYPRESS_VERSION run -b ${CYPRESS_BROWSER} --headless --reporter cypress-multi-reporters --reporter-options configFile=cypress.json --env configFile=$ENVIRONMENT -s "$CYPRESS_SPEC"
 ENDSSH
