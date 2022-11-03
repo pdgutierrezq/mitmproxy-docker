@@ -245,255 +245,89 @@
             <id>KyA87x</id>
             <name>NO TIENE CAT</name>
             <operationId>qMvhBc</operationId>
-            <status>ENABLED</status>
+            <status>DISABLED</status>
             <usingExpressions>false</usingExpressions>
             <xpathExpressions/>
         </mockResponse>
         <mockResponse>
-            <body>&lt;soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"&gt;&#13;
-   &lt;soapenv:Body&gt;&#13;
-      &lt;out5:getCustomerProductResponse xmlns:xs4xs="http://www.w3.org/2001/XMLSchema" xmlns:io6="http://www.w3.org/2005/08/addressing" xmlns:io5="http://www.ibm.com/xmlns/prod/websphere/http/sca/6.1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:out="wsdl.urn://grupoaval.com/customers/v1/" xmlns:io4="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:io3="http://www.ibm.com/xmlns/prod/websphere/mq/sca/6.0.0" xmlns:io2="http://www.ibm.com/websphere/sibx/smo/v6.0.1" xmlns:out5="urn://grupoaval.com/customers/v1/" xmlns:out4="urn://grupoaval.com/xsd/ifx/v2/" xmlns:io="http://www.w3.org/2003/05/soap-envelope" xmlns:out3="urn://grupoaval.com/xsd/ifx/v3/" xmlns:out2="urn://grupoaval.com/xsd/ifx/"&gt;&#13;
-         &lt;out5:CustomerProductRs&gt;&#13;
-            &lt;out2:Status&gt;&#13;
-               &lt;out2:StatusCode&gt;0&lt;/out2:StatusCode&gt;&#13;
-               &lt;out2:StatusDesc&gt;TRANSACCION CORRECTA&lt;/out2:StatusDesc&gt;&#13;
-               &lt;out2:AdditionalStatus&gt;&#13;
-                  &lt;out2:StatusDesc&gt;TRANSACCION CORRECTA&lt;/out2:StatusDesc&gt;&#13;
-               &lt;/out2:AdditionalStatus&gt;&#13;
-            &lt;/out2:Status&gt;&#13;
-            &lt;out2:ApprovalId&gt;5203123432&lt;/out2:ApprovalId&gt;&#13;
-            &lt;out2:RqUID&gt;3123432&lt;/out2:RqUID&gt;&#13;
-            &lt;out2:MsgRqHdr&gt;&#13;
-               &lt;out2:ClientApp/&gt;&#13;
-               &lt;out4:Channel&gt;INT&lt;/out4:Channel&gt;&#13;
-               &lt;out2:BankInfo&gt;&#13;
-                  &lt;out2:BankId&gt;0&lt;/out2:BankId&gt;&#13;
-               &lt;/out2:BankInfo&gt;&#13;
-               &lt;out4:ClientDt&gt;2001-12-31T17:00:00.000Z&lt;/out4:ClientDt&gt;&#13;
-               &lt;out4:IPAddr&gt;192.168.2.2&lt;/out4:IPAddr&gt;&#13;
-               &lt;out4:SessKey&gt;0&lt;/out4:SessKey&gt;&#13;
-               &lt;out2:UserId&gt;&#13;
-                  &lt;out2:GovIssueIdent&gt;&#13;
-                     &lt;out2:GovIssueIdentType&gt;CC&lt;/out2:GovIssueIdentType&gt;&#13;
-                     &lt;out2:IdentSerialNum&gt;1&lt;/out2:IdentSerialNum&gt;&#13;
-                  &lt;/out2:GovIssueIdent&gt;&#13;
-               &lt;/out2:UserId&gt;&#13;
-               &lt;out4:Reverse&gt;false&lt;/out4:Reverse&gt;&#13;
-               &lt;out4:Language&gt;0&lt;/out4:Language&gt;&#13;
-               &lt;out4:NextDay&gt;2001-12-31T00:00:00&lt;/out4:NextDay&gt;&#13;
-            &lt;/out2:MsgRqHdr&gt;&#13;
-            &lt;out2:MsgRsHdr&gt;&#13;
-               &lt;out2:TxCostAmt&gt;&#13;
-                  &lt;out2:CurAmt&gt;&#13;
-                     &lt;out2:Amt&gt;0&lt;/out2:Amt&gt;&#13;
-                     &lt;out2:CurCode&gt;COP&lt;/out2:CurCode&gt;&#13;
-                  &lt;/out2:CurAmt&gt;&#13;
-               &lt;/out2:TxCostAmt&gt;&#13;
-               &lt;out2:EffDt&gt;2001-12-31T17:00:00&lt;/out2:EffDt&gt;&#13;
-            &lt;/out2:MsgRsHdr&gt;&#13;
-            &lt;out3:ProductData&gt;&#13;
-               &lt;out3:AcctType&gt;&lt;/out3:AcctType&gt;&#13;
-               &lt;out3:AcctCodType&gt;0&lt;/out3:AcctCodType&gt;&#13;
-               &lt;out3:DepAcctIdTo&gt;&#13;
-                  &lt;out2:AcctId&gt;135780&lt;/out2:AcctId&gt;&#13;
-                  &lt;out2:AcctType&gt;1&lt;/out2:AcctType&gt;&#13;
-                  &lt;out2:BankInfo&gt;&#13;
-                     &lt;out2:BankId/&gt;&#13;
-                     &lt;out2:Name&gt;&lt;/out2:Name&gt;&#13;
-                  &lt;/out2:BankInfo&gt;&#13;
-               &lt;/out3:DepAcctIdTo&gt;&#13;
-            &lt;/out3:ProductData&gt;&#13;
-            &lt;out3:ProductData&gt;&#13;
-               &lt;out3:AcctType&gt;&lt;/out3:AcctType&gt;&#13;
-               &lt;out3:AcctCodType&gt;0&lt;/out3:AcctCodType&gt;&#13;
-               &lt;out3:DepAcctIdTo&gt;&#13;
-                  &lt;out2:AcctId&gt;186544&lt;/out2:AcctId&gt;&#13;
-                  &lt;out2:AcctType&gt;1&lt;/out2:AcctType&gt;&#13;
-                  &lt;out2:BankInfo&gt;&#13;
-                     &lt;out2:BankId/&gt;&#13;
-                     &lt;out2:Name&gt;&lt;/out2:Name&gt;&#13;
-                  &lt;/out2:BankInfo&gt;&#13;
-               &lt;/out3:DepAcctIdTo&gt;&#13;
-            &lt;/out3:ProductData&gt;&#13;
-            &lt;out3:ProductData&gt;&#13;
-               &lt;out3:AcctType&gt;&lt;/out3:AcctType&gt;&#13;
-               &lt;out3:AcctCodType&gt;0&lt;/out3:AcctCodType&gt;&#13;
-               &lt;out3:DepAcctIdTo&gt;&#13;
-                  &lt;out2:AcctId&gt;222331&lt;/out2:AcctId&gt;&#13;
-                  &lt;out2:AcctType&gt;1&lt;/out2:AcctType&gt;&#13;
-                  &lt;out2:BankInfo&gt;&#13;
-                     &lt;out2:BankId/&gt;&#13;
-                     &lt;out2:Name&gt;&lt;/out2:Name&gt;&#13;
-                  &lt;/out2:BankInfo&gt;&#13;
-               &lt;/out3:DepAcctIdTo&gt;&#13;
-            &lt;/out3:ProductData&gt;&#13;
-            &lt;out3:ProductData&gt;&#13;
-               &lt;out3:AcctType&gt;&lt;/out3:AcctType&gt;&#13;
-               &lt;out3:AcctCodType&gt;0&lt;/out3:AcctCodType&gt;&#13;
-               &lt;out3:DepAcctIdTo&gt;&#13;
-                  &lt;out2:AcctId&gt;244871&lt;/out2:AcctId&gt;&#13;
-                  &lt;out2:AcctType&gt;1&lt;/out2:AcctType&gt;&#13;
-                  &lt;out2:BankInfo&gt;&#13;
-                     &lt;out2:BankId/&gt;&#13;
-                     &lt;out2:Name&gt;&lt;/out2:Name&gt;&#13;
-                  &lt;/out2:BankInfo&gt;&#13;
-               &lt;/out3:DepAcctIdTo&gt;&#13;
-            &lt;/out3:ProductData&gt;&#13;
-            &lt;out3:ProductData&gt;&#13;
-               &lt;out3:AcctType&gt;&lt;/out3:AcctType&gt;&#13;
-               &lt;out3:AcctCodType&gt;0&lt;/out3:AcctCodType&gt;&#13;
-               &lt;out3:DepAcctIdTo&gt;&#13;
-                  &lt;out2:AcctId&gt;333435&lt;/out2:AcctId&gt;&#13;
-                  &lt;out2:AcctType&gt;1&lt;/out2:AcctType&gt;&#13;
-                  &lt;out2:BankInfo&gt;&#13;
-                     &lt;out2:BankId/&gt;&#13;
-                     &lt;out2:Name&gt;&lt;/out2:Name&gt;&#13;
-                  &lt;/out2:BankInfo&gt;&#13;
-               &lt;/out3:DepAcctIdTo&gt;&#13;
-            &lt;/out3:ProductData&gt;&#13;
-            &lt;out3:ProductData&gt;&#13;
-               &lt;out3:AcctType&gt;&lt;/out3:AcctType&gt;&#13;
-               &lt;out3:AcctCodType&gt;0&lt;/out3:AcctCodType&gt;&#13;
-               &lt;out3:DepAcctIdTo&gt;&#13;
-                  &lt;out2:AcctId&gt;343533&lt;/out2:AcctId&gt;&#13;
-                  &lt;out2:AcctType&gt;1&lt;/out2:AcctType&gt;&#13;
-                  &lt;out2:BankInfo&gt;&#13;
-                     &lt;out2:BankId/&gt;&#13;
-                     &lt;out2:Name&gt;&lt;/out2:Name&gt;&#13;
-                  &lt;/out2:BankInfo&gt;&#13;
-               &lt;/out3:DepAcctIdTo&gt;&#13;
-            &lt;/out3:ProductData&gt;&#13;
-            &lt;out3:ProductData&gt;&#13;
-               &lt;out3:AcctType&gt;&lt;/out3:AcctType&gt;&#13;
-               &lt;out3:AcctCodType&gt;0&lt;/out3:AcctCodType&gt;&#13;
-               &lt;out3:DepAcctIdTo&gt;&#13;
-                  &lt;out2:AcctId&gt;411249&lt;/out2:AcctId&gt;&#13;
-                  &lt;out2:AcctType&gt;1&lt;/out2:AcctType&gt;&#13;
-                  &lt;out2:BankInfo&gt;&#13;
-                     &lt;out2:BankId/&gt;&#13;
-                     &lt;out2:Name&gt;&lt;/out2:Name&gt;&#13;
-                  &lt;/out2:BankInfo&gt;&#13;
-               &lt;/out3:DepAcctIdTo&gt;&#13;
-            &lt;/out3:ProductData&gt;&#13;
-            &lt;out3:ProductData&gt;&#13;
-               &lt;out3:AcctType&gt;&lt;/out3:AcctType&gt;&#13;
-               &lt;out3:AcctCodType&gt;0&lt;/out3:AcctCodType&gt;&#13;
-               &lt;out3:DepAcctIdTo&gt;&#13;
-                  &lt;out2:AcctId&gt;685859&lt;/out2:AcctId&gt;&#13;
-                  &lt;out2:AcctType&gt;1&lt;/out2:AcctType&gt;&#13;
-                  &lt;out2:BankInfo&gt;&#13;
-                     &lt;out2:BankId/&gt;&#13;
-                     &lt;out2:Name&gt;&lt;/out2:Name&gt;&#13;
-                  &lt;/out2:BankInfo&gt;&#13;
-               &lt;/out3:DepAcctIdTo&gt;&#13;
-            &lt;/out3:ProductData&gt;&#13;
-            &lt;out3:ProductData&gt;&#13;
-               &lt;out3:AcctType&gt;&lt;/out3:AcctType&gt;&#13;
-               &lt;out3:AcctCodType&gt;0&lt;/out3:AcctCodType&gt;&#13;
-               &lt;out3:DepAcctIdTo&gt;&#13;
-                  &lt;out2:AcctId&gt;699744&lt;/out2:AcctId&gt;&#13;
-                  &lt;out2:AcctType&gt;1&lt;/out2:AcctType&gt;&#13;
-                  &lt;out2:BankInfo&gt;&#13;
-                     &lt;out2:BankId/&gt;&#13;
-                     &lt;out2:Name&gt;&lt;/out2:Name&gt;&#13;
-                  &lt;/out2:BankInfo&gt;&#13;
-               &lt;/out3:DepAcctIdTo&gt;&#13;
-            &lt;/out3:ProductData&gt;&#13;
-            &lt;out3:ProductData&gt;&#13;
-               &lt;out3:AcctType&gt;&lt;/out3:AcctType&gt;&#13;
-               &lt;out3:AcctCodType&gt;0&lt;/out3:AcctCodType&gt;&#13;
-               &lt;out3:DepAcctIdTo&gt;&#13;
-                  &lt;out2:AcctId&gt;8100323&lt;/out2:AcctId&gt;&#13;
-                  &lt;out2:AcctType&gt;1&lt;/out2:AcctType&gt;&#13;
-                  &lt;out2:BankInfo&gt;&#13;
-                     &lt;out2:BankId/&gt;&#13;
-                     &lt;out2:Name&gt;&lt;/out2:Name&gt;&#13;
-                  &lt;/out2:BankInfo&gt;&#13;
-               &lt;/out3:DepAcctIdTo&gt;&#13;
-            &lt;/out3:ProductData&gt;&#13;
-            &lt;out3:ProductData&gt;&#13;
-               &lt;out3:AcctType&gt;&lt;/out3:AcctType&gt;&#13;
-               &lt;out3:AcctCodType&gt;0&lt;/out3:AcctCodType&gt;&#13;
-               &lt;out3:DepAcctIdTo&gt;&#13;
-                  &lt;out2:AcctId&gt;101301034&lt;/out2:AcctId&gt;&#13;
-                  &lt;out2:AcctType&gt;1&lt;/out2:AcctType&gt;&#13;
-                  &lt;out2:BankInfo&gt;&#13;
-                     &lt;out2:BankId/&gt;&#13;
-                     &lt;out2:Name&gt;&lt;/out2:Name&gt;&#13;
-                  &lt;/out2:BankInfo&gt;&#13;
-               &lt;/out3:DepAcctIdTo&gt;&#13;
-            &lt;/out3:ProductData&gt;&#13;
-            &lt;out3:ProductData&gt;&#13;
-               &lt;out3:AcctType&gt;&lt;/out3:AcctType&gt;&#13;
-               &lt;out3:AcctCodType&gt;0&lt;/out3:AcctCodType&gt;&#13;
-               &lt;out3:DepAcctIdTo&gt;&#13;
-                  &lt;out2:AcctId&gt;953723140&lt;/out2:AcctId&gt;&#13;
-                  &lt;out2:AcctType&gt;1&lt;/out2:AcctType&gt;&#13;
-                  &lt;out2:BankInfo&gt;&#13;
-                     &lt;out2:BankId/&gt;&#13;
-                     &lt;out2:Name&gt;&lt;/out2:Name&gt;&#13;
-                  &lt;/out2:BankInfo&gt;&#13;
-               &lt;/out3:DepAcctIdTo&gt;&#13;
-            &lt;/out3:ProductData&gt;&#13;
-            &lt;out3:ProductData&gt;&#13;
-               &lt;out3:AcctType&gt;&lt;/out3:AcctType&gt;&#13;
-               &lt;out3:AcctCodType&gt;0&lt;/out3:AcctCodType&gt;&#13;
-               &lt;out3:DepAcctIdTo&gt;&#13;
-                  &lt;out2:AcctId&gt;8100158&lt;/out2:AcctId&gt;&#13;
-                  &lt;out2:AcctType&gt;6&lt;/out2:AcctType&gt;&#13;
-                  &lt;out2:BankInfo&gt;&#13;
-                     &lt;out2:BankId/&gt;&#13;
-                     &lt;out2:Name&gt;&lt;/out2:Name&gt;&#13;
-                  &lt;/out2:BankInfo&gt;&#13;
-               &lt;/out3:DepAcctIdTo&gt;&#13;
-            &lt;/out3:ProductData&gt;&#13;
-            &lt;out3:ProductData&gt;&#13;
-               &lt;out3:AcctType&gt;&lt;/out3:AcctType&gt;&#13;
-               &lt;out3:AcctCodType&gt;0&lt;/out3:AcctCodType&gt;&#13;
-               &lt;out3:DepAcctIdTo&gt;&#13;
-                  &lt;out2:AcctId&gt;8100174&lt;/out2:AcctId&gt;&#13;
-                  &lt;out2:AcctType&gt;6&lt;/out2:AcctType&gt;&#13;
-                  &lt;out2:BankInfo&gt;&#13;
-                     &lt;out2:BankId/&gt;&#13;
-                     &lt;out2:Name&gt;&lt;/out2:Name&gt;&#13;
-                  &lt;/out2:BankInfo&gt;&#13;
-               &lt;/out3:DepAcctIdTo&gt;&#13;
-            &lt;/out3:ProductData&gt;&#13;
-            &lt;out3:ProductData&gt;&#13;
-               &lt;out3:AcctType&gt;&lt;/out3:AcctType&gt;&#13;
-               &lt;out3:AcctCodType&gt;0&lt;/out3:AcctCodType&gt;&#13;
-               &lt;out3:DepAcctIdTo&gt;&#13;
-                  &lt;out2:AcctId&gt;8100216&lt;/out2:AcctId&gt;&#13;
-                  &lt;out2:AcctType&gt;6&lt;/out2:AcctType&gt;&#13;
-                  &lt;out2:BankInfo&gt;&#13;
-                     &lt;out2:BankId/&gt;&#13;
-                     &lt;out2:Name&gt;&lt;/out2:Name&gt;&#13;
-                  &lt;/out2:BankInfo&gt;&#13;
-               &lt;/out3:DepAcctIdTo&gt;&#13;
-            &lt;/out3:ProductData&gt;&#13;
-            &lt;out3:ProductData&gt;&#13;
-               &lt;out3:AcctType&gt;&lt;/out3:AcctType&gt;&#13;
-               &lt;out3:AcctCodType&gt;9&lt;/out3:AcctCodType&gt;&#13;
-               &lt;out3:DepAcctIdTo&gt;&#13;
-                  &lt;out2:AcctId&gt;508064508&lt;/out2:AcctId&gt;&#13;
-                  &lt;out2:AcctType&gt;3&lt;/out2:AcctType&gt;&#13;
-                  &lt;out2:BankInfo&gt;&#13;
-                     &lt;out2:BankId/&gt;&#13;
-                     &lt;out2:Name&gt;&lt;/out2:Name&gt;&#13;
-                  &lt;/out2:BankInfo&gt;&#13;
-               &lt;/out3:DepAcctIdTo&gt;&#13;
-            &lt;/out3:ProductData&gt;&#13;
-         &lt;/out5:CustomerProductRs&gt;&#13;
-      &lt;/out5:getCustomerProductResponse&gt;&#13;
-   &lt;/soapenv:Body&gt;&#13;
-&lt;/soapenv:Envelope&gt;</body>
+            <body>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&#13;
+&lt;soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"&gt;&lt;soapenv:Header&gt;&lt;wsse:Security soapenv:mustUnderstand="1" xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd"&gt;&lt;wsu:Timestamp wsu:Id="Timestamp-ab9724f9-18ba-4122-8278-50424e906a99" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd"&gt;&lt;wsu:Created&gt;2022-11-03T19:59:29Z&lt;/wsu:Created&gt;&lt;wsu:Expires&gt;2022-11-03T20:04:29Z&lt;/wsu:Expires&gt;&lt;/wsu:Timestamp&gt;&lt;wsse:BinarySecurityToken wsu:Id="SecurityToken-34a2bbad-7a07-41c4-8b36-50424e90a90c" EncodingType="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-soap-message-security-1.0#Base64Binary" ValueType="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-x509-token-profile-1.0#X509v3" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd"&gt;MIIIbjCCBlagAwIBAgITcwAAArK8bjSDqtXPWwAAAAACsjANBgkqhkiG9w0BAQsFADBfMRMwEQYKCZImiZPyLGQBGRYDbmV0MR0wGwYKCZImiZPyLGQBGRYNQmFuY29BVnZpbGxhczEpMCcGA1UEAxMgUEtJMkJhbmNvQXZ2aWxsYXMtUHJ1ZWJhc0Rlc2EtQ0EwHhcNMjEwOTA5MjEwMzA4WhcNMjMwOTA5MjEwMzA4WjCBtjELMAkGA1UEBhMCQ08xDzANBgNVBAcTBkJvZ290YTEXMBUGA1UEChMOQmFuY28gQXZ2aWxsYXMxITAfBgNVBAsTGEdlcmVuY2lhIEluZnJhZXN0cnVjdHVyYTEkMCIGA1UEAwwbQVZfQkFfU1Y1NTBUX0RQVzAwMV9DMDAxX1dTMTQwMgYJKoZIhvcNAQkBFiVTeXN0ZW1Qcm9ncmFtbWVyQGJhbmNvYXZ2aWxsYXMuY29tLmNvMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAsu2ExO6HGuPOtFaTd8XN3imsbpBir5NErowo2SAy1wee9OrWZYY9mYIYvYTyypAh8Ml36FVKJl/J6TFBW4OO0RvMbyXV9GgKfmVPjiw21nfbT1BVc1J8G8i2eI8rSlK0mX6i5w/6zKrjfya0PDqymGE7bVqxudzdMuuhePEspBNiD2HsLlb3mJMnpjt0HzMQmaajLTmSMFcaRKcmkNnzoEGC6lxKpDxVT0zmEyjo5muEwyUI1XSUhQFLxYbbh2nAA8G+T4OI563rX30t85S/Zon//VDXxIDFdonTAcCD98aF8fZ+XPOnOSwJTTuKxZDVHzqdNrtHjU+ei2MZ7E22+wIDAQABo4IDyTCCA8UwHQYDVR0OBBYEFJLMQKyVJkxPrlsAmdzCs/DUkg7pMB8GA1UdIwQYMBaAFEkY0Pk1oLlpMxgyquMM1keO1Ci2MIIBOAYDVR0fBIIBLzCCASswggEnoIIBI6CCAR+GgctsZGFwOi8vL0NOPVBLSTJCYW5jb0F2dmlsbGFzLVBydWViYXNEZXNhLUNBLENOPUFkaWdoZSxDTj1DRFAsQ049UHVibGljJTIwS2V5JTIwU2VydmljZXMsQ049U2VydmljZXMsQ049Q29uZmlndXJhdGlvbixEQz1vcmdhbml6YWNpb24sREM9bmV0P2NlcnRpZmljYXRlUmV2b2NhdGlvbkxpc3Q/YmFzZT9vYmplY3RDbGFzcz1jUkxEaXN0cmlidXRpb25Qb2ludIZPaHR0cDovL0FkaWdoZS5CYW5jb0FWdmlsbGFzLm5ldC9DZXJ0RW5yb2xsL1BLSTJCYW5jb0F2dmlsbGFzLVBydWViYXNEZXNhLUNBLmNybDCCAccGCCsGAQUFBwEBBIIBuTCCAbUwgcQGCCsGAQUFBzAChoG3bGRhcDovLy9DTj1QS0kyQmFuY29BdnZpbGxhcy1QcnVlYmFzRGVzYS1DQSxDTj1BSUEsQ049UHVibGljJTIwS2V5JTIwU2VydmljZXMsQ049U2VydmljZXMsQ049Q29uZmlndXJhdGlvbixEQz1vcmdhbml6YWNpb24sREM9bmV0P2NBQ2VydGlmaWNhdGU/YmFzZT9vYmplY3RDbGFzcz1jZXJ0aWZpY2F0aW9uQXV0aG9yaXR5MHQGCCsGAQUFBzAChmhodHRwOi8vQWRpZ2hlLkJhbmNvQVZ2aWxsYXMubmV0L0NlcnRFbnJvbGwvQWRpZ2hlLkJhbmNvQVZ2aWxsYXMubmV0X1BLSTJCYW5jb0F2dmlsbGFzLVBydWViYXNEZXNhLUNBLmNydDB2BggrBgEFBQcwAoZqZmlsZTovLy8vQWRpZ2hlLkJhbmNvQVZ2aWxsYXMubmV0L0NlcnRFbnJvbGwvQWRpZ2hlLkJhbmNvQVZ2aWxsYXMubmV0X1BLSTJCYW5jb0F2dmlsbGFzLVBydWViYXNEZXNhLUNBLmNydDALBgNVHQ8EBAMCBaAwPQYJKwYBBAGCNxUHBDAwLgYmKwYBBAGCNxUIhLuUQIKnpn6DlZsJlIYVheacToEvgfi+KILy8gwCAWQCAS4wEwYDVR0lBAwwCgYIKwYBBQUHAwEwGwYJKwYBBAGCNxUKBA4wDDAKBggrBgEFBQcDATANBgkqhkiG9w0BAQsFAAOCAgEACUGWYpEHPoUOexhXgM0qgKS2FjnXhSysXZUi12BysVs1gzq0QLrlKZQ8Xhff5qoqVFl+JiVw7DD7GBauzD0Q5/175vFq3ZPJ2HmihayfdLK04isTDnPoc3C5eXTtTsTWIn7Uox1j3hnY1kOVw5WRMgLv4jypbT2L51AjXLS+gOdtKSBXOAKTIwJnAhE7DuSvgGOeJhUr/LRRZXP/DYN8LjY40Wt83kPZ283gUhMjp5vwvcWjckNcND7UI9aqsTbIAgpoAZa07zNtP21NDJEew/by+t/uiYMuCx5RKLW1DDs6ghsTSwAJPC4Gx3Up3IvkRcv83RypisQLNtEdp1pX5LAtIMx0uts+7KHvGnn2uXznjY4Y1MLeLqM5Lb4JHNBND2fEfd16YT8jOjZJHjmXqYMa1QfMg2kH2JK/zz5SPVlVJahRHazBeW89KfHSyYOlGDS/9VmgGOxuua+guzZXwNC7K5LRsCrJTv+o8yo7A7v3AVNNbwT7FyNq7+qQzccuRQV9aUDbwQ1cQm2TkiqYbU7YajgCJQo6JCzQIaG7ms6gXsH+AqPi/mgrLZOQADkOK9AvGQuaSTGn4e/vZb43wXMfcpXyPU7qXH835+jX1W5bwgzoFNCi4F5hgFE/lzhuPK6U9KgG5zjXNbsrARYuBGwT4t7hf/n9GZmUhCZs95Q=&lt;/wsse:BinarySecurityToken&gt;&lt;Signature xmlns="http://www.w3.org/2000/09/xmldsig#"&gt;&#13;
+&lt;SignedInfo&gt;&#13;
+  &lt;CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/&gt;&#13;
+  &lt;SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/&gt;&#13;
+  &lt;Reference URI="#Timestamp-ab9724f9-18ba-4122-8278-50424e906a99"&gt;&#13;
+    &lt;Transforms&gt;&#13;
+      &lt;Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/&gt;&#13;
+    &lt;/Transforms&gt;&#13;
+    &lt;DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/&gt;&#13;
+    &lt;DigestValue&gt;7GqGLDjrkW0bjTu6qxKGaz9/vn0=&lt;/DigestValue&gt;&#13;
+  &lt;/Reference&gt;&#13;
+  &lt;Reference URI="#Body-76a798b0-bc96-4984-bca0-50424e90f748"&gt;&#13;
+    &lt;Transforms&gt;&#13;
+      &lt;Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/&gt;&#13;
+    &lt;/Transforms&gt;&#13;
+    &lt;DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/&gt;&#13;
+    &lt;DigestValue&gt;rEiNrlxr8BS3sSjxXs48RDfq35s=&lt;/DigestValue&gt;&#13;
+  &lt;/Reference&gt;&#13;
+&lt;/SignedInfo&gt;&#13;
+    &lt;SignatureValue&gt;LcEf+UUauKAvNSYGJpTk883Nkn/cCgj4+7YpzXWPa4KQtu9HH06UJ1bIt59tFlgX07DQzA3CdOVtVHevm8l498U1oFzkkHCwfuEwF+2CLv57pvYzPS/wQkOXfZqIK4i+s1TPWj+7iDW0FNA0xtkLbI8AHshJNwGSIkD7z4lMRM79PU6hw+XzMZsCRjbHSIJUdm3+raQTLL4BBDk4muIfQtqBMDdkw7lt6gKSDZD7ICuq7QVgBfejzPxum98IPvcaKA/ysq74Sl7hTgXTV5MXkTlIFTjvgzrHXUnNZOuN17L+G7B4UeIwiztiq2Sa5nj7iNVyy/UA574xLcYJkDr1ZA==&lt;/SignatureValue&gt;&lt;KeyInfo&gt;&lt;wsse:SecurityTokenReference xmlns=""&gt;&lt;wsse:Reference URI="#SecurityToken-34a2bbad-7a07-41c4-8b36-50424e90a90c" ValueType="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-x509-token-profile-1.0#X509v3"/&gt;&lt;/wsse:SecurityTokenReference&gt;&lt;/KeyInfo&gt;&lt;/Signature&gt;&lt;/wsse:Security&gt;&lt;/soapenv:Header&gt;&lt;soapenv:Body wsu:Id="Body-76a798b0-bc96-4984-bca0-50424e90f748" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd"&gt;&lt;out5:getCustomerProductResponse xmlns:xs4xs="http://www.w3.org/2001/XMLSchema" xmlns:io6="http://www.w3.org/2005/08/addressing" xmlns:io5="http://www.ibm.com/xmlns/prod/websphere/http/sca/6.1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:out="wsdl.urn://grupoaval.com/customers/v1/" xmlns:io4="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:io3="http://www.ibm.com/xmlns/prod/websphere/mq/sca/6.0.0" xmlns:io2="http://www.ibm.com/websphere/sibx/smo/v6.0.1" xmlns:out5="urn://grupoaval.com/customers/v1/" xmlns:out4="urn://grupoaval.com/xsd/ifx/v2/" xmlns:io="http://www.w3.org/2003/05/soap-envelope" xmlns:out3="urn://grupoaval.com/xsd/ifx/v3/" xmlns:out2="urn://grupoaval.com/xsd/ifx/"&gt;&#13;
+  &lt;out5:CustomerProductRs&gt;&lt;out2:Status&gt;&lt;out2:StatusCode&gt;0&lt;/out2:StatusCode&gt;&lt;out2:StatusDesc&gt;TRANSACCION CORRECTA&lt;/out2:StatusDesc&gt;&lt;out2:AdditionalStatus&gt;&lt;out2:StatusDesc&gt;TRANSACCION CORRECTA&lt;/out2:StatusDesc&gt;&lt;/out2:AdditionalStatus&gt;&lt;/out2:Status&gt;&lt;out2:ApprovalId&gt;5205568203&lt;/out2:ApprovalId&gt;&lt;out2:RqUID&gt;1667505568203&lt;/out2:RqUID&gt;&#13;
+    &lt;out2:MsgRqHdr&gt;&#13;
+      &lt;out2:ClientApp/&gt;&#13;
+      &lt;out4:Channel&gt;INT&lt;/out4:Channel&gt;&#13;
+      &lt;out2:BankInfo&gt;&#13;
+        &lt;out2:BankId&gt;0&lt;/out2:BankId&gt;&#13;
+      &lt;/out2:BankInfo&gt;&#13;
+      &lt;out4:ClientDt&gt;2022-11-03T19:59:28.203Z&lt;/out4:ClientDt&gt;&#13;
+      &lt;out4:IPAddr&gt;3.13.132.40    &lt;/out4:IPAddr&gt;&#13;
+      &lt;out4:SessKey&gt;0&lt;/out4:SessKey&gt;&#13;
+      &lt;out2:UserId&gt;&#13;
+        &lt;out2:GovIssueIdent&gt;&#13;
+          &lt;out2:GovIssueIdentType&gt;CC&lt;/out2:GovIssueIdentType&gt;&#13;
+          &lt;out2:IdentSerialNum&gt;19380102&lt;/out2:IdentSerialNum&gt;&#13;
+        &lt;/out2:GovIssueIdent&gt;&#13;
+      &lt;/out2:UserId&gt;&#13;
+      &lt;out4:Reverse&gt;false&lt;/out4:Reverse&gt;&#13;
+      &lt;out4:Language&gt;0&lt;/out4:Language&gt;&lt;out4:NextDay&gt;2022-11-03T00:00:00&lt;/out4:NextDay&gt;&lt;/out2:MsgRqHdr&gt;&lt;out2:MsgRsHdr&gt;&lt;out2:TxCostAmt&gt;&lt;out2:CurAmt&gt;&lt;out2:Amt&gt;0&lt;/out2:Amt&gt;&lt;out2:CurCode&gt;COP&lt;/out2:CurCode&gt;&lt;/out2:CurAmt&gt;&lt;/out2:TxCostAmt&gt;&lt;out2:EffDt&gt;2022-11-03T20:45:40&lt;/out2:EffDt&gt;&lt;/out2:MsgRsHdr&gt;&lt;out3:ProductData&gt;&lt;out3:AcctType&gt;                                   &lt;/out3:AcctType&gt;&lt;out3:AcctCodType&gt;5&lt;/out3:AcctCodType&gt;&lt;out3:DepAcctIdTo&gt;&lt;out2:AcctId&gt;8973864&lt;/out2:AcctId&gt;&lt;out2:AcctType&gt;1&lt;/out2:AcctType&gt;&lt;out2:BankInfo&gt;&lt;out2:BankId/&gt;&lt;out2:Name&gt;                                   &lt;/out2:Name&gt;&lt;/out2:BankInfo&gt;&lt;/out3:DepAcctIdTo&gt;&lt;/out3:ProductData&gt;&lt;/out5:CustomerProductRs&gt;&#13;
+&lt;/out5:getCustomerProductResponse&gt;&#13;
+&lt;/soapenv:Body&gt;&lt;/soapenv:Envelope&gt;&#13;
+</body>
             <contentEncodings/>
-            <httpHeaders/>
+            <httpHeaders>
+                <httpHeader>
+                    <name>X-Backside-Transport</name>
+                    <value>OK OK</value>
+                </httpHeader>
+                <httpHeader>
+                    <name>Connection</name>
+                    <value>Keep-Alive</value>
+                </httpHeader>
+                <httpHeader>
+                    <name>X-Global-Transaction-ID</name>
+                    <value>904e425063641da000c39e8f</value>
+                </httpHeader>
+                <httpHeader>
+                    <name>Date</name>
+                    <value>Thu, 03 Nov 2022 19:59:29 GMT</value>
+                </httpHeader>
+                <httpHeader>
+                    <name>Content-Language</name>
+                    <value>en-US</value>
+                </httpHeader>
+                <httpHeader>
+                    <name>Content-Type</name>
+                    <value>text/xml; charset=UTF-8</value>
+                </httpHeader>
+                <httpHeader>
+                    <name>X-Powered-By</name>
+                    <value>Servlet/3.0</value>
+                </httpHeader>
+            </httpHeaders>
             <httpStatusCode>200</httpStatusCode>
-            <id>K8UHUA</id>
+            <id>lO4h7d</id>
             <name>TIENE CAT</name>
             <operationId>qMvhBc</operationId>
-            <status>DISABLED</status>
+            <status>ENABLED</status>
             <usingExpressions>false</usingExpressions>
             <xpathExpressions/>
         </mockResponse>
@@ -578,6 +412,7 @@
       &lt;web:getCustomerProductResult&gt;?&lt;/web:getCustomerProductResult&gt;
    &lt;/soapenv:Body&gt;
 &lt;/soapenv:Envelope&gt;</defaultBody>
+            <defaultMockResponseId></defaultMockResponseId>
             <defaultXPathMockResponseId></defaultXPathMockResponseId>
             <forwardedEndpoint>http://proxy:8080/https://192.168.135.28:442/PFBA_AhorrosyCtaCte20/sca/WSBA_AhorrosyCtaCte_consultarCuentasClienteV02</forwardedEndpoint>
             <httpMethod>POST</httpMethod>
@@ -610,7 +445,7 @@
     </ports>
     <project>
         <created>2020-02-20T20:49:34.972Z</created>
-        <description>PASIVO --- Consultar cuentas por cliente</description>
+        <description>PASIBO --- Consultar cuentas por cliente</description>
         <id>wn0iz3</id>
         <name>rb-pasivo-dev-read-customer-accounts</name>
         <updated>2020-02-20T20:49:34.972Z</updated>
