@@ -107,7 +107,7 @@
 	},&#13;
 	"testrail": {&#13;
 		"testrun": {&#13;
-			"name": "AV Villas, Pasivo - E2E Continuous Integration: Stage"&#13;
+			"name": "AV Villas, Pasivo - E2E Continuous Testing: Stage"&#13;
 		},&#13;
 		"username": "pedro.gutierrez@avaldigitallabs.com",&#13;
 		"password": "8DGEhY276UcBjstWlXfV-dqHee3uuPuC0/ImNJK5S"&#13;
@@ -176,7 +176,7 @@
 	},&#13;
 	"testrail": {&#13;
 		"testrun": {&#13;
-			"name": "AV Villas, Pasivo - E2E Continuous Integration: Develop"&#13;
+			"name": "AV Villas, Pasivo - E2E Continuous Testing: Develop"&#13;
 		},&#13;
 		"username": "pedro.gutierrez@avaldigitallabs.com",&#13;
 		"password": "8DGEhY276UcBjstWlXfV-dqHee3uuPuC0/ImNJK5S"&#13;
@@ -200,6 +200,51 @@
             <name>bavv-pasivo-qa-frontend-dev</name>
             <parameterQueries/>
             <status>ENABLED</status>
+            <usingExpressions>false</usingExpressions>
+            <xpathExpressions/>
+        </mockResponse>
+        <mockResponse>
+            <body>{&#13;
+	"repository": {&#13;
+		"url": "git@github.com:adldigitallabs/bavv-pasivo-qa-frontend.git",&#13;
+		"branch": "debug"&#13;
+	},&#13;
+	"environment": "dev",&#13;
+	"nodejs": {&#13;
+		"version": "18.10.0"&#13;
+	},&#13;
+	"cypress": {&#13;
+		"version": "10.10.0",&#13;
+		"report": "target/site/cypress",&#13;
+		"browser": "chrome",&#13;
+		"tags": "@regression:yes"&#13;
+	},&#13;
+	"testrail": {&#13;
+		"testrun": {&#13;
+			"name": "AV Villas, Pasivo - E2E Continuous Testing: Develop"&#13;
+		},&#13;
+		"username": "pedro.gutierrez@avaldigitallabs.com",&#13;
+		"password": "8DGEhY276UcBjstWlXfV-dqHee3uuPuC0/ImNJK5S"&#13;
+	}&#13;
+}</body>
+            <contentEncodings/>
+            <headerQueries>
+                <headerQuery>
+                    <header>project</header>
+                    <matchAny>false</matchAny>
+                    <matchCase>false</matchCase>
+                    <matchRegex>false</matchRegex>
+                    <query>bavv-pasivo-qa-frontend-dev</query>
+                </headerQuery>
+            </headerQueries>
+            <httpHeaders/>
+            <httpStatusCode>200</httpStatusCode>
+            <id>brnlbe</id>
+            <jsonPathExpressions/>
+            <methodId>CgAueC</methodId>
+            <name>bavv-pasivo-qa-frontend-dev-debug</name>
+            <parameterQueries/>
+            <status>DISABLED</status>
             <usingExpressions>false</usingExpressions>
             <xpathExpressions/>
         </mockResponse>
