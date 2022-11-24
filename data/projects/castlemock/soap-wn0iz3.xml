@@ -327,7 +327,7 @@
             <id>lO4h7d</id>
             <name>TIENE CAT</name>
             <operationId>qMvhBc</operationId>
-            <status>ENABLED</status>
+            <status>DISABLED</status>
             <usingExpressions>false</usingExpressions>
             <xpathExpressions/>
         </mockResponse>
@@ -355,60 +355,6 @@
             <defaultBody>&lt;soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://schemas.xmlsoap.org/wsdl/"&gt;
    &lt;soapenv:Header/&gt;
    &lt;soapenv:Body&gt;
-      &lt;web:getPreapprovedProductResult&gt;?&lt;/web:getPreapprovedProductResult&gt;
-   &lt;/soapenv:Body&gt;
-&lt;/soapenv:Envelope&gt;</defaultBody>
-            <forwardedEndpoint>http://proxy:8080/https://192.168.135.28:442/PFBA_AhorrosyCtaCte20/sca/WSBA_AhorrosyCtaCte_consultarCuentasClienteV02</forwardedEndpoint>
-            <httpMethod>POST</httpMethod>
-            <id>9SoVmy</id>
-            <identifyStrategy>ELEMENT_NAMESPACE</identifyStrategy>
-            <mockOnFailure>false</mockOnFailure>
-            <mockResponses/>
-            <name>getPreapprovedProduct</name>
-            <networkDelay>0</networkDelay>
-            <operationIdentifier>
-                <name>getPreapprovedProductRequest</name>
-                <namespace>urn://grupoaval.com/customers/v1/</namespace>
-            </operationIdentifier>
-            <originalEndpoint>http://proxy:8080/https://192.168.135.28:442/PFBA_AhorrosyCtaCte20/sca/WSBA_AhorrosyCtaCte_consultarCuentasClienteV02</originalEndpoint>
-            <portId>8YV2kk</portId>
-            <responseStrategy>RANDOM</responseStrategy>
-            <simulateNetworkDelay>false</simulateNetworkDelay>
-            <soapVersion>SOAP11</soapVersion>
-            <status>MOCKED</status>
-        </operation>
-        <operation>
-            <currentResponseSequenceIndex>0</currentResponseSequenceIndex>
-            <defaultBody>&lt;soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://schemas.xmlsoap.org/wsdl/"&gt;
-   &lt;soapenv:Header/&gt;
-   &lt;soapenv:Body&gt;
-      &lt;web:addPreapprovedProductResult&gt;?&lt;/web:addPreapprovedProductResult&gt;
-   &lt;/soapenv:Body&gt;
-&lt;/soapenv:Envelope&gt;</defaultBody>
-            <forwardedEndpoint>http://proxy:8080/https://192.168.135.28:442/PFBA_AhorrosyCtaCte20/sca/WSBA_AhorrosyCtaCte_consultarCuentasClienteV02</forwardedEndpoint>
-            <httpMethod>POST</httpMethod>
-            <id>80zdTz</id>
-            <identifyStrategy>ELEMENT_NAMESPACE</identifyStrategy>
-            <mockOnFailure>false</mockOnFailure>
-            <mockResponses/>
-            <name>addPreapprovedProduct</name>
-            <networkDelay>0</networkDelay>
-            <operationIdentifier>
-                <name>addPreapprovedProductRequest</name>
-                <namespace>urn://grupoaval.com/customers/v1/</namespace>
-            </operationIdentifier>
-            <originalEndpoint>http://proxy:8080/https://192.168.135.28:442/PFBA_AhorrosyCtaCte20/sca/WSBA_AhorrosyCtaCte_consultarCuentasClienteV02</originalEndpoint>
-            <portId>8YV2kk</portId>
-            <responseStrategy>RANDOM</responseStrategy>
-            <simulateNetworkDelay>false</simulateNetworkDelay>
-            <soapVersion>SOAP11</soapVersion>
-            <status>MOCKED</status>
-        </operation>
-        <operation>
-            <currentResponseSequenceIndex>0</currentResponseSequenceIndex>
-            <defaultBody>&lt;soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://schemas.xmlsoap.org/wsdl/"&gt;
-   &lt;soapenv:Header/&gt;
-   &lt;soapenv:Body&gt;
       &lt;web:getCustomerProductResult&gt;?&lt;/web:getCustomerProductResult&gt;
    &lt;/soapenv:Body&gt;
 &lt;/soapenv:Envelope&gt;</defaultBody>
@@ -431,7 +377,7 @@
             <responseStrategy>RANDOM</responseStrategy>
             <simulateNetworkDelay>false</simulateNetworkDelay>
             <soapVersion>SOAP11</soapVersion>
-            <status>MOCKED</status>
+            <status>FORWARDED</status>
         </operation>
     </operations>
     <ports>

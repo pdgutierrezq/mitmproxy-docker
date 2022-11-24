@@ -34,7 +34,7 @@
             <id>bYSKPV</id>
             <jsonPathExpressions/>
             <methodId>13krEA</methodId>
-            <name>ok</name>
+            <name>NO enrolado</name>
             <parameterQueries/>
             <status>ENABLED</status>
             <usingExpressions>false</usingExpressions>
@@ -63,9 +63,9 @@
             <id>whlalp</id>
             <jsonPathExpressions/>
             <methodId>13krEA</methodId>
-            <name>ok-registered_user</name>
+            <name>YA enrolado</name>
             <parameterQueries/>
-            <status>ENABLED</status>
+            <status>DISABLED</status>
             <usingExpressions>false</usingExpressions>
             <xpathExpressions/>
         </mockResponse>

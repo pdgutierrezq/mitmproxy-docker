@@ -175,7 +175,7 @@
             <methodId>TcGmcb</methodId>
             <name>transaction_ok</name>
             <parameterQueries/>
-            <status>ENABLED</status>
+            <status>DISABLED</status>
             <usingExpressions>false</usingExpressions>
             <xpathExpressions/>
         </mockResponse>

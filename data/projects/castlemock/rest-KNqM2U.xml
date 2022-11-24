@@ -198,7 +198,7 @@
             <methodId>MilYVO</methodId>
             <name>Sin cuentas</name>
             <parameterQueries/>
-            <status>ENABLED</status>
+            <status>DISABLED</status>
             <usingExpressions>false</usingExpressions>
             <xpathExpressions/>
         </mockResponse>

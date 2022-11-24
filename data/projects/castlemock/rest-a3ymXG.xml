@@ -24,20 +24,6 @@
             <simulateNetworkDelay>false</simulateNetworkDelay>
             <status>MOCKED</status>
         </method>
-        <method>
-            <currentResponseSequenceIndex>0</currentResponseSequenceIndex>
-            <defaultMockResponseId></defaultMockResponseId>
-            <forwardedEndpoint>http://proxy:8080/https://digital-stg-api.avaldigitallabs.com/securityManagement/v1</forwardedEndpoint>
-            <httpMethod>POST</httpMethod>
-            <id>Kagz7v</id>
-            <mockResponses/>
-            <name>CREATE</name>
-            <networkDelay>0</networkDelay>
-            <resourceId>6gO8xL</resourceId>
-            <responseStrategy>RANDOM</responseStrategy>
-            <simulateNetworkDelay>false</simulateNetworkDelay>
-            <status>MOCKED</status>
-        </method>
     </methods>
     <mockResponses>
         <mockResponse>
@@ -55,7 +41,7 @@
             <id>vhnWQh</id>
             <jsonPathExpressions/>
             <methodId>i0FL9J</methodId>
-            <name>unkown business error</name>
+            <name>Error 57</name>
             <parameterQueries/>
             <status>DISABLED</status>
             <usingExpressions>false</usingExpressions>
@@ -70,7 +56,7 @@
             <id>DIX4NA</id>
             <jsonPathExpressions/>
             <methodId>i0FL9J</methodId>
-            <name>Success response</name>
+            <name>Validacion exitosa</name>
             <parameterQueries/>
             <status>ENABLED</status>
             <usingExpressions>false</usingExpressions>
@@ -91,133 +77,7 @@
             <id>XOCvgO</id>
             <jsonPathExpressions/>
             <methodId>i0FL9J</methodId>
-            <name>Error business</name>
-            <parameterQueries/>
-            <status>DISABLED</status>
-            <usingExpressions>false</usingExpressions>
-            <xpathExpressions/>
-        </mockResponse>
-        <mockResponse>
-            <body>{&#13;
-	"error": "Error service mock"&#13;
-}</body>
-            <contentEncodings/>
-            <headerQueries/>
-            <httpHeaders/>
-            <httpStatusCode>500</httpStatusCode>
-            <id>SIWdHZ</id>
-            <jsonPathExpressions/>
-            <methodId>i0FL9J</methodId>
-            <name>validate_error</name>
-            <parameterQueries/>
-            <status>DISABLED</status>
-            <usingExpressions>false</usingExpressions>
-            <xpathExpressions/>
-        </mockResponse>
-        <mockResponse>
-            <body>{&#13;
-	"OtpInfo": {&#13;
-		"Desc": "4243c998-f33f-4229-90ab-b83901a9f629",&#13;
-		"Validity": {&#13;
-			"ValidityPeriod": "Segundo",&#13;
-			"ValidityTime": 180&#13;
-		}&#13;
-	}&#13;
-}</body>
-            <contentEncodings/>
-            <headerQueries/>
-            <httpHeaders/>
-            <httpStatusCode>201</httpStatusCode>
-            <id>sq0tGS</id>
-            <jsonPathExpressions/>
-            <methodId>Kagz7v</methodId>
-            <name>Success response</name>
-            <parameterQueries/>
-            <status>ENABLED</status>
-            <usingExpressions>false</usingExpressions>
-            <xpathExpressions/>
-        </mockResponse>
-        <mockResponse>
-            <body>{&#13;
-  "Desc": "Error Server"&#13;
-}</body>
-            <contentEncodings/>
-            <headerQueries/>
-            <httpHeaders/>
-            <httpStatusCode>500</httpStatusCode>
-            <id>rC9u5v</id>
-            <jsonPathExpressions/>
-            <methodId>Kagz7v</methodId>
-            <name>Error response</name>
-            <parameterQueries/>
-            <status>DISABLED</status>
-            <usingExpressions>false</usingExpressions>
-            <xpathExpressions/>
-        </mockResponse>
-        <mockResponse>
-            <body>{&#13;
-	"RqUID": "219528305",&#13;
-	"Status": {&#13;
-		"StatusCode": "41",&#13;
-		"StatusDesc": "Error asignacion semilla"&#13;
-	},&#13;
-	"statusResponse": 206,&#13;
-	"isOtpVoiceActive": true,&#13;
-	"sentVoiceOtp": false&#13;
-}</body>
-            <contentEncodings/>
-            <headerQueries/>
-            <httpHeaders/>
-            <httpStatusCode>206</httpStatusCode>
-            <id>zc162K</id>
-            <jsonPathExpressions/>
-            <methodId>Kagz7v</methodId>
-            <name>ko-tech-41</name>
-            <parameterQueries/>
-            <status>DISABLED</status>
-            <usingExpressions>false</usingExpressions>
-            <xpathExpressions/>
-        </mockResponse>
-        <mockResponse>
-            <body>{&#13;
-    "RqUID": "549886983",&#13;
-    "Status": {&#13;
-        "StatusCode": "06",&#13;
-        "StatusDesc": "Mismatched phone number CIFIN"&#13;
-    }&#13;
-}</body>
-            <contentEncodings/>
-            <headerQueries/>
-            <httpHeaders/>
-            <httpStatusCode>206</httpStatusCode>
-            <id>07VjV8</id>
-            <jsonPathExpressions/>
-            <methodId>Kagz7v</methodId>
-            <name>Error business</name>
-            <parameterQueries/>
-            <status>DISABLED</status>
-            <usingExpressions>false</usingExpressions>
-            <xpathExpressions/>
-        </mockResponse>
-        <mockResponse>
-            <body>{&#13;
-	"RqUID": "219528305",&#13;
-	"Status": {&#13;
-		"StatusCode": "40",&#13;
-		"StatusDesc": "Error asignacion semilla"&#13;
-	},&#13;
-	"statusResponse": 206,&#13;
-	"isOtpVoiceActive": true,&#13;
-	"sentVoiceOtp": false&#13;
-}</body>
-            <contentEncodings/>
-            <headerQueries/>
-            <httpHeaders/>
-            <httpStatusCode>206</httpStatusCode>
-            <id>HcV3uv</id>
-            <jsonPathExpressions/>
-            <methodId>Kagz7v</methodId>
-            <name>ko-tech-40</name>
+            <name>Error 56</name>
             <parameterQueries/>
             <status>DISABLED</status>
             <usingExpressions>false</usingExpressions>
@@ -227,7 +87,7 @@
     <project>
         <description></description>
         <id>a3ymXG</id>
-        <name>rb-pasivo-dev-user-identity</name>
+        <name>rb-pasivo-dev-user-identity-validate</name>
         <applications/>
     </project>
     <resources>
@@ -236,13 +96,6 @@
             <id>j2AVvI</id>
             <methods/>
             <name>validate</name>
-            <uri>/User_Identity/Identity</uri>
-        </resource>
-        <resource>
-            <applicationId>R99bqa</applicationId>
-            <id>6gO8xL</id>
-            <methods/>
-            <name>create</name>
             <uri>/User_Identity/Identity</uri>
         </resource>
     </resources>

@@ -42,7 +42,7 @@
             <methodId>DFtYzX</methodId>
             <name>ok</name>
             <parameterQueries/>
-            <status>ENABLED</status>
+            <status>DISABLED</status>
             <usingExpressions>false</usingExpressions>
             <xpathExpressions/>
         </mockResponse>

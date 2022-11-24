@@ -81,7 +81,87 @@
             <id>tiH3sO</id>
             <jsonPathExpressions/>
             <methodId>I3tyAX</methodId>
-            <name>ok-cc:false-finantial_docs:false</name>
+            <name>SIN ningun documento</name>
+            <parameterQueries/>
+            <status>DISABLED</status>
+            <usingExpressions>false</usingExpressions>
+            <xpathExpressions/>
+        </mockResponse>
+        <mockResponse>
+            <body>{&#13;
+  responseCode: 1,&#13;
+  responseMessage: 'El campo NroProductoOrigen es obligatorio\n' +&#13;
+    'El campo NroSolicitud es obligatorio',&#13;
+  product: 'PRUEBAS'&#13;
+}</body>
+            <contentEncodings/>
+            <headerQueries/>
+            <httpHeaders/>
+            <httpStatusCode>200</httpStatusCode>
+            <id>nNlAWe</id>
+            <jsonPathExpressions/>
+            <methodId>I3tyAX</methodId>
+            <name>ko</name>
+            <parameterQueries/>
+            <status>DISABLED</status>
+            <usingExpressions>false</usingExpressions>
+            <xpathExpressions/>
+        </mockResponse>
+        <mockResponse>
+            <body>{&#13;
+	"idSession": "ebc515f9-29ce-40db-afe6-9faac7a92d65",&#13;
+	"allowedDocumentExtensions": [&#13;
+		"PDF",&#13;
+		"JPG",&#13;
+		"JPEG",&#13;
+		"PNG"&#13;
+	],&#13;
+	"clientDocuments": [&#13;
+		{&#13;
+			"documentaryCode": 254,&#13;
+			"documentDescription": "Documento Identificacisn (CC,CE,TI,RC)",&#13;
+			"requiredIndicator": false,&#13;
+			"filesDocumentNumber": 5,&#13;
+			"fileSize": 3&#13;
+		}&#13;
+	],&#13;
+	"responseCode": 0,&#13;
+	"product": "CDA"&#13;
+}</body>
+            <contentEncodings/>
+            <headerQueries/>
+            <httpHeaders/>
+            <httpStatusCode>200</httpStatusCode>
+            <id>yoAjKl</id>
+            <jsonPathExpressions/>
+            <methodId>I3tyAX</methodId>
+            <name>SOLO CON documentos financieros</name>
+            <parameterQueries/>
+            <status>DISABLED</status>
+            <usingExpressions>false</usingExpressions>
+            <xpathExpressions/>
+        </mockResponse>
+        <mockResponse>
+            <body>{&#13;
+	"idSession": "5bfcab26-62ee-4469-a191-ae3ac1c34ad6",&#13;
+	"allowedDocumentExtensions": [&#13;
+		"PDF",&#13;
+		"JPG",&#13;
+		"JPEG",&#13;
+		"PNG"&#13;
+	],&#13;
+	"clientDocuments": [],&#13;
+	"responseCode": 0,&#13;
+	"product": "CDA"&#13;
+}</body>
+            <contentEncodings/>
+            <headerQueries/>
+            <httpHeaders/>
+            <httpStatusCode>200</httpStatusCode>
+            <id>74wk1V</id>
+            <jsonPathExpressions/>
+            <methodId>I3tyAX</methodId>
+            <name>Documento de Identidad Y Documentos Financieros</name>
             <parameterQueries/>
             <status>ENABLED</status>
             <usingExpressions>false</usingExpressions>
@@ -136,87 +216,7 @@
             <id>aZWt0B</id>
             <jsonPathExpressions/>
             <methodId>I3tyAX</methodId>
-            <name>ok-cc:true-finantial_docs:false</name>
-            <parameterQueries/>
-            <status>DISABLED</status>
-            <usingExpressions>false</usingExpressions>
-            <xpathExpressions/>
-        </mockResponse>
-        <mockResponse>
-            <body>{&#13;
-  responseCode: 1,&#13;
-  responseMessage: 'El campo NroProductoOrigen es obligatorio\n' +&#13;
-    'El campo NroSolicitud es obligatorio',&#13;
-  product: 'PRUEBAS'&#13;
-}</body>
-            <contentEncodings/>
-            <headerQueries/>
-            <httpHeaders/>
-            <httpStatusCode>200</httpStatusCode>
-            <id>nNlAWe</id>
-            <jsonPathExpressions/>
-            <methodId>I3tyAX</methodId>
-            <name>ko</name>
-            <parameterQueries/>
-            <status>DISABLED</status>
-            <usingExpressions>false</usingExpressions>
-            <xpathExpressions/>
-        </mockResponse>
-        <mockResponse>
-            <body>{&#13;
-	"idSession": "ebc515f9-29ce-40db-afe6-9faac7a92d65",&#13;
-	"allowedDocumentExtensions": [&#13;
-		"PDF",&#13;
-		"JPG",&#13;
-		"JPEG",&#13;
-		"PNG"&#13;
-	],&#13;
-	"clientDocuments": [&#13;
-		{&#13;
-			"documentaryCode": 254,&#13;
-			"documentDescription": "Documento Identificacisn (CC,CE,TI,RC)",&#13;
-			"requiredIndicator": false,&#13;
-			"filesDocumentNumber": 5,&#13;
-			"fileSize": 3&#13;
-		}&#13;
-	],&#13;
-	"responseCode": 0,&#13;
-	"product": "CDA"&#13;
-}</body>
-            <contentEncodings/>
-            <headerQueries/>
-            <httpHeaders/>
-            <httpStatusCode>200</httpStatusCode>
-            <id>yoAjKl</id>
-            <jsonPathExpressions/>
-            <methodId>I3tyAX</methodId>
-            <name>ok-cc:false-finantial_docs:true</name>
-            <parameterQueries/>
-            <status>DISABLED</status>
-            <usingExpressions>false</usingExpressions>
-            <xpathExpressions/>
-        </mockResponse>
-        <mockResponse>
-            <body>{&#13;
-	"idSession": "5bfcab26-62ee-4469-a191-ae3ac1c34ad6",&#13;
-	"allowedDocumentExtensions": [&#13;
-		"PDF",&#13;
-		"JPG",&#13;
-		"JPEG",&#13;
-		"PNG"&#13;
-	],&#13;
-	"clientDocuments": [],&#13;
-	"responseCode": 0,&#13;
-	"product": "CDA"&#13;
-}</body>
-            <contentEncodings/>
-            <headerQueries/>
-            <httpHeaders/>
-            <httpStatusCode>200</httpStatusCode>
-            <id>74wk1V</id>
-            <jsonPathExpressions/>
-            <methodId>I3tyAX</methodId>
-            <name>ok-cc:true-finantial_docs:true</name>
+            <name>SOLO CON documento de identificacion</name>
             <parameterQueries/>
             <status>DISABLED</status>
             <usingExpressions>false</usingExpressions>

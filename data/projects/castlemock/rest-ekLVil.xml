@@ -21,7 +21,7 @@
             <resourceId>KnrviU</resourceId>
             <responseStrategy>RANDOM</responseStrategy>
             <simulateNetworkDelay>false</simulateNetworkDelay>
-            <status>FORWARDED</status>
+            <status>MOCKED</status>
         </method>
     </methods>
     <mockResponses>
@@ -58,7 +58,7 @@
             <id>XhEn42</id>
             <jsonPathExpressions/>
             <methodId>TechZ6</methodId>
-            <name>ko</name>
+            <name>Registro NO exitoso</name>
             <parameterQueries/>
             <status>DISABLED</status>
             <usingExpressions>false</usingExpressions>
@@ -97,7 +97,7 @@
             <id>JybVi1</id>
             <jsonPathExpressions/>
             <methodId>TechZ6</methodId>
-            <name>ko-206</name>
+            <name>Registro NO exitoso fallo de usuario</name>
             <parameterQueries/>
             <status>DISABLED</status>
             <usingExpressions>false</usingExpressions>
@@ -121,7 +121,7 @@
             <id>W8ZGRm</id>
             <jsonPathExpressions/>
             <methodId>TechZ6</methodId>
-            <name>ok</name>
+            <name>Registro exitoso</name>
             <parameterQueries/>
             <status>ENABLED</status>
             <usingExpressions>false</usingExpressions>

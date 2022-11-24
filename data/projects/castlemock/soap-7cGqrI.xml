@@ -362,7 +362,7 @@
             <id>GT5GpG</id>
             <name>cliente con retoma</name>
             <operationId>BovFg2</operationId>
-            <status>ENABLED</status>
+            <status>DISABLED</status>
             <usingExpressions>false</usingExpressions>
             <xpathExpressions/>
         </mockResponse>
@@ -746,7 +746,7 @@
     </mockResponses>
     <operations>
         <operation>
-            <currentResponseSequenceIndex>0</currentResponseSequenceIndex>
+            <currentResponseSequenceIndex>1</currentResponseSequenceIndex>
             <defaultBody>&lt;soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://schemas.xmlsoap.org/wsdl/"&gt;
    &lt;soapenv:Header/&gt;
    &lt;soapenv:Body&gt;
@@ -771,7 +771,7 @@
             <responseStrategy>SEQUENCE</responseStrategy>
             <simulateNetworkDelay>false</simulateNetworkDelay>
             <soapVersion>SOAP11</soapVersion>
-            <status>FORWARDED</status>
+            <status>MOCKED</status>
         </operation>
     </operations>
     <ports>
