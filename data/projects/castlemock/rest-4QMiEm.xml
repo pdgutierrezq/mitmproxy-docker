@@ -176,7 +176,7 @@
 		"version": "10.10.0",&#13;
 		"report": "target/site/cypress",&#13;
 		"browser": "chrome",&#13;
-		"tags": "@regression:yes"&#13;
+		"tags": "@priority:high"&#13;
 	},&#13;
 	"testrail": {&#13;
 		"testrun": {&#13;
