@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<restExportContainer>
+    <applications>
+        <application>
+            <id>g228J1</id>
+            <name>read-active-channels</name>
+            <projectId>xK3RQI</projectId>
+            <resources/>
+        </application>
+    </applications>
+    <methods>
+        <method>
+            <currentResponseSequenceIndex>0</currentResponseSequenceIndex>
+            <defaultMockResponseId></defaultMockResponseId>
+            <forwardedEndpoint>http://proxy:8080/https://apicapi-gateway-qa.appsptqa.ath.com.co</forwardedEndpoint>
+            <httpMethod>GET</httpMethod>
+            <id>1EyOLh</id>
+            <mockResponses/>
+            <name>get</name>
+            <networkDelay>0</networkDelay>
+            <resourceId>oNJqIO</resourceId>
+            <responseStrategy>RANDOM</responseStrategy>
+            <simulateNetworkDelay>false</simulateNetworkDelay>
+            <status>MOCKED</status>
+        </method>
+    </methods>
+    <mockResponses>
+        <mockResponse>
+            <body>{&#13;
+	"MsgRsHdr": {&#13;
+		"EndDt": "2023-01-27T19:23:14",&#13;
+		"Status": {&#13;
+			"AdditionalStatus": {&#13;
+				"StatusCode": "117",&#13;
+				"StatusDesc": "Usuario no esta registrado"&#13;
+			},&#13;
+			"EndDt": "2023-01-27T19:23:14",&#13;
+			"Severity": "Error",&#13;
+			"StatusCode": "117",&#13;
+			"StatusDesc": "Usuario no esta registrado"&#13;
+		}&#13;
+	}&#13;
+}</body>
+            <contentEncodings/>
+            <headerQueries/>
+            <httpHeaders>
+                <httpHeader>
+                    <name>x-forwarded-proto</name>
+                    <value>http</value>
+                </httpHeader>
+                <httpHeader>
+                    <name>Access-Control-Allow-Origin</name>
+                    <value>*</value>
+                </httpHeader>
+                <httpHeader>
+                    <name>Access-Control-Allow-Methods</name>
+                    <value>GET</value>
+                </httpHeader>
+                <httpHeader>
+                    <name>X-Backside-Transport</name>
+                    <value>OK OK</value>
+                </httpHeader>
+                <httpHeader>
+                    <name>X-ApprovalId</name>
+                    <value>7306424817</value>
+                </httpHeader>
+                <httpHeader>
+                    <name>Connection</name>
+                    <value>Keep-Alive</value>
+                </httpHeader>
+                <httpHeader>
+                    <name>x-forwarded-port</name>
+                    <value>80</value>
+                </httpHeader>
+                <httpHeader>
+                    <name>x-forwarded-for</name>
+                    <value>3.13.132.40</value>
+                </httpHeader>
+                <httpHeader>
+                    <name>X-Global-Transaction-ID</name>
+                    <value>792c091763d40c750008b931</value>
+                </httpHeader>
+                <httpHeader>
+                    <name>x-rquid</name>
+                    <value>1656101089896</value>
+                </httpHeader>
+                <httpHeader>
+                    <name>Date</name>
+                    <value>Fri, 27 Jan 2023 17:40:06 GMT</value>
+                </httpHeader>
+                <httpHeader>
+                    <name>Access-Control-Expose-Headers</name>
+                    <value>APIm-Debug-Trans-Id, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, X-Global-Transaction-ID</value>
+                </httpHeader>
+                <httpHeader>
+                    <name>X-RateLimit-Remaining</name>
+                    <value>name=Límite de velocidad predeterminado,359;</value>
+                </httpHeader>
+                <httpHeader>
+                    <name>x-amzn-trace-id</name>
+                    <value>Root=1-63d40c75-0c4123400c9920ea03cff39d</value>
+                </httpHeader>
+                <httpHeader>
+                    <name>Content-Encoding</name>
+                    <value>gzip</value>
+                </httpHeader>
+                <httpHeader>
+                    <name>X-RateLimit-Limit</name>
+                    <value>name=Límite de velocidad predeterminado,360;</value>
+                </httpHeader>
+                <httpHeader>
+                    <name>Content-Type</name>
+                    <value>application/json</value>
+                </httpHeader>
+            </httpHeaders>
+            <httpStatusCode>206</httpStatusCode>
+            <id>7Ae9PF</id>
+            <jsonPathExpressions/>
+            <methodId>1EyOLh</methodId>
+            <name>No enrolado</name>
+            <parameterQueries/>
+            <status>DISABLED</status>
+            <usingExpressions>false</usingExpressions>
+            <xpathExpressions/>
+        </mockResponse>
+        <mockResponse>
+            <body>{&#13;
+	"MsgRsHdr": {&#13;
+		"Status": {&#13;
+			"StatusCode": 500,&#13;
+			"StatusDesc": "URL Open Error",&#13;
+			"EndDt": "2023-01-27T17:34:52",&#13;
+			"AdditionalStatus": {&#13;
+				"StatusCode": 500,&#13;
+				"StatusDesc": "URL Open Error"&#13;
+			},&#13;
+			"Severity": "Error"&#13;
+		},&#13;
+		"EndDt": "2023-01-27T17:34:52"&#13;
+	}&#13;
+}</body>
+            <contentEncodings/>
+            <headerQueries/>
+            <httpHeaders>
+                <httpHeader>
+                    <name>x-forwarded-proto</name>
+                    <value>http</value>
+                </httpHeader>
+                <httpHeader>
+                    <name>X-Backside-Transport</name>
+                    <value>OK OK</value>
+                </httpHeader>
+                <httpHeader>
+                    <name>X-ApprovalId</name>
+                    <value>0</value>
+                </httpHeader>
+                <httpHeader>
+                    <name>Connection</name>
+                    <value>Keep-Alive</value>
+                </httpHeader>
+                <httpHeader>
+                    <name>x-forwarded-port</name>
+                    <value>80</value>
+                </httpHeader>
+                <httpHeader>
+                    <name>x-forwarded-for</name>
+                    <value>3.13.132.40</value>
+                </httpHeader>
+                <httpHeader>
+                    <name>X-Global-Transaction-ID</name>
+                    <value>b71093da63d40b370002ea13</value>
+                </httpHeader>
+                <httpHeader>
+                    <name>x-rquid</name>
+                    <value>1656101089896</value>
+                </httpHeader>
+                <httpHeader>
+                    <name>Date</name>
+                    <value>Fri, 27 Jan 2023 17:34:52 GMT</value>
+                </httpHeader>
+                <httpHeader>
+                    <name>X-RateLimit-Remaining</name>
+                    <value>name=Límite de velocidad predeterminado,359;</value>
+                </httpHeader>
+                <httpHeader>
+                    <name>x-amzn-trace-id</name>
+                    <value>Root=1-63d40b37-69df553e45a0ed7e7e7688c9</value>
+                </httpHeader>
+                <httpHeader>
+                    <name>Content-Encoding</name>
+                    <value>gzip</value>
+                </httpHeader>
+                <httpHeader>
+                    <name>content-type</name>
+                    <value>application/json</value>
+                </httpHeader>
+                <httpHeader>
+                    <name>X-RateLimit-Limit</name>
+                    <value>name=Límite de velocidad predeterminado,360;</value>
+                </httpHeader>
+            </httpHeaders>
+            <httpStatusCode>500</httpStatusCode>
+            <id>maO0DR</id>
+            <jsonPathExpressions/>
+            <methodId>1EyOLh</methodId>
+            <name>Internal service error</name>
+            <parameterQueries/>
+            <status>DISABLED</status>
+            <usingExpressions>false</usingExpressions>
+            <xpathExpressions/>
+        </mockResponse>
+        <mockResponse>
+            <body>{&#13;
+	"CustLoginStatus": {&#13;
+		"PswdStatus": "A"&#13;
+	},&#13;
+	"CustName": {&#13;
+		"LastName": "Test Test",&#13;
+		"LegalName": "Test Test"&#13;
+	},&#13;
+	"CustPswdInfo": [&#13;
+		{&#13;
+			"Channel": "MB",&#13;
+			"CreatedDt": "2022-02-09T00:01:00Z",&#13;
+			"LastAuthInfo": {&#13;
+				"IPAddr": " 3.13.132.40"&#13;
+			},&#13;
+			"OrigDt": "2022-02-09T16:10:00Z",&#13;
+			"PswdInfo": {&#13;
+				"PswdType": " U"&#13;
+			}&#13;
+		},&#13;
+		{&#13;
+			"Channel": "PB",&#13;
+			"CreatedDt": "2022-02-09T00:01:00Z",&#13;
+			"LastAuthInfo": {&#13;
+				"IPAddr": " 3.13.132.40"&#13;
+			},&#13;
+			"OrigDt": "2022-02-09T16:10:00Z",&#13;
+			"PswdInfo": {&#13;
+				"PswdType": " U"&#13;
+			}&#13;
+		}&#13;
+	]&#13;
+}</body>
+            <contentEncodings/>
+            <headerQueries/>
+            <httpHeaders>
+                <httpHeader>
+                    <name>x-forwarded-proto</name>
+                    <value>http</value>
+                </httpHeader>
+                <httpHeader>
+                    <name>X-Backside-Transport</name>
+                    <value>OK OK</value>
+                </httpHeader>
+                <httpHeader>
+                    <name>X-ApprovalId</name>
+                    <value>0</value>
+                </httpHeader>
+                <httpHeader>
+                    <name>Connection</name>
+                    <value>Keep-Alive</value>
+                </httpHeader>
+                <httpHeader>
+                    <name>x-forwarded-port</name>
+                    <value>80</value>
+                </httpHeader>
+                <httpHeader>
+                    <name>x-forwarded-for</name>
+                    <value>3.13.132.40</value>
+                </httpHeader>
+                <httpHeader>
+                    <name>X-Global-Transaction-ID</name>
+                    <value>b71093da63d40b370002ea13</value>
+                </httpHeader>
+                <httpHeader>
+                    <name>x-rquid</name>
+                    <value>1656101089896</value>
+                </httpHeader>
+                <httpHeader>
+                    <name>Date</name>
+                    <value>Fri, 27 Jan 2023 17:34:52 GMT</value>
+                </httpHeader>
+                <httpHeader>
+                    <name>X-RateLimit-Remaining</name>
+                    <value>name=Límite de velocidad predeterminado,359;</value>
+                </httpHeader>
+                <httpHeader>
+                    <name>x-amzn-trace-id</name>
+                    <value>Root=1-63d40b37-69df553e45a0ed7e7e7688c9</value>
+                </httpHeader>
+                <httpHeader>
+                    <name>Content-Encoding</name>
+                    <value>gzip</value>
+                </httpHeader>
+                <httpHeader>
+                    <name>content-type</name>
+                    <value>application/json</value>
+                </httpHeader>
+                <httpHeader>
+                    <name>X-RateLimit-Limit</name>
+                    <value>name=Límite de velocidad predeterminado,360;</value>
+                </httpHeader>
+            </httpHeaders>
+            <httpStatusCode>200</httpStatusCode>
+            <id>p7N9Vy</id>
+            <jsonPathExpressions/>
+            <methodId>1EyOLh</methodId>
+            <name>Enrolado</name>
+            <parameterQueries/>
+            <status>ENABLED</status>
+            <usingExpressions>false</usingExpressions>
+            <xpathExpressions/>
+        </mockResponse>
+    </mockResponses>
+    <project>
+        <description></description>
+        <id>xK3RQI</id>
+        <name>rb-pasivo-dev-read-active-channels</name>
+        <applications/>
+    </project>
+    <resources>
+        <resource>
+            <applicationId>g228J1</applicationId>
+            <id>oNJqIO</id>
+            <methods/>
+            <name>channels</name>
+            <uri>/org-qa/api-pb/securityManagement/v3/Enrollment_Customer/SDS</uri>
+        </resource>
+    </resources>
+</restExportContainer>
