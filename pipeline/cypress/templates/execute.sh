@@ -36,7 +36,7 @@ clone(){
   GIT_URL=$(echo $JOB_DEFINITION | jq -r '.repository.url')
   GIT_BRANCH=$(echo $JOB_DEFINITION | jq -r '.repository.branch')
   git clone -b $GIT_BRANCH $GIT_URL
-  zip $ZIP_FILE_NAME -r .
+  zip $ZIP_FILE_NAME -rq .
   SRC_PATH="/home/ec2-user/jenkins/$ZIP_FILE_NAME"
   ls -l $WORK_DIR
 }
@@ -53,7 +53,7 @@ scp -i "$KEY_PATH" "$WORK_DIR/$ZIP_FILE_NAME" "ec2-user@$EC2:$SRC_PATH"
 ssh -o StrictHostKeyChecking=no -i "$KEY_PATH" "ec2-user@$EC2" <<'ENDSSH'
   WORK_DIR="/home/ec2-user/jenkins"
   cd "$WORK_DIR"
-  unzip "$WORK_DIR/git.zip" -d "."
+  unzip "$WORK_DIR/git.zip" -dq "."
   sudo chmod -R 777 "$WORK_DIR"
 ENDSSH
 ssh -o StrictHostKeyChecking=no -i "$KEY_PATH" "ec2-user@$EC2" <<'ENDSSH'

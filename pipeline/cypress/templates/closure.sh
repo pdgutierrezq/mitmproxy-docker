@@ -20,7 +20,7 @@ ssh -o StrictHostKeyChecking=no -i "$KEY_PATH" "ec2-user@$EC2" <<'ENDSSH'
   sudo mv -f $REPORT_INDEX_FILE index.html
   ls -l
   ZIP_FILE="$WORK_DIR/report.zip"
-  zip $ZIP_FILE -r .
+  zip $ZIP_FILE -rq .
 ENDSSH
 FILE_NAME="report.zip"
 SRC_PATH="/home/ec2-user/jenkins/$FILE_NAME"
@@ -29,5 +29,5 @@ PIPELINE_TARGET_PATH="./target/site/serenity"
 scp -i "$KEY_PATH" "ec2-user@$EC2:$SRC_PATH" "$TARGET_PATH"
 rm -rf "$PIPELINE_TARGET_PATH"
 mkdir -p "$PIPELINE_TARGET_PATH"
-unzip "$TARGET_PATH/$FILE_NAME" -d "$PIPELINE_TARGET_PATH"
+unzip "$TARGET_PATH/$FILE_NAME" -dq "$PIPELINE_TARGET_PATH"
 ls -Rl $PIPELINE_TARGET_PATH
