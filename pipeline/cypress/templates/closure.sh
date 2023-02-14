@@ -12,7 +12,7 @@ ssh -o StrictHostKeyChecking=no -i "$KEY_PATH" "ec2-user@$EC2" <<'ENDSSH'
   . "$WORK_DIR/env"
   REPORT_ABSOLUTE_PATH="$WORK_DIR/$GIT_PROJECT_NAME/$REPORT_PATH"
   cd "$WORK_DIR/$GIT_PROJECT_NAME"
-  docker run --rm -v $PWD:/app -w /app -e TESTRAIL_TESTRUN_NAME="$TESTRAIL_TESTRUN_NAME" -e TESTRAIL_USERNAME=$TESTRAIL_USERNAME -e TESTRAIL_PASSWORD=$TESTRAIL_PASSWORD node:$NODEJS_VERSION /bin/bash -c "apt update && apt-get install -y software-properties-common && add-apt-repository 'deb http://security.debian.org/debian-security stretch/updates main' && apt update && apt install -y openjdk-8-jdk && chmod -R 777 /app &&export npm_config_cache=./.npm-cache && npm run test:cypress:report"
+  docker run --rm -v $PWD:/app -w /app -e TESTRAIL_TESTRUN_NAME="$TESTRAIL_TESTRUN_NAME" -e TESTRAIL_USERNAME=$TESTRAIL_USERNAME -e TESTRAIL_PASSWORD=$TESTRAIL_PASSWORD node:$NODEJS_VERSION /bin/bash -c "apt update && apt-get install -y software-properties-common && add-apt-repository 'deb http://security.debian.org/debian-security stretch/updates main' && apt update && apt install -y openjdk-8-jdk && chmod -R 777 /app && export npm_config_cache=./.npm-cache && npm run test:reports"
   cd $REPORT_ABSOLUTE_PATH
   REPORT_INDEX_FILE=$(find . -type f -regex ".*.html" | head -n 1)
   echo "[INFO] REPORT PATH: $WORK_DIR/$GIT_PROJECT_NAME/$REPORT_PATH"
