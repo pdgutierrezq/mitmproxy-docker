@@ -70,6 +70,10 @@ ssh -o StrictHostKeyChecking=no -i "$KEY_PATH" "ec2-user@$EC2" <<'ENDSSH'
   TESTRAIL_TESTRUN_NAME=$(echo $JOB_DEFINITION | jq -r '.testrail.testrun.name')
   TESTRAIL_USERNAME=$(echo $JOB_DEFINITION | jq -r '.testrail.username')
   TESTRAIL_PASSWORD=$(echo $JOB_DEFINITION | jq -r '.testrail.password')
+  JIRA_TOKEN=$(echo $JOB_DEFINITION | jq -r '.jira.token')
+  XRAY_TEST_PLAN_KEY=$(echo $JOB_DEFINITION | jq -r '.xray.testExecution.key')
+  XRAY_CLIENT_ID=$(echo $JOB_DEFINITION | jq -r '.xray.client.id')
+  XRAY_CLIENT_TOKEN=$(echo $JOB_DEFINITION | jq -r '.xray.client.token')
   GIT_PROJECT=$(basename $GIT_URL)
   GIT_PROJECT_NAME=${GIT_PROJECT%.*}
   WORK_DIR="/home/ec2-user/jenkins"
@@ -83,9 +87,10 @@ ssh -o StrictHostKeyChecking=no -i "$KEY_PATH" "ec2-user@$EC2" <<'ENDSSH'
   echo "export CYPRESS_VERSION=$CYPRESS_VERSION" >> env
   echo "export CYPRESS_TAGS=\"$CYPRESS_TAGS\"" >> env
   echo "export CYPRESS_BROWSER=$CYPRESS_BROWSER" >> env
-  echo "export TESTRAIL_TESTRUN_NAME=\"$TESTRAIL_TESTRUN_NAME\"" >> env
-  echo "export TESTRAIL_USERNAME=$TESTRAIL_USERNAME" >> env
-  echo "export TESTRAIL_PASSWORD=$TESTRAIL_PASSWORD" >> env
+  echo "export JIRA_TOKEN=$JIRA_TOKEN" >> env
+  echo "export XRAY_TEST_PLAN_KEY=$XRAY_TEST_PLAN_KEY" >> env
+  echo "export XRAY_CLIENT_ID=$XRAY_CLIENT_ID" >> env
+  echo "export XRAY_CLIENT_TOKEN=$XRAY_CLIENT_TOKEN" >> env
   cat env
   cd $GIT_PROJECT_NAME
   docker run --rm -v $PWD:/app -w /app node:$NODEJS_VERSION chmod -R 777 /root && npm install
