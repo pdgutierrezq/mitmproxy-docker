@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<restExportContainer>
+    <applications>
+        <application>
+            <id>eCSNLP</id>
+            <name>dev</name>
+            <projectId>BRkRoe</projectId>
+            <resources/>
+        </application>
+    </applications>
+    <methods>
+        <method>
+            <currentResponseSequenceIndex>0</currentResponseSequenceIndex>
+            <defaultMockResponseId></defaultMockResponseId>
+            <forwardedEndpoint>http://proxy:8080/https://192.168.135.28:542/PFBA_CreditoHiptCons28</forwardedEndpoint>
+            <httpMethod>POST</httpMethod>
+            <id>OlFjWe</id>
+            <mockResponses/>
+            <name>POST</name>
+            <networkDelay>0</networkDelay>
+            <resourceId>g400SC</resourceId>
+            <responseStrategy>RANDOM</responseStrategy>
+            <simulateNetworkDelay>false</simulateNetworkDelay>
+            <status>MOCKED</status>
+        </method>
+    </methods>
+    <mockResponses>
+        <mockResponse>
+            <body>{&#13;
+	"codRespuesta": 0,&#13;
+	"mensajeRespuesta": "TRANSACCION EXITOSA",&#13;
+	"tipoReferido": "X",&#13;
+	"codTipoGrupo": "ZZ",&#13;
+	"descripcionTipoGrupo": "NINGUNO",&#13;
+	"codConvenio": 99,&#13;
+	"descripcionConvenio": "NINGUNO",&#13;
+	"codPuntoEntrega": 0,&#13;
+	"descripcionPuntoEntrega": "NINGUNO"&#13;
+}</body>
+            <contentEncodings/>
+            <headerQueries/>
+            <httpHeaders/>
+            <httpStatusCode>200</httpStatusCode>
+            <id>r40yO6</id>
+            <jsonPathExpressions/>
+            <methodId>OlFjWe</methodId>
+            <name>Agente no encontrado</name>
+            <parameterQueries/>
+            <status>DISABLED</status>
+            <usingExpressions>false</usingExpressions>
+            <xpathExpressions/>
+        </mockResponse>
+        <mockResponse>
+            <body>{&#13;
+	"codRespuesta": 100,&#13;
+	"mensajeRespuesta": "KLK493   AEIS KLT022   0100 GRUPO (XX) NO ENCONTRADO",&#13;
+	"tipoReferido": null,&#13;
+	"codTipoGrupo": null,&#13;
+	"descripcionTipoGrupo": null,&#13;
+	"codConvenio": 0,&#13;
+	"descripcionConvenio": null,&#13;
+	"codPuntoEntrega": 0,&#13;
+	"descripcionPuntoEntrega": null&#13;
+}</body>
+            <contentEncodings/>
+            <headerQueries/>
+            <httpHeaders/>
+            <httpStatusCode>200</httpStatusCode>
+            <id>1gBnib</id>
+            <jsonPathExpressions/>
+            <methodId>OlFjWe</methodId>
+            <name>Error de servicio</name>
+            <parameterQueries/>
+            <status>DISABLED</status>
+            <usingExpressions>false</usingExpressions>
+            <xpathExpressions/>
+        </mockResponse>
+        <mockResponse>
+            <body>{&#13;
+    "codConvenio": 99,&#13;
+    "codPuntoEntrega": 0,&#13;
+    "codRespuesta": 0,&#13;
+    "codTipoGrupo": "ZZ",&#13;
+    "descripcionConvenio": "NINGUNO",&#13;
+    "descripcionPuntoEntrega": "NINGUNO",&#13;
+    "descripcionTipoGrupo": "NINGUNO",&#13;
+    "mensajeRespuesta": "TRANSACCION EXITOSA",&#13;
+    "tipoReferido": "I"&#13;
+}</body>
+            <contentEncodings/>
+            <headerQueries/>
+            <httpHeaders/>
+            <httpStatusCode>200</httpStatusCode>
+            <id>kdYfzj</id>
+            <jsonPathExpressions/>
+            <methodId>OlFjWe</methodId>
+            <name>Agente interno</name>
+            <parameterQueries/>
+            <status>ENABLED</status>
+            <usingExpressions>false</usingExpressions>
+            <xpathExpressions/>
+        </mockResponse>
+        <mockResponse>
+            <body>{&#13;
+	"codRespuesta": 99,&#13;
+	"mensajeRespuesta": "KLK493   AEXL KI150K   0084 DISABLED     0602 READ",&#13;
+	"tipoReferido": null,&#13;
+	"codTipoGrupo": null,&#13;
+	"descripcionTipoGrupo": null,&#13;
+	"codConvenio": 0,&#13;
+	"descripcionConvenio": null,&#13;
+	"codPuntoEntrega": 0,&#13;
+	"descripcionPuntoEntrega": null&#13;
+}</body>
+            <contentEncodings/>
+            <headerQueries/>
+            <httpHeaders/>
+            <httpStatusCode>200</httpStatusCode>
+            <id>DqT2eh</id>
+            <jsonPathExpressions/>
+            <methodId>OlFjWe</methodId>
+            <name>Error de lectura</name>
+            <parameterQueries/>
+            <status>DISABLED</status>
+            <usingExpressions>false</usingExpressions>
+            <xpathExpressions/>
+        </mockResponse>
+        <mockResponse>
+            <body>{&#13;
+	"codConvenio": 99,&#13;
+	"codPuntoEntrega": 0,&#13;
+	"codRespuesta": 0,&#13;
+	"codTipoGrupo": "FL",&#13;
+	"descripcionConvenio": "NINGUNO",&#13;
+	"descripcionPuntoEntrega": null,&#13;
+	"descripcionTipoGrupo": "FUERZAS LARGAS",&#13;
+	"mensajeRespuesta": "TRANSACCION EXITOSA",&#13;
+	"tipoReferido": "E"&#13;
+}</body>
+            <contentEncodings/>
+            <headerQueries/>
+            <httpHeaders/>
+            <httpStatusCode>200</httpStatusCode>
+            <id>9GoIvz</id>
+            <jsonPathExpressions/>
+            <methodId>OlFjWe</methodId>
+            <name>Agente externo</name>
+            <parameterQueries/>
+            <status>DISABLED</status>
+            <usingExpressions>false</usingExpressions>
+            <xpathExpressions/>
+        </mockResponse>
+        <mockResponse>
+            <body>{"device":"DatapwD","errorcode":"0x01130006","errormessage":"Failed to establish a backside connection","transaccionID":"39849917"}</body>
+            <contentEncodings/>
+            <headerQueries/>
+            <httpHeaders/>
+            <httpStatusCode>500</httpStatusCode>
+            <id>WkyJfy</id>
+            <jsonPathExpressions/>
+            <methodId>OlFjWe</methodId>
+            <name>Error 500</name>
+            <parameterQueries/>
+            <status>DISABLED</status>
+            <usingExpressions>false</usingExpressions>
+            <xpathExpressions/>
+        </mockResponse>
+    </mockResponses>
+    <project>
+        <description></description>
+        <id>BRkRoe</id>
+        <name>rb-commons-dev-agent-query</name>
+        <applications/>
+    </project>
+    <resources>
+        <resource>
+            <applicationId>eCSNLP</applicationId>
+            <id>g400SC</id>
+            <methods/>
+            <name>WRBA_CreditoHiptCons_consultarAgente</name>
+            <uri>/WRBA_CreditoHiptCons_consultarAgente</uri>
+        </resource>
+    </resources>
+</restExportContainer>
