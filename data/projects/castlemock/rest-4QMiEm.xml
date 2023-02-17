@@ -65,7 +65,7 @@
 	},&#13;
 	"environment": "stg",&#13;
 	"cucumber": {&#13;
-		"options": "--tags '@layer:backend and @priority:high and @regression:yes and not @execution:manual and not @ignore'"&#13;
+		"options": "--tags '@layer:Backend and @priority:High and @regression:Yes and not @execution:manual and not @ignore'"&#13;
 	}&#13;
 }</body>
             <contentEncodings/>
