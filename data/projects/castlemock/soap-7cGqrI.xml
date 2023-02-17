@@ -666,7 +666,7 @@
             <id>bLDOeu</id>
             <name>cliente monoproducto</name>
             <operationId>BovFg2</operationId>
-            <status>ENABLED</status>
+            <status>DISABLED</status>
             <usingExpressions>false</usingExpressions>
             <xpathExpressions/>
         </mockResponse>
@@ -746,7 +746,7 @@
     </mockResponses>
     <operations>
         <operation>
-            <currentResponseSequenceIndex>1</currentResponseSequenceIndex>
+            <currentResponseSequenceIndex>0</currentResponseSequenceIndex>
             <defaultBody>&lt;soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://schemas.xmlsoap.org/wsdl/"&gt;
    &lt;soapenv:Header/&gt;
    &lt;soapenv:Body&gt;
@@ -771,7 +771,7 @@
             <responseStrategy>SEQUENCE</responseStrategy>
             <simulateNetworkDelay>false</simulateNetworkDelay>
             <soapVersion>SOAP11</soapVersion>
-            <status>MOCKED</status>
+            <status>FORWARDED</status>
         </operation>
     </operations>
     <ports>
