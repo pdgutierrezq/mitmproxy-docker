@@ -19,7 +19,6 @@ ssh -o StrictHostKeyChecking=no -i "$KEY_PATH" "ec2-user@$EC2" <<'ENDSSH'
   echo "[INFO] REPORT PATH: $WORK_DIR/$GIT_PROJECT_NAME/$REPORT_PATH"
   echo "[INFO] REPORT_INDEX_FILE: $REPORT_INDEX_FILE"
   sudo mv -f $REPORT_INDEX_FILE index.html
-  ls -l
   ZIP_FILE="$WORK_DIR/report.zip"
   zip $ZIP_FILE -rq .
 ENDSSH
