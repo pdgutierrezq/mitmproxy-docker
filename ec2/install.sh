@@ -15,6 +15,7 @@ ssh -o StrictHostKeyChecking=no -i "$KEY" "ec2-user@$EC2" <<'ENDSSH'
   sudo systemctl enable containerd.service
   apt-get update
   apt-get install curl
+  sudo chmod +x /etc/rc.d/rc.local
   sudo sh -c "echo nameserver 8.8.8.8 > /etc/resolv.conf"
 ENDSSH
 sh ./proxy.sh
