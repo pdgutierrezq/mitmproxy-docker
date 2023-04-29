@@ -48,6 +48,9 @@ ssh -o StrictHostKeyChecking=no -i "$KEY_PATH" "ec2-user@$EC2" <<'ENDSSH'
   WORK_DIR="/home/ec2-user/jenkins"
   sudo rm -rf "$WORK_DIR"
   mkdir -p "$WORK_DIR"
+  ps aux --width 100 --sort -%cpu | head -15
+  sudo pkill -f .*Cypress.*
+  echo && ps aux --width 100 --sort -%cpu | head -15
 ENDSSH
 scp -i "$KEY_PATH" "$WORK_DIR/$ZIP_FILE_NAME" "ec2-user@$EC2:$SRC_PATH"
 ssh -o StrictHostKeyChecking=no -i "$KEY_PATH" "ec2-user@$EC2" <<'ENDSSH'
