@@ -10,8 +10,9 @@ set_ssh_key "$KEY_PATH" "$IDENTITY"
 
 ssh -o StrictHostKeyChecking=no -i "$KEY_PATH" "ec2-user@$EC2" <<'ENDSSH'
   WORK_DIR="/home/ec2-user/jenkins"
+  chmod 777 /home/ec2-user/jenkins/job.sh
   crontab -l
-  echo '* */1 * * * /home/ec2-user/jenkins/job.sh &> /home/ec2-user/log/`date +\%Y-\%m-\%d_\%H-\%M-\%S`.log' > cronjob
+  echo '0 * * * * /home/ec2-user/jenkins/job.sh &> /home/ec2-user/log/`date +\%Y-\%m-\%d_\%H-\%M-\%S`.log' > cronjob
   crontab cronjob
   crontab -l
   rm cronjob
