@@ -40,7 +40,10 @@ clone(){
   SRC_PATH="/home/ec2-user/jenkins/$ZIP_FILE_NAME"
   ls -l $WORK_DIR
 }
-setup
+if [ -z "$SETUP" ]
+then
+  setup
+fi
 set_ssh_key "$KEY_PATH" "$IDENTITY"
 clean "$WORK_DIR"
 clone "$ZIP_FILE_NAME" "$PROJECT_ID"
