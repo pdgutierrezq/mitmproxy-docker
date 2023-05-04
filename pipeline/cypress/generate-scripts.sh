@@ -21,7 +21,6 @@ combine "job.sh"
 sed -i.bak "s/##PROJECT_ID##/$PROJECT_ID/g" "$JOB_SCRIPT"
 rm "$JOB_SCRIPT.bak"
 combine "runner.sh"
-combine "cron.sh"
 
 CLOSURE=$(base64 "$CLOSURE_SCRIPT")
 EXECUTE=$(base64 "$EXECUTE_SCRIPT")
