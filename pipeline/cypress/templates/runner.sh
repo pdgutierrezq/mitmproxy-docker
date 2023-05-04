@@ -31,3 +31,12 @@ clean_dir(){
   rm "$ROOT_DIR/$RELATIVE_DIR.zip"
 #  . $WORK_DIR/job.sh
 ENDSSH
+ssh -o StrictHostKeyChecking=no -i "$KEY_PATH" "ec2-user@$EC2" <<'ENDSSH'
+  WORK_DIR="/home/ec2-user/local"
+  chmod 777 /home/ec2-user/local/job.sh
+  crontab -l
+  echo '0 * * * * /home/ec2-user/local/job.sh &> /home/ec2-user/log/`date +\%Y-\%m-\%d_\%H-\%M-\%S`.log' > cronjob
+  crontab cronjob
+  crontab -l
+  rm cronjob
+ENDSSH
