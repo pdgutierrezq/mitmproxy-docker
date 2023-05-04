@@ -53,6 +53,9 @@ ssh -o StrictHostKeyChecking=no -i "$KEY_PATH" "ec2-user@$EC2" <<'ENDSSH'
   mkdir -p "$WORK_DIR"
   ps aux --width 100 --sort -%cpu | head -15
   sudo pkill -f .*Cypress.*
+  sudo pkill -f .*node.*
+  sudo pkill -f .*chrome.*
+  sudo pkill -f .*zip.*
   echo && ps aux --width 100 --sort -%cpu | head -15
 ENDSSH
 scp -i "$KEY_PATH" "$WORK_DIR/$ZIP_FILE_NAME" "ec2-user@$EC2:$SRC_PATH"
