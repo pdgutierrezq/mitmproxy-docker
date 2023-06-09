@@ -21,5 +21,5 @@ ENDSSH
 sh ./proxy.sh
 sh ./castlemock.sh
 
-
+#docker exec -it proxy sh -c "echo nameserver 8.8.8.8 > /etc/resolv.conf"
 
