@@ -22,4 +22,7 @@ sh ./proxy.sh
 sh ./castlemock.sh
 
 #docker exec -it proxy sh -c "echo nameserver 8.8.8.8 > /etc/resolv.conf"
+# Stg - load balancers vpc 10.5.12.0/22
+# Dev - load balancers vpc 10.5.8.0/22 10.5.10.147
+# ADL VPN 	10.255.224.0/21
 
