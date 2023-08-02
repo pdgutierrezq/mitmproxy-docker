@@ -100,7 +100,7 @@
 		"version": "20.3.0"&#13;
 	},&#13;
 	"cypress": {&#13;
-		"version": "12.14.0",&#13;
+		"version": "10.10.0",&#13;
 		"report": "target/site/cypress",&#13;
 		"browser": "chrome",&#13;
 		"tags": "@regression:yes"&#13;
