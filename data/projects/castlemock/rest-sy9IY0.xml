@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<restExportContainer>
+    <applications>
+        <application>
+            <id>WnvxgE</id>
+            <name>notify-account-creation</name>
+            <projectId>sy9IY0</projectId>
+            <resources/>
+        </application>
+    </applications>
+    <methods>
+        <method>
+            <currentResponseSequenceIndex>0</currentResponseSequenceIndex>
+            <defaultMockResponseId>FYqVB6</defaultMockResponseId>
+            <forwardedEndpoint>http://proxy:8080/https://192.168.135.28:542</forwardedEndpoint>
+            <httpMethod>POST</httpMethod>
+            <id>U88ciP</id>
+            <mockResponses/>
+            <name>post</name>
+            <networkDelay>0</networkDelay>
+            <resourceId>xBcIDU</resourceId>
+            <responseStrategy>HEADER_QUERY_MATCH</responseStrategy>
+            <simulateNetworkDelay>false</simulateNetworkDelay>
+            <status>FORWARDED</status>
+        </method>
+    </methods>
+    <mockResponses>
+        <mockResponse>
+            <body>{&#13;
+	"nroSecuencia": 21911221,&#13;
+	"nroAutorizacion": 52095630,&#13;
+	"codRespuesta": 0,&#13;
+	"mensajeRespuesta": "TRANSACCION EXITOSA",&#13;
+	"fechaTransaccion": "2023-08-22T00:03:00"&#13;
+}</body>
+            <contentEncodings/>
+            <headerQueries/>
+            <httpHeaders>
+                <httpHeader>
+                    <name>Strict-Transport-Security</name>
+                    <value>max-age=31536000</value>
+                </httpHeader>
+                <httpHeader>
+                    <name>Server</name>
+                    <value>IBM App Connect Enterprise</value>
+                </httpHeader>
+                <httpHeader>
+                    <name>X-Backside-Transport</name>
+                    <value>OK OK</value>
+                </httpHeader>
+                <httpHeader>
+                    <name>Connection</name>
+                    <value>Keep-Alive</value>
+                </httpHeader>
+                <httpHeader>
+                    <name>X-Global-Transaction-ID</name>
+                    <value>904e425064df869e044de32f</value>
+                </httpHeader>
+                <httpHeader>
+                    <name>Date</name>
+                    <value>Fri, 18 Aug 2023 14:56:30 GMT</value>
+                </httpHeader>
+                <httpHeader>
+                    <name>Content-Type</name>
+                    <value>application/json</value>
+                </httpHeader>
+            </httpHeaders>
+            <httpStatusCode>200</httpStatusCode>
+            <id>FYqVB6</id>
+            <jsonPathExpressions/>
+            <methodId>U88ciP</methodId>
+            <name>ok</name>
+            <parameterQueries/>
+            <status>ENABLED</status>
+            <usingExpressions>false</usingExpressions>
+            <xpathExpressions/>
+        </mockResponse>
+    </mockResponses>
+    <project>
+        <description></description>
+        <id>sy9IY0</id>
+        <name>rb-pasivo-dev-notify-account-creation</name>
+        <applications/>
+    </project>
+    <resources>
+        <resource>
+            <applicationId>WnvxgE</applicationId>
+            <id>xBcIDU</id>
+            <methods/>
+            <name>notify-account-creation</name>
+            <uri>/PFBA_CanalOtros296/WRBA_CanalOtros_notificaAperturaCuenta</uri>
+        </resource>
+    </resources>
+</restExportContainer>
