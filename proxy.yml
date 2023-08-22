@@ -2,7 +2,7 @@ version: '2'
 services:
   proxy:
     container_name: proxy
-    image: mitmproxy/mitmproxy
+    image: mitmproxy/mitmproxy:9.0.1
 #    network_mode: "host"
     extra_hosts:
     - "bc-host:127.0.0.1"
