@@ -55,3 +55,6 @@ def request(flow: http.HTTPFlow) -> None:
 2. [Response modification](data/proxy/scripts/modify_response.py)
 
 More examples are in mitmproxy's [GitHub repository]( https://github.com/mitmproxy/mitmproxy/tree/master/examples).
+
+## AWS Commands
+sudo passwd root
