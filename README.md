@@ -47,7 +47,7 @@ from mitmproxy import http
 
 def request(flow: http.HTTPFlow) -> None:
     # pretty_host takes the "Host" header of the request into account,
-    # which is useful in transparent mode where we usually only have the IP
+    # which is useful in transparent mode where we usually only have the IP[known_hosts](..%2F..%2F..%2F.ssh%2Fknown_hosts)
     # otherwise.
     if flow.request.pretty_host == "original.host.com":
         flow.request.host = "new.host.com"
@@ -57,4 +57,9 @@ def request(flow: http.HTTPFlow) -> None:
 More examples are in mitmproxy's [GitHub repository]( https://github.com/mitmproxy/mitmproxy/tree/master/examples).
 
 ## AWS Commands
-sudo passwd root
+1. Set an OS user password
+```bash
+[ec2-user ~]$ sudo passwd root
+Changing password for user root.
+New password: tthisisapassword1
+```
