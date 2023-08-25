@@ -2,7 +2,7 @@ version: '3.8'
 services:
   jenkins:
     container_name: jenkins
-    image: jenkins/jenkins:2.60.3-alpine
+    image: jenkins/jenkins
     restart: always
     privileged: true
     user: root
@@ -10,7 +10,7 @@ services:
       - 81:8080
       - 50001:50000
     volumes:
-      - "./data/jenkins:/var/jenkins_home"
+      - "../../data/jenkins:/var/jenkins_home"
       - "/var/run/docker.sock:/var/run/docker.sock"
   agent:
     image: jenkins/ssh-agent:jdk11
