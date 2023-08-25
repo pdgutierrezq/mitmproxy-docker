@@ -10,7 +10,7 @@ services:
       - 81:8080
       - 50001:50000
     volumes:
-      - /home/ubuntu/jenkins_compose/jenkins_configuration:/var/jenkins_home
+      - ./data/jenkins:/var/jenkins_home
       - /var/run/docker.sock:/var/run/docker.sock
   agent:
     image: jenkins/ssh-agent:jdk11
