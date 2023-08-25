@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
-sh ./git.sh
+sh ../ec2/git.sh
 ssh -i "$KEY" "ec2-user@$EC2" <<'ENDSSH'
    #commands to run on remote host
    ROOT_PATH="mitmproxy-docker"
-   BASE_PATH="$BASE_PATH/docker/jenkins"
+   BASE_PATH="docker/jenkins"
    cd $ROOT_PATH
    git fetch
    git pull
