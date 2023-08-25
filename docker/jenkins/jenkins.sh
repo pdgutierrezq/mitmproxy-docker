@@ -7,8 +7,7 @@ ssh -i "$KEY" "ec2-user@$EC2" <<'ENDSSH'
    cd $ROOT_PATH
    git fetch
    git pull
-   cd $BASE_PATH
    docker ps
-   docker-compose down
-   docker-compose -f jenkins.yml up -d
+   docker-compose -f "$BASE_PATH/jenkins.yml" down
+   docker-compose -f "$BASE_PATH/jenkins.yml" up -d
 ENDSSH
