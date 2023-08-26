@@ -27,6 +27,6 @@ sh ../docker/jenkins/jenkins.sh
 # Dev - load balancers vpc 10.5.8.0/22 10.5.10.147
 # ADL VPN 	10.255.224.0/21
 # Github username: pedro-gutierrez_adlover
-# Github tokem: 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
+# Github tokem: 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l
 
 
