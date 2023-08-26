@@ -20,10 +20,11 @@ ssh -o StrictHostKeyChecking=no -i "$KEY" "ec2-user@$EC2" <<'ENDSSH'
 ENDSSH
 sh ./proxy.sh
 sh ./castlemock.sh
-sh ./docker/jenkins/jenkins.sh
+sh ../docker/jenkins/jenkins.sh
 
 #docker exec -it proxy sh -c "echo nameserver 8.8.8.8 > /etc/resolv.conf"
 # Stg - load balancers vpc 10.5.12.0/22
 # Dev - load balancers vpc 10.5.8.0/22 10.5.10.147
 # ADL VPN 	10.255.224.0/21
+# Github tokem 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
 
