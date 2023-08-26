@@ -1,0 +1,4 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<jenkins.model.JenkinsLocationConfiguration>
+  <jenkinsUrl>http://rb-pb-dev-344334744.us-east-2.elb.amazonaws.com:81/</jenkinsUrl>
+</jenkins.model.JenkinsLocationConfiguration>

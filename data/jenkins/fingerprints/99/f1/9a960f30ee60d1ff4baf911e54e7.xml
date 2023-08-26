@@ -1,0 +1,13 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<fingerprint>
+  <timestamp>2023-08-26 05:02:18.281 UTC</timestamp>
+  <md5sum>99f19a960f30ee60d1ff4baf911e54e7</md5sum>
+  <fileName>Credential id=48603ac3-7968-4b6f-892b-778522f8d15a name=48603ac3-7968-4b6f-892b-778522f8d15a</fileName>
+  <usages>
+    <entry>
+      <string>bavv-pasivo-qa-frontend-dev/jenkins</string>
+      <ranges>4-6</ranges>
+    </entry>
+  </usages>
+  <facets/>
+</fingerprint>
