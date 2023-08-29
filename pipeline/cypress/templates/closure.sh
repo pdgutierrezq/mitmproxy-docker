@@ -12,15 +12,19 @@ ssh -o StrictHostKeyChecking=no -i "$KEY_PATH" "ec2-user@$EC2" <<'ENDSSH'
   . "$WORK_DIR/env"
   REPORT_ABSOLUTE_PATH="$WORK_DIR/$GIT_PROJECT_NAME/$REPORT_PATH"
   cd "$WORK_DIR/$GIT_PROJECT_NAME"
-#  docker run --rm -v $PWD:/app -w /app -e JIRA_TOKEN="$JIRA_TOKEN" -e XRAY_CLIENT_ID="$XRAY_CLIENT_ID" -e XRAY_CLIENT_TOKEN="$XRAY_CLIENT_TOKEN" -e XRAY_TEST_PLAN_KEY="$XRAY_TEST_PLAN_KEY" node:$NODEJS_VERSION /bin/bash -c "apt update && apt-get install -y software-properties-common && add-apt-repository 'deb http://security.debian.org/debian-security stretch/updates main' && apt update && apt install -y openjdk-8-jdk && chmod -R 777 /app && export npm_config_cache=./.npm-cache && npm run test:reports"
-  docker run --rm -v $PWD:/app -w /app -e JIRA_TOKEN="$JIRA_TOKEN" -e XRAY_CLIENT_ID="$XRAY_CLIENT_ID" -e XRAY_CLIENT_TOKEN="$XRAY_CLIENT_TOKEN" -e XRAY_TEST_PLAN_KEY="$XRAY_TEST_PLAN_KEY" node:$NODEJS_VERSION /bin/bash -c "chmod -R 777 /app && export npm_config_cache=./.npm-cache && npm run test:reports"
-  cd $REPORT_ABSOLUTE_PATH
-  REPORT_INDEX_FILE=$(find . -type f -regex ".*.html" | head -n 1)
-  echo "[INFO] REPORT PATH: $WORK_DIR/$GIT_PROJECT_NAME/$REPORT_PATH"
-  echo "[INFO] REPORT_INDEX_FILE: $REPORT_INDEX_FILE"
-  sudo mv -f $REPORT_INDEX_FILE index.html
-  ZIP_FILE="$WORK_DIR/report.zip"
-  zip $ZIP_FILE -rq .
+  if [ $? -eq 0 ];then
+  #  docker run --rm -v $PWD:/app -w /app -e JIRA_TOKEN="$JIRA_TOKEN" -e XRAY_CLIENT_ID="$XRAY_CLIENT_ID" -e XRAY_CLIENT_TOKEN="$XRAY_CLIENT_TOKEN" -e XRAY_TEST_PLAN_KEY="$XRAY_TEST_PLAN_KEY" node:$NODEJS_VERSION /bin/bash -c "apt update && apt-get install -y software-properties-common && add-apt-repository 'deb http://security.debian.org/debian-security stretch/updates main' && apt update && apt install -y openjdk-8-jdk && chmod -R 777 /app && export npm_config_cache=./.npm-cache && npm run test:reports"
+    docker run --rm -v $PWD:/app -w /app -e JIRA_TOKEN="$JIRA_TOKEN" -e XRAY_CLIENT_ID="$XRAY_CLIENT_ID" -e XRAY_CLIENT_TOKEN="$XRAY_CLIENT_TOKEN" -e XRAY_TEST_PLAN_KEY="$XRAY_TEST_PLAN_KEY" node:$NODEJS_VERSION /bin/bash -c "chmod -R 777 /app && export npm_config_cache=./.npm-cache && npm run test:reports"
+    cd $REPORT_ABSOLUTE_PATH
+    REPORT_INDEX_FILE=$(find . -type f -regex ".*.html" | head -n 1)
+    echo "[INFO] REPORT PATH: $WORK_DIR/$GIT_PROJECT_NAME/$REPORT_PATH"
+    echo "[INFO] REPORT_INDEX_FILE: $REPORT_INDEX_FILE"
+    sudo mv -f $REPORT_INDEX_FILE index.html
+    ZIP_FILE="$WORK_DIR/report.zip"
+    zip $ZIP_FILE -rq .
+  else
+    echo "Error un-existent directory:$WORK_DIR/$GIT_PROJECT_NAME"
+  fi
 ENDSSH
 FILE_NAME="report.zip"
 SRC_PATH="/home/ec2-user/jenkins/$FILE_NAME"
