@@ -63,3 +63,24 @@ More examples are in mitmproxy's [GitHub repository]( https://github.com/mitmpro
 Changing password for user root.
 New password: tthisisapassword1
 ```
+2. Set ssh key to avoid failures with ssh
+```bash
+chmod 700 /home/ec2-user
+chmod 700 /home/ec2-user/.ssh
+chmod 600 /home/ec2-user/.ssh/authorized_keys
+```
+3. Configure google DNS
+```bash
+docker exec -it proxy sh -c "echo nameserver 8.8.8.8 > /etc/resolv.conf"
+```
+3. ADL DNS
+```bash
+Stg - load balancers vpc 10.5.12.0/22
+Dev - load balancers vpc 10.5.8.0/22 10.5.10.147
+ADL VPN 	10.255.224.0/21
+```
+3. ADL Github
+```bash
+username: pedro-gutierrez_adlover
+tokem: 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l
+```
