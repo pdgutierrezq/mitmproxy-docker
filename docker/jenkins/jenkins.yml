@@ -7,7 +7,7 @@ services:
     privileged: true
     user: root
     environment:
-      - TZ="America/Bogota"
+      - TZ=America/Bogota
     ports:
       - 81:8080
       - 50001:50000
