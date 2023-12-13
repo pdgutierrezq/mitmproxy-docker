@@ -52,6 +52,7 @@ ssh -o StrictHostKeyChecking=no -i "$KEY_PATH" "ec2-user@$EC2" <<'ENDSSH'
   sudo rm -rf "$WORK_DIR"
   mkdir -p "$WORK_DIR"
   ps aux --width 100 --sort -%cpu | head -15
+  docker stop cypress nodejs
   sudo pkill -f .*Cypress.*
   sudo pkill -f .*node.*
   sudo pkill -f .*chrome.*
@@ -106,7 +107,7 @@ ssh -o StrictHostKeyChecking=no -i "$KEY_PATH" "ec2-user@$EC2" <<'ENDSSH'
   # Debug: export NODEJS_VERSION=20.3.0-alpine && docker run -it --rm -v $PWD:/app -w /app node:$NODEJS_VERSION sh
   # Debug: export NODEJS_VERSION=20.3.0 && docker run -it --rm -v $PWD:/app -w /app node:$NODEJS_VERSION bash
   # Debug: export CYPRESS_VERSION=12.14.0 && export ENVIRONMENT=dev && export CYPRESS_BROWSER=chrome && export CYPRESS_TAGS=@regression:yes && docker run --rm --entrypoint /bin/bash -v $PWD:/e2e -w /e2e -e LIBVA_DRIVER_NAME="radeonsi chromium" -e ELECTRON_EXTRA_LAUNCH_ARGS=--disable-gpu cypress/included:$CYPRESS_VERSION -c "npm i typescript && export ENVIRONMENT=${ENVIRONMENT} CYPRESS_BROWSER=${CYPRESS_BROWSER} CYPRESS_TAGS=${CYPRESS_TAGS} && npm run test"
-  docker run --rm -v $PWD:/app -w /app node:$NODEJS_VERSION chmod -R 777 /root && npm install
-  docker run --rm --entrypoint /bin/bash -v $PWD:/e2e -w /e2e -e LIBVA_DRIVER_NAME="radeonsi chromium" -e ELECTRON_EXTRA_LAUNCH_ARGS=--disable-gpu -e CYPRESS_BROWSER -e ENVIRONMENT -e CYPRESS_TAGS cypress/included:$CYPRESS_VERSION -c "npm i typescript && export ENVIRONMENT=${ENVIRONMENT} && cypress run -b ${CYPRESS_BROWSER} --headless --reporter cypress-multi-reporters --reporter-options configFile=config.json --env grepTags=\"${CYPRESS_TAGS}\""
+  docker run --rm --name nodejs -v $PWD:/app -w /app node:$NODEJS_VERSION chmod -R 777 /root && npm install
+  docker run --rm --name cypress --cpus="3.5" --entrypoint /bin/bash -v $PWD:/e2e -w /e2e -e LIBVA_DRIVER_NAME="radeonsi chromium" -e ELECTRON_EXTRA_LAUNCH_ARGS=--disable-gpu -e CYPRESS_BROWSER -e ENVIRONMENT -e CYPRESS_TAGS cypress/included:$CYPRESS_VERSION -c "npm i typescript && export ENVIRONMENT=${ENVIRONMENT} && cypress run -b ${CYPRESS_BROWSER} --headless --reporter cypress-multi-reporters --reporter-options configFile=config.json --env grepTags=\"${CYPRESS_TAGS}\""
 #  docker run --rm --entrypoint /bin/bash -v $PWD:/e2e -w /e2e -e LIBVA_DRIVER_NAME="radeonsi chromium" -e ELECTRON_EXTRA_LAUNCH_ARGS=--disable-gpu cypress/included:$CYPRESS_VERSION -c "npm i typescript && export ENVIRONMENT=${ENVIRONMENT} CYPRESS_BROWSER=${CYPRESS_BROWSER} CYPRESS_TAGS=${CYPRESS_TAGS} && npm run test"
 ENDSSH
