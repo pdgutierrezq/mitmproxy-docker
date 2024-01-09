@@ -29,6 +29,7 @@ rules = {
 
 # this is called for a response before returning to the proxy client
 def response(flow: http.HTTPFlow) -> None:
+    ctx.log.info(flow.response)
     if 'content-type' in flow.response.headers and flow.response.headers["content-type"].startswith("application/json"):
         for rule in rules:
             if re.match(rule, flow.request.path) is not None:
