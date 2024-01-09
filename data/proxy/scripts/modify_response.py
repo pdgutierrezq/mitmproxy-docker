@@ -62,6 +62,6 @@ def file(filename: str) -> str:
         json_data = json.load(json_file)
         return json.dumps(json_data)
 
-def response(flow: http.HTTPFlow) -> None:
-  # this script does nothing
-  return
+# def response(flow: http.HTTPFlow) -> None:
+#   # this script does nothing
+#   return
