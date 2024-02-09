@@ -3,9 +3,6 @@ This example shows two ways to redirect flows to another server.
 """
 from mitmproxy import http, ctx
 
-def response(flow: http.HTTPFlow) -> None:
-  ctx.log.info("Status Code:" + flow.response.status_code)
-  flow.response.status_code = 205
 
 def request(flow: http.HTTPFlow) -> None:
   # pretty_host takes the "Host" header of the request into account,
