@@ -1,7 +1,6 @@
-PROJECT_ID='##PROJECT_ID##'
 ROOT_DIR="$PWD"
-KEY_PATH="$ROOT_DIR/$KEY"
 WORK_DIR="$ROOT_DIR/git"
+PROJECT_ID="$(basename $(dirname $ROOT_DIR))"
 ZIP_FILE_NAME="$(basename $WORK_DIR).zip"
 
 set_ssh_key(){
