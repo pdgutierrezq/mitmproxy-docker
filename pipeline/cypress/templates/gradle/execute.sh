@@ -34,7 +34,6 @@ clone(){
   JOB_DEFINITION="$3"
   GIT_URL=$(echo $JOB_DEFINITION | jq -r '.repository.url')
   GIT_BRANCH=$(echo $JOB_DEFINITION | jq -r '.repository.branch')
-  REPORT_PATH=$(echo $JOB_DEFINITION | jq -r '.gradle.report')
   git clone -b $GIT_BRANCH $GIT_URL
   zip $ZIP_FILE_NAME -rq .
   SRC_PATH="/home/ec2-user/jenkins/$ZIP_FILE_NAME"
