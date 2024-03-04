@@ -1,17 +1,14 @@
 ROOT_DIR="$PWD"
-KEY_PATH="$ROOT_DIR/$KEY"
+. "$ROOT_DIR/env"
+cat "$ROOT_DIR/env"
+
 WORK_DIR="$ROOT_DIR/git"
-BUILD_DIR="$WORK_DIR/build"
-TARGET_DIR="$WORK_DIR/target"
-REPORT_CHILD_PATH="$WORK_DIR/$GIT_PROJECT_NAME/target"
+TARGET_CHILD_PATH="$WORK_DIR/$GIT_PROJECT_NAME/target"
 BUILD_CHILD_PATH="$WORK_DIR/$GIT_PROJECT_NAME/build"
 
 report(){
-  REPORT_CHILD_PATH="$WORK_DIR/$GIT_PROJECT_NAME/target"
-  BUILD_CHILD_PATH="$WORK_DIR/$GIT_PROJECT_NAME/build"
-  cp -Rf "$REPORT_CHILD_PATH" .
   cp -Rf "$BUILD_CHILD_PATH" .
+  cp -Rf "$BUILD_CHILD_PATH/reports/tests/test/." "./target/site/serenity"
 }
 
-. "$ROOT_DIR/env"
 report

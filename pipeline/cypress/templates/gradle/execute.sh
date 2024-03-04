@@ -26,7 +26,6 @@ setup(){
   chmod -R 700 "$SSH_DIR"
   ssh-keyscan ssh-keyscan github.com > "$KNOW_HOST_FILE"
   ssh-keygen -R hostname
-  cat "$KNOW_HOST_FILE"
 }
 clone(){
   ZIP_FILE_NAME=$1
@@ -44,15 +43,12 @@ clone(){
   GIT_PROJECT_NAME=${GIT_PROJECT%.*}
   cd $GIT_PROJECT_NAME
   echo "export GIT_PROJECT_NAME=$GIT_PROJECT_NAME" > $ROOT_DIR/env
-  echo "export REPORT_PATH=$REPORT_PATH" >> $ROOT_DIR/env
-  ls -l
 }
 runner(){
   JOB_DEFINITION="$1"
   ENVIRONMENT=$(echo $JOB_DEFINITION | jq -r '.environment')
   CUCUMBER_OPTIONS=$(echo $JOB_DEFINITION | jq -r '.cucumber.options')
   export cucumberOptions="$CUCUMBER_OPTIONS" && gradle clean test -Denvironment=$ENVIRONMENT
-  ls -l
 }
 
 if [ -z "$SETUP" ]
