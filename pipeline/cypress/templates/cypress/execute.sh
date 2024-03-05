@@ -1,7 +1,7 @@
-PROJECT_ID='##PROJECT_ID##'
 ROOT_DIR="$PWD"
 KEY_PATH="$ROOT_DIR/$KEY"
 WORK_DIR="$ROOT_DIR/git"
+PROJECT_ID="$(basename $(dirname $ROOT_DIR))"
 ZIP_FILE_NAME="$(basename $WORK_DIR).zip"
 
 set_ssh_key(){
@@ -26,7 +26,6 @@ setup(){
   chmod -R 700 "$SSH_DIR"
   ssh-keyscan ssh-keyscan github.com > "$KNOW_HOST_FILE"
   ssh-keygen -R hostname
-  cat "$KNOW_HOST_FILE"
 }
 clone(){
   ZIP_FILE_NAME=$1
@@ -40,6 +39,11 @@ clone(){
   SRC_PATH="/home/ec2-user/jenkins/$ZIP_FILE_NAME"
   ls -l $WORK_DIR
 }
+set_env(){
+   echo "export PROJECT_ID=$PROJECT_ID" > $ROOT_DIR/env
+   scp -i "$KEY_PATH" "$ROOT_DIR/env" "ec2-user@$EC2:~/.ssh/environment"
+}
+
 if [ -z "$SETUP" ]
 then
   setup
@@ -66,8 +70,10 @@ ssh -o StrictHostKeyChecking=no -i "$KEY_PATH" "ec2-user@$EC2" <<'ENDSSH'
   unzip -q "$WORK_DIR/git.zip" -d "."
   sudo chmod -R 777 "$WORK_DIR"
 ENDSSH
+set_env
 ssh -o StrictHostKeyChecking=no -i "$KEY_PATH" "ec2-user@$EC2" <<'ENDSSH'
-  PROJECT_ID='##PROJECT_ID##'
+  . ~/.ssh/environment
+  cat ~/.ssh/environment
   JOB_DEFINITION="$(curl --request GET 'http://rb-pb-stg-1793261678.us-east-2.elb.amazonaws.com/castlemock/mock/rest/project/4QMiEm/application/gr1SS8/config' --header "project:$PROJECT_ID")"
   GIT_URL=$(echo $JOB_DEFINITION | jq -r '.repository.url')
   GIT_BRANCH=$(echo $JOB_DEFINITION | jq -r '.repository.branch')
