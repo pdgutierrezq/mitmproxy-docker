@@ -6,6 +6,7 @@ ssh -i "$KEY" "ec2-user@$EC2" <<'ENDSSH'
    docker ps
    docker stop proxy
    git fetch
+   git reset --hard
    git pull
    ./run.sh
 ENDSSH
