@@ -44,61 +44,62 @@
 
     .iframe-container input {
       width: 100%;
+      font-size: 90%;
       padding-inline: 0px
     }
   </style>
 </head>
 <body>
-<!--<div class="top-menu">-->
-<!--  <div class="menu-item" onclick="loadPage(`dev.html`)">Develop</div>-->
-<!--  <div class="menu-item" onclick="loadPage(`stg.html`)">Stage</div>-->
-<!--</div>-->
+<div class="top-menu">
+  <div class="menu-item" onclick="loadPage(`dev`)">Develop</div>
+  <div class="menu-item" onclick="loadPage(`stg`)">Stage</div>
+</div>
 <div class="content" id="content">
 <div class="iframe-container">
   <input type="text" id="input1" placeholder="Enter URL for iframe 1"
-         value="https://jenkins.rb-pre-ops.net/view/bavv-pasivo-qa/job/bavv-pasivo-qa-frontend-dev-cda/Serenity/"
+         value="bavv-pasivo-qa-frontend-dev-cda/Serenity/"
          oninput="changeIframeSrc(`iframe1`)">
   <iframe id="iframe1" class="iframe"></iframe>
 </div>
 
 <div class="iframe-container">
   <input type="text" id="input2" placeholder="Enter URL for iframe 2"
-         value="https://jenkins.rb-pre-ops.net/view/bavv-pasivo-qa/job/bavv-pasivo-qa-frontend-dev-cdt/Serenity/"
+         value="bavv-pasivo-qa-frontend-dev-cdt/Serenity/"
          oninput="changeIframeSrc(`iframe2`)">
   <iframe id="iframe2" class="iframe"></iframe>
 </div>
 
 <div class="iframe-container">
   <input type="text" id="input3" placeholder="Enter URL for iframe 4"
-         value="https://jenkins.rb-pre-ops.net/view/bavv-pasivo-qa/job/bavv-pasivo-qa-frontend-dev-cncc/Serenity/"
+         value="bavv-pasivo-qa-frontend-dev-cncc/Serenity/"
          oninput="changeIframeSrc(`iframe3`)">
   <iframe id="iframe3" class="iframe"></iframe>
 </div>
 
 <div class="iframe-container">
   <input type="text" id="input4" placeholder="Enter URL for iframe 4"
-         value="https://jenkins.rb-pre-ops.net/view/bavv-pasivo-qa/job/bavv-pasivo-qa-frontend-dev-cnsc/Serenity/"
+         value="bavv-pasivo-qa-frontend-dev-cnsc/Serenity/"
          oninput="changeIframeSrc(`iframe4`)">
   <iframe id="iframe4" class="iframe"></iframe>
 </div>
 
 <div class="iframe-container">
   <input type="text" id="input5" placeholder="Enter URL for iframe 4"
-         value="https://jenkins.rb-pre-ops.net/view/bavv-pasivo-qa/job/bavv-pasivo-qa-frontend-dev-cpcol/Serenity/"
+         value="bavv-pasivo-qa-frontend-dev-cpcol/Serenity/"
          oninput="changeIframeSrc(`iframe5`)">
   <iframe id="iframe5" class="iframe"></iframe>
 </div>
 
 <div class="iframe-container">
   <input type="text" id="input6" placeholder="Enter URL for iframe 4"
-         value="https://jenkins.rb-pre-ops.net/view/bavv-pasivo-qa/job/bavv-pasivo-qa-frontend-dev-deposit/Serenity/"
+         value="bavv-pasivo-qa-frontend-dev-deposit/Serenity/"
          oninput="changeIframeSrc(`iframe6`)">
   <iframe id="iframe6" class="iframe"></iframe>
 </div>
 
 <div class="iframe-container">
   <input type="text" id="input7" placeholder="Enter URL for iframe 3"
-         value="https://jenkins.rb-pre-ops.net/view/bavv-pasivo-qa/job/bavv-pasivo-qa-api-dev/Test"
+         value="bavv-pasivo-qa-api-dev/Test"
          oninput="changeIframeSrc(`iframe7`)">
   <iframe id="iframe7" class="iframe"></iframe>
 </div>

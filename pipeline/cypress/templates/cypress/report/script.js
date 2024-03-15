@@ -1,28 +1,33 @@
 function loadPage(pageUrl) {
-  fetch(pageUrl)
-  .then(response => response.text())
-  .then(data => {
-    document.getElementById(`content`).innerHTML = data;
-    reloadIframes();
-  });
+  if (pageUrl === `stg`) {
+    for (let i = 1; i <= 7; i++) {
+      const inputField = document.getElementById(`input` + i);
+      inputField.value = inputField.value.replace(`dev`, `stg`);
+    }
+  } else {
+    for (let i = 1; i <= 7; i++) {
+      const inputField = document.getElementById(`input` + i);
+      inputField.value = inputField.value.replace(`stg`, `dev`);
+    }
+  }
+  reloadIframes();
 }
 
 function changeIframeSrc(iframeId) {
-  const input = document.getElementById(`input` + iframeId.slice(-1)).value;
+  const baseUrl = "https://jenkins.rb-pre-ops.net/view/bavv-pasivo-qa/job/"
+  const input = baseUrl + document.getElementById(
+      `input` + iframeId.slice(-1)).value;
   document.getElementById(iframeId).src = input;
 }
 
-function reloadIframes(){
-  document.getElementById(`iframe1`).src = document.getElementById(`input1`).value;
-  document.getElementById(`iframe2`).src = document.getElementById(`input2`).value;
-  document.getElementById(`iframe3`).src = document.getElementById(`input3`).value;
-  document.getElementById(`iframe4`).src = document.getElementById(`input4`).value;
-  document.getElementById(`iframe5`).src = document.getElementById(`input5`).value;
-  document.getElementById(`iframe6`).src = document.getElementById(`input6`).value;
-  document.getElementById(`iframe7`).src = document.getElementById(`input7`).value;
+function reloadIframes() {
+  const baseUrl = "https://jenkins.rb-pre-ops.net/view/bavv-pasivo-qa/job/"
+  for (let i = 1; i <= 7; i++) {
+    document.getElementById(`iframe` + i).src = baseUrl
+        + document.getElementById(`input` + i).value;
+  }
 }
 
-window.onload = function() {
-  loadPage(`dev.html`)
-  reloadIframes();
+window.onload = function () {
+  loadPage(`dev`);
 };
