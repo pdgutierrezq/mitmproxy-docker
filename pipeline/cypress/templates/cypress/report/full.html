@@ -12,7 +12,6 @@
     }
 
     .top-menu {
-      position: fixed;
       top: 0;
       left: 0;
       width: 100%;
@@ -42,14 +41,6 @@
   <!-- Content will be loaded here -->
 </div>
 
-<script>
-  function loadPage(pageUrl) {
-    fetch(pageUrl)
-    .then(response => response.text())
-    .then(data => {
-      document.getElementById('content').innerHTML = data;
-    });
-  }
-</script>
+<script src="script.js"></script>
 </body>
 </html>
