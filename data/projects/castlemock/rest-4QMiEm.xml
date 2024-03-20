@@ -59,17 +59,15 @@
         </mockResponse>
         <mockResponse>
             <body>{&#13;
-        "repository": {&#13;
-        "url": "git@github.com:adldigitallabs/bavv-pasivo-qa-backend.git",&#13;
-        "branch": "stage"&#13;
-        },&#13;
-        "environment": "stg",&#13;
-        "cucumber": {&#13;
-        "options": "--tags '@layer:Backend and @priority:High and @regression:Yes and not
-        @execution:manual and not @ignore'"&#13;
-        }&#13;
-        }
-      </body>
+	"repository": {&#13;
+		"url": "git@github.com:adldigitallabs/bavv-pasivo-qa-backend.git",&#13;
+		"branch": "stage"&#13;
+	},&#13;
+	"environment": "stg",&#13;
+	"cucumber": {&#13;
+		"options": "--tags '@layer:Backend and @priority:High and @regression:Yes and not @execution:manual and not @ignore'"&#13;
+	}&#13;
+}</body>
             <contentEncodings/>
             <headerQueries>
                 <headerQuery>
@@ -93,35 +91,34 @@
         </mockResponse>
         <mockResponse>
             <body>{&#13;
-        "repository": {&#13;
-        "url": "git@github.com:adldigitallabs/bavv-pasivo-qa-frontend.git",&#13;
-        "branch": "develop"&#13;
-        },&#13;
-        "environment": "dev",&#13;
-        "nodejs": {&#13;
-        "version": "20.3.0"&#13;
-        },&#13;
-        "cypress": {&#13;
-        "version": "13.6.1",&#13;
-        "report": "target/site/cypress",&#13;
-        "browser": "chrome",&#13;
-        "spec": "cypress/e2e/features/products/Deposit/self",&#13;
-        "tags": "@priority:high"&#13;
-        },&#13;
-        "xray": {&#13;
-        "client": {&#13;
-        "id": "40C74256820B4B1DB64E32E4A9EB32FC",&#13;
-        "token": "64c5b78a3344777a0f4e0e624d5e5e30afab870661a1c6dd3d5725b9e38b999c"&#13;
-        },&#13;
-        "testPlan": {&#13;
-        "key": "PBA-8287"&#13;
-        }&#13;
-        },&#13;
-        "jira": {&#13;
-        "token": "cGVkcm8uZ3V0aWVycmV6QGF2YWxkaWdpdGFsbGFicy5jb206MndzdnRRUURLNE9TR25KNk1qSXoyOUE1"&#13;
-        }&#13;
-        }
-      </body>
+	"repository": {&#13;
+		"url": "git@github.com:adldigitallabs/bavv-pasivo-qa-frontend.git",&#13;
+		"branch": "v6.11.0"&#13;
+	},&#13;
+	"environment": "stg",&#13;
+	"nodejs": {&#13;
+		"version": "20.3.0"&#13;
+	},&#13;
+	"cypress": {&#13;
+		"version": "13.6.1",&#13;
+		"report": "target/site/cypress",&#13;
+		"browser": "chrome",&#13;
+		"spec": "cypress/e2e/features/products/CDA",&#13;
+		"tags": "@regression:yes"&#13;
+	},&#13;
+	"xray": {&#13;
+		"client": {&#13;
+			"id": "40C74256820B4B1DB64E32E4A9EB32FC",&#13;
+			"token": "64c5b78a3344777a0f4e0e624d5e5e30afab870661a1c6dd3d5725b9e38b999c"&#13;
+		},&#13;
+		"testPlan": {&#13;
+			"key": "PBA-8289"&#13;
+		}&#13;
+	},&#13;
+	"jira": {&#13;
+		"token": "cGVkcm8uZ3V0aWVycmV6QGF2YWxkaWdpdGFsbGFicy5jb206MndzdnRRUURLNE9TR25KNk1qSXoyOUE1"&#13;
+	}&#13;
+}</body>
             <contentEncodings/>
             <headerQueries>
                 <headerQuery>
@@ -129,67 +126,15 @@
                     <matchAny>false</matchAny>
                     <matchCase>false</matchCase>
                     <matchRegex>false</matchRegex>
-                    <query>bavv-pasivo-qa-frontend-dev-deposit</query>
+                    <query>bavv-pasivo-qa-frontend-stg-cda</query>
                 </headerQuery>
             </headerQueries>
             <httpHeaders/>
             <httpStatusCode>200</httpStatusCode>
-            <id>LpXjZu</id>
+            <id>1OYsS1</id>
             <jsonPathExpressions/>
             <methodId>CgAueC</methodId>
-            <name>bavv-pasivo-qa-frontend-dev-deposit</name>
-            <parameterQueries/>
-            <status>ENABLED</status>
-            <usingExpressions>false</usingExpressions>
-            <xpathExpressions/>
-        </mockResponse>
-        <mockResponse>
-            <body>{&#13;
-        "repository": {&#13;
-        "url": "git@github.com:adldigitallabs/bavv-pasivo-qa-frontend.git",&#13;
-        "branch": "develop"&#13;
-        },&#13;
-        "environment": "dev",&#13;
-        "nodejs": {&#13;
-        "version": "20.3.0"&#13;
-        },&#13;
-        "cypress": {&#13;
-        "version": "13.6.1",&#13;
-        "report": "target/site/cypress",&#13;
-        "browser": "chrome",&#13;
-        "spec": "cypress/e2e/features/products/CNSC",&#13;
-        "tags": "@priority:high"&#13;
-        },&#13;
-        "xray": {&#13;
-        "client": {&#13;
-        "id": "40C74256820B4B1DB64E32E4A9EB32FC",&#13;
-        "token": "64c5b78a3344777a0f4e0e624d5e5e30afab870661a1c6dd3d5725b9e38b999c"&#13;
-        },&#13;
-        "testPlan": {&#13;
-        "key": "PBA-8287"&#13;
-        }&#13;
-        },&#13;
-        "jira": {&#13;
-        "token": "cGVkcm8uZ3V0aWVycmV6QGF2YWxkaWdpdGFsbGFicy5jb206MndzdnRRUURLNE9TR25KNk1qSXoyOUE1"&#13;
-        }&#13;
-        }
-      </body>
-            <contentEncodings/>
-            <headerQueries>
-                <headerQuery>
-                    <header>project</header>
-                    <matchAny>false</matchAny>
-                    <matchCase>false</matchCase>
-                    <matchRegex>false</matchRegex>
-                    <query>bavv-pasivo-qa-frontend-dev-cnsc</query>
-                </headerQuery>
-            </headerQueries>
-            <httpHeaders/>
-            <httpStatusCode>200</httpStatusCode>
-            <id>9WOiYH</id>
-            <jsonPathExpressions/>
-            <methodId>CgAueC</methodId>
-            <name>bavv-pasivo-qa-frontend-dev-cnsc</name>
+            <name>bavv-pasivo-qa-frontend-stg-cda</name>
             <parameterQueries/>
             <status>ENABLED</status>
             <usingExpressions>false</usingExpressions>
@@ -209,7 +154,58 @@
 		"version": "13.6.1",&#13;
 		"report": "target/site/cypress",&#13;
 		"browser": "chrome",&#13;
-		"spec": "cypress/e2e/features/products/Deposit/self",&#13;
+		"spec": "cypress/e2e/features/products/CDT",&#13;
+		"tags": "@regression:yes"&#13;
+	},&#13;
+	"xray": {&#13;
+		"client": {&#13;
+			"id": "40C74256820B4B1DB64E32E4A9EB32FC",&#13;
+			"token": "64c5b78a3344777a0f4e0e624d5e5e30afab870661a1c6dd3d5725b9e38b999c"&#13;
+		},&#13;
+		"testPlan": {&#13;
+			"key": "PBA-8289"&#13;
+		}&#13;
+	},&#13;
+	"jira": {&#13;
+		"token": "cGVkcm8uZ3V0aWVycmV6QGF2YWxkaWdpdGFsbGFicy5jb206MndzdnRRUURLNE9TR25KNk1qSXoyOUE1"&#13;
+	}&#13;
+}</body>
+            <contentEncodings/>
+            <headerQueries>
+                <headerQuery>
+                    <header>project</header>
+                    <matchAny>false</matchAny>
+                    <matchCase>false</matchCase>
+                    <matchRegex>false</matchRegex>
+                    <query>bavv-pasivo-qa-frontend-stg-cdt</query>
+                </headerQuery>
+            </headerQueries>
+            <httpHeaders/>
+            <httpStatusCode>200</httpStatusCode>
+            <id>v31YrF</id>
+            <jsonPathExpressions/>
+            <methodId>CgAueC</methodId>
+            <name>bavv-pasivo-qa-frontend-stg-cdt</name>
+            <parameterQueries/>
+            <status>ENABLED</status>
+            <usingExpressions>false</usingExpressions>
+            <xpathExpressions/>
+        </mockResponse>
+        <mockResponse>
+            <body>{&#13;
+	"repository": {&#13;
+		"url": "git@github.com:adldigitallabs/bavv-pasivo-qa-frontend.git",&#13;
+		"branch": "v6.11.0"&#13;
+	},&#13;
+	"environment": "stg",&#13;
+	"nodejs": {&#13;
+		"version": "20.3.0"&#13;
+	},&#13;
+	"cypress": {&#13;
+		"version": "13.6.1",&#13;
+		"report": "target/site/cypress",&#13;
+		"browser": "chrome",&#13;
+		"spec": "cypress/e2e/features/products/CNSC",&#13;
 		"tags": "@regression:yes"&#13;
 	},&#13;
 	"xray": {&#13;
@@ -260,7 +256,7 @@
 		"version": "13.6.1",&#13;
 		"report": "target/site/cypress",&#13;
 		"browser": "chrome",&#13;
-		"spec": "cypress/e2e/features/products/Deposit/self",&#13;
+		"spec": "cypress/e2e/features/products/CNCC",&#13;
 		"tags": "@regression:yes"&#13;
 	},&#13;
 	"xray": {&#13;
@@ -311,7 +307,7 @@
 		"version": "13.6.1",&#13;
 		"report": "target/site/cypress",&#13;
 		"browser": "chrome",&#13;
-		"spec": "cypress/e2e/features/products/Deposit/self",&#13;
+		"spec": "cypress/e2e/features/products/CPCOL",&#13;
 		"tags": "@regression:yes"&#13;
 	},&#13;
 	"xray": {&#13;
@@ -362,7 +358,7 @@
 		"version": "13.6.1",&#13;
 		"report": "target/site/cypress",&#13;
 		"browser": "chrome",&#13;
-		"spec": "cypress/e2e/features/products/Deposit/self",&#13;
+		"spec": "cypress/e2e/features/products/Deposit",&#13;
 		"tags": "@regression:yes"&#13;
 	},&#13;
 	"xray": {&#13;
@@ -401,35 +397,34 @@
         </mockResponse>
         <mockResponse>
             <body>{&#13;
-        "repository": {&#13;
-        "url": "git@github.com:adldigitallabs/bavv-pasivo-qa-frontend.git",&#13;
-        "branch": "develop"&#13;
-        },&#13;
-        "environment": "dev",&#13;
-        "nodejs": {&#13;
-        "version": "20.3.0"&#13;
-        },&#13;
-        "cypress": {&#13;
-        "version": "13.6.1",&#13;
-        "report": "target/site/cypress",&#13;
-        "browser": "chrome",&#13;
-        "spec": "cypress/e2e/features/products/CDA",&#13;
-        "tags": "@priority:high"&#13;
-        },&#13;
-        "xray": {&#13;
-        "client": {&#13;
-        "id": "40C74256820B4B1DB64E32E4A9EB32FC",&#13;
-        "token": "64c5b78a3344777a0f4e0e624d5e5e30afab870661a1c6dd3d5725b9e38b999c"&#13;
-        },&#13;
-        "testPlan": {&#13;
-        "key": "PBA-8287"&#13;
-        }&#13;
-        },&#13;
-        "jira": {&#13;
-        "token": "cGVkcm8uZ3V0aWVycmV6QGF2YWxkaWdpdGFsbGFicy5jb206MndzdnRRUURLNE9TR25KNk1qSXoyOUE1"&#13;
-        }&#13;
-        }
-      </body>
+	"repository": {&#13;
+		"url": "git@github.com:adldigitallabs/bavv-pasivo-qa-frontend.git",&#13;
+		"branch": "develop"&#13;
+	},&#13;
+	"environment": "dev",&#13;
+	"nodejs": {&#13;
+		"version": "20.3.0"&#13;
+	},&#13;
+	"cypress": {&#13;
+		"version": "13.6.1",&#13;
+		"report": "target/site/cypress",&#13;
+		"browser": "chrome",&#13;
+		"spec": "cypress/e2e/features/products/CDA",&#13;
+		"tags": "@priority:high"&#13;
+	},&#13;
+	"xray": {&#13;
+		"client": {&#13;
+			"id": "40C74256820B4B1DB64E32E4A9EB32FC",&#13;
+			"token": "64c5b78a3344777a0f4e0e624d5e5e30afab870661a1c6dd3d5725b9e38b999c"&#13;
+		},&#13;
+		"testPlan": {&#13;
+			"key": "PBA-8287"&#13;
+		}&#13;
+	},&#13;
+	"jira": {&#13;
+		"token": "cGVkcm8uZ3V0aWVycmV6QGF2YWxkaWdpdGFsbGFicy5jb206MndzdnRRUURLNE9TR25KNk1qSXoyOUE1"&#13;
+	}&#13;
+}</body>
             <contentEncodings/>
             <headerQueries>
                 <headerQuery>
@@ -455,9 +450,9 @@
             <body>{&#13;
 	"repository": {&#13;
 		"url": "git@github.com:adldigitallabs/bavv-pasivo-qa-frontend.git",&#13;
-		"branch": "v6.11.0"&#13;
+		"branch": "develop"&#13;
 	},&#13;
-	"environment": "stg",&#13;
+	"environment": "dev",&#13;
 	"nodejs": {&#13;
 		"version": "20.3.0"&#13;
 	},&#13;
@@ -465,8 +460,8 @@
 		"version": "13.6.1",&#13;
 		"report": "target/site/cypress",&#13;
 		"browser": "chrome",&#13;
-		"spec": "cypress/e2e/features/products/Deposit/self",&#13;
-		"tags": "@regression:yes"&#13;
+		"spec": "cypress/e2e/features/products/CDT",&#13;
+		"tags": "@priority:high"&#13;
 	},&#13;
 	"xray": {&#13;
 		"client": {&#13;
@@ -474,7 +469,7 @@
 			"token": "64c5b78a3344777a0f4e0e624d5e5e30afab870661a1c6dd3d5725b9e38b999c"&#13;
 		},&#13;
 		"testPlan": {&#13;
-			"key": "PBA-8289"&#13;
+			"key": "PBA-8287"&#13;
 		}&#13;
 	},&#13;
 	"jira": {&#13;
@@ -488,15 +483,15 @@
                     <matchAny>false</matchAny>
                     <matchCase>false</matchCase>
                     <matchRegex>false</matchRegex>
-                    <query>	bavv-pasivo-qa-frontend-stg-cda</query>
+                    <query>bavv-pasivo-qa-frontend-dev-cdt</query>
                 </headerQuery>
             </headerQueries>
             <httpHeaders/>
             <httpStatusCode>200</httpStatusCode>
-            <id>1OYsS1</id>
+            <id>vfgsJI</id>
             <jsonPathExpressions/>
             <methodId>CgAueC</methodId>
-            <name>	bavv-pasivo-qa-frontend-stg-cda</name>
+            <name>bavv-pasivo-qa-frontend-dev-cdt</name>
             <parameterQueries/>
             <status>ENABLED</status>
             <usingExpressions>false</usingExpressions>
@@ -506,9 +501,9 @@
             <body>{&#13;
 	"repository": {&#13;
 		"url": "git@github.com:adldigitallabs/bavv-pasivo-qa-frontend.git",&#13;
-		"branch": "v6.11.0"&#13;
+		"branch": "develop"&#13;
 	},&#13;
-	"environment": "stg",&#13;
+	"environment": "dev",&#13;
 	"nodejs": {&#13;
 		"version": "20.3.0"&#13;
 	},&#13;
@@ -516,8 +511,8 @@
 		"version": "13.6.1",&#13;
 		"report": "target/site/cypress",&#13;
 		"browser": "chrome",&#13;
-		"spec": "cypress/e2e/features/products/Deposit/self",&#13;
-		"tags": "@regression:yes"&#13;
+		"spec": "cypress/e2e/features/products/CNSC",&#13;
+		"tags": "@priority:high"&#13;
 	},&#13;
 	"xray": {&#13;
 		"client": {&#13;
@@ -525,7 +520,7 @@
 			"token": "64c5b78a3344777a0f4e0e624d5e5e30afab870661a1c6dd3d5725b9e38b999c"&#13;
 		},&#13;
 		"testPlan": {&#13;
-			"key": "PBA-8289"&#13;
+			"key": "PBA-8287"&#13;
 		}&#13;
 	},&#13;
 	"jira": {&#13;
@@ -539,15 +534,15 @@
                     <matchAny>false</matchAny>
                     <matchCase>false</matchCase>
                     <matchRegex>false</matchRegex>
-                    <query>bavv-pasivo-qa-frontend-stg-cdt</query>
+                    <query>bavv-pasivo-qa-frontend-dev-cnsc</query>
                 </headerQuery>
             </headerQueries>
             <httpHeaders/>
             <httpStatusCode>200</httpStatusCode>
-            <id>v31YrF</id>
+            <id>9WOiYH</id>
             <jsonPathExpressions/>
             <methodId>CgAueC</methodId>
-            <name>bavv-pasivo-qa-frontend-stg-cdt</name>
+            <name>bavv-pasivo-qa-frontend-dev-cnsc</name>
             <parameterQueries/>
             <status>ENABLED</status>
             <usingExpressions>false</usingExpressions>
@@ -555,35 +550,34 @@
         </mockResponse>
         <mockResponse>
             <body>{&#13;
-        "repository": {&#13;
-        "url": "git@github.com:adldigitallabs/bavv-pasivo-qa-frontend.git",&#13;
-        "branch": "develop"&#13;
-        },&#13;
-        "environment": "dev",&#13;
-        "nodejs": {&#13;
-        "version": "20.3.0"&#13;
-        },&#13;
-        "cypress": {&#13;
-        "version": "13.6.1",&#13;
-        "report": "target/site/cypress",&#13;
-        "browser": "chrome",&#13;
-        "spec": "cypress/e2e/features/products/CNCC",&#13;
-        "tags": "@priority:high"&#13;
-        },&#13;
-        "xray": {&#13;
-        "client": {&#13;
-        "id": "40C74256820B4B1DB64E32E4A9EB32FC",&#13;
-        "token": "64c5b78a3344777a0f4e0e624d5e5e30afab870661a1c6dd3d5725b9e38b999c"&#13;
-        },&#13;
-        "testPlan": {&#13;
-        "key": "PBA-8287"&#13;
-        }&#13;
-        },&#13;
-        "jira": {&#13;
-        "token": "cGVkcm8uZ3V0aWVycmV6QGF2YWxkaWdpdGFsbGFicy5jb206MndzdnRRUURLNE9TR25KNk1qSXoyOUE1"&#13;
-        }&#13;
-        }
-      </body>
+	"repository": {&#13;
+		"url": "git@github.com:adldigitallabs/bavv-pasivo-qa-frontend.git",&#13;
+		"branch": "develop"&#13;
+	},&#13;
+	"environment": "dev",&#13;
+	"nodejs": {&#13;
+		"version": "20.3.0"&#13;
+	},&#13;
+	"cypress": {&#13;
+		"version": "13.6.1",&#13;
+		"report": "target/site/cypress",&#13;
+		"browser": "chrome",&#13;
+		"spec": "cypress/e2e/features/products/CNCC",&#13;
+		"tags": "@priority:high"&#13;
+	},&#13;
+	"xray": {&#13;
+		"client": {&#13;
+			"id": "40C74256820B4B1DB64E32E4A9EB32FC",&#13;
+			"token": "64c5b78a3344777a0f4e0e624d5e5e30afab870661a1c6dd3d5725b9e38b999c"&#13;
+		},&#13;
+		"testPlan": {&#13;
+			"key": "PBA-8287"&#13;
+		}&#13;
+	},&#13;
+	"jira": {&#13;
+		"token": "cGVkcm8uZ3V0aWVycmV6QGF2YWxkaWdpdGFsbGFicy5jb206MndzdnRRUURLNE9TR25KNk1qSXoyOUE1"&#13;
+	}&#13;
+}</body>
             <contentEncodings/>
             <headerQueries>
                 <headerQuery>
@@ -607,35 +601,34 @@
         </mockResponse>
         <mockResponse>
             <body>{&#13;
-        "repository": {&#13;
-        "url": "git@github.com:adldigitallabs/bavv-pasivo-qa-frontend.git",&#13;
-        "branch": "develop"&#13;
-        },&#13;
-        "environment": "dev",&#13;
-        "nodejs": {&#13;
-        "version": "20.3.0"&#13;
-        },&#13;
-        "cypress": {&#13;
-        "version": "13.6.1",&#13;
-        "report": "target/site/cypress",&#13;
-        "browser": "chrome",&#13;
-        "spec": "cypress/e2e/features/products/CPCOL",&#13;
-        "tags": "@priority:high"&#13;
-        },&#13;
-        "xray": {&#13;
-        "client": {&#13;
-        "id": "40C74256820B4B1DB64E32E4A9EB32FC",&#13;
-        "token": "64c5b78a3344777a0f4e0e624d5e5e30afab870661a1c6dd3d5725b9e38b999c"&#13;
-        },&#13;
-        "testPlan": {&#13;
-        "key": "PBA-8287"&#13;
-        }&#13;
-        },&#13;
-        "jira": {&#13;
-        "token": "cGVkcm8uZ3V0aWVycmV6QGF2YWxkaWdpdGFsbGFicy5jb206MndzdnRRUURLNE9TR25KNk1qSXoyOUE1"&#13;
-        }&#13;
-        }
-      </body>
+	"repository": {&#13;
+		"url": "git@github.com:adldigitallabs/bavv-pasivo-qa-frontend.git",&#13;
+		"branch": "develop"&#13;
+	},&#13;
+	"environment": "dev",&#13;
+	"nodejs": {&#13;
+		"version": "20.3.0"&#13;
+	},&#13;
+	"cypress": {&#13;
+		"version": "13.6.1",&#13;
+		"report": "target/site/cypress",&#13;
+		"browser": "chrome",&#13;
+		"spec": "cypress/e2e/features/products/CPCOL",&#13;
+		"tags": "@priority:high"&#13;
+	},&#13;
+	"xray": {&#13;
+		"client": {&#13;
+			"id": "40C74256820B4B1DB64E32E4A9EB32FC",&#13;
+			"token": "64c5b78a3344777a0f4e0e624d5e5e30afab870661a1c6dd3d5725b9e38b999c"&#13;
+		},&#13;
+		"testPlan": {&#13;
+			"key": "PBA-8287"&#13;
+		}&#13;
+	},&#13;
+	"jira": {&#13;
+		"token": "cGVkcm8uZ3V0aWVycmV6QGF2YWxkaWdpdGFsbGFicy5jb206MndzdnRRUURLNE9TR25KNk1qSXoyOUE1"&#13;
+	}&#13;
+}</body>
             <contentEncodings/>
             <headerQueries>
                 <headerQuery>
@@ -659,35 +652,34 @@
         </mockResponse>
         <mockResponse>
             <body>{&#13;
-        "repository": {&#13;
-        "url": "git@github.com:adldigitallabs/bavv-pasivo-qa-frontend.git",&#13;
-        "branch": "develop"&#13;
-        },&#13;
-        "environment": "dev",&#13;
-        "nodejs": {&#13;
-        "version": "20.3.0"&#13;
-        },&#13;
-        "cypress": {&#13;
-        "version": "13.6.1",&#13;
-        "report": "target/site/cypress",&#13;
-        "browser": "chrome",&#13;
-        "spec": "cypress/e2e/features/products/CDT",&#13;
-        "tags": "@priority:high"&#13;
-        },&#13;
-        "xray": {&#13;
-        "client": {&#13;
-        "id": "40C74256820B4B1DB64E32E4A9EB32FC",&#13;
-        "token": "64c5b78a3344777a0f4e0e624d5e5e30afab870661a1c6dd3d5725b9e38b999c"&#13;
-        },&#13;
-        "testPlan": {&#13;
-        "key": "PBA-8287"&#13;
-        }&#13;
-        },&#13;
-        "jira": {&#13;
-        "token": "cGVkcm8uZ3V0aWVycmV6QGF2YWxkaWdpdGFsbGFicy5jb206MndzdnRRUURLNE9TR25KNk1qSXoyOUE1"&#13;
-        }&#13;
-        }
-      </body>
+	"repository": {&#13;
+		"url": "git@github.com:adldigitallabs/bavv-pasivo-qa-frontend.git",&#13;
+		"branch": "develop"&#13;
+	},&#13;
+	"environment": "dev",&#13;
+	"nodejs": {&#13;
+		"version": "20.3.0"&#13;
+	},&#13;
+	"cypress": {&#13;
+		"version": "13.6.1",&#13;
+		"report": "target/site/cypress",&#13;
+		"browser": "chrome",&#13;
+		"spec": "cypress/e2e/features/products/Deposit",&#13;
+		"tags": "@priority:high"&#13;
+	},&#13;
+	"xray": {&#13;
+		"client": {&#13;
+			"id": "40C74256820B4B1DB64E32E4A9EB32FC",&#13;
+			"token": "64c5b78a3344777a0f4e0e624d5e5e30afab870661a1c6dd3d5725b9e38b999c"&#13;
+		},&#13;
+		"testPlan": {&#13;
+			"key": "PBA-8287"&#13;
+		}&#13;
+	},&#13;
+	"jira": {&#13;
+		"token": "cGVkcm8uZ3V0aWVycmV6QGF2YWxkaWdpdGFsbGFicy5jb206MndzdnRRUURLNE9TR25KNk1qSXoyOUE1"&#13;
+	}&#13;
+}</body>
             <contentEncodings/>
             <headerQueries>
                 <headerQuery>
@@ -695,15 +687,15 @@
                     <matchAny>false</matchAny>
                     <matchCase>false</matchCase>
                     <matchRegex>false</matchRegex>
-                    <query>bavv-pasivo-qa-frontend-dev-cdt</query>
+                    <query>bavv-pasivo-qa-frontend-dev-deposit</query>
                 </headerQuery>
             </headerQueries>
             <httpHeaders/>
             <httpStatusCode>200</httpStatusCode>
-            <id>vfgsJI</id>
+            <id>LpXjZu</id>
             <jsonPathExpressions/>
             <methodId>CgAueC</methodId>
-            <name>bavv-pasivo-qa-frontend-dev-cdt</name>
+            <name>bavv-pasivo-qa-frontend-dev-deposit</name>
             <parameterQueries/>
             <status>ENABLED</status>
             <usingExpressions>false</usingExpressions>
@@ -736,14 +728,11 @@
         </mockResponse>
         <mockResponse>
             <body>{&#13;
-        "job": {&#13;
-        "execute":
-        "Uk9PVF9ESVI9IiRQV0QiCldPUktfRElSPSIkUk9PVF9ESVIvZ2l0IgpQUk9KRUNUX0lEPSIkKGJhc2VuYW1lICQoZGlybmFtZSAkUk9PVF9ESVIpKSIKWklQX0ZJTEVfTkFNRT0iJChiYXNlbmFtZSAkV09SS19ESVIpLnppcCIKCnNldF9zc2hfa2V5KCl7CiAgS0VZX1BBVEg9JDEKICBJREVOVElUWT0kMgogIGVjaG8gJElERU5USVRZIHwgYmFzZTY0IC1kID4gIiRLRVlfUEFUSCIKICBjaG1vZCAtUiA3MDAgIiRLRVlfUEFUSCIKfQpjbGVhbigpewogIFdPUktfRElSPSQxCiAgcm0gLXJmICIkV09SS19ESVIiCiAgbWtkaXIgLXAgIiRXT1JLX0RJUiIKfQpzZXR1cCgpewogIExPQ0FMX0RJUj0iL3Jvb3QiCiAgU1NIX0RJUj0iJExPQ0FMX0RJUi8uc3NoIgogIFNTSF9GSUxFPSIkU1NIX0RJUi9pZF9yc2EiCiAgS05PV19IT1NUX0ZJTEU9IiRTU0hfRElSL2tub3duX2hvc3RzIgogIG1rZGlyIC1wICIkU1NIX0RJUiIKICBhcGsgYWRkIGN1cmwgZ2l0IHppcCBvcGVuc3NoLWNsaWVudAogIGN1cmwgLS1yZXF1ZXN0IEdFVCAnaHR0cDovL3JiLXBiLXN0Zy0xNzkzMjYxNjc4LnVzLWVhc3QtMi5lbGIuYW1hem9uYXdzLmNvbS9jYXN0bGVtb2NrL21vY2svcmVzdC9wcm9qZWN0LzRRTWlFbS9hcHBsaWNhdGlvbi9ncjFTUzgvY29uZmlnJyAtLWhlYWRlciAna2V5OionIHwgYmFzZTY0IC1kID4gIiRTU0hfRklMRSIKICBjaG1vZCAtUiA3MDAgIiRTU0hfRElSIgogIHNzaC1rZXlzY2FuIHNzaC1rZXlzY2FuIGdpdGh1Yi5jb20gPiAiJEtOT1dfSE9TVF9GSUxFIgogIHNzaC1rZXlnZW4gLVIgaG9zdG5hbWUKfQpjbG9uZSgpewogIFpJUF9GSUxFX05BTUU9JDEKICBjZCAkV09SS19ESVIKICBQUk9KRUNUX0lEPSQyCiAgSk9CX0RFRklOSVRJT049IiQzIgogIEdJVF9VUkw9JChlY2hvICRKT0JfREVGSU5JVElPTiB8IGpxIC1yICcucmVwb3NpdG9yeS51cmwnKQogIEdJVF9CUkFOQ0g9JChlY2hvICRKT0JfREVGSU5JVElPTiB8IGpxIC1yICcucmVwb3NpdG9yeS5icmFuY2gnKQogIGdpdCBjbG9uZSAtYiAkR0lUX0JSQU5DSCAkR0lUX1VSTAogIHppcCAkWklQX0ZJTEVfTkFNRSAtcnEgLgogIFNSQ19QQVRIPSIvaG9tZS9lYzItdXNlci9qZW5raW5zLyRaSVBfRklMRV9OQU1FIgogIGxzIC1sICRXT1JLX0RJUgogIEdJVF9QUk9KRUNUPSQoYmFzZW5hbWUgJEdJVF9VUkwpCiAgR0lUX1BST0pFQ1RfTkFNRT0ke0dJVF9QUk9KRUNUJS4qfQogIGNkICRHSVRfUFJPSkVDVF9OQU1FCiAgZWNobyAiZXhwb3J0IEdJVF9QUk9KRUNUX05BTUU9JEdJVF9QUk9KRUNUX05BTUUiID4gJFJPT1RfRElSL2Vudgp9CnJ1bm5lcigpewogIEpPQl9ERUZJTklUSU9OPSIkMSIKICBFTlZJUk9OTUVOVD0kKGVjaG8gJEpPQl9ERUZJTklUSU9OIHwganEgLXIgJy5lbnZpcm9ubWVudCcpCiAgQ1VDVU1CRVJfT1BUSU9OUz0kKGVjaG8gJEpPQl9ERUZJTklUSU9OIHwganEgLXIgJy5jdWN1bWJlci5vcHRpb25zJykKICBleHBvcnQgY3VjdW1iZXJPcHRpb25zPSIkQ1VDVU1CRVJfT1BUSU9OUyIgJiYgZ3JhZGxlIGNsZWFuIHRlc3QgLURlbnZpcm9ubWVudD0kRU5WSVJPTk1FTlQKfQoKaWYgWyAteiAiJFNFVFVQIiBdCnRoZW4KICBzZXR1cApmaQpzZXRfc3NoX2tleSAiJEtFWV9QQVRIIiAiJElERU5USVRZIgpjbGVhbiAiJFdPUktfRElSIgpKT0JfREVGSU5JVElPTj0iJChjdXJsIC0tcmVxdWVzdCBHRVQgJ2h0dHA6Ly9yYi1wYi1zdGctMTc5MzI2MTY3OC51cy1lYXN0LTIuZWxiLmFtYXpvbmF3cy5jb20vY2FzdGxlbW9jay9tb2NrL3Jlc3QvcHJvamVjdC80UU1pRW0vYXBwbGljYXRpb24vZ3IxU1M4L2NvbmZpZycgLS1oZWFkZXIgInByb2plY3Q6JFBST0pFQ1RfSUQiKSIKY2xvbmUgIiRaSVBfRklMRV9OQU1FIiAiJFBST0pFQ1RfSUQiICIkSk9CX0RFRklOSVRJT04iCnJ1bm5lciAiJEpPQl9ERUZJTklUSU9OIgoK",&#13;
-        "closure":
-        "Uk9PVF9ESVI9IiRQV0QiCi4gIiRST09UX0RJUi9lbnYiCmNhdCAiJFJPT1RfRElSL2VudiIKCldPUktfRElSPSIkUk9PVF9ESVIvZ2l0IgpUQVJHRVRfQ0hJTERfUEFUSD0iJFdPUktfRElSLyRHSVRfUFJPSkVDVF9OQU1FL3RhcmdldCIKQlVJTERfQ0hJTERfUEFUSD0iJFdPUktfRElSLyRHSVRfUFJPSkVDVF9OQU1FL2J1aWxkIgoKcmVwb3J0KCl7CiAgY3AgLVJmICIkQlVJTERfQ0hJTERfUEFUSCIgLgogIGNwIC1SZiAiJEJVSUxEX0NISUxEX1BBVEgvcmVwb3J0cy90ZXN0cy90ZXN0Ly4iICIuL3RhcmdldC9zaXRlL3NlcmVuaXR5Igp9CgpyZXBvcnQK"&#13;
-        }&#13;
-        }
-      </body>
+	"job": {&#13;
+		"execute": "Uk9PVF9ESVI9IiRQV0QiCldPUktfRElSPSIkUk9PVF9ESVIvZ2l0IgpQUk9KRUNUX0lEPSIkKGJhc2VuYW1lICQoZGlybmFtZSAkUk9PVF9ESVIpKSIKWklQX0ZJTEVfTkFNRT0iJChiYXNlbmFtZSAkV09SS19ESVIpLnppcCIKCnNldF9zc2hfa2V5KCl7CiAgS0VZX1BBVEg9JDEKICBJREVOVElUWT0kMgogIGVjaG8gJElERU5USVRZIHwgYmFzZTY0IC1kID4gIiRLRVlfUEFUSCIKICBjaG1vZCAtUiA3MDAgIiRLRVlfUEFUSCIKfQpjbGVhbigpewogIFdPUktfRElSPSQxCiAgcm0gLXJmICIkV09SS19ESVIiCiAgbWtkaXIgLXAgIiRXT1JLX0RJUiIKfQpzZXR1cCgpewogIExPQ0FMX0RJUj0iL3Jvb3QiCiAgU1NIX0RJUj0iJExPQ0FMX0RJUi8uc3NoIgogIFNTSF9GSUxFPSIkU1NIX0RJUi9pZF9yc2EiCiAgS05PV19IT1NUX0ZJTEU9IiRTU0hfRElSL2tub3duX2hvc3RzIgogIG1rZGlyIC1wICIkU1NIX0RJUiIKICBhcGsgYWRkIGN1cmwgZ2l0IHppcCBvcGVuc3NoLWNsaWVudAogIGN1cmwgLS1yZXF1ZXN0IEdFVCAnaHR0cDovL3JiLXBiLXN0Zy0xNzkzMjYxNjc4LnVzLWVhc3QtMi5lbGIuYW1hem9uYXdzLmNvbS9jYXN0bGVtb2NrL21vY2svcmVzdC9wcm9qZWN0LzRRTWlFbS9hcHBsaWNhdGlvbi9ncjFTUzgvY29uZmlnJyAtLWhlYWRlciAna2V5OionIHwgYmFzZTY0IC1kID4gIiRTU0hfRklMRSIKICBjaG1vZCAtUiA3MDAgIiRTU0hfRElSIgogIHNzaC1rZXlzY2FuIHNzaC1rZXlzY2FuIGdpdGh1Yi5jb20gPiAiJEtOT1dfSE9TVF9GSUxFIgogIHNzaC1rZXlnZW4gLVIgaG9zdG5hbWUKfQpjbG9uZSgpewogIFpJUF9GSUxFX05BTUU9JDEKICBjZCAkV09SS19ESVIKICBQUk9KRUNUX0lEPSQyCiAgSk9CX0RFRklOSVRJT049IiQzIgogIEdJVF9VUkw9JChlY2hvICRKT0JfREVGSU5JVElPTiB8IGpxIC1yICcucmVwb3NpdG9yeS51cmwnKQogIEdJVF9CUkFOQ0g9JChlY2hvICRKT0JfREVGSU5JVElPTiB8IGpxIC1yICcucmVwb3NpdG9yeS5icmFuY2gnKQogIGdpdCBjbG9uZSAtYiAkR0lUX0JSQU5DSCAkR0lUX1VSTAogIHppcCAkWklQX0ZJTEVfTkFNRSAtcnEgLgogIFNSQ19QQVRIPSIvaG9tZS9lYzItdXNlci9qZW5raW5zLyRaSVBfRklMRV9OQU1FIgogIGxzIC1sICRXT1JLX0RJUgogIEdJVF9QUk9KRUNUPSQoYmFzZW5hbWUgJEdJVF9VUkwpCiAgR0lUX1BST0pFQ1RfTkFNRT0ke0dJVF9QUk9KRUNUJS4qfQogIGNkICRHSVRfUFJPSkVDVF9OQU1FCiAgZWNobyAiZXhwb3J0IEdJVF9QUk9KRUNUX05BTUU9JEdJVF9QUk9KRUNUX05BTUUiID4gJFJPT1RfRElSL2Vudgp9CnJ1bm5lcigpewogIEpPQl9ERUZJTklUSU9OPSIkMSIKICBFTlZJUk9OTUVOVD0kKGVjaG8gJEpPQl9ERUZJTklUSU9OIHwganEgLXIgJy5lbnZpcm9ubWVudCcpCiAgQ1VDVU1CRVJfT1BUSU9OUz0kKGVjaG8gJEpPQl9ERUZJTklUSU9OIHwganEgLXIgJy5jdWN1bWJlci5vcHRpb25zJykKICBleHBvcnQgY3VjdW1iZXJPcHRpb25zPSIkQ1VDVU1CRVJfT1BUSU9OUyIgJiYgZ3JhZGxlIGNsZWFuIHRlc3QgLURlbnZpcm9ubWVudD0kRU5WSVJPTk1FTlQKfQoKaWYgWyAteiAiJFNFVFVQIiBdCnRoZW4KICBzZXR1cApmaQpzZXRfc3NoX2tleSAiJEtFWV9QQVRIIiAiJElERU5USVRZIgpjbGVhbiAiJFdPUktfRElSIgpKT0JfREVGSU5JVElPTj0iJChjdXJsIC0tcmVxdWVzdCBHRVQgJ2h0dHA6Ly9yYi1wYi1zdGctMTc5MzI2MTY3OC51cy1lYXN0LTIuZWxiLmFtYXpvbmF3cy5jb20vY2FzdGxlbW9jay9tb2NrL3Jlc3QvcHJvamVjdC80UU1pRW0vYXBwbGljYXRpb24vZ3IxU1M4L2NvbmZpZycgLS1oZWFkZXIgInByb2plY3Q6JFBST0pFQ1RfSUQiKSIKY2xvbmUgIiRaSVBfRklMRV9OQU1FIiAiJFBST0pFQ1RfSUQiICIkSk9CX0RFRklOSVRJT04iCnJ1bm5lciAiJEpPQl9ERUZJTklUSU9OIgoK",&#13;
+		"closure": "Uk9PVF9ESVI9IiRQV0QiCi4gIiRST09UX0RJUi9lbnYiCmNhdCAiJFJPT1RfRElSL2VudiIKCldPUktfRElSPSIkUk9PVF9ESVIvZ2l0IgpUQVJHRVRfQ0hJTERfUEFUSD0iJFdPUktfRElSLyRHSVRfUFJPSkVDVF9OQU1FL3RhcmdldCIKQlVJTERfQ0hJTERfUEFUSD0iJFdPUktfRElSLyRHSVRfUFJPSkVDVF9OQU1FL2J1aWxkIgoKcmVwb3J0KCl7CiAgY3AgLVJmICIkQlVJTERfQ0hJTERfUEFUSCIgLgogIGNwIC1SZiAiJEJVSUxEX0NISUxEX1BBVEgvcmVwb3J0cy90ZXN0cy90ZXN0Ly4iICIuL3RhcmdldC9zaXRlL3NlcmVuaXR5Igp9CgpyZXBvcnQK"&#13;
+	}&#13;
+}</body>
             <contentEncodings/>
             <headerQueries>
                 <headerQuery>
