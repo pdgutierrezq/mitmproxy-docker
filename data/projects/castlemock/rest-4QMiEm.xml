@@ -1017,6 +1017,20 @@
                     <matchRegex>false</matchRegex>
                     <query>bavv-pasivo-qa-api-stg</query>
                 </headerQuery>
+                <headerQuery>
+                    <header>job</header>
+                    <matchAny>false</matchAny>
+                    <matchCase>false</matchCase>
+                    <matchRegex>false</matchRegex>
+                    <query>bavv-pasivo-qa-api-dev-channels</query>
+                </headerQuery>
+                <headerQuery>
+                    <header>job</header>
+                    <matchAny>false</matchAny>
+                    <matchCase>false</matchCase>
+                    <matchRegex>false</matchRegex>
+                    <query>bavv-pasivo-qa-api-stg-channels</query>
+                </headerQuery>
             </headerQueries>
             <httpHeaders/>
             <httpStatusCode>200</httpStatusCode>
@@ -1080,6 +1094,20 @@
                     <matchRegex>false</matchRegex>
                     <query>bavv-pasivo-qa-frontend-dev-cnsc</query>
                 </headerQuery>
+                <headerQuery>
+                    <header>job</header>
+                    <matchAny>false</matchAny>
+                    <matchCase>false</matchCase>
+                    <matchRegex>false</matchRegex>
+                    <query>bavv-pasivo-qa-frontend-dev-channels-cda</query>
+                </headerQuery>
+                <headerQuery>
+                    <header>job</header>
+                    <matchAny>false</matchAny>
+                    <matchCase>false</matchCase>
+                    <matchRegex>false</matchRegex>
+                    <query>bavv-pasivo-qa-frontend-dev-channels-cdt</query>
+                </headerQuery>
             </headerQueries>
             <httpHeaders/>
             <httpStatusCode>200</httpStatusCode>
@@ -1142,6 +1170,20 @@
                     <matchCase>false</matchCase>
                     <matchRegex>false</matchRegex>
                     <query>bavv-pasivo-qa-frontend-stg-cnsc</query>
+                </headerQuery>
+                <headerQuery>
+                    <header>job</header>
+                    <matchAny>false</matchAny>
+                    <matchCase>false</matchCase>
+                    <matchRegex>false</matchRegex>
+                    <query>bavv-pasivo-qa-frontend-stg-channels-cda</query>
+                </headerQuery>
+                <headerQuery>
+                    <header>job</header>
+                    <matchAny>false</matchAny>
+                    <matchCase>false</matchCase>
+                    <matchRegex>false</matchRegex>
+                    <query>bavv-pasivo-qa-frontend-stg-channels-cdt</query>
                 </headerQuery>
             </headerQueries>
             <httpHeaders/>
