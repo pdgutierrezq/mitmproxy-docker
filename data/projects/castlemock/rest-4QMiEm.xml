@@ -97,7 +97,7 @@
 	},&#13;
 	"environment": "dev",&#13;
 	"cucumber": {&#13;
-		"options": "--tags '@layer:Backend and @priority:High and not @api:channels and not @execution:manual and not @ignore'"&#13;
+		"options": "--tags '@layer:Backend and @priority:High and not @execution:manual and not @ignore"&#13;
 	}&#13;
 }</body>
             <contentEncodings/>
@@ -123,15 +123,15 @@
         </mockResponse>
         <mockResponse>
             <body>{&#13;
-          "repository": {&#13;
-          "url": "git@github.com:adldigitallabs/bavv-pasivo-qa-backend.git",&#13;
-          "branch": "develop"&#13;
-          },&#13;
-          "environment": "dev-channels",&#13;
-          "cucumber": {&#13;
-          "options": "--tags '@layer:Backend and @priority:High and @regression:Yes and @api:channels and not @execution:manual and not @ignore'"&#13;
-          }&#13;
-          }</body>
+	"repository": {&#13;
+		"url": "git@github.com:adldigitallabs/bavv-pasivo-qa-backend.git",&#13;
+		"branch": "develop"&#13;
+	},&#13;
+	"environment": "dev-channels",&#13;
+	"cucumber": {&#13;
+		"options": "--tags '@layer:Backend and @priority:High and @regression:Yes and @api:channels and not @execution:manual and not @ignore'"&#13;
+	}&#13;
+}</body>
             <contentEncodings/>
             <headerQueries>
                 <headerQuery>
