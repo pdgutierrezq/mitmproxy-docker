@@ -97,7 +97,7 @@
 	},&#13;
 	"environment": "dev",&#13;
 	"cucumber": {&#13;
-		"options": "--tags '@layer:Backend and @priority:High and not @execution:manual and not @ignore"&#13;
+		"options": "--tags '@layer:Backend and @priority:High and not @api:channels and not @execution:manual and not @ignore'"&#13;
 	}&#13;
 }</body>
             <contentEncodings/>
@@ -157,7 +157,7 @@
             <body>{&#13;
 	"repository": {&#13;
 		"url": "git@github.com:adldigitallabs/bavv-pasivo-qa-frontend.git",&#13;
-		"branch": "v9.1.0"&#13;
+		"branch": "v9.2.0"&#13;
 	},&#13;
 	"environment": "stg",&#13;
 	"nodejs": {&#13;
@@ -208,7 +208,7 @@
             <body>{&#13;
 	"repository": {&#13;
 		"url": "git@github.com:adldigitallabs/bavv-pasivo-qa-frontend.git",&#13;
-		"branch": "v9.1.0"&#13;
+		"branch": "v9.2.0"&#13;
 	},&#13;
 	"environment": "stg",&#13;
 	"nodejs": {&#13;
@@ -259,7 +259,7 @@
             <body>{&#13;
 	"repository": {&#13;
 		"url": "git@github.com:adldigitallabs/bavv-pasivo-qa-frontend.git",&#13;
-		"branch": "v9.1.0"&#13;
+		"branch": "v9.2.0"&#13;
 	},&#13;
 	"environment": "stg",&#13;
 	"nodejs": {&#13;
@@ -310,7 +310,7 @@
             <body>{&#13;
 	"repository": {&#13;
 		"url": "git@github.com:adldigitallabs/bavv-pasivo-qa-frontend.git",&#13;
-		"branch": "v9.1.0"&#13;
+		"branch": "v9.2.0"&#13;
 	},&#13;
 	"environment": "stg",&#13;
 	"nodejs": {&#13;
@@ -361,7 +361,7 @@
             <body>{&#13;
 	"repository": {&#13;
 		"url": "git@github.com:adldigitallabs/bavv-pasivo-qa-frontend.git",&#13;
-		"branch": "v9.1.0"&#13;
+		"branch": "v9.2.0"&#13;
 	},&#13;
 	"environment": "stg",&#13;
 	"nodejs": {&#13;
@@ -412,7 +412,7 @@
             <body>{&#13;
 	"repository": {&#13;
 		"url": "git@github.com:adldigitallabs/bavv-pasivo-qa-frontend.git",&#13;
-		"branch": "v9.1.0"&#13;
+		"branch": "v9.2.0"&#13;
 	},&#13;
 	"environment": "stg",&#13;
 	"nodejs": {&#13;
@@ -463,7 +463,7 @@
             <body>{&#13;
 	"repository": {&#13;
 		"url": "git@github.com:adldigitallabs/bavv-pasivo-qa-frontend.git",&#13;
-		"branch": "v9.1.0"&#13;
+		"branch": "v9.2.0"&#13;
 	},&#13;
 	"environment": "stg",&#13;
 	"nodejs": {&#13;
@@ -514,7 +514,7 @@
             <body>{&#13;
 	"repository": {&#13;
 		"url": "git@github.com:adldigitallabs/bavv-pasivo-qa-frontend.git",&#13;
-		"branch": "v9.1.0"&#13;
+		"branch": "v9.2.0"&#13;
 	},&#13;
 	"environment": "stg",&#13;
 	"nodejs": {&#13;
@@ -565,7 +565,7 @@
             <body>{&#13;
 	"repository": {&#13;
 		"url": "git@github.com:adldigitallabs/bavv-pasivo-qa-frontend.git",&#13;
-		"branch": "v9.1.0"&#13;
+		"branch": "v9.2.0"&#13;
 	},&#13;
 	"environment": "stg",&#13;
 	"nodejs": {&#13;
