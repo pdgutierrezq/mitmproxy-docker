@@ -14,9 +14,12 @@ function report(){
   echo "echo \$REPORT_RAW > $REPORT_TARGET_PATH" >> "$SCRIPT"
 #  echo "cat $REPORT_TARGET_PATH" >> "$SCRIPT"
 }
+ENV_SCRIPT='./env/env.sh'
+. $ENV_SCRIPT
+SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
 TEMPLATES_PATH='./templates'
-JENKINS_PATH='./jenkins'
+JENKINS_PATH='./jenkins/'$ENVIRONMENT
 EXECUTE_SCRIPT="$JENKINS_PATH/execute.sh"
 CLOSURE_SCRIPT="$JENKINS_PATH/closure.sh"
 JOB_SCRIPT="$JENKINS_PATH/job.sh"
