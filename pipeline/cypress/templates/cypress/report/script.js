@@ -14,7 +14,7 @@ const iframes = [
 ];
 
 function loadPage(pageUrl, iframes) {
-  loadIframes(iframes)
+  loadIframes(iframes);
   if (pageUrl === `stg`) {
     for (let i = 1; i <= iframes.length; i++) {
       const inputField = document.getElementById(`input` + i);
@@ -30,12 +30,12 @@ function loadPage(pageUrl, iframes) {
 }
 
 function loadIframes(iframes) {
-  const content = document.getElementById('content');
+  const content = document.getElementById("content");
   iframes.forEach(data => {
-    const container = document.createElement('div');
-    container.className = 'iframe-container';
+    const container = document.createElement("div");
+    container.className = "iframe-container";
     container.innerHTML = `
-      <input type="text" id="input${data.id}" value="${data.value}" oninput="changeIframeSrc('iframe${data.id}')">
+      <input type="text" id="input${data.id}" value="${data.value}" oninput="changeIframeSrc("iframe${data.id}")">
       <iframe id="iframe${data.id}" class="iframe"></iframe>
     `;
     content.appendChild(container);
