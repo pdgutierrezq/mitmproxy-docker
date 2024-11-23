@@ -1,0 +1,77 @@
+{
+  "baseUrl" : "https://jenkins.rb-pre-ops.net/view/bavv-pasivo-qa/job/",
+  "filters": [
+    {
+      "name": "API",
+      "value": "api"
+    },
+    {
+      "name": "E2E",
+      "value": "frontend"
+    },
+    {
+      "name": "CHANNELS",
+      "value": "channels"
+    }
+  ],
+  "environments": [
+    {
+      "id": "dev",
+      "name": "Develop"
+    },
+    {
+      "id": "stg",
+      "name": "Stage"
+    }
+  ],
+  "iframes": [
+    {
+      "id": 1,
+      "value": "bavv-pasivo-qa-api-{envPrefix}/Test"
+    },
+    {
+      "id": 2,
+      "value": "bavv-pasivo-qa-frontend-{envPrefix}-cda/Serenity"
+    },
+    {
+      "id": 3,
+      "value": "bavv-pasivo-qa-frontend-{envPrefix}-cdt/Serenity"
+    },
+    {
+      "id": 4,
+      "value": "bavv-pasivo-qa-frontend-{envPrefix}-cncc/Serenity"
+    },
+    {
+      "id": 5,
+      "value": "bavv-pasivo-qa-frontend-{envPrefix}-cnsc/Serenity"
+    },
+    {
+      "id": 6,
+      "value": "bavv-pasivo-qa-frontend-{envPrefix}-cpcol/Serenity"
+    },
+    {
+      "id": 7,
+      "value": "bavv-pasivo-qa-frontend-{envPrefix}-deposit/Serenity"
+    },
+    {
+      "id": 8,
+      "value": "bavv-pasivo-qa-api-{envPrefix}-channels/Test"
+    },
+    {
+      "id": 9,
+      "value": "bavv-pasivo-qa-frontend-{envPrefix}-channels-cda/Serenity"
+    },
+    {
+      "id": 10,
+      "value": "bavv-pasivo-qa-frontend-{envPrefix}-channels-cdt/Serenity"
+    },
+    {
+      "id": 11,
+      "value": "bavv-pasivo-qa-frontend-{envPrefix}-channels-cnsc/Serenity"
+    },
+    {
+      "id": 12,
+      "value": "bavv-pasivo-qa-frontend-{envPrefix}-deposit-mfe/Serenity"
+    }
+  ]
+}
