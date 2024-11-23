@@ -3,12 +3,54 @@
     <applications>
         <application>
             <id>gr1SS8</id>
-            <name>automation</name>
+            <name>jenkins</name>
+            <projectId>4QMiEm</projectId>
+            <resources/>
+        </application>
+        <application>
+            <id>zDkEGo</id>
+            <name>rpt</name>
             <projectId>4QMiEm</projectId>
             <resources/>
         </application>
     </applications>
     <methods>
+        <method>
+            <currentResponseSequenceIndex>0</currentResponseSequenceIndex>
+            <httpMethod>GET</httpMethod>
+            <id>eUcI7G</id>
+            <mockResponses/>
+            <name>get</name>
+            <networkDelay>0</networkDelay>
+            <resourceId>k0DRIy</resourceId>
+            <responseStrategy>RANDOM</responseStrategy>
+            <simulateNetworkDelay>false</simulateNetworkDelay>
+            <status>MOCKED</status>
+        </method>
+        <method>
+            <currentResponseSequenceIndex>0</currentResponseSequenceIndex>
+            <httpMethod>GET</httpMethod>
+            <id>CLlQgc</id>
+            <mockResponses/>
+            <name>get</name>
+            <networkDelay>0</networkDelay>
+            <resourceId>yfHaOl</resourceId>
+            <responseStrategy>RANDOM</responseStrategy>
+            <simulateNetworkDelay>false</simulateNetworkDelay>
+            <status>MOCKED</status>
+        </method>
+        <method>
+            <currentResponseSequenceIndex>0</currentResponseSequenceIndex>
+            <httpMethod>GET</httpMethod>
+            <id>8xSsJo</id>
+            <mockResponses/>
+            <name>get</name>
+            <networkDelay>0</networkDelay>
+            <resourceId>TNJjsR</resourceId>
+            <responseStrategy>RANDOM</responseStrategy>
+            <simulateNetworkDelay>false</simulateNetworkDelay>
+            <status>MOCKED</status>
+        </method>
         <method>
             <currentResponseSequenceIndex>0</currentResponseSequenceIndex>
             <defaultMockResponseId></defaultMockResponseId>
@@ -23,20 +65,344 @@
             <simulateNetworkDelay>false</simulateNetworkDelay>
             <status>MOCKED</status>
         </method>
-        <method>
-            <currentResponseSequenceIndex>0</currentResponseSequenceIndex>
-            <httpMethod>GET</httpMethod>
-            <id>fuWznw</id>
-            <mockResponses/>
-            <name>get</name>
-            <networkDelay>0</networkDelay>
-            <resourceId>4yPQdM</resourceId>
-            <responseStrategy>RANDOM</responseStrategy>
-            <simulateNetworkDelay>false</simulateNetworkDelay>
-            <status>MOCKED</status>
-        </method>
     </methods>
     <mockResponses>
+        <mockResponse>
+            <body>{&#13;
+	"baseUrl": "https://jenkins.rb-pre-ops.net/view/bavv-pasivo-qa/job/",&#13;
+	"filters": [&#13;
+		{&#13;
+			"name": "API",&#13;
+			"value": "api"&#13;
+		},&#13;
+		{&#13;
+			"name": "E2E",&#13;
+			"value": "frontend"&#13;
+		},&#13;
+		{&#13;
+			"name": "CHANNELS",&#13;
+			"value": "channels"&#13;
+		}&#13;
+	],&#13;
+	"environments": [&#13;
+		{&#13;
+			"id": "dev",&#13;
+			"name": "Develop"&#13;
+		},&#13;
+		{&#13;
+			"id": "stg",&#13;
+			"name": "Stage"&#13;
+		}&#13;
+	],&#13;
+	"iframes": [&#13;
+		{&#13;
+			"id": 1,&#13;
+			"value": "bavv-pasivo-qa-api-{envPrefix}/Test"&#13;
+		},&#13;
+		{&#13;
+			"id": 2,&#13;
+			"value": "bavv-pasivo-qa-frontend-{envPrefix}-cda/Serenity"&#13;
+		},&#13;
+		{&#13;
+			"id": 3,&#13;
+			"value": "bavv-pasivo-qa-frontend-{envPrefix}-cdt/Serenity"&#13;
+		},&#13;
+		{&#13;
+			"id": 4,&#13;
+			"value": "bavv-pasivo-qa-frontend-{envPrefix}-cncc/Serenity"&#13;
+		},&#13;
+		{&#13;
+			"id": 5,&#13;
+			"value": "bavv-pasivo-qa-frontend-{envPrefix}-cnsc/Serenity"&#13;
+		},&#13;
+		{&#13;
+			"id": 6,&#13;
+			"value": "bavv-pasivo-qa-frontend-{envPrefix}-cpcol/Serenity"&#13;
+		},&#13;
+		{&#13;
+			"id": 7,&#13;
+			"value": "bavv-pasivo-qa-frontend-{envPrefix}-deposit/Serenity"&#13;
+		},&#13;
+		{&#13;
+			"id": 8,&#13;
+			"value": "bavv-pasivo-qa-api-{envPrefix}-channels/Test"&#13;
+		},&#13;
+		{&#13;
+			"id": 9,&#13;
+			"value": "bavv-pasivo-qa-frontend-{envPrefix}-channels-cda/Serenity"&#13;
+		},&#13;
+		{&#13;
+			"id": 10,&#13;
+			"value": "bavv-pasivo-qa-frontend-{envPrefix}-channels-cdt/Serenity"&#13;
+		},&#13;
+		{&#13;
+			"id": 11,&#13;
+			"value": "bavv-pasivo-qa-frontend-{envPrefix}-channels-cnsc/Serenity"&#13;
+		},&#13;
+		{&#13;
+			"id": 12,&#13;
+			"value": "bavv-pasivo-qa-frontend-{envPrefix}-deposit-mfe/Serenity"&#13;
+		}&#13;
+	]&#13;
+}</body>
+            <contentEncodings/>
+            <headerQueries/>
+            <httpHeaders/>
+            <httpStatusCode>200</httpStatusCode>
+            <id>KuxmTs</id>
+            <jsonPathExpressions/>
+            <methodId>eUcI7G</methodId>
+            <name>ok</name>
+            <parameterQueries/>
+            <status>ENABLED</status>
+            <usingExpressions>false</usingExpressions>
+            <xpathExpressions/>
+        </mockResponse>
+        <mockResponse>
+            <body>&lt;!DOCTYPE html&gt;&#13;
+&lt;html lang="en"&gt;&#13;
+	&lt;head&gt;&#13;
+		&lt;title&gt;Pasivo E2E Report&lt;/title&gt;&#13;
+		&lt;style&gt;&#13;
+    .iframe {&#13;
+      display: inline-block;&#13;
+      width: 100%;&#13;
+      height: 100%;&#13;
+    }&#13;
+&#13;
+    body {&#13;
+      font-family: Arial, sans-serif;&#13;
+      margin: 0;&#13;
+      padding: 0;&#13;
+    }&#13;
+&#13;
+    .top-menu {&#13;
+      top: 0;&#13;
+      left: 0;&#13;
+      width: 100%;&#13;
+      background-color: #333;&#13;
+      color: white;&#13;
+      display: flex;&#13;
+      justify-content: center;&#13;
+      padding: 10px 0;&#13;
+    }&#13;
+&#13;
+    .menu-item {&#13;
+      margin: 0 10px;&#13;
+      cursor: pointer;&#13;
+    }&#13;
+&#13;
+    .content {&#13;
+      padding-top: 0px;&#13;
+    }&#13;
+&#13;
+    .iframe-container {&#13;
+      display: inline-block;&#13;
+      width: 48%;&#13;
+      margin-right: 1%;&#13;
+      height: 500px;&#13;
+    }&#13;
+&#13;
+    .iframe-container input {&#13;
+      width: 100%;&#13;
+      font-size: 90%;&#13;
+      padding-inline: 0px&#13;
+    }&#13;
+&#13;
+    .top-menu {&#13;
+      gap: 120px;&#13;
+      padding: 2px;&#13;
+    }&#13;
+&#13;
+    .environment-section, .filter-section, .quick-filters {&#13;
+      display: flex;&#13;
+      gap: 10px;&#13;
+      align-items: center;&#13;
+    }&#13;
+&#13;
+    .menu-item {&#13;
+      cursor: pointer;&#13;
+      padding: 5px 10px;&#13;
+      border-radius: 4px;&#13;
+    }&#13;
+&#13;
+    .menu-item:hover {&#13;
+      background-color: #1f65a2;&#13;
+    }&#13;
+&#13;
+    #filterInput {&#13;
+      padding: 5px;&#13;
+      width: 200px;&#13;
+    }&#13;
+  &lt;/style&gt;&#13;
+	&lt;/head&gt;&#13;
+	&lt;body&gt;&#13;
+		&lt;div class="top-menu"&gt;&#13;
+			&lt;div class="environment-section" id="environmentSection"&gt;&#13;
+				&lt;!-- Environments will be added here dynamically --&gt;&#13;
+			&lt;/div&gt;&#13;
+			&lt;div class="top-menu"&gt;&#13;
+				&lt;div class="filter-section"&gt;&#13;
+					&lt;input type="text" id="filterInput" placeholder="Enter filter (e.g., api, frontend, channels)"&gt;&#13;
+						&lt;div class="menu-item" onclick="loadPageWithEnv()"&gt;Apply Filter&lt;/div&gt;&#13;
+					&lt;/div&gt;&#13;
+					&lt;div class="filter-section" id="filterSection"&gt;&#13;
+						&lt;!-- Filters will be added here dynamically --&gt;&#13;
+					&lt;/div&gt;&#13;
+				&lt;/div&gt;&#13;
+			&lt;/div&gt;&#13;
+			&lt;div class="content" id="content"&gt;&#13;
+				&lt;!-- The iframe containers will be generated here --&gt;&#13;
+			&lt;/div&gt;&#13;
+			&lt;script src="script.js"&gt;&#13;
+			&lt;/script&gt;&#13;
+		&lt;/body&gt;&#13;
+	&lt;/html&gt;</body>
+            <contentEncodings/>
+            <headerQueries/>
+            <httpHeaders/>
+            <httpStatusCode>200</httpStatusCode>
+            <id>73J9jQ</id>
+            <jsonPathExpressions/>
+            <methodId>CLlQgc</methodId>
+            <name>ok</name>
+            <parameterQueries/>
+            <status>ENABLED</status>
+            <usingExpressions>false</usingExpressions>
+            <xpathExpressions/>
+        </mockResponse>
+        <mockResponse>
+            <body>let currentEnvironment = "dev";&#13;
+let baseUrl = "http://rb-pb-stg-1793261678.us-east-2.elb.amazonaws.com/castlemock/mock/rest/project/4QMiEm/application/zDkEGo/rpt/";&#13;
+// baseUrl = "";&#13;
+let data = {};&#13;
+&#13;
+async function readData(baseUrl=""){&#13;
+  try {&#13;
+    const response = await fetch(baseUrl+"data.json");&#13;
+    if (!response.ok) {&#13;
+      throw new Error(`HTTP error! status: ${response.status}`);&#13;
+    }&#13;
+    data = await response.json();&#13;
+  } catch (error) {&#13;
+    console.error("Error loading");&#13;
+    return [];&#13;
+  }&#13;
+}&#13;
+&#13;
+async function createIframeData(filterRegex = null) {&#13;
+  const envPrefix = currentEnvironment;&#13;
+  const processedData = data.iframes.map(item =&gt; ({&#13;
+    ...item,&#13;
+    value: item.value.replace("{envPrefix}", envPrefix)&#13;
+  }));&#13;
+&#13;
+  if (filterRegex instanceof RegExp) {&#13;
+    return processedData.filter(item =&gt; filterRegex.test(item.value));&#13;
+  }&#13;
+  return processedData;&#13;
+}&#13;
+&#13;
+async function setEnvironment(env) {&#13;
+  currentEnvironment = env;&#13;
+  loadPage(await createIframeData(currentEnvironment));&#13;
+}&#13;
+&#13;
+async function loadPageWithEnv() {&#13;
+  const filterInput = document.getElementById("filterInput").value;&#13;
+  const filter = filterInput ? new RegExp(filterInput) : null;&#13;
+  loadPage(await createIframeData(filter));&#13;
+}&#13;
+&#13;
+function loadPage(iframes) {&#13;
+  loadIframes(iframes);&#13;
+  reloadIframes();&#13;
+}&#13;
+&#13;
+function loadIframes(iframes) {&#13;
+  const content = document.getElementById("content");&#13;
+  content.innerHTML = "";&#13;
+  iframes.forEach(data =&gt; {&#13;
+    const container = document.createElement("div");&#13;
+    container.className = "iframe-container";&#13;
+    container.innerHTML = `&#13;
+      &lt;input type="text" id="input${data.id}" value="${data.value}" oninput="changeIframeSrc("iframe${data.id}")"&gt;&#13;
+      &lt;iframe id="iframe${data.id}" class="iframe"&gt;&lt;/iframe&gt;&#13;
+    `;&#13;
+    content.appendChild(container);&#13;
+  });&#13;
+}&#13;
+&#13;
+function changeIframeSrc(iframeId) {&#13;
+  const input = data.baseUrl + document.getElementById(&#13;
+      `input` + iframeId.slice(-1)).value;&#13;
+  document.getElementById(iframeId).src = input;&#13;
+}&#13;
+&#13;
+function reloadIframes() {&#13;
+  const iframes = document.getElementsByClassName(`iframe`);&#13;
+  Array.from(iframes).forEach(iframe =&gt; {&#13;
+    const input = iframe.previousElementSibling;&#13;
+    if (input &amp;&amp; input.tagName === "INPUT") {&#13;
+      iframe.src = data.baseUrl + input.value;&#13;
+    }&#13;
+  });&#13;
+}&#13;
+&#13;
+function createEnvironmentMenu() {&#13;
+  const environmentSection = document.getElementById("environmentSection");&#13;
+&#13;
+  data.environments.forEach(env =&gt; {&#13;
+    const menuItem = document.createElement("div");&#13;
+    menuItem.className = "menu-item";&#13;
+    menuItem.onclick = () =&gt; setEnvironment(env.id);&#13;
+    menuItem.textContent = env.name;&#13;
+    environmentSection.appendChild(menuItem);&#13;
+  });&#13;
+}&#13;
+&#13;
+function createFilterMenu() {&#13;
+  const filterSection = document.getElementById("filterSection");&#13;
+&#13;
+  data.filters.forEach(filter =&gt; {&#13;
+    const menuItem = document.createElement("div");&#13;
+    menuItem.className = "menu-item";&#13;
+    menuItem.onclick = () =&gt; setFilter(filter.value);&#13;
+    menuItem.textContent = filter.name;&#13;
+    filterSection.appendChild(menuItem);&#13;
+  });&#13;
+}&#13;
+&#13;
+function setFilter(filter) {&#13;
+    document.getElementById("filterInput").value = filter;&#13;
+    loadPageWithEnv();&#13;
+}&#13;
+&#13;
+window.onload = async function () {&#13;
+  await readData(baseUrl);&#13;
+  await createEnvironmentMenu();&#13;
+  await createFilterMenu();&#13;
+  loadPage(await createIframeData());&#13;
+};&#13;
+</body>
+            <contentEncodings/>
+            <headerQueries/>
+            <httpHeaders>
+                <httpHeader>
+                    <name>Content-Type</name>
+                    <value>application/javascript</value>
+                </httpHeader>
+            </httpHeaders>
+            <httpStatusCode>200</httpStatusCode>
+            <id>7vU3TC</id>
+            <jsonPathExpressions/>
+            <methodId>8xSsJo</methodId>
+            <name>ok</name>
+            <parameterQueries/>
+            <status>ENABLED</status>
+            <usingExpressions>false</usingExpressions>
+            <xpathExpressions/>
+        </mockResponse>
         <mockResponse>
             <body>{&#13;
 	"repository": {&#13;
@@ -1325,97 +1691,6 @@
             <usingExpressions>false</usingExpressions>
             <xpathExpressions/>
         </mockResponse>
-        <mockResponse>
-            <body>{&#13;
-	"baseUrl": "https://jenkins.rb-pre-ops.net/view/bavv-pasivo-qa/job/",&#13;
-	"filters": [&#13;
-		{&#13;
-			"name": "API",&#13;
-			"value": "api"&#13;
-		},&#13;
-		{&#13;
-			"name": "E2E",&#13;
-			"value": "frontend"&#13;
-		},&#13;
-		{&#13;
-			"name": "CHANNELS",&#13;
-			"value": "channels"&#13;
-		}&#13;
-	],&#13;
-	"environments": [&#13;
-		{&#13;
-			"id": "dev",&#13;
-			"name": "Develop"&#13;
-		},&#13;
-		{&#13;
-			"id": "stg",&#13;
-			"name": "Stage"&#13;
-		}&#13;
-	],&#13;
-	"iframes": [&#13;
-		{&#13;
-			"id": 1,&#13;
-			"value": "bavv-pasivo-qa-api-{envPrefix}/Test"&#13;
-		},&#13;
-		{&#13;
-			"id": 2,&#13;
-			"value": "bavv-pasivo-qa-frontend-{envPrefix}-cda/Serenity"&#13;
-		},&#13;
-		{&#13;
-			"id": 3,&#13;
-			"value": "bavv-pasivo-qa-frontend-{envPrefix}-cdt/Serenity"&#13;
-		},&#13;
-		{&#13;
-			"id": 4,&#13;
-			"value": "bavv-pasivo-qa-frontend-{envPrefix}-cncc/Serenity"&#13;
-		},&#13;
-		{&#13;
-			"id": 5,&#13;
-			"value": "bavv-pasivo-qa-frontend-{envPrefix}-cnsc/Serenity"&#13;
-		},&#13;
-		{&#13;
-			"id": 6,&#13;
-			"value": "bavv-pasivo-qa-frontend-{envPrefix}-cpcol/Serenity"&#13;
-		},&#13;
-		{&#13;
-			"id": 7,&#13;
-			"value": "bavv-pasivo-qa-frontend-{envPrefix}-deposit/Serenity"&#13;
-		},&#13;
-		{&#13;
-			"id": 8,&#13;
-			"value": "bavv-pasivo-qa-api-{envPrefix}-channels/Test"&#13;
-		},&#13;
-		{&#13;
-			"id": 9,&#13;
-			"value": "bavv-pasivo-qa-frontend-{envPrefix}-channels-cda/Serenity"&#13;
-		},&#13;
-		{&#13;
-			"id": 10,&#13;
-			"value": "bavv-pasivo-qa-frontend-{envPrefix}-channels-cdt/Serenity"&#13;
-		},&#13;
-		{&#13;
-			"id": 11,&#13;
-			"value": "bavv-pasivo-qa-frontend-{envPrefix}-channels-cnsc/Serenity"&#13;
-		},&#13;
-		{&#13;
-			"id": 12,&#13;
-			"value": "bavv-pasivo-qa-frontend-{envPrefix}-deposit-mfe/Serenity"&#13;
-		}&#13;
-	]&#13;
-}</body>
-            <contentEncodings/>
-            <headerQueries/>
-            <httpHeaders/>
-            <httpStatusCode>200</httpStatusCode>
-            <id>y6hOKW</id>
-            <jsonPathExpressions/>
-            <methodId>fuWznw</methodId>
-            <name>ok</name>
-            <parameterQueries/>
-            <status>ENABLED</status>
-            <usingExpressions>false</usingExpressions>
-            <xpathExpressions/>
-        </mockResponse>
     </mockResponses>
     <project>
         <description></description>
@@ -1425,18 +1700,32 @@
     </project>
     <resources>
         <resource>
+            <applicationId>zDkEGo</applicationId>
+            <id>k0DRIy</id>
+            <methods/>
+            <name>/rpt/data.json</name>
+            <uri>/rpt/data.json</uri>
+        </resource>
+        <resource>
+            <applicationId>zDkEGo</applicationId>
+            <id>yfHaOl</id>
+            <methods/>
+            <name>/rpt/index.html</name>
+            <uri>/rpt/index.html</uri>
+        </resource>
+        <resource>
+            <applicationId>zDkEGo</applicationId>
+            <id>TNJjsR</id>
+            <methods/>
+            <name>script.js</name>
+            <uri>/rpt/script.js</uri>
+        </resource>
+        <resource>
             <applicationId>gr1SS8</applicationId>
             <id>lSbiBJ</id>
             <methods/>
             <name>config</name>
             <uri>/config</uri>
-        </resource>
-        <resource>
-            <applicationId>gr1SS8</applicationId>
-            <id>4yPQdM</id>
-            <methods/>
-            <name>report</name>
-            <uri>/report/rpt-data.json</uri>
         </resource>
     </resources>
 </restExportContainer>

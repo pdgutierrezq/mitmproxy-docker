@@ -1,10 +1,11 @@
 let currentEnvironment = "dev";
-const baseUrl = "http://rb-pb-stg-1793261678.us-east-2.elb.amazonaws.com/castlemock/mock/rest/project/4QMiEm/application/gr1SS8/report";
+let baseUrl = "http://rb-pb-stg-1793261678.us-east-2.elb.amazonaws.com/castlemock/mock/rest/project/4QMiEm/application/zDkEGo/rpt/";
+// baseUrl = "";
 let data = {};
 
 async function readData(baseUrl=""){
   try {
-    const response = await fetch(baseUrl+"/rpt-data.json");
+    const response = await fetch(baseUrl+"data.json");
     if (!response.ok) {
       throw new Error(`HTTP error! status: ${response.status}`);
     }
