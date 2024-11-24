@@ -50,7 +50,7 @@ function loadIframes(iframes) {
     const container = document.createElement("div");
     container.className = "iframe-container";
     container.innerHTML = `
-      <input type="text" id="input${data.id}" value="${data.value}" oninput="changeIframeSrc("iframe${data.id}")">
+      <input type="text" id="input${data.id}" value="${data.value}" oninput="changeIframeSrc(\`iframe${data.id}\`)">
       <iframe id="iframe${data.id}" class="iframe"></iframe>
     `;
     content.appendChild(container);

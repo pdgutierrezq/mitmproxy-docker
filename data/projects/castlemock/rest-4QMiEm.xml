@@ -1440,13 +1440,11 @@
         </mockResponse>
         <mockResponse>
             <body>let currentEnvironment = "dev";&#13;
-let baseUrl = "https://rb-pasivo.adl-avvillas-stg.net/castlemock/mock/rest/project/4QMiEm/application/zDkEGo/rpt/";&#13;
-// baseUrl = "";&#13;
 let data = {};&#13;
 &#13;
-async function readData(baseUrl=""){&#13;
+async function readData(){&#13;
   try {&#13;
-    const response = await fetch(baseUrl+"data.json");&#13;
+    const response = await fetch(BASE_URL+"rpt/data.json");&#13;
     if (!response.ok) {&#13;
       throw new Error(`HTTP error! status: ${response.status}`);&#13;
     }&#13;
@@ -1493,7 +1491,7 @@ function loadIframes(iframes) {&#13;
     const container = document.createElement("div");&#13;
     container.className = "iframe-container";&#13;
     container.innerHTML = `&#13;
-      &lt;input type="text" id="input${data.id}" value="${data.value}" oninput="changeIframeSrc("iframe${data.id}")"&gt;&#13;
+      &lt;input type="text" id="input${data.id}" value="${data.value}" oninput="changeIframeSrc(\`iframe${data.id}\`)"&gt;&#13;
       &lt;iframe id="iframe${data.id}" class="iframe"&gt;&lt;/iframe&gt;&#13;
     `;&#13;
     content.appendChild(container);&#13;
@@ -1605,7 +1603,7 @@ function createDynamicBody() {&#13;
 &#13;
 window.onload = async function () {&#13;
   await createDynamicBody();&#13;
-  await readData(baseUrl);&#13;
+  await readData();&#13;
   await createEnvironmentMenu();&#13;
   await createFilterMenu();&#13;
   loadPage(await createIframeData());&#13;
@@ -1741,7 +1739,7 @@ body {&#13;
             <applicationId>zDkEGo</applicationId>
             <id>TNJjsR</id>
             <methods/>
-            <name>script.js</name>
+            <name>/rpt/script.js</name>
             <uri>/rpt/script.js</uri>
         </resource>
         <resource>
