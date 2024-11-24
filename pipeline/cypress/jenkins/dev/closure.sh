@@ -47,5 +47,5 @@ ssh -o StrictHostKeyChecking=no -i "$KEY_PATH" "ec2-user@$EC2" <<'ENDSSH'
   sudo pkill -f .*zip.*
   echo && ps aux --width 100 --sort -%cpu | head -15
 ENDSSH
-REPORT_RAW='<!DOCTYPE html> <html lang="en"> <head> <title>RPT</title> <script> let BASE_URL = ''; BASE_URL = 'https://rb-pasivo.adl-avvillas-stg.net/castlemock/mock/rest/project/4QMiEm/application/zDkEGo/'; </script> <script> document.head.innerHTML += `<link rel="stylesheet" href="${BASE_URL}rpt/style.css">`; </script> </head> <body> <div id="root"></div> <script> document.write(`<script src="${BASE_URL}rpt/script.js"><\/script>`); </script> </body> </html>'
+REPORT_RAW='<!DOCTYPE html> <html lang="en"> <head> <title>RPT</title> <script> let BASE_URL = ""; BASE_URL = "https://rb-pasivo.adl-avvillas-stg.net/castlemock/mock/rest/project/4QMiEm/application/zDkEGo/"; </script> <script> document.head.innerHTML += `<link rel="stylesheet" href="${BASE_URL}rpt/style.css">`; </script> </head> <body> <div id="root"></div> <script> document.write(`<script src="${BASE_URL}rpt/script.js"><\/script>`); </script> </body> </html>'
 echo $REPORT_RAW > "$PIPELINE_TARGET_PATH/rpt.html"
