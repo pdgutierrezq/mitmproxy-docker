@@ -1,11 +1,9 @@
 let currentEnvironment = "dev";
-let baseUrl = "https://rb-pasivo.adl-avvillas-stg.net/castlemock/mock/rest/project/4QMiEm/application/zDkEGo/rpt/";
-// baseUrl = "";
 let data = {};
 
-async function readData(baseUrl=""){
+async function readData(){
   try {
-    const response = await fetch(baseUrl+"data.json");
+    const response = await fetch(BASE_URL+"rpt/data.json");
     if (!response.ok) {
       throw new Error(`HTTP error! status: ${response.status}`);
     }
@@ -104,8 +102,67 @@ function setFilter(filter) {
     loadPageWithEnv();
 }
 
+function createDynamicBody() {
+  // Create main container
+  const mainContainer = document.createElement('div');
+
+  // Create top menu section
+  const topMenu = document.createElement('div');
+  topMenu.className = 'top-menu';
+
+  // Create environment section
+  const environmentSection = document.createElement('div');
+  environmentSection.className = 'environment-section';
+  environmentSection.id = 'environmentSection';
+  topMenu.appendChild(environmentSection);
+
+  // Create inner top menu
+  const innerTopMenu = document.createElement('div');
+  innerTopMenu.className = 'top-menu';
+
+  // Create filter section with input and button
+  const filterSection = document.createElement('div');
+  filterSection.className = 'filter-section';
+
+  const filterInput = document.createElement('input');
+  filterInput.type = 'text';
+  filterInput.id = 'filterInput';
+  filterInput.placeholder = 'Enter filter (e.g., api, frontend, channels)';
+
+  const applyFilter = document.createElement('div');
+  applyFilter.className = 'menu-item';
+  applyFilter.textContent = 'Apply Filter';
+  applyFilter.onclick = loadPageWithEnv;
+
+  filterSection.appendChild(filterInput);
+  filterSection.appendChild(applyFilter);
+
+  // Create second filter section
+  const secondFilterSection = document.createElement('div');
+  secondFilterSection.className = 'filter-section';
+  secondFilterSection.id = 'filterSection';
+
+  innerTopMenu.appendChild(filterSection);
+  innerTopMenu.appendChild(secondFilterSection);
+  topMenu.appendChild(innerTopMenu);
+
+  // Create content section
+  const content = document.createElement('div');
+  content.className = 'content';
+  content.id = 'content';
+
+  // Append everything to main container
+  mainContainer.appendChild(topMenu);
+  mainContainer.appendChild(content);
+
+  // Add to document body
+  document.body.appendChild(mainContainer);
+}
+
+
 window.onload = async function () {
-  await readData(baseUrl);
+  await createDynamicBody();
+  await readData();
   await createEnvironmentMenu();
   await createFilterMenu();
   loadPage(await createIframeData());
