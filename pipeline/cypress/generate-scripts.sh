@@ -40,6 +40,6 @@ rm "$JOB_SCRIPT.bak"
 combine "runner.sh"
 report "$CLOSURE_SCRIPT" $REPORT_BASE_FILE_NAME
 
-CLOSURE=$(base64 "$CLOSURE_SCRIPT")
-EXECUTE=$(base64 "$EXECUTE_SCRIPT")
+CLOSURE=$(base64 < "$CLOSURE_SCRIPT")
+EXECUTE=$(base64 < "$EXECUTE_SCRIPT")
 echo "{\"job\": {\"execute\": \"$EXECUTE\",\"closure\":\"$CLOSURE\"}}" > "$JENKINS_PATH/$PROJECT_ID.json"

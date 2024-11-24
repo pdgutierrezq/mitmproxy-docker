@@ -38,7 +38,7 @@ scp -i "$KEY_PATH" "ec2-user@$EC2:$SRC_PATH" "$TARGET_PATH"
 rm -rf "$PIPELINE_TARGET_PATH"
 mkdir -p "$PIPELINE_TARGET_PATH"
 unzip -q "$TARGET_PATH/$FILE_NAME" -d "$PIPELINE_TARGET_PATH"
-ls -Rl $PIPELINE_TARGET_PATH
+#ls -Rl $PIPELINE_TARGET_PATH
 ssh -o StrictHostKeyChecking=no -i "$KEY_PATH" "ec2-user@$EC2" <<'ENDSSH'
   ps aux --width 100 --sort -%cpu | head -15
   sudo pkill -f .*Cypress.*
