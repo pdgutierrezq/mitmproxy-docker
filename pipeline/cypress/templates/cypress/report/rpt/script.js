@@ -1,5 +1,5 @@
 let currentEnvironment = "dev";
-let baseUrl = "http://rb-pb-stg-1793261678.us-east-2.elb.amazonaws.com/castlemock/mock/rest/project/4QMiEm/application/zDkEGo/rpt/";
+let baseUrl = "https://rb-pasivo.adl-avvillas-stg.net/castlemock/mock/rest/project/4QMiEm/application/zDkEGo/rpt/";
 // baseUrl = "";
 let data = {};
 
