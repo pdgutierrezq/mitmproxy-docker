@@ -1349,7 +1349,7 @@
         </mockResponse>
         <mockResponse>
             <body>{&#13;
-	"baseUrl": "https://jenkins.rb-pre-ops.net/view/bavv-pasivo-qa/job/",&#13;
+	"baseUrl": "https://jenkins-rb.adldigitallabs.com/view/bavv-pasivo-qa/job/",&#13;
 	"filters": [&#13;
 		{&#13;
 			"name": "API",&#13;

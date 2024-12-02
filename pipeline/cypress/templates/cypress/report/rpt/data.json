@@ -1,5 +1,5 @@
 {
-  "baseUrl" : "https://jenkins.rb-pre-ops.net/view/bavv-pasivo-qa/job/",
+  "baseUrl" : "https://jenkins-rb.adldigitallabs.com/view/bavv-pasivo-qa/job/",
   "filters": [
     {
       "name": "API",
