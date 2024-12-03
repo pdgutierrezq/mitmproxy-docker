@@ -30,12 +30,40 @@
       "value": "bavv-pasivo-qa-api-{envPrefix}/Test"
     },
     {
+      "id": 19,
+      "value": "bavv-pasivo-qa-api-{envPrefix}-bank/Test"
+    },
+    {
       "id": 2,
       "value": "bavv-pasivo-qa-frontend-{envPrefix}-cda/Serenity"
     },
     {
+      "id": 13,
+      "value": "bavv-pasivo-qa-frontend-{envPrefix}-cda-card/Serenity"
+    },
+    {
+      "id": 14,
+      "value": "bavv-pasivo-qa-frontend-{envPrefix}-cda-optional/Serenity"
+    },
+    {
+      "id": 15,
+      "value": "bavv-pasivo-qa-frontend-{envPrefix}-cda-otp/Serenity"
+    },
+    {
       "id": 3,
       "value": "bavv-pasivo-qa-frontend-{envPrefix}-cdt/Serenity"
+    },
+    {
+      "id": 16,
+      "value": "bavv-pasivo-qa-frontend-{envPrefix}-cdt-assisted/Serenity"
+    },
+    {
+      "id": 17,
+      "value": "bavv-pasivo-qa-frontend-{envPrefix}-cdt-optional/Serenity"
+    },
+    {
+      "id": 18,
+      "value": "bavv-pasivo-qa-frontend-{envPrefix}-cdt-otp/Serenity"
     },
     {
       "id": 4,

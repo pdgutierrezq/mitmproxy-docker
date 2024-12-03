@@ -50,7 +50,7 @@ function loadIframes(iframes) {
     const container = document.createElement("div");
     container.className = "iframe-container";
     container.innerHTML = `
-      <input type="text" id="input${data.id}" value="${data.value}" oninput="changeIframeSrc(\`iframe${data.id}\`)">
+      <input type="text" id="input${data.id}" value="${data.value}" oninput="changeIframeSrc(\`${data.id}\`)">
       <iframe id="iframe${data.id}" class="iframe"></iframe>
     `;
     content.appendChild(container);
@@ -59,8 +59,8 @@ function loadIframes(iframes) {
 
 function changeIframeSrc(iframeId) {
   const input = data.baseUrl + document.getElementById(
-      `input` + iframeId.slice(-1)).value;
-  document.getElementById(iframeId).src = input;
+      `input` + iframeId).value;
+  document.getElementById(`iframe${iframeId}`).src = input;
 }
 
 function reloadIframes() {
